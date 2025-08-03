@@ -1,0 +1,54 @@
+{
+  "height": 5,
+  "margin-top": 8,
+  "margin-left": 8,
+  "margin-right": 8,
+  "layer": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": ["pulseaudio", "battery", "clock"],
+  
+  "custom/brightness": {
+    "format": "",
+    "interval": 1,
+    "exec": "brightnessctl get",
+    "return-type": "json",
+    "exec-if": "which brightnessctl",
+    "on-click": "brightnessctl set +10%",
+    "on-click-right": "brightnessctl set 10%-",
+    "tooltip": false
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "interval": 1,
+    "format": "{capacity} {icon}",
+    "format-charging": "{capacity} ",
+    "format-full": "{capacity} ",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "{volume} {icon}",
+    "format-muted": "mut ",
+    "format-icons": [
+      "",
+      ""
+    ],
+    "scroll-step": 5,
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": false
+  }
+}
+

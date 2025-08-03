@@ -1,0 +1,81 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="JdkInstallerHistory">
+    <option name="installedItems">
+      <installed-jdk>
+        <option name="fullText" value="Microsoft OpenJDK 17.0.15" />
+        <option name="installDir" value="/home/arsoniv/.jdks/ms-17.0.15" />
+        <option name="sha256" value="e7029853d3e9d3dde090aa65dc2386c6e9cb0a41028fea41e48c866a958eba03" />
+        <option name="url" value="https://aka.ms/download-jdk/microsoft-jdk-17.0.15-linux-x64.tar.gz" />
+        <option name="versionText" value="17.0.15" />
+      </installed-jdk>
+    </option>
+  </component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="15.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "InstalledPluginsSearchHistory": "GUI\ngui design\ngui desi",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "2",
+    "MarketplacePluginsSearchHistory": "vim",
+    "MemberChooser.copyJavadoc": "false",
+    "MemberChooser.showClasses": "true",
+    "NewProjectWizard.generateOnboardingTips": "true",
+    "NewProjectWizard.gradleDslState": "KOTLIN",
+    "NewProjectWizard.groupIdState": "org.arsoniv",
+    "NextRunPlatformUpdateBuild": "IC-251.27812.49",
+    "NextRunPlatformUpdateSelfBuild": "IC-251.23774.435",
+    "NextRunPlatformUpdateVersion": "2025.1.4.1",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
+    "RunOnceActivity.git.modal.commit.toggle": "true",
+    "SettingsSearchHistory": "GUI\ngui design\nfont",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.run.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor": "Sources",
+    "decompiler.legal.notice.accepted": "true",
+    "defaultJdkConfigured": "true",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "251.23774.435",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "got.it.tooltip.Plugins Auto-Update": "1",
+    "got.it.tooltip.settings.sync.in.settings": "1",
+    "ideavim.statistics.timestamp": "1748391544829",
+    "input.method.disabler.muted": "true",
+    "installed.kotlin.plugin.version": "251.23774.435-IJ",
+    "java.exceptions.anniversary.banner.shown": "2",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin.lastUpdateCheck": "1750714884112",
+    "last_opened_file_path": "/home/arsoniv/projects/1.1game",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "onboarding.generation.number": "3",
+    "previousColorScheme": "_@user_Dark",
+    "project.wizard.group": "NPW.simple-project.Java",
+    "registry.to.advanced.settings.migration.build": "IC-251.23774.435",
+    "settings.code.style.selected.tab.JAVA": "Wrapping and Braces",
+    "tab_selection_count": "5",
+    "terminal.gen.one.option.visible": "false"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/arsoniv/projects/1.1game",
+      "/home/arsoniv/IdeaProjects/1.1game"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

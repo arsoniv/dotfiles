@@ -1,0 +1,24 @@
+<scheme name="_@user_Default" version="142" parent_scheme="Default">
+  <metaInfo>
+    <property name="ide">CLion</property>
+    <property name="ideVersion">2025.1.1.0.0</property>
+    <property name="originalScheme">Default</property>
+  </metaInfo>
+  <colors>
+    <option name="FILESTATUS_ADDED" value="72F1B8" />
+    <option name="FILESTATUS_DELETED" value="FE4450" />
+    <option name="FILESTATUS_HIJACKED" value="FEDE5D" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="FFFFFF59" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="03EDF9" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="03EDF9" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="03EDF9" />
+    <option name="FILESTATUS_MERGED" value="36F9F6" />
+    <option name="FILESTATUS_MODIFIED" value="F92AAD" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="B893CE" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="B893CE" />
+    <option name="FILESTATUS_OBSOLETE" value="FFCB6B" />
+    <option name="FILESTATUS_SUPPRESSED" value="848BBD" />
+    <option name="FILESTATUS_SWITCHED" value="FEDE5D" />
+    <option name="FILESTATUS_UNKNOWN" value="999999" />
+  </colors>
+</scheme>

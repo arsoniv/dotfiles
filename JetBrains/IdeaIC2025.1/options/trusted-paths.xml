@@ -1,0 +1,16 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/1.1game" value="true" />
+        <entry key="$USER_HOME$/IdeaProjects/PaceMan-Tracker" value="true" />
+        <entry key="$USER_HOME$/IdeaProjects/eclipse-of-fate-game" value="true" />
+        <entry key="$USER_HOME$/IdeaProjects/game-fun" value="true" />
+        <entry key="$USER_HOME$/WebstormProjects/ms-ranked-3-client" value="true" />
+        <entry key="$USER_HOME$/WebstormProjects/ms-ranked-3-server" value="true" />
+        <entry key="$USER_HOME$/projects/1.1game" value="true" />
+        <entry key="$USER_HOME$/projects/teach_orson" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

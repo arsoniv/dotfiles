@@ -1,0 +1,26 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/projects/axen-os-rust">
+          <value>
+            <RecentProjectMetaInfo frameTitle="axen-os-rust – main.rs" opened="true" projectWorkspaceId="30FRRCte0bmXZq3mwuJFP2jUBPD">
+              <option name="activationTimestamp" value="1753221522535" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RR-251.25410.170" />
+              <option name="buildTimestamp" value="1748283360000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="8" y="56" width="1904" height="1136" />
+              <option name="productionCode" value="RR" />
+              <option name="projectOpenTimestamp" value="1753221324156" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/projects/axen-os-rust" />
+    <option name="lastProjectLocation" value="$USER_HOME$/projects" />
+  </component>
+</application>

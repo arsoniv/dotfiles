@@ -1,0 +1,642 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="eclipse-of-fate-game" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="4b1c433e:BranchNodeDescriptor$Root" />
+        <item name="LOCAL" type="7ab31ef7:BranchNodeDescriptor$TopLevelGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="279c2fezt7fhg" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Main.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="310">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Main.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/GamePanel.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="434">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"GamePanel.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/gradlew">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="4836">
+              <caret line="156" column="8" selection-start-line="156" selection-start-column="8" selection-end-line="156" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"gradlew","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,68,10,17,110,111,100,101,115,47,99,111,110,115,111,108,101,46,115,118,103,18,25,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,115,104,101,108,108,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-88,-76,-117,-54,5,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/gradlew.bat">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="372">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"gradlew.bat","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,73,10,18,102,105,108,101,84,121,112,101,115,47,116,101,120,116,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,116,101,120,116,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-122,-48,-19,-85,-2,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/settings.gradle.kts">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"settings.gradle.kts (2d-space-game)","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,-106,1,10,56,111,114,103,47,106,101,116,98,114,97,105,110,115,47,107,111,116,108,105,110,47,105,100,101,97,47,105,99,111,110,115,47,107,111,116,108,105,110,95,103,114,97,100,108,101,95,115,99,114,105,112,116,46,115,118,103,18,60,111,114,103,47,106,101,116,98,114,97,105,110,115,47,107,111,116,108,105,110,47,105,100,101,97,47,105,99,111,110,115,47,101,120,112,117,105,47,107,111,116,108,105,110,71,114,97,100,108,101,83,99,114,105,112,116,46,115,118,103,26,20,111,114,103,46,106,101,116,98,114,97,105,110,115,46,107,111,116,108,105,110,40,-24,-65,-15,-112,2,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Player.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="434">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Player.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/WaterMellon.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="372">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"WaterMellon.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Zombie.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="620">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Zombie.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/img.png">
+          <provider editor-type-id="images" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"img.png","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,75,10,19,102,105,108,101,84,121,112,101,115,47,105,109,97,103,101,46,115,118,103,18,25,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,105,109,97,103,101,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-90,-7,-120,-127,-1,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/images.png">
+          <provider editor-type-id="images" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"images.png","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,75,10,19,102,105,108,101,84,121,112,101,115,47,105,109,97,103,101,46,115,118,103,18,25,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,105,109,97,103,101,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-90,-7,-120,-127,-1,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/img_1.png">
+          <provider editor-type-id="images" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"img_1.png","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,75,10,19,102,105,108,101,84,121,112,101,115,47,105,109,97,103,101,46,115,118,103,18,25,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,105,109,97,103,101,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-90,-7,-120,-127,-1,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/img_3.png">
+          <provider editor-type-id="images" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"img_3.png","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,75,10,19,102,105,108,101,84,121,112,101,115,47,105,109,97,103,101,46,115,118,103,18,25,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,105,109,97,103,101,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-90,-7,-120,-127,-1,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/MedKit.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="434">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"MedKit.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Slurp.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="434">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Slurp.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Util.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="93">
+              <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Util.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Entity.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="775">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Entity.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/MouseListener.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1488">
+              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"MouseListener.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/KeyHandler.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1333">
+              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"KeyHandler.java","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "JAVA": {
+      "usageCount": 134,
+      "lastUsed": 1753736400781
+    },
+    "Image": {
+      "usageCount": 25,
+      "lastUsed": 1753736400574
+    },
+    "Kotlin": {
+      "usageCount": 6,
+      "lastUsed": 1753736400637
+    },
+    "Shell Script": {
+      "usageCount": 4,
+      "lastUsed": 1753736400624
+    },
+    "textmate": {
+      "usageCount": 4,
+      "lastUsed": 1753736400807
+    },
+    "CLASS": {
+      "usageCount": 1,
+      "lastUsed": 1750717561671
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>true</find>
+      <find>newPre</find>
+      <find>println</find>
+      <find>eclips</find>
+      <find>ecl</find>
+      <find>[</find>
+      <find>esc</find>
+      <find>reset</find>
+      <find>space</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>false</replace>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="GitBranchesPopupTreeState">
+    <expand>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="LOCAL" type="6e158aa5:GitBranchType$LOCAL" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/Keylistener.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/MouseListener.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/zombie.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/Main.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/WaterMellon.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/Slurp.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/MedKit.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/Entity.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/Util.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/Player.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/Bullet.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/GamePanel.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/eclipse-of-fate-game/src/main/java/org/arsoniv/Zombie.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/build.gradle.kts&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/settings.gradle.kts&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/Entity.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/KeyHandler.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/Main.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/MedKit.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/MouseListener.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/Player.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/Slurp.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/Util.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/WaterMellon.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/Zombie.java&quot;,
+    &quot;/home/arsoniv/IdeaProjects/1.1game/src/main/java/org/arsoniv/GamePanel.java&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="134" lastUsage="1753736400781" />
+    </language>
+    <language id="Shell Script">
+      <summary usageCount="4" lastUsage="1753736400624" />
+    </language>
+    <language id="kotlin">
+      <summary usageCount="6" lastUsage="1753736400637" />
+    </language>
+    <language id="textmate">
+      <summary usageCount="4" lastUsage="1753736400807" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Application.Main" />
+      <element setting="Gradle.1.1game [compileJava]" />
+      <element setting="JAR Application.eclipse-of-fate-game-1.0-SNAPSHOT.jar" />
+    </history>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.09322479" />
+      <window_info id="Commit" order="1" weight="0.4004727" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32966548" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32966548" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Build" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" show_stripe_button="false" weight="0.32966548" />
+      <window_info anchor="bottom" id="Debug" order="7" show_stripe_button="false" weight="0.32966548" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32966548" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.33009452" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights bottom="0.32966548" left="0.4004727" right="0.33009452" />
+    </layoutV2>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16412815" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Build" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32966548" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.33025506" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32966548" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights bottom="0.32966548" left="0.16412815" />
+    </layout-to-restore>
+    <recentWindows>
+      <value>Commit</value>
+      <value>Run</value>
+      <value>Debug</value>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>Gradle</value>
+      <value>Version Control</value>
+      <value>Find</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="443" y="199" width="1024" height="819" key="#Project_Structure" timestamp="1749505464994">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="443" y="199" width="1024" height="819" key="#Project_Structure/0.0.1920.1200@0.0.1920.1200" timestamp="1749505464994" />
+    <state x="757" y="311" width="395" height="595" key="#com.intellij.ide.util.MemberChooser" timestamp="1748996561678">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="757" y="311" width="395" height="595" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1748996561678" />
+    <state x="773" y="447" width="363" height="323" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1749083902186">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="773" y="447" width="363" height="323" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1749083902186" />
+    <state x="698" y="386" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1750713181611">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="698" y="386" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1750713181611" />
+    <state x="748" y="381" key="FileChooserDialogImpl" timestamp="1750714398505">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="748" y="381" key="FileChooserDialogImpl/0.0.1920.1200@0.0.1920.1200" timestamp="1750714398505" />
+    <state x="698" y="470" key="Github.ShareDialog" timestamp="1750714439973">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="698" y="470" key="Github.ShareDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1750714439973" />
+    <state x="772" y="342" key="Github.UntrackedFilesDialog" timestamp="1750714455088">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="772" y="342" key="Github.UntrackedFilesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1750714455088" />
+    <state width="1822" height="332" key="GridCell.Tab.0.bottom" timestamp="1750990268283">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1750990268283" />
+    <state width="1822" height="332" key="GridCell.Tab.0.center" timestamp="1750990268283">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1750990268283" />
+    <state width="1822" height="332" key="GridCell.Tab.0.left" timestamp="1750990268283">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1750990268283" />
+    <state width="1822" height="332" key="GridCell.Tab.0.right" timestamp="1750990268283">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1750990268283" />
+    <state width="1822" height="332" key="GridCell.Tab.1.bottom" timestamp="1750990268283">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1750990268283" />
+    <state width="1822" height="332" key="GridCell.Tab.1.center" timestamp="1750990268283">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1750990268283" />
+    <state width="1822" height="332" key="GridCell.Tab.1.left" timestamp="1750990268283">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1750990268283" />
+    <state width="1822" height="332" key="GridCell.Tab.1.right" timestamp="1750990268283">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1750990268283" />
+    <state x="560" y="373" key="Vcs.Push.Dialog.v2" timestamp="1752526765274">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="560" y="373" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1752526765274" />
+    <state x="560" y="270" width="800" height="706" key="new project wizard" timestamp="1753736440278">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="560" y="270" width="800" height="706" key="new project wizard/0.0.1920.1200@0.0.1920.1200" timestamp="1753736440278" />
+    <state x="624" y="290" key="run.anything.popup" timestamp="1748994430814">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="624" y="290" key="run.anything.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1748994430814" />
+    <state x="623" y="297" width="706" height="696" key="search.everywhere.popup" timestamp="1750716068653">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="623" y="297" width="706" height="696" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1750716068653" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Bullet.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img_4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img_2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jrt:///usr/lib/jvm/default!/java.base/java/lang/String.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="115" column="28" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/images.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img_3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/MedKit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Slurp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4836">
+          <caret line="156" column="8" selection-start-line="156" selection-start-column="8" selection-end-line="156" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/MouseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/KeyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1333">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/Zombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/GamePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/arsoniv/WaterMellon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI" />
+      <state key="GlobalLibrariesConfigurable.UI" />
+      <state key="JdkListConfigurable.UI" />
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>test|eclipse-of-fate-game</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI" />
+    </states>
+  </component>
+</project>

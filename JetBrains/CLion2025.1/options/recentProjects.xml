@@ -1,0 +1,74 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/.cache/JetBrains/CLion2025.1/demo/LearnCppProject">
+          <value>
+            <RecentProjectMetaInfo frameTitle="LearnCppProject – main.cpp" hidden="true" projectWorkspaceId="2OKQdOm4h3GNybsNtbkgqr1SP32">
+              <option name="activationTimestamp" value="1746954331235" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-251.25410.104" />
+              <option name="buildTimestamp" value="1746539640000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="6" y="26" width="1908" height="1168" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1746954278488" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/projects/og_waywall">
+          <value>
+            <RecentProjectMetaInfo frameTitle="og_waywall – scene.c" projectWorkspaceId="30Tf2PENnYVyxGuk65cu9bIxipV">
+              <option name="activationTimestamp" value="1753829126004" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-251.25410.104" />
+              <option name="buildTimestamp" value="1746539640000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <frame x="8" y="55" width="1904" height="1137" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1753829088280" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/projects/axen-lang">
+          <value>
+            <RecentProjectMetaInfo frameTitle="axen-lang – build.c" projectWorkspaceId="30ZJO8M0KlQ0xST56EwSjtkfcUy">
+              <option name="activationTimestamp" value="1753909685564" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-251.25410.104" />
+              <option name="buildTimestamp" value="1746539640000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="8" y="55" width="1904" height="1137" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1753829126602" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/projects/waywall">
+          <value>
+            <RecentProjectMetaInfo frameTitle="waywall – irc.c" opened="true" projectWorkspaceId="30TcygnA0YJSPKhMEY6YBzpAjVN">
+              <option name="activationTimestamp" value="1754198230528" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-251.25410.104" />
+              <option name="buildTimestamp" value="1746539640000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="8" y="55" width="1904" height="1137" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1753909687322" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/projects/waywall" />
+    <option name="lastProjectLocation" value="$USER_HOME$/projects" />
+  </component>
+</application>

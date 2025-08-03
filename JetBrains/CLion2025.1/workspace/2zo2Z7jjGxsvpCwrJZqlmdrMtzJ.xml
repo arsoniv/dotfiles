@@ -1,0 +1,442 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="axen" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="rcvtnzfvmm55" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="264">
+              <caret line="17" column="3" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"main.c","foregroundColor":-3938169,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"c3e887"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/compile_commands.json">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="330">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"compile_commands.json","foregroundColor":-3938169,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"c3e887"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,73,10,18,102,105,108,101,84,121,112,101,115,47,106,115,111,110,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,106,115,111,110,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-55,-15,-115,-58,-6,-1,-1,-1,-1,1,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/../bf++/elf.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="110">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"elf.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/build.h">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="198">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+              <folding>
+                <marker date="1752406093981" expanded="true" signature="13:49" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"build.h","foregroundColor":-3938169,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"c3e887"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/build.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="308">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"build.c","foregroundColor":-3938169,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"c3e887"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/../bf++/elf.h">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="132">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <marker date="1752393271973" expanded="true" signature="13:52" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"elf.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/main.ax">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="110">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"main.ax","foregroundColor":-8092412,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"848504"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,73,10,18,102,105,108,101,84,121,112,101,115,47,116,101,120,116,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,116,101,120,116,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-122,-48,-19,-85,-2,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/parser.h">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="572">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"parser.h","foregroundColor":-3938169,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"c3e887"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/parser.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1804">
+              <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"parser.c","foregroundColor":-3938169,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"c3e887"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/tokenizer.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="88">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"tokenizer.c","foregroundColor":-3938169,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"c3e887"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/tokenizer.h">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="132">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"tokenizer.h","foregroundColor":-3938169,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"c3e887"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C/C++ Header": {
+      "usageCount": 76,
+      "lastUsed": 1753083309971
+    },
+    "PLAIN_TEXT": {
+      "usageCount": 20,
+      "lastUsed": 1753083309954
+    },
+    "C/C++": {
+      "usageCount": 92,
+      "lastUsed": 1753083309968
+    },
+    "Makefile": {
+      "usageCount": 7,
+      "lastUsed": 1752388522463
+    },
+    "GitIgnore file": {
+      "usageCount": 1,
+      "lastUsed": 1752383260898
+    },
+    "JSON": {
+      "usageCount": 17,
+      "lastUsed": 1753083309948
+    },
+    "YAML": {
+      "usageCount": 3,
+      "lastUsed": 1752404831699
+    },
+    "translated code preview": {
+      "usageCount": 1,
+      "lastUsed": 1752383547766
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>node_</find>
+      <find>number</find>
+      <find>Expression</find>
+      <find>literal ha</find>
+      <find>dst.c</find>
+      <find>for (size_t j = 0; j &lt; dst.children_len; j++) {</find>
+      <find>expre</find>
+      <find>dst[</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/arsoniv/projects/axen/src/elf.c&quot;,
+    &quot;/home/arsoniv/projects/axen/include/elf.h&quot;,
+    &quot;/home/arsoniv/projects/axen/include/parser.h&quot;,
+    &quot;/home/arsoniv/projects/axen/.clang-format&quot;,
+    &quot;/home/arsoniv/projects/axen/include/build.h&quot;,
+    &quot;/home/arsoniv/projects/axen/src/main.c&quot;,
+    &quot;/home/arsoniv/projects/axen/include/tokenizer.h&quot;,
+    &quot;/home/arsoniv/projects/axen/src/tokenizer.c&quot;,
+    &quot;/home/arsoniv/projects/axen/src/build.c&quot;,
+    &quot;/home/arsoniv/projects/axen/src/parser.c&quot;,
+    &quot;/home/arsoniv/projects/axen/main.ax&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C++">
+      <summary usageCount="168" lastUsage="1753083309971" />
+    </language>
+    <language id="GitIgnore">
+      <summary usageCount="1" lastUsage="1752383260898" />
+    </language>
+    <language id="JSON">
+      <summary usageCount="17" lastUsage="1753083309948" />
+    </language>
+    <language id="Makefile">
+      <summary usageCount="7" lastUsage="1752388522463" />
+    </language>
+    <language id="TEXT">
+      <summary usageCount="20" lastUsage="1753083309954" />
+    </language>
+    <language id="yaml">
+      <summary usageCount="3" lastUsage="1752404831699" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Native Application.all" />
+    </history>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="39629000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19989452" />
+      <window_info id="Commit" order="1" weight="0.33009452" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.47579223" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.20202464" />
+      <window_info anchor="bottom" id="CMake" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.32966548" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.32966548" />
+      <window_info anchor="bottom" id="Run" order="9" show_stripe_button="false" weight="0.47579223" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.33009452" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" />
+      <unified_weights bottom="0.47579223" left="0.19989452" right="0.33009452" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>Run</value>
+      <value>Services</value>
+      <value>AIAssistant</value>
+      <value>Commit</value>
+      <value>Build</value>
+      <value>Debug</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="559" y="251" key="#C/C++" timestamp="1752383434116">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="559" y="251" key="#C/C++/0.0.1920.1200@0.0.1920.1200" timestamp="1752383434116" />
+    <state x="748" y="409" key="FileChooserDialogImpl" timestamp="1752383752625">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="748" y="409" key="FileChooserDialogImpl/0.0.1920.1200@0.0.1920.1200" timestamp="1752383752625" />
+    <state width="1822" height="498" key="GridCell.Tab.0.bottom" timestamp="1753008817876">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="498" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1753008817876" />
+    <state width="1822" height="498" key="GridCell.Tab.0.center" timestamp="1753008817876">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="498" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1753008817876" />
+    <state width="1822" height="498" key="GridCell.Tab.0.left" timestamp="1753008817876">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="498" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1753008817876" />
+    <state width="1822" height="498" key="GridCell.Tab.0.right" timestamp="1753008817876">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="498" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1753008817876" />
+    <state x="379" y="1011" width="1512" height="139" key="ProcessPopupWindow" timestamp="1752383658747">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="379" y="1011" width="1512" height="139" key="ProcessPopupWindow/0.0.1920.1200@0.0.1920.1200" timestamp="1752383658747" />
+    <state x="469" y="274" key="SettingsEditor" timestamp="1752383789537">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="469" y="274" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1752383789537" />
+    <state x="698" y="345" width="524" height="558" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1752405767319">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="698" y="345" width="524" height="558" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1752405767319" />
+    <state x="652" y="539" key="makefile.clean.confirm.dialog" timestamp="1752383163495">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="652" y="539" key="makefile.clean.confirm.dialog/0.0.1920.1200@0.0.1920.1200" timestamp="1752383163495" />
+    <state x="624" y="290" key="run.anything.popup" timestamp="1752394465277">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="624" y="290" key="run.anything.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1752394465277" />
+    <state x="623" y="298" width="706" height="713" key="search.everywhere.popup" timestamp="1752444669219">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="623" y="298" width="706" height="713" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1752444669219" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.clang-format">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compile_commands.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/build.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <marker date="1752406093981" expanded="true" signature="13:49" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bf++/elf.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.ax">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tokenizer.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/parser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bf++/elf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <marker date="1752393271973" expanded="true" signature="13:52" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1804">
+          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/build.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/tokenizer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="3" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

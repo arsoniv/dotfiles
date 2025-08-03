@@ -1,0 +1,56 @@
+q
+add Music
+clear 
+add
+filter flac
+filter lac
+filter f
+fset ogg=filename="*.oog"
+fset flac=filename="*.flac"
+fset ogg=filename="*.flac"
+add Joe Rogan Experience #2219 - Donald Trump [hBMoPUAeLnY].m4a
+set softvol=false
+set progress_bar=line
+set color_trackwin_album_attr=bold
+colorscheme 1
+add Msuci
+clear
+bind -f common v player-stop
+add Music/
+search-prev
+refresh
+source ~/Music
+source 
+bind common <key> source
+add ~/Music
+bind -f common c player-pause
+bind -f common a win-add-l
+bind -f common ^Y win-scroll-up
+bind -f common ^U win-half-page-up
+bind -f common ^R toggle repeat_current
+bind -f common ^L refresh
+refresh-cache
+bind common s shuffle
+update-cache
+open
+reload
+bind common m mute
+bind -f common l seek +5
+bind -r
+bind
+binf
+bind -h
+bind -f common space player-pause
+bind -f common + vol +10%
+colorscheme dark
+colorscheme 
+colorscheme white
+colorscheme blue
+colorscheme default
+colorscheme help
+colorscheme
+color
+bind -f browser space win-activate
+bind -f common space win-toggle
+set shuffle=true
+quit

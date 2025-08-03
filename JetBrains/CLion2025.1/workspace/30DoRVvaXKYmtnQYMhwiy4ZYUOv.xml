@@ -1,0 +1,459 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="axen-os" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="1s88vksacgc3y" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/makefile">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="550">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"makefile","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,84,10,18,105,99,111,110,115,47,109,97,107,101,102,105,108,101,46,115,118,103,18,24,105,99,111,110,115,47,101,120,112,117,105,47,109,97,107,101,102,105,108,101,46,115,118,103,26,28,110,97,109,101,46,107,114,111,112,112,46,105,110,116,101,108,108,105,106,46,109,97,107,101,102,105,108,101,40,-103,-29,-87,-31,7,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/linker.ld">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="154">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"linker.ld","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,70,10,12,105,99,111,110,115,47,108,100,46,115,118,103,18,18,105,99,111,110,115,47,101,120,112,117,105,47,108,100,46,115,118,103,26,26,99,111,109,46,106,101,116,98,114,97,105,110,115,46,108,105,110,107,101,114,115,99,114,105,112,116,40,-87,-59,-106,-33,2,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/kernal.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="110">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"kernal.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/bootloader/efi.h">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="264">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"efi.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bootloader/bootloader.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="286">
+              <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"bootloader.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C/C++": {
+      "usageCount": 15,
+      "lastUsed": 1753267641269
+    },
+    "Makefile": {
+      "usageCount": 10,
+      "lastUsed": 1753267641226
+    },
+    "UNKNOWN": {
+      "usageCount": 5,
+      "lastUsed": 1753179952927
+    },
+    "C/C++ Header": {
+      "usageCount": 12,
+      "lastUsed": 1753267641350
+    },
+    "YAML": {
+      "usageCount": 2,
+      "lastUsed": 1753184931542
+    },
+    "PLAIN_TEXT": {
+      "usageCount": 1,
+      "lastUsed": 1753253624363
+    },
+    "LinkerScript": {
+      "usageCount": 4,
+      "lastUsed": 1753267776167
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>efi_main</find>
+      <find>.c</find>
+      <find>linker.</find>
+      <find>linker.ld</find>
+      <find>main</find>
+      <find>-e m</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/arsoniv/projects/axen-os/.clang-format",
+    "/home/arsoniv/projects/axen-os/Makefile",
+    "/home/arsoniv/projects/axen-os/src/include/efi.h",
+    "/home/arsoniv/projects/axen-os/src/main.c",
+    "/home/arsoniv/projects/axen-os/src/efi.h",
+    "/home/arsoniv/projects/axen-os/src/bootloader.c",
+    "/home/arsoniv/projects/axen-os/makefile",
+    "/home/arsoniv/projects/axen-os/linker.ld",
+    "/home/arsoniv/projects/axen-os/src/kernal.c",
+    "/home/arsoniv/projects/axen-os/src/bootloader/efi.h",
+    "/home/arsoniv/projects/axen-os/src/bootloader/bootloader.c"
+  ]
+}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C++">
+      <summary usageCount="27" lastUsage="1753267641350" />
+    </language>
+    <language id="LinkerScript">
+      <summary usageCount="4" lastUsage="1753267776167" />
+    </language>
+    <language id="Makefile">
+      <summary usageCount="10" lastUsage="1753267641228" />
+    </language>
+    <language id="TEXT">
+      <summary usageCount="1" lastUsage="1753253624363" />
+    </language>
+    <language id="yaml">
+      <summary usageCount="2" lastUsage="1753184931542" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="axen-os" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/projects/axen-os}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="axen-os" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/projects/axen-os}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/projects/axen-os/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="axen-os" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/projects/axen-os}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/projects/axen-os/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/projects/axen-os/src/bootloader}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="axen-os" />
+            <item name="axen-os" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="axen-os" />
+              <item name="dir{file:///home/arsoniv/projects/axen-os}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/build" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="build" />
+                <item name="dir{file:///home/arsoniv/projects/axen-os/build}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/src" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="src" />
+                <item name="dir{file:///home/arsoniv/projects/axen-os/src}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/bootloader" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="bootloader" />
+                  <item name="dir{file:///home/arsoniv/projects/axen-os/src/bootloader}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/bootloader/bootloader.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="bootloader.c" />
+                    <item name="bootloader.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/bootloader/efi.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="efi.h" />
+                    <item name="efi.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/kernal.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="kernal.c" />
+                  <item name="kernal.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/linker.ld" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/ld.svg" iconPlugin="com.jetbrains.linkerscript" isLeaf="true" text="linker.ld" />
+                <item name="linker.ld" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/makefile" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/makefile.svg" iconPlugin="name.kropp.intellij.makefile" isLeaf="true" text="makefile" />
+                <item name="makefile" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.clang-format" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/yaml.svg" iconPlugin="com.intellij" isLeaf="true" text=".clang-format" />
+                <item name=".clang-format" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Makefile Target.Make Run" />
+      <element setting="Makefile Target.Make Clean" />
+      <element setting="Makefile Target.Make All" />
+      <element setting="Native Application.all" />
+    </history>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$/build/image/EFI/BOOT">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21814000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Backup and Sync History" show_stripe_button="false" />
+      <window_info id="Pull Requests" show_stripe_button="false" />
+      <window_info id="Learn" show_stripe_button="false" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48145604" visible="true" weight="0.19091387" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info auto_hide="true" id="Structure" order="2" sideWeight="0.51854396" side_tool="true" weight="0.12788865" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Packages" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Vcpkg" show_stripe_button="false" />
+      <window_info anchor="bottom" id="clangd" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.5002744" weight="0.29709506" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="CMake" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" show_stripe_button="false" weight="0.32966548" />
+      <window_info anchor="bottom" id="Run" order="7" show_stripe_button="false" sideWeight="0.5002744" weight="0.29709506" />
+      <window_info anchor="bottom" id="make" order="8" sideWeight="0.49972558" side_tool="true" weight="0.26452464" />
+      <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Python Console" show_stripe_button="false" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" />
+      <unified_weights bottom="0.29709506" left="0.19091387" right="0.33009452" />
+    </layoutV2>
+    <recentWindows>
+      <value>Run</value>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>Structure</value>
+      <value>make</value>
+      <value>Build</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="298" width="843" height="651" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1753252461796">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="560" y="298" width="843" height="651" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1753252461796" />
+    <state x="678" y="393" width="554" height="431" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1753258676449">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="678" y="393" width="554" height="431" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1753258676449" />
+    <state x="769" y="380" key="FileChooserDialogImpl" timestamp="1753182883054">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="769" y="380" key="FileChooserDialogImpl/0.0.1920.1200@0.0.1920.1200" timestamp="1753182883054" />
+    <state width="1822" height="295" key="GridCell.Tab.0.bottom" timestamp="1753268249261">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1753268249261" />
+    <state width="1822" height="295" key="GridCell.Tab.0.center" timestamp="1753268249261">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="295" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1753268249261" />
+    <state width="1822" height="295" key="GridCell.Tab.0.left" timestamp="1753268249261">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="295" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1753268249261" />
+    <state width="1822" height="295" key="GridCell.Tab.0.right" timestamp="1753268249261">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="295" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1753268249261" />
+    <state x="469" y="274" key="SettingsEditor" timestamp="1753261067090">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="469" y="274" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1753261067090" />
+    <state x="647" y="524" width="615" height="169" key="makefile.clean.confirm.dialog" timestamp="1753171574369">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="647" y="524" width="615" height="169" key="makefile.clean.confirm.dialog/0.0.1920.1200@0.0.1920.1200" timestamp="1753171574369" />
+    <state x="624" y="290" key="run.anything.popup" timestamp="1753180077840">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="624" y="290" key="run.anything.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1753180077840" />
+    <state x="623" y="298" key="search.everywhere.popup" timestamp="1753218853151">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="623" y="298" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1753218853151" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/include/efi.h" />
+    <entry file="file://$PROJECT_DIR$/.clang-format">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/efi/efilib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/efi.h" />
+    <entry file="file://$PROJECT_DIR$/build/main.d" />
+    <entry file="file://$PROJECT_DIR$/src/efi.h" />
+    <entry file="file://$PROJECT_DIR$/src/bootloader/ef.h" />
+    <entry file="file://$PROJECT_DIR$/src/kernal.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linker.ld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bootloader/efi.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bootloader/bootloader.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

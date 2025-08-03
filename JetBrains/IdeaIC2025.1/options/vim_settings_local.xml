@@ -1,0 +1,122 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-cmd>
+        <entry encoding="base64">Vw==</entry>
+        <entry encoding="base64">ZSBHYW1lUGFuZWwuamF2</entry>
+        <entry encoding="base64">ZSBNYWluLmphdmE=</entry>
+        <entry encoding="base64">ZSBHYW1lUGFuZWwuamF2YQ==</entry>
+        <entry encoding="base64">Onc=</entry>
+        <entry encoding="base64" />
+        <entry encoding="base64">dw==</entry>
+      </history-cmd>
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="game-fun-10889560">
+      <jump line="8" column="0" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/Main.java" protocol="file" />
+      <jump line="11" column="0" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/Main.java" protocol="file" />
+      <jump line="9" column="33" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="18" column="0" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="16" column="22" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="22" column="2" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="25" column="0" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="17" column="22" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="21" column="18" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="35" column="2" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="39" column="2" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="28" column="69" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="29" column="6" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="30" column="31" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="43" column="9" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="46" column="30" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="15" column="24" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/Main.java" protocol="file" />
+      <jump line="3" column="17" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="48" column="48" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="50" column="0" filename="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="$USER_HOME$/.ideavimrc" timestamp="1748392483979">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/Main.java" timestamp="1748298931995">
+        <mark key="'" line="15" column="24" />
+        <mark key="[" line="13" column="19" />
+        <mark key="]" line="15" column="25" />
+        <mark key="." line="15" column="24" />
+        <mark key="^" line="15" column="25" />
+      </file>
+      <file name="$USER_HOME$/IdeaProjects/game-fun/src/main/java/org/arsoniv/GamePanel.java" timestamp="1748392472216">
+        <mark key="'" line="30" column="6" />
+        <mark key="[" line="48" column="47" />
+        <mark key="]" line="48" column="48" />
+        <mark key="." line="48" column="49" />
+        <mark key="^" line="48" column="49" />
+      </file>
+      <file name="/" timestamp="1748298548572">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="&quot;" type="CHARACTER_WISE">
+        <text encoding="base64">d2hpdGU=</text>
+      </register>
+      <register name="-" type="CHARACTER_WISE">
+        <text encoding="base64">d2hpdGU=</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">MA==</text>
+      </register>
+      <register name="0" type="LINE_WISE">
+        <text encoding="base64">CQlnMmQuc2V0Q29sb3IoQ29sb3Iud2hpdGUpOwo=</text>
+      </register>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">CQkJCW5leHREcmF3ID0gU3lzdGVtLm5hbm9UaW1lKCkgLSAoU3lzdGVtLm5hbm9UaW1lKCkgLSBuZXh0RHJhdyk7CgkJCX0KCQl9Cg==</text>
+      </register>
+      <register name="2" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">CQlmaW5hbCBkb3VibGUgbnNQZXJTZWNvbmQgPSAxXzAwMF8wMDBfMDAwLjA7Cg==</text>
+      </register>
+      <register name="6" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICB9Cg==</text>
+      </register>
+      <register name="7" type="LINE_WISE">
+        <text encoding="base64">CiAgICAgICAgd2hpbGUgKGdhbWVUaHJlYWQgIT0gbnVsbCkgewoJCQkJCQo=</text>
+      </register>
+      <register name="8" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgfQo=</text>
+      </register>
+      <register name="9" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGUucHJpbnRTdGFja1RyYWNlKCk7Cg==</text>
+      </register>
+      <register name=":" type="CHARACTER_WISE">
+        <text encoding="base64">dw==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-offset encoding="base64" />
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

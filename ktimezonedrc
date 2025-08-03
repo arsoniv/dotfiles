@@ -1,0 +1,4 @@
+[TimeZones]
+LocalZone=Pacific/Auckland
+ZoneinfoDir=/usr/share/zoneinfo
+Zonetab=/usr/share/zoneinfo/zone.tab

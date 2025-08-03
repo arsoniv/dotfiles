@@ -1,0 +1,151 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$SelectAll">
+      <i c="37" l="1753506765330" />
+    </e>
+    <e n="$Undo">
+      <i c="53" l="1753506072397" />
+    </e>
+    <e n="Back">
+      <i c="2" l="1753502556382" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="610" l="1753506721797" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="44" l="1753505936784" />
+    </e>
+    <e n="EditorChooseLookupItemReplace">
+      <i c="2" l="1753503365703" />
+    </e>
+    <e n="EditorCopy">
+      <i c="79" l="1753506165631" />
+    </e>
+    <e n="EditorCut">
+      <i c="14" l="1753504928438" />
+    </e>
+    <e n="EditorDeleteLine">
+      <i c="7" l="1753501866594" />
+    </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="36" l="1753506722226" />
+    </e>
+    <e n="EditorDown">
+      <i c="57" l="1753505882971" />
+    </e>
+    <e n="EditorEnter">
+      <i c="108" l="1753505237769" />
+    </e>
+    <e n="EditorEscape">
+      <i c="1" l="1753503545114" />
+    </e>
+    <e n="EditorLeft">
+      <i c="65" l="1753505941303" />
+    </e>
+    <e n="EditorLeftWithSelection">
+      <i c="2" l="1753503567845" />
+    </e>
+    <e n="EditorLineEnd">
+      <i c="5" l="1753505237572" />
+    </e>
+    <e n="EditorLineEndWithSelection">
+      <i c="2" l="1753503567120" />
+    </e>
+    <e n="EditorLineStart">
+      <i c="1" l="1753503326945" />
+    </e>
+    <e n="EditorLineStartWithSelection">
+      <i c="1" l="1753504623351" />
+    </e>
+    <e n="EditorNextWord">
+      <i c="1" l="1753504568744" />
+    </e>
+    <e n="EditorPageUp">
+      <i c="1" l="1753504974986" />
+    </e>
+    <e n="EditorPaste">
+      <i c="98" l="1753506765563" />
+    </e>
+    <e n="EditorRight">
+      <i c="45" l="1753506716151" />
+    </e>
+    <e n="EditorRightWithSelection">
+      <i c="1" l="1753504607819" />
+    </e>
+    <e n="EditorStartNewLine">
+      <i c="1" l="1753503276725" />
+    </e>
+    <e n="EditorTextEndWithSelection">
+      <i c="1" l="1753501417510" />
+    </e>
+    <e n="EditorUp">
+      <i c="31" l="1753505236727" />
+    </e>
+    <e n="EditorUpWithSelection">
+      <i c="2" l="1753501419378" />
+    </e>
+    <e n="Find">
+      <i c="2" l="1753500772960" />
+    </e>
+    <e n="Forward">
+      <i c="1" l="1753502556481" />
+    </e>
+    <e n="GotoDeclaration">
+      <i c="16" l="1753505250240" />
+    </e>
+    <e n="HideAllWindows">
+      <i c="1" l="1753503104013" />
+    </e>
+    <e n="NewElement">
+      <i c="1" l="1753496793908" />
+    </e>
+    <e n="NewPythonFile">
+      <i c="7" l="1753505417506" />
+    </e>
+    <e n="NextTemplateVariable">
+      <i c="4" l="1753504840246" />
+    </e>
+    <e n="PasteMultiple">
+      <i c="1" l="1753496972150" />
+    </e>
+    <e n="ReformatCode">
+      <i c="26" l="1753506108645" />
+    </e>
+    <e n="RenameElement">
+      <i c="3" l="1753504836649" />
+    </e>
+    <e n="Run">
+      <i c="7" l="1753497297784" />
+    </e>
+    <e n="SaveAll">
+      <i c="205" l="1753506766137" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="5" l="1753502756770" />
+    </e>
+    <e n="com.intellij.find.SearchReplaceComponent$CloseAction">
+      <i c="2" l="1753503191754" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="7" l="1753504069729" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="1" l="1753506785852" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="5" l="1753503660502" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.ActionGroupPanelWrapper$6">
+      <i c="1" l="1753496701263" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="3" l="1753502437702" />
+    </e>
+    <e n="com.intellij.ui.dsl.builder.components.SegmentedButtonAction">
+      <i c="1" l="1753496705788" />
+    </e>
+    <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
+      <i c="1" l="1753502450146" />
+    </e>
+  </component>
+</application>

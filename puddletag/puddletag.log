@@ -1,0 +1,990 @@
+[2025-05-01 14:42:58,399]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/8E0A6292952515A71A5A2C746792E803BEB76E04
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,414]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/3232F63C3FCA2B675CFE836C25FCF5E22B8C3A3D
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,420]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/A763FF175388D0E16CDFA1BDD51376ACC7FD1A82
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,427]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/3747EA85D75768C34F2A66B5EA0D0F90EA2D5CCE
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,502]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/4B7C736D8FED11A0DF077A41727572063E387994
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,554]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/348C36F1E1651808F59E43E2CDE3E92878C7C278
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,593]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/2CAE0AA8180F855FA423660FAC1F155FA9A3452D
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,595]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/B82238175658906EC37444E88106FE94459F7D56
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,639]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/2B3ED3A2FC362042206FC40CDB86E0237FB34A64
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,667]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/962D767D4BC66288662677E8CC6104D38CE61687
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,735]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/F9F4B62E130319C0F72BA49A519C9989617FBC93
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,775]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/7B9A53429EF9A491EA1C1C0F28A3F6F2BFFF7C39
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,796]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/8038571C499855572BA9B77A406B8E981409F921
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,799]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/D5176B8F4CBBD334C9F982B69E0EF6B871579BEE
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,831]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/9FC7116D39705CFD5F885950154D5183D4579851
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,869]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/8AD4C5C6429F73599740A4BF2B85729C0102C9CA
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,902]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/2869C8090DDB4A07EBC798DCE3B3AE1BAB467249
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,933]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/58606DD63BD56C80D322C9F87D311AF6C2D6190E
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,944]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/F912FB6DC38926CADC9B51EBA3C0802479A342AE
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-01 14:42:58,981]ERROR:Error loading file /home/arsoniv/.cache/mozilla/firefox/mirmyd49.default-release/cache2/entries/78EAEAF05BA196F10B6D129B8418146DA92CB3F8
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 341, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-04 21:02:07,050]ERROR:Error loading file /home/arsoniv/Videos/lowkey-ranked-1.mp4
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 329, in ReplacementTag
+    return filetypes[extensions[match.groups()[0]][0]][1](filename)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-05-04 21:02:19,166]ERROR:Error loading file /home/arsoniv/Videos/lowkey-ranked-1.mp4
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1053, in load
+    moov = atoms[b"moov"]
+           ~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/_atom.py", line 188, in __getitem__
+    raise KeyError("%r not found" % names[0])
+KeyError: "b'moov' not found"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 675, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 329, in ReplacementTag
+    return filetypes[extensions[match.groups()[0]][0]][1](filename)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 158, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 223, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/mp4.py", line 347, in link
+    tags, audio = self.load(filename, MP4)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1184, in load
+    self.info.load(atoms, fileobj)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
+    raise MP4StreamInfoError("not a MP4 file")
+mutagen.mp4.MP4StreamInfoError: not a MP4 file

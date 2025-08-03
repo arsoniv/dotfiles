@@ -1,0 +1,23 @@
+<application>
+  <component name="DimensionService">
+    <location key="REMOTE_DEVELOPMENT_CONNECTION.0.0.1920.1200" x="555" y="270" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1200" width="1822" height="332" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1200" width="1822" height="332" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1200" width="1822" height="332" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1200" width="1822" height="332" />
+    <size key="REMOTE_DEVELOPMENT_CONNECTION.0.0.1920.1200" width="810" height="680" />
+  </component>
+  <component name="WindowManager">
+    <frame x="8" y="56" width="1904" height="1136" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="748" y="381" width="454" height="458" key="FileChooserDialogImpl" timestamp="1751963988061">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="748" y="381" width="454" height="458" key="FileChooserDialogImpl/0.0.1920.1200" timestamp="1751963988061" />
+    <state x="960" y="624" width="1904" height="1136" key="WELCOME_SCREEN" timestamp="1752997846116">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="960" y="624" width="1904" height="1136" key="WELCOME_SCREEN/0.0.1920.1200" timestamp="1752997846116" />
+  </component>
+</application>

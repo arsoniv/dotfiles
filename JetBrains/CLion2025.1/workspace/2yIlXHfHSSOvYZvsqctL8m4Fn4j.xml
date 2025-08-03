@@ -1,0 +1,1859 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="waywall" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="4b1c433e:BranchNodeDescriptor$Root" />
+        <item name="LOCAL" type="7ab31ef7:BranchNodeDescriptor$TopLevelGroup" />
+      </path>
+      <path>
+        <item name="ROOT" type="4b1c433e:BranchNodeDescriptor$Root" />
+        <item name="REMOTE" type="7ab31ef7:BranchNodeDescriptor$TopLevelGroup" />
+      </path>
+      <path>
+        <item name="ROOT" type="4b1c433e:BranchNodeDescriptor$Root" />
+        <item name="REMOTE" type="7ab31ef7:BranchNodeDescriptor$TopLevelGroup" />
+        <item name="REMOTE:origin" type="9a375a70:BranchNodeDescriptor$RemoteGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="1pqdj6qxh114c" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/waywall/config/api.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="22220">
+              <caret line="1010" column="19" selection-start-line="1010" selection-start-column="19" selection-end-line="1010" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#28670#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"api.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/waywall/config/vm.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="3212">
+              <caret line="155" column="18" selection-start-line="155" selection-start-column="18" selection-end-line="155" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"vm.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/waywall/config/internal.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="264">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"internal.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/waywall/reload.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="2244">
+              <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"reload.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/waywall/timer.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="704">
+              <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"timer.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/waywall/main.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="2244">
+              <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"main.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/waywall/lua/init.lua">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1034">
+              <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"init.lua","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,126,10,124,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,97,114,115,111,110,105,118,47,46,108,111,99,97,108,47,115,104,97,114,101,47,74,101,116,66,114,97,105,110,115,47,67,76,105,111,110,50,48,50,53,46,49,47,69,109,109,121,76,117,97,47,108,105,98,47,105,110,115,116,114,117,109,101,110,116,101,100,45,69,109,109,121,76,117,97,45,49,46,52,46,50,48,45,73,68,69,65,50,53,49,46,106,97,114,33,47,105,99,111,110,115,47,108,117,97,46,112,110,103]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/waywall/lua/api.lua">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="880">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"api.lua","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,126,10,124,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,97,114,115,111,110,105,118,47,46,108,111,99,97,108,47,115,104,97,114,101,47,74,101,116,66,114,97,105,110,115,47,67,76,105,111,110,50,48,50,53,46,49,47,69,109,109,121,76,117,97,47,108,105,98,47,105,110,115,116,114,117,109,101,110,116,101,100,45,69,109,109,121,76,117,97,45,49,46,52,46,50,48,45,73,68,69,65,50,53,49,46,106,97,114,33,47,105,99,111,110,115,47,108,117,97,46,112,110,103]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/waywall/http.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="179">
+              <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"http.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/http.h">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="198">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"http.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C/C++ Header": {
+      "usageCount": 132,
+      "lastUsed": 1750470810516
+    },
+    "C/C++": {
+      "usageCount": 320,
+      "lastUsed": 1750470810665
+    },
+    "textmate": {
+      "usageCount": 3,
+      "lastUsed": 1749530105726
+    },
+    "Markdown": {
+      "usageCount": 1,
+      "lastUsed": 1749530008173
+    },
+    "lua": {
+      "usageCount": 50,
+      "lastUsed": 1750470810486
+    },
+    "YAML": {
+      "usageCount": 4,
+      "lastUsed": 1750402583078
+    },
+    "Makefile": {
+      "usageCount": 6,
+      "lastUsed": 1750409364954
+    },
+    "meson.build": {
+      "usageCount": 5,
+      "lastUsed": 1750409364806
+    },
+    "PLAIN_TEXT": {
+      "usageCount": 1,
+      "lastUsed": 1749601587199
+    },
+    "TOML": {
+      "usageCount": 2,
+      "lastUsed": 1750402583082
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>time</find>
+      <find>chunk</find>
+      <find>log</find>
+      <find>listener</find>
+      <find>re</find>
+      <find>even</find>
+      <find>struct</find>
+      <find>config_vm</find>
+      <find>tick</find>
+      <find>server_crea</find>
+      <find>active</find>
+      <find>toggle_f</find>
+      <find>wl_event_loop_add_fd</find>
+      <find>wl_display_cre</find>
+      <find>displa</find>
+      <find>wl_subsurface</find>
+      <find>wl_subsurfacewl_subsurface</find>
+      <find>res</find>
+      <find>wl_event_loop_add_timer</find>
+      <find>font</find>
+      <find>text</find>
+      <find>texture</find>
+      <find>term</find>
+      <find>call</find>
+      <find>failed</find>
+      <find>event</find>
+      <find>event list</find>
+      <find>JIt</find>
+      <find />
+      <find>configur</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="directoryName" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitBranchesPopupTreeState">
+    <expand>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="LOCAL" type="6e158aa5:GitBranchType$LOCAL" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/meson.build&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/lua/init.lua&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/config/api.c&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/subproc.c&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/lua/helpers.lua&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/main.c&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/include/http.h&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/server/server.c&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/include/util/stb_truetype.h&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/text.c&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/include/stb_truetype.h&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/scene.c&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/meson.build&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/lua/api.lua&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/reload.c&quot;,
+    &quot;/home/arsoniv/CLionProjects/waywall/waywall/http.c&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C++">
+      <summary usageCount="452" lastUsage="1750470810665" />
+    </language>
+    <language id="JetBrainsMeson">
+      <summary usageCount="5" lastUsage="1750409364806" />
+    </language>
+    <language id="Lua">
+      <summary usageCount="50" lastUsage="1750470810486" />
+    </language>
+    <language id="Makefile">
+      <summary usageCount="6" lastUsage="1750409364954" />
+    </language>
+    <language id="Markdown">
+      <summary usageCount="1" lastUsage="1749530008175" />
+    </language>
+    <language id="TEXT">
+      <summary usageCount="1" lastUsage="1749601587199" />
+    </language>
+    <language id="TOML">
+      <summary usageCount="2" lastUsage="1750402583082" />
+    </language>
+    <language id="textmate">
+      <summary usageCount="3" lastUsage="1749530105726" />
+    </language>
+    <language id="yaml">
+      <summary usageCount="4" lastUsage="1750402583078" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/waywall}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/waywall/glsl}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/include}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/include}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/include/util}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/protocol}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall/config}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall/lua}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall/server}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall/util}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="waywall" />
+            <item name="waywall" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="waywall" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/waywall}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.github" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".github" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/waywall/.github}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/build" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="build" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/meson-info" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="meson-info" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/meson-info}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/meson-logs" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="meson-logs" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/meson-logs}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/meson-private" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="meson-private" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/meson-private}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/protocol" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="protocol" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/protocol}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/waywall" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="waywall" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/waywall}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/build/waywall/glsl" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="glsl" />
+                    <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/waywall/glsl}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/build/waywall/glsl/texcopy.frag.h" />
+                        </map>
+                      </attributes>
+                      <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="texcopy.frag.h" />
+                      <item name="texcopy.frag.h" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/build/waywall/glsl/texcopy.vert.h" />
+                        </map>
+                      </attributes>
+                      <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="texcopy.vert.h" />
+                      <item name="texcopy.vert.h" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/build/waywall/lua" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="lua" />
+                    <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/waywall/lua}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/build/waywall/waywall.p" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="waywall.p" />
+                    <item name="dir{file:///home/arsoniv/CLionProjects/waywall/build/waywall/waywall.p}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/build/waywall/waywall" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="waywall" />
+                    <item name="waywall" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/.gitignore" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                  <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/.hgignore" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".hgignore" />
+                  <item name=".hgignore" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/.ninja_deps" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text=".ninja_deps" />
+                  <item name=".ninja_deps" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/.ninja_log" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text=".ninja_log" />
+                  <item name=".ninja_log" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/build.ninja" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text="build.ninja" />
+                  <item name="build.ninja" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/build/compile_commands.json" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="compile_commands.json" />
+                  <item name="compile_commands.json" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/buildDir" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="buildDir" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/waywall/buildDir}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/ci" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="ci" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/waywall/ci}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/contrib" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="contrib" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/waywall/contrib}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/doc" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="doc" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/waywall/doc}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/include" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="include" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/waywall/include}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/config" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="config" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/include/config}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/server" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="server" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/include/server}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/util" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="util" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/include/util}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/alloc.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="alloc.h" />
+                    <item name="alloc.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/box.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="box.h" />
+                    <item name="box.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/debug.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="debug.h" />
+                    <item name="debug.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/font.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="font.h" />
+                    <item name="font.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/keycodes.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="keycodes.h" />
+                    <item name="keycodes.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/list.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="list.h" />
+                    <item name="list.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/log.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="log.h" />
+                    <item name="log.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/prelude.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="prelude.h" />
+                    <item name="prelude.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/serial.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="serial.h" />
+                    <item name="serial.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/str.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="str.h" />
+                    <item name="str.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/syscall.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="syscall.h" />
+                    <item name="syscall.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/sysinfo.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="sysinfo.h" />
+                    <item name="sysinfo.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/util/zip.h" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="zip.h" />
+                    <item name="zip.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/http.h" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="http.h" />
+                  <item name="http.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/inotify.h" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="inotify.h" />
+                  <item name="inotify.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/instance.h" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="instance.h" />
+                  <item name="instance.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/reload.h" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="reload.h" />
+                  <item name="reload.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/scene.h" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="scene.h" />
+                  <item name="scene.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/subproc.h" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="subproc.h" />
+                  <item name="subproc.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/timer.h" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="timer.h" />
+                  <item name="timer.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/wrap.h" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wrap.h" />
+                  <item name="wrap.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/protocol" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="protocol" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/waywall/protocol}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/protocol/meson.build" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
+                  <item name="meson.build" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/waywall" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="waywall" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/config" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="config" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall/config}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/config/api.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="api.c" />
+                    <item name="api.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/config/config.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="config.c" />
+                    <item name="config.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/config/internal.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="internal.c" />
+                    <item name="internal.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/config/vm.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="vm.c" />
+                    <item name="vm.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/glsl" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="glsl" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall/glsl}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/lua" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="lua" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall/lua}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/lua/api.lua" />
+                      </map>
+                    </attributes>
+                    <data isLeaf="true" text="api.lua" />
+                    <item name="api.lua" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/lua/helpers.lua" />
+                      </map>
+                    </attributes>
+                    <data isLeaf="true" text="helpers.lua" />
+                    <item name="helpers.lua" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/lua/init.lua" />
+                      </map>
+                    </attributes>
+                    <data isLeaf="true" text="init.lua" />
+                    <item name="init.lua" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/lua/meson.build" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
+                    <item name="meson.build" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/server" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="server" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall/server}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/backend.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="backend.c" />
+                    <item name="backend.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/buffer.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="buffer.c" />
+                    <item name="buffer.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/cursor.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="cursor.c" />
+                    <item name="cursor.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/fake_input.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="fake_input.c" />
+                    <item name="fake_input.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/gl.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="gl.c" />
+                    <item name="gl.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/remote_buffer.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="remote_buffer.c" />
+                    <item name="remote_buffer.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/server.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="server.c" />
+                    <item name="server.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/ui.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="ui.c" />
+                    <item name="ui.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/wl_compositor.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wl_compositor.c" />
+                    <item name="wl_compositor.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/wl_data_device_manager.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wl_data_device_manager.c" />
+                    <item name="wl_data_device_manager.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/wl_output.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wl_output.c" />
+                    <item name="wl_output.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/wl_seat.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wl_seat.c" />
+                    <item name="wl_seat.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/wl_shm.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wl_shm.c" />
+                    <item name="wl_shm.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/wp_linux_dmabuf.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wp_linux_dmabuf.c" />
+                    <item name="wp_linux_dmabuf.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/wp_linux_drm_syncobj.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wp_linux_drm_syncobj.c" />
+                    <item name="wp_linux_drm_syncobj.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/wp_pointer_constraints.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wp_pointer_constraints.c" />
+                    <item name="wp_pointer_constraints.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/wp_relative_pointer.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wp_relative_pointer.c" />
+                    <item name="wp_relative_pointer.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/xdg_decoration.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="xdg_decoration.c" />
+                    <item name="xdg_decoration.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/xdg_shell.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="xdg_shell.c" />
+                    <item name="xdg_shell.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/xserver.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="xserver.c" />
+                    <item name="xserver.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/xwayland.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="xwayland.c" />
+                    <item name="xwayland.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/xwayland_shell.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="xwayland_shell.c" />
+                    <item name="xwayland_shell.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/server/xwm.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="xwm.c" />
+                    <item name="xwm.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/util" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="util" />
+                  <item name="dir{file:///home/arsoniv/CLionProjects/waywall/waywall/util}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/util/debug.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="debug.c" />
+                    <item name="debug.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/util/log.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="log.c" />
+                    <item name="log.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/util/prelude.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="prelude.c" />
+                    <item name="prelude.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/util/str.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="str.c" />
+                    <item name="str.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/util/syscall.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="syscall.c" />
+                    <item name="syscall.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/util/sysinfo.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="sysinfo.c" />
+                    <item name="sysinfo.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/waywall/util/zip.c" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="zip.c" />
+                    <item name="zip.c" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/http.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="http.c" />
+                  <item name="http.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/inotify.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="inotify.c" />
+                  <item name="inotify.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/instance.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="instance.c" />
+                  <item name="instance.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/main.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="main.c" />
+                  <item name="main.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/meson.build" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
+                  <item name="meson.build" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/reload.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="reload.c" />
+                  <item name="reload.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/scene.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="scene.c" />
+                  <item name="scene.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/subproc.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="subproc.c" />
+                  <item name="subproc.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/timer.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="timer.c" />
+                  <item name="timer.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/waywall/wrap.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="wrap.c" />
+                  <item name="wrap.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.clang-format" />
+                  </map>
+                </attributes>
+                <data iconPath="fileTypes/yaml.svg" iconPlugin="com.intellij" isLeaf="true" text=".clang-format" />
+                <item name=".clang-format" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/book.toml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/toml-file.svg" iconPlugin="org.toml.lang" isLeaf="true" text="book.toml" />
+                <item name="book.toml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/LICENSE" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="LICENSE" />
+                <item name="LICENSE" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/Makefile" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/makefile.svg" iconPlugin="name.kropp.intellij.makefile" isLeaf="true" text="Makefile" />
+                <item name="Makefile" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/meson.build" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
+                <item name="meson.build" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/README.md" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/MarkdownPlugin.svg" iconPlugin="org.intellij.plugins.markdown" isLeaf="true" text="README.md" />
+                <item name="README.md" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/selene.toml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/toml-file.svg" iconPlugin="org.toml.lang" isLeaf="true" text="selene.toml" />
+                <item name="selene.toml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/stylua.toml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/toml-file.svg" iconPlugin="org.toml.lang" isLeaf="true" text="stylua.toml" />
+                <item name="stylua.toml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="nodes/ppLib.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="scope/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Native Application.waywall" />
+    </history>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="79379000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15782563" />
+      <window_info id="Commit" order="1" weight="0.15782563" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Pull Requests" order="3" weight="0.15782563" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.30325705" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.30325705" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.30325705" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.30325705" />
+      <window_info anchor="bottom" id="CMake" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.30325705" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.30325705" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.30325705" />
+      <window_info anchor="bottom" id="Run" order="9" show_stripe_button="false" weight="0.30325705" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="documentation.v2" order="5" side_tool="true" weight="0.33009452" />
+      <window_info anchor="right" id="Meson" order="6" weight="0.33009452" />
+      <unified_weights bottom="0.30325705" left="0.15782563" right="0.33009452" />
+    </layoutV2>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15782563" />
+      <window_info id="Commit" order="1" weight="0.15782563" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.30325705" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.30325705" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.30325705" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.30325705" />
+      <window_info anchor="bottom" id="CMake" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.30325705" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.30325705" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.30325705" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" weight="0.33009452" />
+      <window_info anchor="right" id="documentation.v2" order="6" side_tool="true" weight="0.33009452" />
+      <unified_weights bottom="0.30325705" left="0.15782563" right="0.33009452" />
+    </layout-to-restore>
+    <recentWindows>
+      <value>Version Control</value>
+      <value>Project</value>
+      <value>Commit</value>
+      <value>Terminal</value>
+      <value>Run</value>
+      <value>Build</value>
+      <value>Meson</value>
+      <value>Pull Requests</value>
+      <value>Messages</value>
+      <value>Find</value>
+      <value>Problems View</value>
+      <value>Services</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="594" y="316" key="#Inspections" timestamp="1749556248025">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="594" y="316" key="#Inspections/0.0.1920.1200@0.0.1920.1200" timestamp="1749556248025" />
+    <state x="675" y="408" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1750330693116">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="675" y="408" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1750330693116" />
+    <state width="1822" height="302" key="GridCell.Tab.0.bottom" timestamp="1750331063509">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1750331063509" />
+    <state width="1822" height="302" key="GridCell.Tab.0.center" timestamp="1750331063509">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="302" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1750331063509" />
+    <state width="1822" height="302" key="GridCell.Tab.0.left" timestamp="1750331063509">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="302" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1750331063509" />
+    <state width="1822" height="302" key="GridCell.Tab.0.right" timestamp="1750331063509">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="302" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1750331063509" />
+    <state x="1415" y="942" width="476" height="208" key="ProcessPopupWindow" timestamp="1749536686893">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="1415" y="942" width="476" height="208" key="ProcessPopupWindow/0.0.1920.1200@0.0.1920.1200" timestamp="1749536686893" />
+    <state x="469" y="274" key="SettingsEditor" timestamp="1749552942267">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="469" y="274" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1749552942267" />
+    <state x="555" y="358" width="800" height="502" key="Vcs.Push.Dialog.v2" timestamp="1750470819582">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="555" y="358" width="800" height="502" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1750470819582" />
+    <state x="698" y="345" width="524" height="558" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1750470508252">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="698" y="345" width="524" height="558" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1750470508252" />
+    <state x="749" y="541" width="411" height="136" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1750021709889">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="749" y="541" width="411" height="136" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1750021709889" />
+    <state x="724" y="161" width="649" height="576" key="find.popup" timestamp="1749722349966">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="724" y="161" width="649" height="576" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1749722349966" />
+    <state x="624" y="290" key="run.anything.popup" timestamp="1749555571070">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="624" y="290" key="run.anything.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1749555571070" />
+    <state x="623" y="298" width="706" height="696" key="search.everywhere.popup" timestamp="1749724340241">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="623" y="298" width="706" height="696" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1749724340241" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/include/timer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/server/buffer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/server/ui.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdbool.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/wayland-server-protocol.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="1150" column="7" selection-start-line="1150" selection-start-column="7" selection-end-line="1150" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/glsl/embed.lua">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/glsl/texcopy.vert">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/server/server.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/luajit-2.1/lua.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/wayland-server-core.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="143" column="15" lean-forward="true" selection-start-line="143" selection-start-column="15" selection-end-line="143" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/text.h" />
+    <entry file="file://$PROJECT_DIR$/include/util/stb_truetype.h" />
+    <entry file="file://$PROJECT_DIR$/waywall/text.c" />
+    <entry file="file://$PROJECT_DIR$/include/stb_truetype.h" />
+    <entry file="file:///usr/include/GLES2/gl2.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.clang-format">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book.toml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meson.build">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/remote_buffer.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/scene.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#22893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/scene.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/wl_output.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/util/font.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/ui.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10868">
+          <caret line="512" column="12" selection-start-line="512" selection-start-column="12" selection-end-line="512" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/inotify.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/util/syscall.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/xdg_shell.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="105" column="32" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/subproc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1562">
+          <caret line="81" column="10" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/wrap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/backend.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/server.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="126" column="19" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/lua/helpers.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/xwm.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="955">
+          <caret line="405" column="25" selection-start-line="405" selection-start-column="25" selection-end-line="405" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/server/wl_compositor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/wl_compositor.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="955">
+          <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/gl.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/server/gl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/wrap.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="955">
+          <caret line="263" column="4" selection-start-line="263" selection-start-column="4" selection-end-line="263" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/unistd.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/include/time.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/lua/init.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/lua/api.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/timer.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/http.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/config/internal.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/http.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/reload.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/config/vm.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3212">
+          <caret line="155" column="18" selection-start-line="155" selection-start-column="18" selection-end-line="155" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/config/api.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22220">
+          <caret line="1010" column="19" selection-start-line="1010" selection-start-column="19" selection-end-line="1010" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#28670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

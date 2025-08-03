@@ -1,0 +1,7 @@
+com.chrisrm.idea.MaterialThemeUI
+com.intellij.c.performanceTesting
+com.intellij.cidr.grazie
+com.intellij.cidr.lang
+com.intellij.cidr.lang.clangdBridge
+com.intellij.cidr.markdown
+org.jetbrains.plugins.cidr-intelliLang

@@ -1,0 +1,26 @@
+<application>
+  <component name="MaterialThemeNewConfig">
+    <option name="accentState">
+      <MTAccentConfigState>
+        <option name="accentColorHex" value="676e95" />
+        <option name="overrideAccentColor" value="false" />
+      </MTAccentConfigState>
+    </option>
+    <option name="compactState">
+      <MTCompactConfigState>
+        <option name="compactDropdowns" value="true" />
+      </MTCompactConfigState>
+    </option>
+    <option name="metadata">
+      <MTMetadataState>
+        <option name="userId" value="10559893:197a3e3568f:-8000" />
+        <option name="version" value="9.8.1" />
+      </MTMetadataState>
+    </option>
+    <option name="themeState">
+      <MTThemeConfigState>
+        <option name="selectedThemeName" value="NATIVE" />
+      </MTThemeConfigState>
+    </option>
+  </component>
+</application>

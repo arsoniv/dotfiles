@@ -1,0 +1,14 @@
+[Default Applications]
+application/x-zerosize=nvim.desktop
+x-scheme-handler/ss=Outline.desktop
+x-scheme-handler/ssconf=Outline.desktop
+x-scheme-handler/lunarclient=lunarclient.desktop
+x-scheme-handler/discord-562286213059444737=lunarclient.desktop
+
+[Added Associations]
+application/x-zerosize=nvim.desktop;
+image/png=firefox.desktop;qimgv.desktop;
+x-scheme-handler/ss=Outline.desktop;
+x-scheme-handler/ssconf=Outline.desktop;
+video/mp4=mpv.desktop;vlc.desktop;
+video/webm=mpv.desktop;

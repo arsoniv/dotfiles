@@ -1,0 +1,381 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="axen" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="1s88vksacgc3y" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="792">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;CMakeLists.txt&quot;,&quot;foregroundColor&quot;:-2104859,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,68,10,15,105,99,111,110,115,47,67,77,97,107,101,46,115,118,103,18,21,105,99,111,110,115,47,101,120,112,117,105,47,67,77,97,107,101,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,40,-99,-66,-40,-99,2,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/linker.ld">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;linker.ld&quot;,&quot;foregroundColor&quot;:-2104859,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,70,10,12,105,99,111,110,115,47,108,100,46,115,118,103,18,18,105,99,111,110,115,47,101,120,112,117,105,47,108,100,46,115,118,103,26,26,99,111,109,46,106,101,116,98,114,97,105,110,115,46,108,105,110,107,101,114,115,99,114,105,112,116,40,-87,-59,-106,-33,2,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="132">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;main.c&quot;,&quot;foregroundColor&quot;:-2104859,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}</tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/qemu.sh">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="946">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;qemu.sh&quot;,&quot;foregroundColor&quot;:-2104859,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,68,10,17,110,111,100,101,115,47,99,111,110,115,111,108,101,46,115,118,103,18,25,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,115,104,101,108,108,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-88,-76,-117,-54,5,48,0]}</tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Shell Script": {
+      "usageCount": 6,
+      "lastUsed": 1753168312421
+    },
+    "C/C++": {
+      "usageCount": 8,
+      "lastUsed": 1753168312475
+    },
+    "LinkerScript": {
+      "usageCount": 6,
+      "lastUsed": 1753168312452
+    },
+    "CMakeLists.txt": {
+      "usageCount": 6,
+      "lastUsed": 1753168312358
+    },
+    "PLAIN_TEXT": {
+      "usageCount": 2,
+      "lastUsed": 1753161459650
+    },
+    "UNKNOWN": {
+      "usageCount": 1,
+      "lastUsed": 1753165868753
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sbin/cc</find>
+      <find>ldd</find>
+      <find>subsystem</find>
+      <find>efi</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/arsoniv/projects/axen/main.c&quot;,
+    &quot;/home/arsoniv/projects/axen/iso/startup.nsh&quot;,
+    &quot;/home/arsoniv/projects/axen/src/main.c&quot;,
+    &quot;/home/arsoniv/projects/axen/CMakeLists.txt&quot;,
+    &quot;/home/arsoniv/projects/axen/linker.ld&quot;,
+    &quot;/home/arsoniv/projects/axen/qemu.sh&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C++">
+      <summary usageCount="8" lastUsage="1753168312475" />
+    </language>
+    <language id="CMake">
+      <summary usageCount="6" lastUsage="1753168312360" />
+    </language>
+    <language id="LinkerScript">
+      <summary usageCount="6" lastUsage="1753168312452" />
+    </language>
+    <language id="Shell Script">
+      <summary usageCount="6" lastUsage="1753168312421" />
+    </language>
+    <language id="TEXT">
+      <summary usageCount="2" lastUsage="1753161459650" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="axen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/projects/axen}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="axen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/projects/axen}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/projects/axen/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="axen" />
+            <item name="axen" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="axen" />
+              <item name="dir{file:///home/arsoniv/projects/axen}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/cmake-build-debug" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="cmake-build-debug" />
+                <item name="dir{file:///home/arsoniv/projects/axen/cmake-build-debug}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/iso" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="true" text="iso" />
+                <item name="dir{file:///home/arsoniv/projects/axen/iso}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/src" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/sourceRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="src" />
+                <item name="dir{file:///home/arsoniv/projects/axen/src}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/main.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="main.c" />
+                  <item name="main.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/CMakeLists.txt" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/CMake.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="CMakeLists.txt" />
+                <item name="CMakeLists.txt" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/boot.img" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="boot.img" />
+                <item name="boot.img" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/linker.ld" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/ld.svg" iconPlugin="com.jetbrains.linkerscript" isLeaf="true" text="linker.ld" />
+                <item name="linker.ld" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/qemu.sh" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/shell.svg" iconPlugin="com.intellij" isLeaf="true" text="qemu.sh" />
+                <item name="qemu.sh" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="CMake Application.efi" />
+      <element setting="CMake Application.main_obj" />
+      <element setting="CMake Debug.main" />
+      <element setting="CMake Application.BOOTX64.EFI" />
+      <element setting="CMake Application.efibin" />
+      <element setting="CMake Application.compile_obj" />
+      <element setting="CMake Application.BOOTX64.so" />
+    </history>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="qemu.sh">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8685000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15519959" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.32966548" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32966548" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="CMake" order="5" weight="0.32966548" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32966548" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" show_stripe_button="false" weight="0.32966548" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" />
+      <unified_weights bottom="0.32966548" left="0.15519959" />
+    </layoutV2>
+    <recentWindows>
+      <value>Terminal</value>
+      <value>Project</value>
+      <value>Messages</value>
+      <value>CMake</value>
+      <value>Debug</value>
+      <value>Problems View</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="298" width="843" height="651" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1753161377722">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="560" y="298" width="843" height="651" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1753161377722" />
+    <state x="683" y="408" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1753165863036">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="683" y="408" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1753165863036" />
+    <state width="1822" height="332" key="GridCell.Tab.0.bottom" timestamp="1753165660362">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1753165660362" />
+    <state width="1822" height="332" key="GridCell.Tab.0.center" timestamp="1753165660362">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1753165660362" />
+    <state width="1822" height="332" key="GridCell.Tab.0.left" timestamp="1753165660362">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1753165660362" />
+    <state width="1822" height="332" key="GridCell.Tab.0.right" timestamp="1753165660362">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1753165660362" />
+    <state width="1822" height="332" key="GridCell.Tab.1.bottom" timestamp="1753165660362">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1753165660362" />
+    <state width="1822" height="332" key="GridCell.Tab.1.center" timestamp="1753165660362">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1753165660362" />
+    <state width="1822" height="332" key="GridCell.Tab.1.left" timestamp="1753165660362">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1753165660362" />
+    <state width="1822" height="332" key="GridCell.Tab.1.right" timestamp="1753165660362">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1753165660362" />
+    <state x="469" y="274" key="SettingsEditor" timestamp="1753161351134">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="469" y="274" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1753161351134" />
+    <state x="624" y="290" key="run.anything.popup" timestamp="1753160748288">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="624" y="290" key="run.anything.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1753160748288" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.c" />
+    <entry file="file://$PROJECT_DIR$/iso/startup.nsh" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qemu.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linker.ld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

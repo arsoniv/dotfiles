@@ -1,0 +1,90 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-cmd>
+        <entry encoding="base64">dw==</entry>
+      </history-cmd>
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="ms-ranked-3-server-1ba14616">
+      <jump line="16" column="3" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" protocol="file" />
+      <jump line="0" column="6" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" protocol="file" />
+      <jump line="15" column="0" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" protocol="file" />
+      <jump line="6" column="17" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" protocol="file" />
+      <jump line="0" column="140" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/.env" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/.gitignore" protocol="file" />
+      <jump line="10" column="7" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/.gitignore" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" protocol="file" />
+      <jump line="10" column="25" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" protocol="file" />
+      <jump line="4" column="14" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" protocol="file" />
+      <jump line="2" column="13" filename="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" protocol="file" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/index.ts" timestamp="1747012303622">
+        <mark key="[" line="10" column="22" />
+        <mark key="]" line="13" column="2" />
+        <mark key="^" line="13" column="2" />
+        <mark key="." line="13" column="1" />
+      </file>
+      <file name="$USER_HOME$/WebstormProjects/ms-ranked-3-server/.gitignore" timestamp="1747003036417">
+        <mark key="[" line="8" column="7" />
+        <mark key="]" line="10" column="8" />
+        <mark key="^" line="10" column="8" />
+        <mark key="." line="10" column="7" />
+      </file>
+      <file name="$USER_HOME$/WebstormProjects/ms-ranked-3-server/src/.env" timestamp="1747003006781">
+        <mark key="&quot;" line="0" column="140" />
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="141" />
+        <mark key="^" line="0" column="141" />
+        <mark key="." line="0" column="140" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">ZXhwcmVzcygpLmxpc3RlbigpCg==</text>
+      </register>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">ZXhwcmVzcygpLmxpc3RlbigpCg==</text>
+      </register>
+      <register name="2" type="LINE_WISE">
+        <text encoding="base64">aW1wb3J0IGh0dHAgZnJvbSAiaHR0cCI7CmltcG9ydCB7bmVvbn0gZnJvbSAiQG5lb25kYXRhYmFzZS9zZXJ2ZXJsZXNzIjsK</text>
+      </register>
+      <register name="3" type="CHARACTER_WISE">
+        <text encoding="base64">CmNvbnN0IHNxbCA9IG5lb24ocHJvY2Vzcy5lbnYuREFUQUJBU0VfVVJMKTsKCmNvbnN0IHJlcXVlc3RIYW5kbGVyID0gYXN5bmMgKHJlcSwgcmVzKSA9PiB7CiAgY29uc3QgcmVzdWx0ID0gYXdhaXQgc3FsYFNFTEVDVCB2ZXJzaW9uKClgOwogIGNvbnN0IHsgdmVyc2lvbiB9ID0gcmVzdWx0WzBdOwogIHJlcy53cml0ZUhlYWQoMjAwLCB7ICJDb250ZW50LVR5cGUiOiAidGV4dC9wbGFpbiIgfSk7CiAgcmVzLmVuZCh2ZXJzaW9uKTsKfTsKCmh0dHAuY3JlYXRlU2VydmVyKHJlcXVlc3RIYW5kbGVyKS5saXN0ZW4oMzAwMCwgKCkgPT4gewogIGNvbnNvbGUubG9nKCJTZXJ2ZXIgcnVubmluZyBhdCBodHRwOi8vbG9jYWxob3N0OjMwMDAiKTsKfSk7Cg==</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">KCJkb3RlbnYiKS5jb25maWcoKTsK</text>
+      </register>
+      <register name=":" type="CHARACTER_WISE">
+        <text encoding="base64">dw==</text>
+      </register>
+      <register name="-" type="CHARACTER_WISE">
+        <text encoding="base64">KQ==</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">b2FwcC5nZXBvc3QoIi9sb2dpbiIsIGFzeW5jIChyZXEsIHJlcykgPT4ge30p</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-offset encoding="base64" />
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

@@ -1,0 +1,61 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="15.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "ColorChooser.RecentColors": "255-255-255-255,,,39-255-0-255",
+    "FileChooser.ShowPath": "true",
+    "FindSplitterProportion": "0.33017242",
+    "GeneralSettings.initiallyConfigured": "true",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "7",
+    "NextRunPlatformUpdateBuild": "WS-251.26927.40",
+    "NextRunPlatformUpdateSelfBuild": "WS-251.25410.117",
+    "NextRunPlatformUpdateVersion": "2025.1.3",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.TerminalOptionsProvider.migration.2025.1.1": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
+    "RunOnceActivity.git.modal.commit.toggle": "true",
+    "RunOnceActivity.svelte.init.key": "true",
+    "RunOnceActivity.webstorm.auto-popup.quick-doc.initialized": "true",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "evlsprt.251": "196afc44e00",
+    "evlsprt3.251": "5",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "251.25410.117",
+    "fileTypeChangedCounter": "3",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "got.it.tooltip.Plugins Auto-Update": "1",
+    "got.it.tooltip.js.debugger.terminal.start.debugger.from.url": "1",
+    "ideavim.statistics.timestamp": "1747002232551",
+    "input.method.disabler.muted": "true",
+    "last_opened_file_path": "/home/arsoniv/WebstormProjects/golftracker",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@user_Dark",
+    "registry.to.advanced.settings.migration.build": "WS-251.25410.117",
+    "tab_selection_count": "5",
+    "terminal.gen.one.option.visible": "false",
+    "ts.lib.d.ts.version": "5.6.3"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/arsoniv/WebstormProjects/golftracker",
+      "/home/arsoniv/WebstormProjects/donut_smp_ah_index"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

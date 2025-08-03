@@ -1,0 +1,400 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="os" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="1s88vksacgc3y" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="581">
+              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"CMakeLists.txt","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,68,10,15,105,99,111,110,115,47,67,77,97,107,101,46,115,118,103,18,21,105,99,111,110,115,47,101,120,112,117,105,47,67,77,97,107,101,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,40,-99,-66,-40,-99,2,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/grub.cfg">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="22">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"grub.cfg","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,71,10,20,100,101,98,117,103,103,101,114,47,116,104,114,101,97,100,115,46,115,118,103,18,26,101,120,112,117,105,47,100,101,98,117,103,103,101,114,47,116,104,114,101,97,100,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-105,-76,-25,23,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/linker.ld">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="418">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"linker.ld","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,70,10,12,105,99,111,110,115,47,108,100,46,115,118,103,18,18,105,99,111,110,115,47,101,120,112,117,105,47,108,100,46,115,118,103,26,26,99,111,109,46,106,101,116,98,114,97,105,110,115,46,108,105,110,107,101,114,115,99,114,105,112,116,40,-87,-59,-106,-33,2,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="198">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#215#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"main.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C/C++": {
+      "usageCount": 4,
+      "lastUsed": 1753150944666
+    },
+    "Ini": {
+      "usageCount": 4,
+      "lastUsed": 1753147738602
+    },
+    "LinkerScript": {
+      "usageCount": 3,
+      "lastUsed": 1753147738645
+    },
+    "Assembly file": {
+      "usageCount": 1,
+      "lastUsed": 1753133740203
+    },
+    "CMakeLists.txt": {
+      "usageCount": 3,
+      "lastUsed": 1753147738614
+    },
+    "Assembly": {
+      "usageCount": 2,
+      "lastUsed": 1753147738641
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>my_</find>
+      <find>build_iso</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/arsoniv/projects/os/main.c",
+    "/home/arsoniv/projects/os/iso/boot/grub/grub.cfg",
+    "/home/arsoniv/projects/os/linker.ld",
+    "/home/arsoniv/projects/os/grub.cfg",
+    "/home/arsoniv/projects/os/src/bootloader.asm",
+    "/home/arsoniv/projects/os/CMakeLists.txt",
+    "/home/arsoniv/projects/os/src/kernel.c",
+    "/home/arsoniv/projects/os/src/main.c"
+  ]
+}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="ASM">
+      <summary usageCount="1" lastUsage="1753133740203" />
+    </language>
+    <language id="C++">
+      <summary usageCount="4" lastUsage="1753150944666" />
+    </language>
+    <language id="CMake">
+      <summary usageCount="3" lastUsage="1753147738614" />
+    </language>
+    <language id="Ini">
+      <summary usageCount="4" lastUsage="1753147738604" />
+    </language>
+    <language id="LinkerScript">
+      <summary usageCount="3" lastUsage="1753147738645" />
+    </language>
+    <language id="NASM">
+      <summary usageCount="2" lastUsage="1753147738641" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="os" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/projects/os}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="os" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/projects/os}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/arsoniv/projects/os/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="os" />
+            <item name="os" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="os" />
+              <item name="dir{file:///home/arsoniv/projects/os}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/cmake-build-debug" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="cmake-build-debug" />
+                <item name="dir{file:///home/arsoniv/projects/os/cmake-build-debug}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/iso" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="iso" />
+                <item name="dir{file:///home/arsoniv/projects/os/iso}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/src" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/sourceRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="src" />
+                <item name="dir{file:///home/arsoniv/projects/os/src}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/main.c" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="main.c" />
+                  <item name="main.c" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/CMakeLists.txt" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/CMake.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="CMakeLists.txt" />
+                <item name="CMakeLists.txt" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/grub.cfg" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/debugger/threads.svg" iconPlugin="com.intellij" isLeaf="true" text="grub.cfg" />
+                <item name="grub.cfg" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/os.iso" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="os.iso" />
+                <item name="os.iso" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/linker.ld" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/ld.svg" iconPlugin="com.jetbrains.linkerscript" isLeaf="true" text="linker.ld" />
+                <item name="linker.ld" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <option name="allConfigurationsExpanded" value="true" />
+    <history>
+      <element setting="CMake Application.build_all" />
+      <element setting="CMake Application.build_iso" />
+      <element setting="CMake Application.os" />
+      <element setting="CMake Application.run" />
+      <element setting="CMake Application.copy_grub_cfg" />
+      <element setting="Shell Script.Qemu Run" />
+      <element setting="CMake Application.my_os" />
+    </history>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6924000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.208771" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32966548" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="CMake" order="5" visible="true" weight="0.32966548" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32966548" />
+      <window_info anchor="bottom" id="Run" order="7" show_stripe_button="false" weight="0.32966548" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" />
+      <unified_weights bottom="0.32966548" left="0.208771" />
+    </layoutV2>
+    <recentWindows>
+      <value>CMake</value>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>Messages</value>
+      <value>Run</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="767" y="305" key="#CMake" timestamp="1753134047853">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="767" y="305" key="#CMake/0.0.1920.1200@0.0.1920.1200" timestamp="1753134047853" />
+    <state x="560" y="298" width="829" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1753137435914">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="560" y="298" width="829" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1753137435914" />
+    <state x="715" y="396" key="#com.intellij.tools.ToolEditorDialog" timestamp="1753135505977">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="715" y="396" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1753135505977" />
+    <state width="1822" height="332" key="GridCell.Tab.0.bottom" timestamp="1753142062585">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1753142062585" />
+    <state width="1822" height="332" key="GridCell.Tab.0.center" timestamp="1753142062585">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1753142062585" />
+    <state width="1822" height="332" key="GridCell.Tab.0.left" timestamp="1753142062585">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1753142062585" />
+    <state width="1822" height="332" key="GridCell.Tab.0.right" timestamp="1753142062585">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1753142062585" />
+    <state x="469" y="274" key="SettingsEditor" timestamp="1753134403658">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="469" y="274" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1753134403658" />
+    <state x="698" y="345" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1753136774133">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="698" y="345" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1753136774133" />
+    <state x="869" y="343" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1753135506451">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="869" y="343" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.0.1920.1200@0.0.1920.1200" timestamp="1753135506451" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/iso/boot/grub/grub.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grub.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bootloader.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kernel.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linker.ld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

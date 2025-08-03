@@ -1,0 +1,15 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/WebstormProjects/donut_smp_ah_index" value="true" />
+        <entry key="$USER_HOME$/WebstormProjects/golf-tracker" value="true" />
+        <entry key="$USER_HOME$/WebstormProjects/golftracker" value="true" />
+        <entry key="$USER_HOME$/WebstormProjects/ms-ranked-3" value="true" />
+        <entry key="$USER_HOME$/WebstormProjects/ms-ranked-3-client" value="true" />
+        <entry key="$USER_HOME$/WebstormProjects/ms-ranked-3-server" value="true" />
+        <entry key="$USER_HOME$/WebstormProjects/school_thing" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

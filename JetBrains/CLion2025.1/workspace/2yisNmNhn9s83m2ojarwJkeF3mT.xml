@@ -1,0 +1,263 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="ft_test" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="1pqdj6qxh114c">
+      <file>
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="220">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"CMakeLists.txt","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,68,10,15,105,99,111,110,115,47,67,77,97,107,101,46,115,118,103,18,21,105,99,111,110,115,47,101,120,112,117,105,47,67,77,97,107,101,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,40,-99,-66,-40,-99,2,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="44">
+              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <folding>
+                <marker date="1750329297162" expanded="true" signature="0:73" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"main.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C/C++": {
+      "usageCount": 1,
+      "lastUsed": 1750328693115
+    },
+    "CMakeLists.txt": {
+      "usageCount": 1,
+      "lastUsed": 1750328691250
+    }
+  }
+}]]></component>
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/arsoniv/CLionProjects/ft_test/CMakeLists.txt",
+    "/home/arsoniv/CLionProjects/ft_test/main.c"
+  ]
+}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C++">
+      <summary usageCount="1" lastUsage="1750328693115" />
+    </language>
+    <language id="CMake">
+      <summary usageCount="1" lastUsage="1750328691253" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ft_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/ft_test}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="ft_test" />
+            <item name="ft_test" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="ft_test" />
+              <item name="dir{file:///home/arsoniv/CLionProjects/ft_test}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/cmake-build-debug" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="cmake-build-debug" />
+                <item name="dir{file:///home/arsoniv/CLionProjects/ft_test/cmake-build-debug}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/CMakeLists.txt" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/CMake.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="CMakeLists.txt" />
+                <item name="CMakeLists.txt" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/main" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="main" />
+                <item name="main" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/main.c" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/fileTypes/c.svg" iconPlugin="com.intellij.cidr.base" isLeaf="true" text="main.c" />
+                <item name="main.c" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="CMake Application.main" />
+      <element setting="CMake Debug.ft_test" />
+      <element setting="C/C++ File.main.c" />
+    </history>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="792000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16412815" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32966548" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="CMake" order="5" weight="0.32966548" />
+      <window_info anchor="bottom" id="Run" order="6" show_stripe_button="false" weight="0.32966548" />
+      <window_info anchor="bottom" id="Build" order="7" show_stripe_button="false" weight="0.32966548" />
+      <window_info anchor="bottom" id="Debug" order="8" show_stripe_button="false" weight="0.32966548" />
+      <window_info anchor="bottom" id="Messages" order="9" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" />
+      <unified_weights bottom="0.32966548" left="0.16412815" />
+    </layoutV2>
+    <recentWindows>
+      <value>Run</value>
+      <value>CMake</value>
+      <value>Terminal</value>
+      <value>Debug</value>
+      <value>Build</value>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="374" y="395" key="FileChooserDialogImpl" timestamp="1750329108390">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="374" y="395" key="FileChooserDialogImpl/0.0.1920.1200@0.0.1920.1200" timestamp="1750329108390" />
+    <state width="1822" height="332" key="GridCell.Tab.0.bottom" timestamp="1750329483403">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1750329483403" />
+    <state width="1822" height="332" key="GridCell.Tab.0.center" timestamp="1750329483403">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1750329483403" />
+    <state width="1822" height="332" key="GridCell.Tab.0.left" timestamp="1750329483403">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1750329483403" />
+    <state width="1822" height="332" key="GridCell.Tab.0.right" timestamp="1750329483403">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1750329483403" />
+    <state width="1822" height="332" key="GridCell.Tab.1.bottom" timestamp="1750329483403">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1750329483403" />
+    <state width="1822" height="332" key="GridCell.Tab.1.center" timestamp="1750329483403">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1750329483403" />
+    <state width="1822" height="332" key="GridCell.Tab.1.left" timestamp="1750329483403">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1750329483403" />
+    <state width="1822" height="332" key="GridCell.Tab.1.right" timestamp="1750329483403">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1822" height="332" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1750329483403" />
+    <state x="95" y="274" key="SettingsEditor" timestamp="1750329115248">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="95" y="274" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1750329115248" />
+    <state x="698" y="345" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1750329257253">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="698" y="345" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1750329257253" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1750329297162" expanded="true" signature="0:73" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,43 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.1920.1200" x="724" y="161" />
+    <size key="find.popup.0.0.1920.1200" width="649" height="576" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1200" width="1822" height="356" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1200" width="1822" height="356" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1200" width="1822" height="356" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1200" width="1822" height="356" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1200" width="1822" height="332" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1200" width="1822" height="332" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1200" width="1822" height="332" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1200" width="1822" height="332" />
+    <size key="GridCell.Tab.2.left.0.0.1920.1200" width="1822" height="291" />
+    <size key="GridCell.Tab.2.center.0.0.1920.1200" width="1822" height="291" />
+    <size key="GridCell.Tab.2.right.0.0.1920.1200" width="1822" height="291" />
+    <size key="GridCell.Tab.2.bottom.0.0.1920.1200" width="1822" height="291" />
+    <size key="GridCell.Tab.3.left.0.0.1920.1200" width="1822" height="291" />
+    <size key="GridCell.Tab.3.center.0.0.1920.1200" width="1822" height="291" />
+    <size key="GridCell.Tab.3.right.0.0.1920.1200" width="1822" height="291" />
+    <size key="GridCell.Tab.3.bottom.0.0.1920.1200" width="1822" height="291" />
+  </component>
+  <component name="WindowManager">
+    <frame x="8" y="55" width="1904" height="1137" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="743" y="380" width="424" height="458" key="FileChooserDialogImpl" timestamp="1753168743897">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="743" y="380" width="424" height="458" key="FileChooserDialogImpl/0.0.1920.1200" timestamp="1753168743897" />
+    <state width="345" height="327" key="ShowUsagesActions.dimensionServiceKey" timestamp="1754193819467">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="345" height="327" key="ShowUsagesActions.dimensionServiceKey/0.0.1920.1200" timestamp="1754193819467" />
+    <state x="482" y="624" width="948" height="1136" key="WELCOME_SCREEN" timestamp="1753168744015">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="482" y="624" width="948" height="1136" key="WELCOME_SCREEN/0.0.1920.1200" timestamp="1753168744015" />
+    <state width="300" height="524" key="manage.recent.projects.popup" timestamp="1753829096702">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="300" height="524" key="manage.recent.projects.popup/0.0.1920.1200" timestamp="1753829096702" />
+  </component>
+</application>

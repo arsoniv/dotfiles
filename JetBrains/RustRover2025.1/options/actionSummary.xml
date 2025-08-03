@@ -1,0 +1,52 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$SelectAll">
+      <i c="2" l="1753221382562" />
+    </e>
+    <e n="$Undo">
+      <i c="2" l="1753221385249" />
+    </e>
+    <e n="Cargo.RefreshCargoProject">
+      <i c="2" l="1753221501808" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="12" l="1753221405309" />
+    </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="4" l="1753221358739" />
+    </e>
+    <e n="EditorDown">
+      <i c="2" l="1753221396553" />
+    </e>
+    <e n="EditorEnter">
+      <i c="4" l="1753221401888" />
+    </e>
+    <e n="EditorLeft">
+      <i c="1" l="1753221356970" />
+    </e>
+    <e n="EditorLineStartWithSelection">
+      <i c="1" l="1753221395651" />
+    </e>
+    <e n="EditorPaste">
+      <i c="4" l="1753221386891" />
+    </e>
+    <e n="SaveAll">
+      <i c="6" l="1753221419306" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="1" l="1753221522458" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="5" l="1753221448808" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.ActionGroupPanelWrapper$6">
+      <i c="1" l="1753221225918" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1753221443930" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="1" l="1753221442960" />
+    </e>
+  </component>
+</application>
