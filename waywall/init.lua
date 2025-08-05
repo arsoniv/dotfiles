@@ -122,7 +122,7 @@ end
 
 --local nin_bot_overlay = require("nin_bot")
 local paceman_stats_overlay = require("paceman_session_overlay")
-local chat1 = Chat("nyachloe", 2, 2, 10, 48, 22)
+local chat1 = Chat("arsoniv", 5, 2, 10, 48, 22)
 
 local timer = nil
 local function open_timer()
@@ -184,6 +184,9 @@ config.actions = {
 	end,
 	["ctrl-j"] = function()
 		chat1.client:close()
+	end,
+	["ctrl-h"] = function()
+		chat1:clearall()
 	end,
 }
 

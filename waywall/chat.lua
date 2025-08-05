@@ -21,17 +21,16 @@ local function new_chat(channel, x, y, rows, cols, size)
 	CHAT.has_joined = false
 	CHAT.client = nil
 
-	function CHAT:send_hi()
+	function CHAT:send(msg)
 		if self.client and self.has_connected then
-			print("Sending 'hi' message.")
-			self.client:send("PRIVMSG #" .. self.channel .. " :hi\r\n")
+			print("Sending message: " .. msg)
+			self.client:send("PRIVMSG #" .. self.channel .. " :" .. msg .. "\r\n")
 		else
 			print("Client not connected yet!")
 		end
 	end
 
 	local function draw_chat()
-		-- Clear previous texts
 		for i = 1, #CHAT.chat_texts do
 			CHAT.chat_texts[i]:close()
 			CHAT.chat_texts[i] = nil
@@ -44,21 +43,17 @@ local function new_chat(channel, x, y, rows, cols, size)
 			local name_text = m.user
 			local body_text = ": " .. m.text
 
-			-- Truncate full message if too long for max cols (optional)
 			local full_text = name_text .. body_text
 			if #full_text > CHAT.max_cols then
 				body_text = body_text:sub(1, CHAT.max_cols - #name_text - 3) .. "..."
 			end
 
-			-- Create name text object
 			local name_obj = waywall.text(name_text, CHAT.chat_x, chat_y, m.color .. "FF", CHAT.text_height)
-			-- Position body text just after name using advance
 			local name_advance = name_obj:advance()
 
 			local body_x = CHAT.chat_x + name_advance
 			local body_obj = waywall.text(body_text, body_x, chat_y, "FFFFFFFF", CHAT.text_height)
 
-			-- Insert both into chat_texts for later cleanup
 			table.insert(CHAT.chat_texts, name_obj)
 			table.insert(CHAT.chat_texts, body_obj)
 
@@ -69,9 +64,51 @@ local function new_chat(channel, x, y, rows, cols, size)
 	local function callback(line)
 		-- uncomment below to see every event (useful for seeing the format and debugging)
 		print("\n" .. line .. "\n")
+
+		-- Handle CLEARCHAT
+		if line:find("CLEARCHAT") then
+			local msg_id = line:match("target%-msg%-id=([^; ]+)")
+			local user = line:match("CLEARCHAT #[^ ]+ :([^ ]+)")
+
+			if msg_id then
+				for i = #CHAT.messages, 1, -1 do
+					if CHAT.messages[i].id == msg_id then
+						table.remove(CHAT.messages, i)
+						break
+					end
+				end
+			elseif user then -- delete all messages
+				for i = #CHAT.messages, 1, -1 do
+					if CHAT.messages[i].user == user then
+						table.remove(CHAT.messages, i)
+					end
+				end
+			end
+
+			draw_chat()
+			return
+		end
+
+		-- Handle CLEARMSG
+		if line:find("CLEARMSG") then
+			local msg_id = line:match("target%-msg%-id=([^; ]+)")
+			if msg_id then
+				for i = #CHAT.messages, 1, -1 do
+					if CHAT.messages[i].id == msg_id then
+						table.remove(CHAT.messages, i)
+						break
+					end
+				end
+				draw_chat()
+			end
+			return
+		end
+
+		-- handle chat message
 		local user = line:match("display%-name=([^;]+)")
 		local msg = line:match("PRIVMSG #[^ ]+ :(.+)$")
 		local color = line:match("color=([^;]+)")
+		local id = line:match("id=([^;]+)")
 
 		if color == nil then
 			color = "#FFFFFF"
@@ -82,6 +119,7 @@ local function new_chat(channel, x, y, rows, cols, size)
 				user = user,
 				text = msg,
 				color = color,
+				id = id,
 			})
 			if #CHAT.messages > CHAT.chat_rows then
 				local excess = #CHAT.messages - CHAT.chat_rows
