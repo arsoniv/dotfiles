@@ -57,7 +57,7 @@ local function display_overlay()
 
 		local state = waywall.state()
 		if state.screen == "wall" then
-			text = waywall.text(display_string, 25, 1020, "#FFFFFF", 38)
+			text = waywall.text(display_string, 25, 1060, "#FFFFFF", 38)
 		end
 	end
 end
@@ -83,7 +83,7 @@ local function display_overlay2()
 
 		local state = waywall.state()
 		if state.screen == "wall" then
-			text2 = waywall.text(display_string, 1120, 815, "#FFFFFF", 28)
+			text2 = waywall.text(display_string, 1125, 795, "#FFFFFF", 38)
 		end
 	end
 end

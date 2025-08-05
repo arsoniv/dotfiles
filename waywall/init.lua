@@ -13,9 +13,9 @@ local config = {
 	},
 	theme = {
 		background = "#222222ff",
-		ninb_anchor = "right",
+		ninb_anchor = "bottomleft",
 		ninb_opacity = 0.7,
-		font_path = "/usr/share/fonts/noto/NotoSans-Regular.ttf",
+		font_path = "/usr/share/fonts/minecraft/MinecraftDefault-Regular.ttf",
 	},
 	experimental = {
 		jit = true,
@@ -81,12 +81,11 @@ helpers.res_mirror({
 
 local resolutions = {
 	thin = helpers.toggle_res(380, 900),
-	eye = helpers.toggle_res(320, 16384),
 	tall = helpers.toggle_res(320, 16384),
 	wide = helpers.toggle_res(1650, 280),
 }
 
---ninbot program
+--ninbot
 local noNinB = true
 local exec_ninb = function()
 	if noNinB then
@@ -95,27 +94,37 @@ local exec_ninb = function()
 	end
 end
 
+--paceman
+local noPaceman = true
+local exec_pm = function()
+	if noPaceman then
+		waywall.exec("java -jar /home/arsoniv/paceman-tracker-0.7.0.jar --nogui")
+		local pm_text = waywall.text("Paceman Started...", 2, 2, "#00FF00CC", 30)
+		noPaceman = false
+		waywall.sleep(1500)
+		pm_text:close()
+	end
+end
+
 -- dpi change for eye throws
 local eyeMode = false
 local toggleEye = function()
 	if eyeMode then
-		resolutions.eye()
+		resolutions.tall()
 		waywall.exec("razer-cli --dpi 3200")
 		eyeMode = false
 	else
-		resolutions.eye()
+		resolutions.tall()
 		waywall.exec("razer-cli --dpi 200")
 		eyeMode = true
 	end
 end
 
 --local nin_bot_overlay = require("nin_bot")
---local paceman_stats_overlay = require("paceman_session_overlay")
-
-local chat1 = Chat("stableronaldo", 2, 2, 10, 48, 22)
+local paceman_stats_overlay = require("paceman_session_overlay")
+local chat1 = Chat("nyachloe", 2, 2, 10, 48, 22)
 
 local timer = nil
-
 local function open_timer()
 	if not timer then
 		timer = waywall.timer(10, 10, "#FFFFFFFF", 40, 3)
@@ -124,7 +133,6 @@ local function open_timer()
 		timer = nil
 	end
 end
-
 local function pause()
 	if timer then
 		timer:pause()
@@ -137,22 +145,40 @@ local function reset()
 end
 
 local function draw_utf8_text()
-	waywall.text("Héllo, 𝼜𝼜𝼜", 10, 10, "#FFFFFFFF", 50)
+	local text = waywall.text("l", 10, 10, "#FFFFFFFF", 50)
+	print(text:advance())
 end
 
 config.actions = {
-	["*-f2"] = resolutions.thin,
+	["*-f2"] = function()
+		waywall.exec("razer-cli --dpi 3200")
+		resolutions.thin()
+	end,
 	["*-p"] = toggleEye,
-	["*-y"] = resolutions.wide,
+	["*-y"] = function()
+		waywall.exec("razer-cli --dpi 3200")
+		resolutions.wide()
+	end,
 
-	["shift-1"] = resolutions.eye,
+	["shift-1"] = function()
+		waywall.exec("razer-cli --dpi 3200")
+		resolutions.tall()
+	end,
 
 	["*-n"] = helpers.toggle_floating,
 	["ctrl-n"] = exec_ninb,
+	["ctrl-b"] = exec_pm,
+
+	--[[ timer
 	["ctrl-8"] = open_timer,
 	["ctrl-9"] = pause,
 	["ctrl-0"] = reset,
-	["ctrl-g"] = draw_utf8_text,
+	]]
+	--
+
+	--test text
+	--["ctrl-g"] = draw_utf8_text,
+
 	["ctrl-k"] = function()
 		chat1:open()
 	end,

@@ -110,7 +110,13 @@ rtp:prepend(lazypath)
 -- [[ Configure and install plugins ]]
 
 require("lazy").setup({
-	"NMAC427/guess-indent.nvim", -- Detect tabstop and shiftwidth automatically
+	{
+		"NMAC427/guess-indent.nvim",
+		config = function()
+			require("guess-indent").setup({})
+		end,
+		event = "BufReadPost",
+	},
 
 	{
 		"lewis6991/gitsigns.nvim",

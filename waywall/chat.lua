@@ -21,7 +21,17 @@ local function new_chat(channel, x, y, rows, cols, size)
 	CHAT.has_joined = false
 	CHAT.client = nil
 
+	function CHAT:send_hi()
+		if self.client and self.has_connected then
+			print("Sending 'hi' message.")
+			self.client:send("PRIVMSG #" .. self.channel .. " :hi\r\n")
+		else
+			print("Client not connected yet!")
+		end
+	end
+
 	local function draw_chat()
+		-- Clear previous texts
 		for i = 1, #CHAT.chat_texts do
 			CHAT.chat_texts[i]:close()
 			CHAT.chat_texts[i] = nil
@@ -31,17 +41,34 @@ local function new_chat(channel, x, y, rows, cols, size)
 
 		for i = math.max(#CHAT.messages - CHAT.chat_rows + 1, 1), #CHAT.messages do
 			local m = CHAT.messages[i]
-			local display_text = m.user .. ": " .. m.text
-			if #display_text > CHAT.max_cols then
-				display_text = display_text:sub(1, CHAT.max_cols - 3) .. "..."
+			local name_text = m.user
+			local body_text = ": " .. m.text
+
+			-- Truncate full message if too long for max cols (optional)
+			local full_text = name_text .. body_text
+			if #full_text > CHAT.max_cols then
+				body_text = body_text:sub(1, CHAT.max_cols - #name_text - 3) .. "..."
 			end
-			local new_text_obj = waywall.text(display_text, CHAT.chat_x, chat_y, m.color .. "FF", CHAT.text_height)
+
+			-- Create name text object
+			local name_obj = waywall.text(name_text, CHAT.chat_x, chat_y, m.color .. "FF", CHAT.text_height)
+			-- Position body text just after name using advance
+			local name_advance = name_obj:advance()
+
+			local body_x = CHAT.chat_x + name_advance
+			local body_obj = waywall.text(body_text, body_x, chat_y, "FFFFFFFF", CHAT.text_height)
+
+			-- Insert both into chat_texts for later cleanup
+			table.insert(CHAT.chat_texts, name_obj)
+			table.insert(CHAT.chat_texts, body_obj)
+
 			chat_y = chat_y + CHAT.text_height
-			table.insert(CHAT.chat_texts, new_text_obj)
 		end
 	end
 
 	local function callback(line)
+		-- uncomment below to see every event (useful for seeing the format and debugging)
+		print("\n" .. line .. "\n")
 		local user = line:match("display%-name=([^;]+)")
 		local msg = line:match("PRIVMSG #[^ ]+ :(.+)$")
 		local color = line:match("color=([^;]+)")
@@ -72,9 +99,8 @@ local function new_chat(channel, x, y, rows, cols, size)
 			self.client = waywall.irc_client_create(self.ip, self.port, self.username, self.token, callback)
 			self.has_connected = true
 
-			waywall.sleep(1000)
+			waywall.sleep(3000)
 			self.client:send("CAP REQ :twitch.tv/tags twitch.tv/commands\r\n")
-			waywall.sleep(1000)
 			self.client:send("JOIN #" .. self.channel .. "\r\n")
 		end
 	end
