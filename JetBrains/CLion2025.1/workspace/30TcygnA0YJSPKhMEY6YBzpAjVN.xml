@@ -35,202 +35,64 @@
       <file>
         <entry file="file://$PROJECT_DIR$/waywall/scene.c">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="638">
-              <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+            <state relative-caret-position="352">
+              <caret line="933" column="39" selection-start-line="933" selection-start-column="39" selection-end-line="933" selection-end-column="39" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"scene.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/waywall/config/config.c">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="956">
-              <caret line="850" column="31" selection-start-line="850" selection-start-column="31" selection-end-line="850" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"config.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"scene.c","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/include/scene.h">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="308">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <marker date="1754273023902" expanded="true" signature="49:224" ph="##include ..." />
-              </folding>
+            <state relative-caret-position="333">
+              <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"scene.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/include/util/box.h">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"box.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"scene.h","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/waywall/config/api.c">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="670">
-              <caret line="254" column="1" lean-forward="true" selection-start-line="254" selection-start-column="1" selection-end-line="254" selection-end-column="1" />
+            <state relative-caret-position="370">
+              <caret line="1059" column="34" lean-forward="true" selection-start-line="1059" selection-start-column="34" selection-end-line="1059" selection-end-column="34" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"api.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/waywall/config/vm.c">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="7898">
-              <caret line="368" selection-start-line="368" selection-end-line="368" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"vm.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/waywall/irc.c">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="66">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"irc.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/include/libircclient.h">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="2860">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
-              <folding>
-                <marker date="1754267320598" expanded="true" signature="5430:5511" ph="##include ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"libircclient.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/include/libirc_errors.h">
-          <provider editor-type-id="text-editor" selected="true" />
-        </entry>
-        <tab><![CDATA[{"tabTitle":"libirc_errors.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/waywall/http.c">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="1672">
-              <caret line="86" column="65" selection-start-line="86" selection-start-column="65" selection-end-line="86" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"http.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/include/http.h">
-          <provider editor-type-id="text-editor" selected="true" />
-        </entry>
-        <tab><![CDATA[{"tabTitle":"http.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/waywall/server/server.c">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="2068">
-              <caret line="130" column="26" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"server.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/include/irc.h">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="88">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"irc.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/waywall/lua/api.lua">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="3674">
-              <caret line="167" selection-start-line="167" selection-end-line="167" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"api.lua","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,126,10,124,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,97,114,115,111,110,105,118,47,46,108,111,99,97,108,47,115,104,97,114,101,47,74,101,116,66,114,97,105,110,115,47,67,76,105,111,110,50,48,50,53,46,49,47,69,109,109,121,76,117,97,47,108,105,98,47,105,110,115,116,114,117,109,101,110,116,101,100,45,69,109,109,121,76,117,97,45,49,46,52,46,50,48,45,73,68,69,65,50,53,49,46,106,97,114,33,47,105,99,111,110,115,47,108,117,97,46,112,110,103]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/meson.build">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="1342">
-              <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"meson.build","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,74,10,15,105,99,111,110,115,47,109,101,115,111,110,46,115,118,103,18,21,105,99,111,110,115,47,101,120,112,117,105,47,109,101,115,111,110,46,115,118,103,26,24,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,46,109,101,115,111,110,40,-63,-9,-93,-60,3,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Makefile">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="748">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"Makefile","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,84,10,18,105,99,111,110,115,47,109,97,107,101,102,105,108,101,46,115,118,103,18,24,105,99,111,110,115,47,101,120,112,117,105,47,109,97,107,101,102,105,108,101,46,115,118,103,26,28,110,97,109,101,46,107,114,111,112,112,46,105,110,116,101,108,108,105,106,46,109,97,107,101,102,105,108,101,40,-103,-29,-87,-31,7,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/waywall/meson.build">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="528">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"waywall/meson.build","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,74,10,15,105,99,111,110,115,47,109,101,115,111,110,46,115,118,103,18,21,105,99,111,110,115,47,101,120,112,117,105,47,109,101,115,111,110,46,115,118,103,26,24,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,46,109,101,115,111,110,40,-63,-9,-93,-60,3,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"api.c","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++ Header": {
-      "usageCount": 65,
-      "lastUsed": 1754272603577
+      "usageCount": 100,
+      "lastUsed": 1754717071496
     },
     "C/C++": {
-      "usageCount": 153,
-      "lastUsed": 1754272603581
+      "usageCount": 208,
+      "lastUsed": 1754717547183
     },
     "meson.build": {
-      "usageCount": 35,
-      "lastUsed": 1754272603563
+      "usageCount": 37,
+      "lastUsed": 1754428918245
     },
     "Markdown": {
       "usageCount": 9,
       "lastUsed": 1754024776838
     },
     "lua": {
-      "usageCount": 24,
-      "lastUsed": 1754272603585
+      "usageCount": 30,
+      "lastUsed": 1754711306922
     },
     "DIFF": {
-      "usageCount": 2,
-      "lastUsed": 1754264264085
+      "usageCount": 4,
+      "lastUsed": 1754656177953
     },
     "Makefile": {
-      "usageCount": 4,
-      "lastUsed": 1754272603565
+      "usageCount": 11,
+      "lastUsed": 1754711306848
     }
   }
 }]]></component>
@@ -240,16 +102,29 @@
       <find>time</find>
       <find>gc</find>
       <find>timer-&gt;lasti</find>
-      <find />
       <find>debug</find>
       <find>http</find>
       <find>free</find>
       <find>irc_client_cr</find>
-      <find>16</find>
       <find>return 0</find>
       <find>text</find>
-      <find>close</find>
       <find>scene_text</find>
+      <find>irc</find>
+      <find>close</find>
+      <find>close timer</find>
+      <find>LUA</find>
+      <find>16</find>
+      <find>run</find>
+      <find>all_clients</find>
+      <find>queue_clean</find>
+      <find>(vm</find>
+      <find>from</find>
+      <find>unref</find>
+      <find>if (cl</find>
+      <find>thread_run</find>
+      <find>build_image</find>
+      <find />
+      <find>l_text</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -273,16 +148,21 @@
   "changedPaths": [
     "/home/arsoniv/projects/waywall/README.md",
     "/home/arsoniv/projects/waywall/waywall/meson.build",
-    "/home/arsoniv/projects/waywall/waywall/lua/api.lua",
     "/home/arsoniv/projects/waywall/waywall/server/server.c",
     "/home/arsoniv/projects/waywall/waywall/http.c",
-    "/home/arsoniv/projects/waywall/waywall/irc.c",
-    "/home/arsoniv/projects/waywall/include/irc.h",
     "/home/arsoniv/projects/waywall/waywall/config/config.c",
     "/home/arsoniv/projects/waywall/meson.build",
-    "/home/arsoniv/projects/waywall/waywall/scene.c",
+    "/home/arsoniv/projects/waywall/waywall/config/vm.c",
+    "/home/arsoniv/projects/waywall/include/config/vm.h",
+    "/home/arsoniv/projects/waywall/Makefile",
+    "/home/arsoniv/projects/waywall/include/irc.h",
+    "/home/arsoniv/projects/waywall/waywall/main.c",
+    "/home/arsoniv/projects/waywall/waywall/lua/api.lua",
+    "/home/arsoniv/projects/waywall/waywall/irc.c",
+    "/home/arsoniv/projects/waywall/include/gif.h",
     "/home/arsoniv/projects/waywall/include/scene.h",
-    "/home/arsoniv/projects/waywall/waywall/config/api.c"
+    "/home/arsoniv/projects/waywall/waywall/config/api.c",
+    "/home/arsoniv/projects/waywall/waywall/scene.c"
   ]
 }]]></component>
   <component name="IgnoredFileRootStore">
@@ -294,16 +174,16 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="218" lastUsage="1754272603581" />
+      <summary usageCount="308" lastUsage="1754717547183" />
     </language>
     <language id="JetBrainsMeson">
-      <summary usageCount="35" lastUsage="1754272603563" />
+      <summary usageCount="37" lastUsage="1754428918245" />
     </language>
     <language id="Lua">
-      <summary usageCount="24" lastUsage="1754272603585" />
+      <summary usageCount="30" lastUsage="1754711306922" />
     </language>
     <language id="Makefile">
-      <summary usageCount="4" lastUsage="1754272603565" />
+      <summary usageCount="11" lastUsage="1754711306848" />
     </language>
     <language id="Markdown">
       <summary usageCount="9" lastUsage="1754024776838" />
@@ -759,7 +639,7 @@
                       <entry key="filePath" value="$PROJECT_DIR$/waywall/meson.build" />
                     </map>
                   </attributes>
-                  <data iconPath="icons/expui/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
+                  <data iconPath="icons/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
                   <item name="meson.build" type="ab9368bb:PsiFileNode" />
                 </presentation>
               </presentation>
@@ -787,7 +667,7 @@
                     <entry key="filePath" value="$PROJECT_DIR$/meson.build" />
                   </map>
                 </attributes>
-                <data iconPath="icons/expui/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
+                <data iconPath="icons/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
                 <item name="meson.build" type="ab9368bb:PsiFileNode" />
               </presentation>
               <presentation>
@@ -796,7 +676,7 @@
                     <entry key="filePath" value="$PROJECT_DIR$/Makefile" />
                   </map>
                 </attributes>
-                <data iconPath="icons/expui/makefile.svg" iconPlugin="name.kropp.intellij.makefile" isLeaf="true" text="Makefile" />
+                <data iconPath="icons/makefile.svg" iconPlugin="name.kropp.intellij.makefile" isLeaf="true" text="Makefile" />
                 <item name="Makefile" type="ab9368bb:PsiFileNode" />
               </presentation>
               <presentation>
@@ -884,12 +764,12 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53655000" />
+    <option name="totallyTimeSpent" value="83080000" />
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.11528361" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.11528361" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17778361" />
+      <window_info id="Commit" order="1" weight="0.17778361" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Pull Requests" order="3" weight="0.17200631" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.33025506" />
@@ -907,13 +787,35 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Meson" order="5" weight="0.2901786" />
-      <unified_weights bottom="0.33025506" left="0.11528361" right="0.2901786" />
+      <unified_weights bottom="0.33025506" left="0.17778361" right="0.2901786" />
     </layoutV2>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17778361" />
+      <window_info id="Commit" order="1" weight="0.17778361" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Pull Requests" order="3" weight="0.17200631" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.33025506" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.33025506" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33025506" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.33025506" />
+      <window_info anchor="bottom" id="CMake" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.33025506" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" show_stripe_button="false" weight="0.33025506" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" weight="0.2901786" />
+      <unified_weights bottom="0.33025506" left="0.17778361" right="0.2901786" />
+    </layout-to-restore>
     <recentWindows>
-      <value>Commit</value>
       <value>Terminal</value>
-      <value>Project</value>
       <value>Version Control</value>
+      <value>Project</value>
+      <value>Commit</value>
       <value>Run</value>
       <value>Build</value>
       <value>Problems View</value>
@@ -943,18 +845,18 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1822" height="333" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1754271854457" />
-    <state x="770" y="362" key="RollbackChangesDialog" timestamp="1753913242583">
+    <state x="770" y="362" width="380" height="523" key="RollbackChangesDialog" timestamp="1754656127086">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="770" y="362" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1753913242583" />
+    <state x="770" y="362" width="380" height="523" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1754656127086" />
     <state x="469" y="273" key="SettingsEditor" timestamp="1753914911551">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="469" y="273" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1753914911551" />
-    <state x="560" y="372" width="800" height="502" key="Vcs.Push.Dialog.v2" timestamp="1754276894336">
+    <state x="560" y="372" width="800" height="502" key="Vcs.Push.Dialog.v2" timestamp="1754711493917">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="560" y="372" width="800" height="502" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1754276894336" />
+    <state x="560" y="372" width="800" height="502" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1754711493917" />
     <state x="698" y="344" width="524" height="558" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1754193250720">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -963,10 +865,14 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="709" y="354" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1754267073809" />
-    <state x="623" y="297" width="706" height="713" key="search.everywhere.popup" timestamp="1754190054097">
+    <state x="624" y="581" key="run.anything.popup" timestamp="1754717783044">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="623" y="297" width="706" height="713" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1754190054097" />
+    <state x="624" y="581" key="run.anything.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1754717783044" />
+    <state x="623" y="297" width="706" height="713" key="search.everywhere.popup" timestamp="1754442494131">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="623" y="297" width="706" height="713" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1754442494131" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/include/time.h">
@@ -1011,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waywall/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waywall/lua/init.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1045,40 +944,20 @@
     <entry file="file:///usr/include/libircclient/libircclient.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/waywall/config/vm.c">
+    <entry file="file://$PROJECT_DIR$/include/util/box.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7898">
-          <caret line="368" selection-start-line="368" selection-end-line="368" />
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waywall/irc.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/libirc_errors.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/http.h">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/include/libircclient.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2860">
           <caret line="130" selection-start-line="130" selection-end-line="130" />
           <folding>
-            <marker date="1754267320598" expanded="true" signature="5430:5511" ph="##include ..." />
+            <marker date="1754440063254" expanded="true" signature="5430:5511" ph="##include ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waywall/meson.build">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1089,76 +968,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
+    <entry file="file://$PROJECT_DIR$/waywall/meson.build">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="528">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waywall/server/server.c">
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdatomic.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="130" column="26" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
+        <state relative-caret-position="341">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/libirc_errors.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/include/luajit-2.1/lua.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/irc.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="220">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/config/vm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/server.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4664">
+          <caret line="248" column="23" selection-start-line="248" selection-start-column="23" selection-end-line="248" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waywall/http.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="86" column="65" selection-start-line="86" selection-start-column="65" selection-end-line="86" selection-end-column="65" />
+        <state relative-caret-position="2970">
+          <caret line="145" column="30" selection-start-line="145" selection-start-column="30" selection-end-line="145" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waywall/lua/api.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3674">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        <state relative-caret-position="858">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waywall/config/config.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="956">
-          <caret line="850" column="31" selection-start-line="850" selection-start-column="31" selection-end-line="850" selection-end-column="31" />
+          <caret line="913" column="8" selection-start-line="913" selection-start-column="8" selection-end-line="913" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/util/box.h">
+    <entry file="file://$PROJECT_DIR$/waywall/config/vm.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+        <state relative-caret-position="956">
+          <caret line="334" column="22" selection-start-line="334" selection-end-line="334" selection-end-column="22" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/wrap.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="956">
+          <caret line="536" column="5" selection-start-line="536" selection-start-column="5" selection-end-line="536" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/server/xwayland.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="956">
+          <caret line="139" column="14" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/irc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/gif.h" />
+    <entry file="file://$PROJECT_DIR$/include/http.h">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/include/scene.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <marker date="1754273023902" expanded="true" signature="49:224" ph="##include ..." />
-          </folding>
+        <state relative-caret-position="333">
+          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waywall/scene.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+        <state relative-caret-position="352">
+          <caret line="933" column="39" selection-start-line="933" selection-start-column="39" selection-end-line="933" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waywall/config/api.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="254" column="1" lean-forward="true" selection-start-line="254" selection-start-column="1" selection-end-line="254" selection-end-column="1" />
+        <state relative-caret-position="370">
+          <caret line="1059" column="34" lean-forward="true" selection-start-line="1059" selection-start-column="34" selection-end-line="1059" selection-end-column="34" />
         </state>
       </provider>
     </entry>

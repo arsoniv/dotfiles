@@ -1,34 +1,21 @@
 <application>
   <component name="AcceptanceRateFactors">
-    <option name="lastSelectionTime" value="1754272761792" />
-    <option name="lastShowUpTime" value="1754272761792" />
+    <option name="lastSelectionTime" value="1754717194888" />
+    <option name="lastShowUpTime" value="1754717194888" />
     <option name="prevSelected" value="true" />
     <selectionCounts>
-      <entry key="1" value="1.000000688295077" />
-      <entry key="24" value="9.698625256388697" />
-      <entry key="168" value="54.068304375384365" />
+      <entry key="1" value="1.999414206971863" />
+      <entry key="24" value="3.445813043416161" />
+      <entry key="168" value="39.078610134786366" />
     </selectionCounts>
     <showUpCounts>
-      <entry key="1" value="1.0000006882971406" />
-      <entry key="24" value="24.770935585796977" />
-      <entry key="168" value="173.84684675247223" />
+      <entry key="1" value="2.9984685064332375" />
+      <entry key="24" value="6.664394272196243" />
+      <entry key="168" value="117.58231468252971" />
     </showUpCounts>
   </component>
   <component name="CompletionFinishedType">
     <dailyDataMap>
-      <entry key="2025-07-21">
-        <DailyData>
-          <option name="invalidated" value="1" />
-          <option name="other" value="1" />
-        </DailyData>
-      </entry>
-      <entry key="2025-07-22">
-        <DailyData>
-          <option name="invalidated" value="2" />
-          <option name="other" value="1" />
-          <option name="selected" value="1" />
-        </DailyData>
-      </entry>
       <entry key="2025-07-23">
         <DailyData>
           <option name="invalidated" value="2" />
@@ -83,28 +70,24 @@
           <option name="selected" value="1" />
         </DailyData>
       </entry>
+      <entry key="2025-08-06">
+        <DailyData>
+          <option name="invalidated" value="4" />
+          <option name="other" value="1" />
+          <option name="selected" value="5" />
+        </DailyData>
+      </entry>
+      <entry key="2025-08-09">
+        <DailyData>
+          <option name="explicitCancel" value="1" />
+          <option name="invalidated" value="2" />
+          <option name="selected" value="3" />
+        </DailyData>
+      </entry>
     </dailyDataMap>
   </component>
   <component name="PrefixLength">
     <dailyDataMap>
-      <entry key="2025-07-20">
-        <DailyData>
-          <prefixLengths>
-            <entry key="1" value="4" />
-            <entry key="2" value="3" />
-            <entry key="3" value="1" />
-            <entry key="4" value="1" />
-            <entry key="8" value="1" />
-          </prefixLengths>
-        </DailyData>
-      </entry>
-      <entry key="2025-07-22">
-        <DailyData>
-          <prefixLengths>
-            <entry key="6" value="1" />
-          </prefixLengths>
-        </DailyData>
-      </entry>
       <entry key="2025-07-23">
         <DailyData>
           <prefixLengths>
@@ -179,28 +162,27 @@
           </prefixLengths>
         </DailyData>
       </entry>
+      <entry key="2025-08-06">
+        <DailyData>
+          <prefixLengths>
+            <entry key="1" value="4" />
+            <entry key="2" value="1" />
+          </prefixLengths>
+        </DailyData>
+      </entry>
+      <entry key="2025-08-09">
+        <DailyData>
+          <prefixLengths>
+            <entry key="1" value="1" />
+            <entry key="4" value="1" />
+            <entry key="5" value="1" />
+          </prefixLengths>
+        </DailyData>
+      </entry>
     </dailyDataMap>
   </component>
   <component name="TimeBetweenTyping">
     <dailyDataMap>
-      <entry key="2025-07-24">
-        <DailyData>
-          <option name="count" value="236" />
-          <option name="totalTime" value="205813" />
-        </DailyData>
-      </entry>
-      <entry key="2025-07-27">
-        <DailyData>
-          <option name="count" value="829" />
-          <option name="totalTime" value="625305" />
-        </DailyData>
-      </entry>
-      <entry key="2025-07-28">
-        <DailyData>
-          <option name="count" value="359" />
-          <option name="totalTime" value="201389" />
-        </DailyData>
-      </entry>
       <entry key="2025-07-29">
         <DailyData>
           <option name="count" value="1413" />
@@ -241,6 +223,24 @@
         <DailyData>
           <option name="count" value="58" />
           <option name="totalTime" value="93148" />
+        </DailyData>
+      </entry>
+      <entry key="2025-08-06">
+        <DailyData>
+          <option name="count" value="521" />
+          <option name="totalTime" value="543088" />
+        </DailyData>
+      </entry>
+      <entry key="2025-08-08">
+        <DailyData>
+          <option name="count" value="194" />
+          <option name="totalTime" value="93328" />
+        </DailyData>
+      </entry>
+      <entry key="2025-08-09">
+        <DailyData>
+          <option name="count" value="229" />
+          <option name="totalTime" value="198825" />
         </DailyData>
       </entry>
     </dailyDataMap>

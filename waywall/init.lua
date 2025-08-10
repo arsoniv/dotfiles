@@ -98,11 +98,9 @@ end
 local noPaceman = true
 local exec_pm = function()
 	if noPaceman then
+		print("STARTING PACEMAN")
 		waywall.exec("java -jar /home/arsoniv/paceman-tracker-0.7.0.jar --nogui")
-		local pm_text = waywall.text("Paceman Started...", 2, 2, "#00FF00CC", 30)
 		noPaceman = false
-		waywall.sleep(1500)
-		pm_text:close()
 	end
 end
 
@@ -121,8 +119,8 @@ local toggleEye = function()
 end
 
 --local nin_bot_overlay = require("nin_bot")
-local paceman_stats_overlay = require("paceman_session_overlay")
-local chat1 = Chat("arsoniv", 5, 2, 10, 48, 22)
+--local paceman_stats_overlay = require("paceman_session_overlay")
+local chat1 = Chat("infume", 15, 15, 10, 42, 22, 20000)
 
 local timer = nil
 local function open_timer()
@@ -145,8 +143,7 @@ local function reset()
 end
 
 local function draw_utf8_text()
-	local text = waywall.text("l", 10, 10, "#FFFFFFFF", 50)
-	print(text:advance())
+	local text = waywall.text("<#FF0000FF>red text<#0000FF99> blue text", 15, 3, 50)
 end
 
 config.actions = {
@@ -168,25 +165,19 @@ config.actions = {
 	["*-n"] = helpers.toggle_floating,
 	["ctrl-n"] = exec_ninb,
 	["ctrl-b"] = exec_pm,
+	["ctrl-g"] = draw_utf8_text,
 
 	--[[ timer
 	["ctrl-8"] = open_timer,
 	["ctrl-9"] = pause,
 	["ctrl-0"] = reset,
 	]]
-	--
-
-	--test text
-	--["ctrl-g"] = draw_utf8_text,
 
 	["ctrl-k"] = function()
 		chat1:open()
 	end,
-	["ctrl-j"] = function()
-		chat1.client:close()
-	end,
-	["ctrl-h"] = function()
-		chat1:clearall()
+	["ctrl-m"] = function()
+		chat1:send("meow")
 	end,
 }
 
