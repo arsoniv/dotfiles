@@ -124,7 +124,8 @@
     "id" : "ai.assistant.grazie.pro.count",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "4"
+      "from" : "4",
+      "to" : "6"
     } ],
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
@@ -161,7 +162,8 @@
     "id" : "ai.assistant.grazie.pro.state",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "3"
+      "from" : "3",
+      "to" : "4"
     } ],
     "rules" : {
       "event_id" : [ "{enum:settings.writing.style|settings.auto.fix|settings.processing}" ],
@@ -235,12 +237,14 @@
         "count" : [ "{regexp#integer}" ],
         "custom_runner_type" : [ "{enum:run|debug|aidebugger.runner}" ],
         "events_count" : [ "{regexp#integer}" ],
+        "plugin_version" : [ "{regexp:^(?:\\d+\\.\\d+\\.\\d+|dev)$}" ],
         "show_reason" : [ "{enum:all|auto}" ],
-        "skip_reason" : [ "{enum:not_supported_executor|disabled|module_run_config|non_ai_project}" ],
+        "skip_reason" : [ "{enum:not_supported_executor|disabled|module_run_config|non_ai_project}", "{enum#__skip_reason}" ],
         "threads_count" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "debugger_disable", "debugger_enable", "disable_auto_show", "tool_window_show", "tool_window_close", "custom_runner_selected", "no_pretty_view_found", "thread_finished", "session_finished", "graph_show", "thread_show", "raw_show", "pretty_show", "custom_runner_skipped", "report_issue_click" ]
+        "__event_id" : [ "debugger_disable", "debugger_enable", "disable_auto_show", "tool_window_show", "tool_window_close", "custom_runner_selected", "no_pretty_view_found", "thread_finished", "session_finished", "graph_show", "thread_show", "raw_show", "pretty_show", "custom_runner_skipped", "report_issue_click", "buy_pycharm_pro_clicked", "first_event_received", "runtime_requirements_not_met" ],
+        "__skip_reason" : [ "remote_interpreter", "sdk_is_null", "python_version_is_null", "run_config_is_null", "python_version_is_invalid", "low_python_version" ]
       }
     }
   }, {
@@ -1667,6 +1671,19 @@
       }
     }
   }, {
+    "id" : "command.completion.state",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:command.completion.enabled}" ],
+      "event_data" : {
+        "enabled" : [ "{enum#boolean}" ],
+        "used_as_group" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
     "id" : "commit.interactions",
     "builds" : [ ],
     "versions" : [ {
@@ -2336,7 +2353,7 @@
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "data_source_id" : [ "{regexp#hash}" ],
-        "dbms" : [ "{util#dbms}" ],
+        "dbms" : [ "{util#dbms}", "{enum#__dbms}" ],
         "error_code" : [ "{regexp#integer}" ],
         "failed" : [ "{enum#boolean}" ],
         "sql_state" : [ "{regexp:[0-9A-Z ]{5}}" ],
@@ -2344,6 +2361,7 @@
         "version" : [ "{regexp#version}" ]
       },
       "enums" : {
+        "__dbms" : [ "INGRES", "CLICKHOUSE", "ZEN", "DATABRICKS", "MARIADB", "SYNAPSE", "KDB", "SPARK", "MEMSQL", "PRESTO", "ORACLE", "ATHENA", "SYBASE", "MSACCESS", "TIDB", "IGNITE", "INFORMIX", "DB2_IS", "DB2_LUW", "TERADATA", "OPENEDGE", "COUCHBASE", "GBASE", "PHOENIX", "VITESS", "GITBASE", "INFLUXDB", "MSSQL", "MSSQL_LOCALDB", "GREENPLUM", "IRIS", "BIGQUERY", "POSTGRES", "MONGO", "SQLITE", "NETEZZA", "CASSANDRA", "IMPALA", "DYNAMO", "TIMESTREAM", "NETSUITE", "DB2_ZOS", "TRINO", "MYSQL_AURORA", "HANA", "TIBERO", "AZURE", "HIVE", "DERBY", "VERTICA", "CLOUD_SPANNER", "OCEANBASE", "DRILL", "FRONTBASE", "MYSQL", "SALESFORCE", "H2", "YUGABYTE", "HSQLDB", "CRATE", "DB2", "FILEMAKER", "DENODO", "EXASOL", "REDIS", "SQLANYWHERE", "MONET", "SNOWFLAKE", "ELASTICSEARCH", "REDSHIFT", "UNKNOWN", "FIREBIRD", "COCKROACH" ],
         "__event_id" : [ "connection.test.started", "connection.test.completed", "connection.failed", "data.source.modified", "connection.succeeded" ]
       }
     },
@@ -3182,6 +3200,18 @@
       "fields" : [ "idAnonymized" ]
     } ]
   }, {
+    "id" : "dotnet.cpp.ctd.counter",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:actionCalled}" ],
+      "event_data" : {
+        "action" : [ "{enum:StepOver|StepInto|StepOut|StepBack|Resume|StartSession|RestartFinishedSession|RestartAliveSession|ComputeFrames|ComputeChildren|ComputeLocals|EvaluateExpression}" ]
+      }
+    }
+  }, {
     "id" : "dotnet.cpp_cache",
     "builds" : [ ],
     "versions" : [ {
@@ -3236,7 +3266,7 @@
         "itemCompletedTime_ms" : [ "{regexp#integer}" ],
         "lookupShownTime_ms" : [ "{regexp#integer}" ],
         "multiplier" : [ "{regexp#integer}" ],
-        "psiLanguages" : [ "{enum:ASP.NET route templates|C#|Cpp|C++|Css|HTML|HttpHandler or WebService|JavaScript-like languages|JsDoc|RegExpBase|Unmanaged|VB.NET|Injected CSS|Angular 2 HTML|Aspx|Html in JSX|Injected HTML|Injected Angular 2 HTML|Skin|Html in JSX|Html in TSX|Razor|Razor CSharp|IL|JavaScript-like languages|Injected JavaScript|JavaScript|Json|Angular 2|Angular 2 Expressions|Angular 2 NgFor|Angular 2 Statements|Angular 4 NgIf|Jsx|TypeScript|Tsx|Injected Json|ClrRegExp|HtmlRegExp|JsRegExp|AppxManifestLanguage|Build Script|Injected XML|ResX|XAML|MSBuild|NAnt|DTD|Web.Config|XMLDOC|C# XmlDoc|JavaScript XmlDoc|VB XmlDoc|F#|F# Script|Cg|ShaderLab|YAML|Unity Yaml|Protobuf|ANY|Unknown}" ],
+        "psiLanguages" : [ "{enum:ASP.NET route templates|C#|Cpp|C++|Css|HTML|HttpHandler or WebService|JavaScript-like languages|JsDoc|RegExpBase|Unmanaged|VB.NET|Injected CSS|Angular 2 HTML|Aspx|Html in JSX|Injected HTML|Injected Angular 2 HTML|Skin|Html in JSX|Html in TSX|Razor|Razor CSharp|IL|JavaScript-like languages|Injected JavaScript|JavaScript|Json|Angular 2|Angular 2 Expressions|Angular 2 NgFor|Angular 2 Statements|Angular 4 NgIf|Jsx|TypeScript|Tsx|Injected Json|ClrRegExp|HtmlRegExp|JsRegExp|AppxManifestLanguage|Build Script|Injected XML|ResX|XAML|MSBuild|NAnt|DTD|Web.Config|XMLDOC|C# XmlDoc|JavaScript XmlDoc|VB XmlDoc|F#|F# Script|Cg|ShaderLab|YAML|Unity Yaml|Protobuf|ANY|Unknown}", "{enum:C/C++|SQL}" ],
         "totalTime_ms" : [ "{regexp#integer}" ]
       },
       "enums" : {
@@ -3291,6 +3321,21 @@
         "fileSize" : [ "{regexp#integer}" ],
         "latencyGroup" : [ "{regexp#integer}" ],
         "typedKey" : [ "{enum:Backspace|Tab|Enter|Exclamation|DoubleQuote|Hash|Dollar|Percent|Ampersand|SingleQuote|LParen|RParen|Asterisk|Plus|Comma|Minus|Dot|ForwardSlash|Colon|Semicolon|LessThan|Equal|GreaterThan|QuestionMark|AtSign|LBracket|BackSlash|RBracket|Caret|Underscore|BackTick|LBrace|VerticalBar|RBrace|Tilde|Delete|Cut|TabLeft|WordDeleteToStart|WordDeleteToEnd|EmacsTab|EditorStartNewLineBeforeAction|EditorStartNewLineAction|Paste|Copy|Other}" ]
+      }
+    }
+  }, {
+    "id" : "dotnet.radler.clangd.counter",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:clangdDiagnostics}" ],
+      "event_data" : {
+        "numErrorsAfterFiltering" : [ "{regexp#integer}" ],
+        "numWarningsAfterFiltering" : [ "{regexp#integer}" ],
+        "totalNumErrors" : [ "{regexp#integer}" ],
+        "totalNumWarnings" : [ "{regexp#integer}" ]
       }
     }
   }, {
@@ -3567,7 +3612,7 @@
         "versions" : [ "{regexp#version}" ]
       },
       "enums" : {
-        "vscode_extensions" : [ "ms-python.python", "ms-toolsai.jupyter", "ms-python.vscode-pylance", "ms-toolsai.jupyter-keymap", "ms-vscode.cpptools", "ms-toolsai.jupyter-renderers", "ritwickdey.LiveServer", "esbenp.prettier-vscode", "VisualStudioExptTeam.vscodeintellicode", "ms-toolsai.vscode-jupyter-cell-tags", "ms-toolsai.vscode-jupyter-slideshow", "dbaeumer.vscode-eslint", "redhat.java", "ms-azuretools.vscode-docker", "MS-CEINTL.vscode-language-pack-zh-hans", "eamodio.gitlens", "vscjava.vscode-java-debug", "ms-dotnettools.csharp", "vscjava.vscode-maven", "twxs.cmake", "ms-vscode.cmake-tools", "vscjava.vscode-java-test", "vscjava.vscode-java-dependency", "vscjava.vscode-java-pack", "formulahendry.code-runner", "ms-vscode-remote.remote-wsl", "ms-python.isort", "ms-vscode.cpptools-themes", "ms-vscode-remote.remote-containers", "PKief.material-icon-theme", "ms-vscode.cpptools-extension-pack", "ms-vscode-remote.remote-ssh", "ecmel.vscode-html-css", "vscode-icons-team.vscode-icons", "VisualStudioExptTeam.intellicode-api-usage-examples", "ms-vscode-remote.remote-ssh-edit", "formulahendry.auto-rename-tag", "MS-vsliveshare.vsliveshare", "GitHub.vscode-pull-request-github", "octref.vetur", "redhat.vscode-yaml", "xabikos.JavaScriptSnippets", "jeff-hykin.better-cpp-syntax", "christian-kohler.path-intellisense", "cschlosser.doxdocgen", "formulahendry.auto-close-tag", "golang.Go", "HookyQR.beautify", "xdebug.php-debug", "abusaidm.html-snippets", "bmewburn.vscode-intelephense-client", "GitHub.github-vscode-theme", "donjayamanne.githistory", "dsznajder.es7-react-js-snippets", "ms-vscode.PowerShell", "techer.open-in-browser", "EditorConfig.EditorConfig", "zhuangtongfa.Material-theme", "streetsidesoftware.code-spell-checker", "batisteo.vscode-django", "Dart-Code.dart-code", "GitHub.copilot", "ms-vscode.remote-explorer", "yzhang.markdown-all-in-one", "wholroyd.jinja", "eg2.vscode-npm-script", "Dart-Code.flutter", "Zignd.html-css-class-completion", "christian-kohler.npm-intellisense", "ms-vscode.azure-account", "MS-CEINTL.vscode-language-pack-ja", "ms-mssql.mssql", "TabNine.tabnine-vscode", "donjayamanne.python-extension-pack", "dracula-theme.theme-dracula", "njpwerner.autodocstring", "naumovs.color-highlight", "KevinRose.vsc-python-indent", "oderwat.indent-rainbow", "DavidAnson.vscode-markdownlint", "mhutchie.git-graph", "Angular.ng-template", "tht13.python", "vscodevim.vim", "aaron-bond.better-comments", "MS-vsliveshare.vsliveshare-audio", "MS-CEINTL.vscode-language-pack-es", "DotJoshJohnson.xml", "Vue.volar", "austin.code-gnu-global", "pranaygp.vscode-css-peek", "akamud.vscode-theme-onedark", "donjayamanne.python-environment-manager", "redhat.vscode-xml", "mikestead.dotenv", "shd101wyy.markdown-preview-enhanced", "ms-vscode-remote.vscode-remote-extensionpack", "xdebug.php-pack", "johnpapa.Angular2", "ms-vscode.vscode-typescript-tslint-plugin", "MS-CEINTL.vscode-language-pack-ru", "Shan.code-settings-sync", "vadimcn.vscode-lldb", "msjsdiag.vscode-react-native", "MS-CEINTL.vscode-language-pack-pt-BR", "wayou.vscode-todo-highlight", "magicstack.MagicPython", "GrapeCity.gc-excelviewer", "tomoki1207.pdf", "alefragnani.project-manager", "humao.rest-client", "lonefy.vscode-JS-CSS-HTML-formatter", "platformio.platformio-ide", "bradlc.vscode-tailwindcss", "rebornix.Ruby", "steoates.autoimport", "ms-dotnettools.vscode-dotnet-runtime", "Gruntfuggly.todo-tree", "hollowtree.vue-snippets", "ms-kubernetes-tools.vscode-kubernetes-tools", "mechatroner.rainbow-csv", "Equinusocio.vsc-community-material-theme", "firefox-devtools.vscode-firefox-debug", "burkeholland.simple-react-snippets", "danielpinto8zz6.c-cpp-compile-run", "HashiCorp.terraform", "mtxr.sqltools", "alefragnani.Bookmarks", "wix.vscode-import-cost", "Equinusocio.vsc-material-theme-icons", "thekalinga.bootstrap4-vscode", "onecentlin.laravel-blade", "codezombiech.gitignore", "MS-CEINTL.vscode-language-pack-fr", "zobo.php-intellisense", "GitHub.codespaces", "ms-vscode.hexeditor", "ms-vscode.makefile-tools", "MS-CEINTL.vscode-language-pack-ko", "vscjava.vscode-spring-initializr", "WallabyJs.quokka-vscode", "James-Yu.latex-workshop", "wingrunr21.vscode-ruby", "ms-vscode.vscode-typescript-next", "mgmcdermott.vscode-language-babel", "ritwickdey.live-sass", "sidthesloth.html5-boilerplate", "hbenl.vscode-test-explorer", "johnpapa.vscode-peacock", "dbaeumer.jshint", "johnpapa.winteriscoming", "tht13.html-preview-vscode", "rangav.vscode-thunder-client", "Mikael.Angular-BeastCode", "monokai.theme-monokai-pro-vscode", "usernamehw.errorlens", "ms-vscode.live-server", "vmware.vscode-spring-boot", "Equinusocio.vsc-material-theme", "2gua.rainbow-brackets", "ms-edgedevtools.vscode-edge-devtools", "ms-mssql.data-workspace-vscode", "ms-azuretools.vscode-azureresourcegroups", "sdras.vue-vscode-snippets", "MS-CEINTL.vscode-language-pack-de", "ms-mssql.sql-database-projects-vscode", "sdras.night-owl", "Syler.sass-indented", "redhat.vscode-commons", "ms-vscode.sublime-keybindings", "ms-vscode.test-adapter-converter", "ms-azuretools.vscode-azurefunctions", "teabyii.ayu", "rust-lang.rust-analyzer", "jcbuisson.vue", "vscjava.vscode-spring-boot-dashboard", "SonarSource.sonarlint-vscode", "waderyan.gitblame", "alexcvzz.vscode-sqlite", "vincaslt.highlight-matching-tag", "ZainChen.json", "azemoh.one-monokai", "rifi2k.format-html-in-php", "rust-lang.rust", "formulahendry.auto-complete-tag", "vsciot-vscode.vscode-arduino", "georgewfraser.vscode-javac", "jasonnutter.search-node-modules", "ms-toolsai.vscode-ai", "onecentlin.laravel5-snippets", "quicktype.quicktype", "mohsen1.prettify-json", "donjayamanne.jquerysnippets", "bungcip.better-toml", "xabikos.ReactSnippets", "Unity.unity-debug", "ms-vscode.remote-server", "jchannon.csharpextensions", "Orta.vscode-jest", "vmware.vscode-boot-dev-pack", "yzane.markdown-pdf", "ms-mssql.sql-bindings-vscode", "mitaki28.vscode-clang", "zxh404.vscode-proto3", "DEVSENSE.phptools-vscode", "ms-toolsai.vscode-ai-remote", "kisstkondoros.vscode-gutter-preview", "jebbs.plantuml", "Atlassian.atlascode", "emmanuelbeziat.vscode-great-icons", "ziyasal.vscode-open-in-github", "ahmadawais.shades-of-purple", "GraphQL.vscode-graphql", "michelemelluso.code-beautifier", "aeschli.vscode-css-formatter", "shardulm94.trailing-spaces", "ionutvmi.path-autocomplete", "formulahendry.terminal", "stylelint.vscode-stylelint", "hediet.vscode-drawio", "rvest.vs-code-prettier-eslint", "anseki.vscode-color", "RobbOwen.synthwave-vscode", "GitHub.remotehub", "ms-azuretools.vscode-azureappservice", "vsls-contrib.gitdoc", "AmazonWebServices.aws-toolkit-vscode", "vscjava.vscode-gradle", "k--kato.intellij-idea-keybindings", "icrawl.discord-vscode", "MS-CEINTL.vscode-language-pack-zh-hant", "formulahendry.vscode-mysql", "ryannaddy.laravel-artisan", "ikappas.phpcs", "ms-vscode.azurecli", "nrwl.angular-console", "rbbit.typescript-hero", "redhat.fabric8-analytics", "whizkydee.material-palenight-theme", "brapifra.phpserver", "leizongmin.node-module-intellisense", "donjayamanne.git-extension-pack", "ms-vscode.notepadplusplus-keybindings", "liximomo.sftp", "pflannery.vscode-versionlens", "salesforce.salesforcedx-vscode-core", "DEVSENSE.composer-php-vscode", "wesbos.theme-cobalt2", "codingyu.laravel-goto-view", "DEVSENSE.profiler-php-vscode", "sibiraj-s.vscode-scss-formatter", "dongli.python-preview", "xaver.clang-format", "kleber-swf.unity-code-snippets", "salesforce.salesforcedx-vscode-apex", "ms-vscode.js-debug-nightly", "mrmlnc.vscode-scss", "EQuimper.react-native-react-redux", "bierner.markdown-preview-github-styles", "ms-azuretools.vscode-cosmosdb", "amiralizadeh9480.laravel-extra-intellisense", "neilbrayfield.php-docblocker", "Vue.vscode-typescript-vue-plugin", "foxundermoon.shell-format", "salesforce.salesforcedx-vscode-lightning", "salesforce.salesforcedx-vscode-visualforce", "MehediDracula.php-namespace-resolver", "salesforce.salesforcedx-vscode-apex-debugger", "adpyke.codesnap", "qinjia.view-in-browser", "msazurermtools.azurerm-vscode-tools", "salesforce.salesforcedx-vscode-lwc", "REditorSupport.r", "mkaufman.HTMLHint", "salesforce.salesforcedx-vscode-apex-replay-debugger", "johnpapa.angular-essentials", "ms-azuretools.vscode-azurestorage", "salesforce.salesforcedx-vscode", "pnp.polacode", "JuanBlanco.solidity", "glenn2223.live-sass", "Tobiah.unity-tools", "file-icons.file-icons", "josetr.cmake-language-support-vscode", "GitLab.gitlab-workflow", "Blackboxapp.blackbox", "wmaurer.change-case", "tushortz.python-extended-snippets", "jmrog.vscode-nuget-package-manager", "k--kato.docomment", "mathiasfrohlich.Kotlin", "felipecaputo.git-project-manager", "tombonnike.vscode-status-bar-format-toggle", "janisdd.vscode-edit-csv", "ms-vscode.remote-repositories", "KnisterPeter.vscode-github", "CS50.extension-uninstaller", "enkia.tokyo-night", "hdg.live-html-previewer", "FallenMax.mithril-emmet", "ms-vscode.atom-keybindings", "cweijan.vscode-mysql-client2", "CS50.ddb50", "peakchen90.open-html-in-browser", "WakaTime.vscode-wakatime", "hars.CppSnippets", "WhenSunset.chatgpt-china", "waderyan.nodejs-extension-pack", "GraphQL.vscode-graphql-syntax", "alexisvt.flutter-snippets", "mongodb.mongodb-vscode", "akamud.vscode-theme-onelight", "Prisma.prisma", "ms-azure-devops.azure-pipelines", "jock.svg", "mohd-akram.vscode-html-format", "vmware.vscode-manifest-yaml", "bierner.markdown-mermaid", "castwide.solargraph", "dzannotti.vscode-babel-coloring", "johnstoncode.svn-scm", "kokororin.vscode-phpfmt", "shufo.vscode-blade-formatter", "svelte.svelte-vscode", "ChakrounAnas.turbo-console-log", "vmware.vscode-concourse", "eriklynd.json-tools", "salesforce.salesforce-vscode-slds", "LittleFoxTeam.vscode-python-test-adapter", "mrcrowl.easy-less", "DigitalBrainstem.javascript-ejs-support", "donjayamanne.javadebugger", "firsttris.vscode-jest-runner", "EliverLara.andromeda", "MS-CEINTL.vscode-language-pack-it", "CS50.vscode-presentation-mode", "liviuschera.noctis", "cyrilletuzi.angular-schematics", "ms-vscode.vscode-node-azure-pack", "adpyke.vscode-sql-formatter", "sumneko.lua", "Ionide.Ionide-fsharp", "negokaz.live-server-preview", "wcwhitehead.bootstrap-3-snippets", "junstyle.php-cs-fixer", "hoovercj.vscode-power-mode", "Sophisticode.php-formatter", "bierner.color-info", "tinkertrain.theme-panda", "pmneo.tsimporter", "IBM.output-colorizer", "bianxianyang.htmlplay", "ms-azuretools.vscode-azurevirtualmachines", "donjayamanne.jupyter", "arcticicestudio.nord-visual-studio-code", "justusadam.language-haskell", "humy2833.ftp-simple", "styled-components.vscode-styled-components", "natewallace.angular2-inline", "GoogleCloudTools.cloudcode", "4ops.terraform", "utsavm9.c-cpp-flag-debugging", "LeetCode.vscode-leetcode", "Wscats.eno", "ryu1kn.partial-diff", "ms-vscode.azure-repos", "rodrigovallades.es7-react-js-snippets", "jprestidge.theme-material-theme", "skyran.js-jsx-snippets", "mgesbert.python-path", "slevesque.shader", "onecentlin.laravel-extension-pack", "whatwedo.twig", "miguelsolorio.fluent-icons", "infinity1207.angular2-switcher", "kamikillerto.vscode-colorize", "bajdzis.vscode-database", "ms-python.black-formatter", "timonwong.shellcheck", "vscjava.vscode-lombok", "almenon.arepl", "stringham.move-ts", "CS50.lab50", "DanielSanMedium.dscodegpt", "scala-lang.scala", "alexkrechik.cucumberautocomplete", "llvm-vs-code-extensions.vscode-clangd", "jorgeserrano.vscode-csharp-snippets", "csstools.postcss", "salesforce.salesforcedx-vscode-soql", "kisstkondoros.vscode-codemetrics", "akamud.vscode-javascript-snippet-pack", "mtxr.sqltools-driver-mysql", "Tyriar.sort-lines", "kumar-harsh.graphql-for-vscode", "serayuzgur.crates", "rogalmic.bash-debug", "ms-dotnettools.dotnet-interactive-vscode", "alexiv.vscode-angular2-files", "auchenberg.vscode-browser-preview", "spywhere.guides", "misogi.ruby-rubocop", "MS-CEINTL.vscode-language-pack-tr", "alphabotsec.vscode-eclipse-keybindings", "xyz.local-history", "Tyriar.lorem-ipsum", "mutantdino.resourcemonitor", "GitHub.copilot-nightly", "ms-python.pylint", "mkxml.vscode-filesize", "kreativ-software.csharpextensions", "bibhasdn.django-html", "dzhavat.bracket-pair-toggler", "flowtype.flow-for-vscode", "GitHub.copilot-labs", "ms-azuretools.vscode-bicep", "formulahendry.dotnet-test-explorer", "Askia.askia-qexml-generator-extension", "george-alisson.html-preview-vscode", "13xforever.language-x86-64-assembly", "webfreak.debug", "caolin.java-run", "sleistner.vscode-fileutils", "MS-CEINTL.vscode-language-pack-pl", "sysoev.language-stylus", "CS50.markdown50", "dariofuzinato.vue-peek", "Zaczero.bootstrap-v4-snippets", "adashen.vscode-tomcat", "mshr-h.VerilogHDL", "formulahendry.docker-explorer", "samuelcolvin.jinjahtml", "fwcd.kotlin", "ms-iot.vscode-ros", "ms-vscode.mono-debug", "rokoroku.vscode-theme-darcula", "42Crunch.vscode-openapi", "chrmarti.regex", "be5invis.vscode-custom-css", "Gimly81.matlab", "shalldie.background", "frhtylcn.pythonsnippets", "ckolkman.vscode-postgres", "karigari.chat", "lihui.vs-color-picker", "fabianlauer.vs-code-xml-format", "yandeu.five-server", "fisheva.eva-theme", "huizhou.githd", "be5invis.vscode-icontheme-nomo-dark", "etmoffat.pip-packages", "silvenon.mdx", "SolarLiner.linux-themes", "bradgashler.htmltagwrap", "ms-azuretools.vscode-azurestaticwebapps", "julialang.language-julia", "bencoleman.armview", "naco-siren.gradle-language", "ajshort.include-autocomplete", "tal7aouy.theme", "BracketPairColorDLW.bracket-pair-color-dlw", "clinyong.vscode-css-modules", "chris-noring.node-snippets", "gencay.vscode-chatgpt", "miramac.vscode-exec-node", "ms-azuretools.vscode-azureterraform", "qiu8310.minapp-vscode", "Arjun.swagger-viewer", "ms-vscode.vs-keybindings", "BeardedBear.beardedtheme", "marus25.cortex-debug", "bierner.markdown-emoji", "Fudge.auto-using", "lextudio.restructuredtext", "nhoizey.gremlins", "austenc.laravel-blade-spacer", "GitHub.vscode-github-actions", "MarlinFirmware.auto-build", "rocketseat.theme-omni", "qwtel.sqlite-viewer", "tonybaloney.vscode-pets", "mrmlnc.vscode-apache", "DiemasMichiels.emulate", "mindaro-dev.file-downloader", "idleberg.icon-fonts", "cipchk.cssrem", "ms-dotnettools.vscode-dotnet-pack", "jakebathman.mysql-syntax", "infeng.vscode-react-typescript", "NuclleaR.vscode-extension-auto-import", "danwahlin.angular2-snippets", "denoland.vscode-deno", "Wscats.cors-browser", "wwm.better-align", "AnbuselvanRocky.bootstrap5-vscode", "mads-hartmann.bash-ide-vscode", "SimonSiefke.svg-preview", "shakram02.bash-beautify", "Alibaba-Cloud.tongyi-lingma", "Shopify.ruby-lsp", "JakeBecker.elixir-ls", "Oracle.oracle-java" ]
+        "vscode_extensions" : [ "13xforever.language-x86-64-assembly", "2gua.rainbow-brackets", "42Crunch.vscode-openapi", "42crunch.vscode-openapi", "4ops.terraform", "Alibaba-Cloud.tongyi-lingma", "AmazonWebServices.aws-toolkit-vscode", "AnbuselvanRocky.bootstrap5-vscode", "Angular.ng-template", "Arjun.swagger-viewer", "Askia.askia-qexml-generator-extension", "Atlassian.atlascode", "BeardedBear.beardedtheme", "Blackboxapp.blackbox", "BracketPairColorDLW.bracket-pair-color-dlw", "CS50.ddb50", "CS50.extension-uninstaller", "CS50.lab50", "CS50.markdown50", "CS50.vscode-presentation-mode", "ChakrounAnas.turbo-console-log", "DEVSENSE.composer-php-vscode", "DEVSENSE.phptools-vscode", "DEVSENSE.profiler-php-vscode", "DanielSanMedium.dscodegpt", "Dart-Code.dart-code", "Dart-Code.flutter", "DavidAnson.vscode-markdownlint", "DiemasMichiels.emulate", "DigitalBrainstem.javascript-ejs-support", "DotJoshJohnson.xml", "EQuimper.react-native-react-redux", "EditorConfig.EditorConfig", "EliverLara.andromeda", "Equinusocio.vsc-community-material-theme", "Equinusocio.vsc-material-theme", "Equinusocio.vsc-material-theme-icons", "FallenMax.mithril-emmet", "Fudge.auto-using", "Gimly81.matlab", "GitHub.codespaces", "GitHub.copilot", "GitHub.copilot-labs", "GitHub.copilot-nightly", "GitHub.github-vscode-theme", "GitHub.remotehub", "GitHub.vscode-github-actions", "GitHub.vscode-pull-request-github", "GitLab.gitlab-workflow", "GoogleCloudTools.cloudcode", "GrapeCity.gc-excelviewer", "GraphQL.vscode-graphql", "GraphQL.vscode-graphql-syntax", "Gruntfuggly.todo-tree", "HashiCorp.terraform", "HookyQR.beautify", "IBM.output-colorizer", "Ionide.Ionide-fsharp", "JakeBecker.elixir-ls", "James-Yu.latex-workshop", "JuanBlanco.solidity", "KevinRose.vsc-python-indent", "KnisterPeter.vscode-github", "LeetCode.vscode-leetcode", "LittleFoxTeam.vscode-python-test-adapter", "MS-CEINTL.vscode-language-pack-de", "MS-CEINTL.vscode-language-pack-es", "MS-CEINTL.vscode-language-pack-fr", "MS-CEINTL.vscode-language-pack-it", "MS-CEINTL.vscode-language-pack-ja", "MS-CEINTL.vscode-language-pack-ko", "MS-CEINTL.vscode-language-pack-pl", "MS-CEINTL.vscode-language-pack-pt-BR", "MS-CEINTL.vscode-language-pack-ru", "MS-CEINTL.vscode-language-pack-tr", "MS-CEINTL.vscode-language-pack-zh-hans", "MS-CEINTL.vscode-language-pack-zh-hant", "MS-vsliveshare.vsliveshare", "MS-vsliveshare.vsliveshare-audio", "MarlinFirmware.auto-build", "MehediDracula.php-namespace-resolver", "Mikael.Angular-BeastCode", "NuclleaR.vscode-extension-auto-import", "Oracle.oracle-java", "Orta.vscode-jest", "PKief.material-icon-theme", "Prisma.prisma", "REditorSupport.r", "RobbOwen.synthwave-vscode", "Shan.code-settings-sync", "Shopify.ruby-lsp", "SimonSiefke.svg-preview", "SolarLiner.linux-themes", "SonarSource.sonarlint-vscode", "Sophisticode.php-formatter", "Syler.sass-indented", "TabNine.tabnine-vscode", "Tobiah.unity-tools", "Tyriar.lorem-ipsum", "Tyriar.sort-lines", "Unity.unity-debug", "VisualStudioExptTeam.intellicode-api-usage-examples", "VisualStudioExptTeam.vscodeintellicode", "Vue.volar", "Vue.vscode-typescript-vue-plugin", "WakaTime.vscode-wakatime", "WallabyJs.quokka-vscode", "WhenSunset.chatgpt-china", "Wscats.cors-browser", "Wscats.eno", "Zaczero.bootstrap-v4-snippets", "ZainChen.json", "Zignd.html-css-class-completion", "aaron-bond.better-comments", "abusaidm.html-snippets", "adashen.vscode-tomcat", "adpyke.codesnap", "adpyke.vscode-sql-formatter", "aeschli.vscode-css-formatter", "ahmadawais.shades-of-purple", "ajshort.include-autocomplete", "akamud.vscode-javascript-snippet-pack", "akamud.vscode-theme-onedark", "akamud.vscode-theme-onelight", "alefragnani.Bookmarks", "alefragnani.bookmarks", "alefragnani.project-manager", "alexcvzz.vscode-sqlite", "alexisvt.flutter-snippets", "alexiv.vscode-angular2-files", "alexkrechik.cucumberautocomplete", "alibaba-cloud.tongyi-lingma", "almenon.arepl", "alphabotsec.vscode-eclipse-keybindings", "amazonwebservices.aws-toolkit-vscode", "amiralizadeh9480.laravel-extra-intellisense", "anbuselvanrocky.bootstrap5-vscode", "angular.ng-template", "anseki.vscode-color", "arcticicestudio.nord-visual-studio-code", "arjun.swagger-viewer", "askia.askia-qexml-generator-extension", "atlassian.atlascode", "auchenberg.vscode-browser-preview", "austenc.laravel-blade-spacer", "austin.code-gnu-global", "azemoh.one-monokai", "bajdzis.vscode-database", "batisteo.vscode-django", "be5invis.vscode-custom-css", "be5invis.vscode-icontheme-nomo-dark", "beardedbear.beardedtheme", "bencoleman.armview", "bianxianyang.htmlplay", "bibhasdn.django-html", "bierner.color-info", "bierner.markdown-emoji", "bierner.markdown-mermaid", "bierner.markdown-preview-github-styles", "blackboxapp.blackbox", "bmewburn.vscode-intelephense-client", "bracketpaircolordlw.bracket-pair-color-dlw", "bradgashler.htmltagwrap", "bradlc.vscode-tailwindcss", "brapifra.phpserver", "bungcip.better-toml", "burkeholland.simple-react-snippets", "caolin.java-run", "castwide.solargraph", "chakrounanas.turbo-console-log", "chris-noring.node-snippets", "christian-kohler.npm-intellisense", "christian-kohler.path-intellisense", "chrmarti.regex", "cipchk.cssrem", "ckolkman.vscode-postgres", "clinyong.vscode-css-modules", "codezombiech.gitignore", "codingyu.laravel-goto-view", "cs50.ddb50", "cs50.extension-uninstaller", "cs50.lab50", "cs50.markdown50", "cs50.vscode-presentation-mode", "cschlosser.doxdocgen", "csstools.postcss", "cweijan.vscode-mysql-client2", "cyrilletuzi.angular-schematics", "danielpinto8zz6.c-cpp-compile-run", "danielsanmedium.dscodegpt", "danwahlin.angular2-snippets", "dariofuzinato.vue-peek", "dart-code.dart-code", "dart-code.flutter", "davidanson.vscode-markdownlint", "dbaeumer.jshint", "dbaeumer.vscode-eslint", "denoland.vscode-deno", "devsense.composer-php-vscode", "devsense.phptools-vscode", "devsense.profiler-php-vscode", "diemasmichiels.emulate", "digitalbrainstem.javascript-ejs-support", "dongli.python-preview", "donjayamanne.git-extension-pack", "donjayamanne.githistory", "donjayamanne.javadebugger", "donjayamanne.jquerysnippets", "donjayamanne.jupyter", "donjayamanne.python-environment-manager", "donjayamanne.python-extension-pack", "dotjoshjohnson.xml", "dracula-theme.theme-dracula", "dsznajder.es7-react-js-snippets", "dzannotti.vscode-babel-coloring", "dzhavat.bracket-pair-toggler", "eamodio.gitlens", "ecmel.vscode-html-css", "editorconfig.editorconfig", "eg2.vscode-npm-script", "eliverlara.andromeda", "emmanuelbeziat.vscode-great-icons", "enkia.tokyo-night", "equimper.react-native-react-redux", "equinusocio.vsc-community-material-theme", "equinusocio.vsc-material-theme", "equinusocio.vsc-material-theme-icons", "eriklynd.json-tools", "esbenp.prettier-vscode", "etmoffat.pip-packages", "fabianlauer.vs-code-xml-format", "fallenmax.mithril-emmet", "felipecaputo.git-project-manager", "file-icons.file-icons", "firefox-devtools.vscode-firefox-debug", "firsttris.vscode-jest-runner", "fisheva.eva-theme", "flowtype.flow-for-vscode", "formulahendry.auto-close-tag", "formulahendry.auto-complete-tag", "formulahendry.auto-rename-tag", "formulahendry.code-runner", "formulahendry.docker-explorer", "formulahendry.dotnet-test-explorer", "formulahendry.terminal", "formulahendry.vscode-mysql", "foxundermoon.shell-format", "frhtylcn.pythonsnippets", "fudge.auto-using", "fwcd.kotlin", "gencay.vscode-chatgpt", "george-alisson.html-preview-vscode", "georgewfraser.vscode-javac", "gimly81.matlab", "github.codespaces", "github.copilot", "github.copilot-labs", "github.copilot-nightly", "github.github-vscode-theme", "github.remotehub", "github.vscode-github-actions", "github.vscode-pull-request-github", "gitlab.gitlab-workflow", "glenn2223.live-sass", "golang.Go", "golang.go", "googlecloudtools.cloudcode", "grapecity.gc-excelviewer", "graphql.vscode-graphql", "graphql.vscode-graphql-syntax", "gruntfuggly.todo-tree", "hars.CppSnippets", "hars.cppsnippets", "hashicorp.terraform", "hbenl.vscode-test-explorer", "hdg.live-html-previewer", "hediet.vscode-drawio", "hollowtree.vue-snippets", "hookyqr.beautify", "hoovercj.vscode-power-mode", "huizhou.githd", "humao.rest-client", "humy2833.ftp-simple", "ibm.output-colorizer", "icrawl.discord-vscode", "idleberg.icon-fonts", "ikappas.phpcs", "infeng.vscode-react-typescript", "infinity1207.angular2-switcher", "ionide.ionide-fsharp", "ionutvmi.path-autocomplete", "jakebathman.mysql-syntax", "jakebecker.elixir-ls", "james-yu.latex-workshop", "janisdd.vscode-edit-csv", "jasonnutter.search-node-modules", "jcbuisson.vue", "jchannon.csharpextensions", "jebbs.plantuml", "jeff-hykin.better-cpp-syntax", "jmrog.vscode-nuget-package-manager", "jock.svg", "johnpapa.Angular2", "johnpapa.angular-essentials", "johnpapa.angular2", "johnpapa.vscode-peacock", "johnpapa.winteriscoming", "johnstoncode.svn-scm", "jorgeserrano.vscode-csharp-snippets", "josetr.cmake-language-support-vscode", "jprestidge.theme-material-theme", "juanblanco.solidity", "julialang.language-julia", "junstyle.php-cs-fixer", "justusadam.language-haskell", "k--kato.docomment", "k--kato.intellij-idea-keybindings", "kamikillerto.vscode-colorize", "karigari.chat", "kevinrose.vsc-python-indent", "kisstkondoros.vscode-codemetrics", "kisstkondoros.vscode-gutter-preview", "kleber-swf.unity-code-snippets", "knisterpeter.vscode-github", "kokororin.vscode-phpfmt", "kreativ-software.csharpextensions", "kumar-harsh.graphql-for-vscode", "leetcode.vscode-leetcode", "leizongmin.node-module-intellisense", "lextudio.restructuredtext", "lihui.vs-color-picker", "littlefoxteam.vscode-python-test-adapter", "liviuschera.noctis", "liximomo.sftp", "llvm-vs-code-extensions.vscode-clangd", "lonefy.vscode-JS-CSS-HTML-formatter", "lonefy.vscode-js-css-html-formatter", "mads-hartmann.bash-ide-vscode", "magicstack.MagicPython", "magicstack.magicpython", "marlinfirmware.auto-build", "marus25.cortex-debug", "mathiasfrohlich.Kotlin", "mathiasfrohlich.kotlin", "mechatroner.rainbow-csv", "mehedidracula.php-namespace-resolver", "mgesbert.python-path", "mgmcdermott.vscode-language-babel", "mhutchie.git-graph", "michelemelluso.code-beautifier", "miguelsolorio.fluent-icons", "mikael.angular-beastcode", "mikestead.dotenv", "mindaro-dev.file-downloader", "miramac.vscode-exec-node", "misogi.ruby-rubocop", "mitaki28.vscode-clang", "mkaufman.HTMLHint", "mkaufman.htmlhint", "mkxml.vscode-filesize", "mohd-akram.vscode-html-format", "mohsen1.prettify-json", "mongodb.mongodb-vscode", "monokai.theme-monokai-pro-vscode", "mrcrowl.easy-less", "mrmlnc.vscode-apache", "mrmlnc.vscode-scss", "ms-azure-devops.azure-pipelines", "ms-azuretools.vscode-azureappservice", "ms-azuretools.vscode-azurefunctions", "ms-azuretools.vscode-azureresourcegroups", "ms-azuretools.vscode-azurestaticwebapps", "ms-azuretools.vscode-azurestorage", "ms-azuretools.vscode-azureterraform", "ms-azuretools.vscode-azurevirtualmachines", "ms-azuretools.vscode-bicep", "ms-azuretools.vscode-cosmosdb", "ms-azuretools.vscode-docker", "ms-ceintl.vscode-language-pack-de", "ms-ceintl.vscode-language-pack-es", "ms-ceintl.vscode-language-pack-fr", "ms-ceintl.vscode-language-pack-it", "ms-ceintl.vscode-language-pack-ja", "ms-ceintl.vscode-language-pack-ko", "ms-ceintl.vscode-language-pack-pl", "ms-ceintl.vscode-language-pack-pt-br", "ms-ceintl.vscode-language-pack-ru", "ms-ceintl.vscode-language-pack-tr", "ms-ceintl.vscode-language-pack-zh-hans", "ms-ceintl.vscode-language-pack-zh-hant", "ms-dotnettools.csharp", "ms-dotnettools.dotnet-interactive-vscode", "ms-dotnettools.vscode-dotnet-pack", "ms-dotnettools.vscode-dotnet-runtime", "ms-edgedevtools.vscode-edge-devtools", "ms-iot.vscode-ros", "ms-kubernetes-tools.vscode-kubernetes-tools", "ms-mssql.data-workspace-vscode", "ms-mssql.mssql", "ms-mssql.sql-bindings-vscode", "ms-mssql.sql-database-projects-vscode", "ms-python.black-formatter", "ms-python.isort", "ms-python.pylint", "ms-python.python", "ms-python.vscode-pylance", "ms-toolsai.jupyter", "ms-toolsai.jupyter-keymap", "ms-toolsai.jupyter-renderers", "ms-toolsai.vscode-ai", "ms-toolsai.vscode-ai-remote", "ms-toolsai.vscode-jupyter-cell-tags", "ms-toolsai.vscode-jupyter-slideshow", "ms-vscode-remote.remote-containers", "ms-vscode-remote.remote-ssh", "ms-vscode-remote.remote-ssh-edit", "ms-vscode-remote.remote-wsl", "ms-vscode-remote.vscode-remote-extensionpack", "ms-vscode.PowerShell", "ms-vscode.atom-keybindings", "ms-vscode.azure-account", "ms-vscode.azure-repos", "ms-vscode.azurecli", "ms-vscode.cmake-tools", "ms-vscode.cpptools", "ms-vscode.cpptools-extension-pack", "ms-vscode.cpptools-themes", "ms-vscode.hexeditor", "ms-vscode.js-debug-nightly", "ms-vscode.live-server", "ms-vscode.makefile-tools", "ms-vscode.mono-debug", "ms-vscode.notepadplusplus-keybindings", "ms-vscode.powershell", "ms-vscode.remote-explorer", "ms-vscode.remote-repositories", "ms-vscode.remote-server", "ms-vscode.sublime-keybindings", "ms-vscode.test-adapter-converter", "ms-vscode.vs-keybindings", "ms-vscode.vscode-node-azure-pack", "ms-vscode.vscode-typescript-next", "ms-vscode.vscode-typescript-tslint-plugin", "ms-vsliveshare.vsliveshare", "ms-vsliveshare.vsliveshare-audio", "msazurermtools.azurerm-vscode-tools", "mshr-h.VerilogHDL", "mshr-h.veriloghdl", "msjsdiag.vscode-react-native", "mtxr.sqltools", "mtxr.sqltools-driver-mysql", "mutantdino.resourcemonitor", "naco-siren.gradle-language", "natewallace.angular2-inline", "naumovs.color-highlight", "negokaz.live-server-preview", "neilbrayfield.php-docblocker", "nhoizey.gremlins", "njpwerner.autodocstring", "nrwl.angular-console", "nucllear.vscode-extension-auto-import", "octref.vetur", "oderwat.indent-rainbow", "onecentlin.laravel-blade", "onecentlin.laravel-extension-pack", "onecentlin.laravel5-snippets", "oracle.oracle-java", "orta.vscode-jest", "peakchen90.open-html-in-browser", "pflannery.vscode-versionlens", "pkief.material-icon-theme", "platformio.platformio-ide", "pmneo.tsimporter", "pnp.polacode", "pranaygp.vscode-css-peek", "prisma.prisma", "qinjia.view-in-browser", "qiu8310.minapp-vscode", "quicktype.quicktype", "qwtel.sqlite-viewer", "rangav.vscode-thunder-client", "rbbit.typescript-hero", "rebornix.Ruby", "rebornix.ruby", "redhat.fabric8-analytics", "redhat.java", "redhat.vscode-commons", "redhat.vscode-xml", "redhat.vscode-yaml", "reditorsupport.r", "rifi2k.format-html-in-php", "ritwickdey.LiveServer", "ritwickdey.live-sass", "ritwickdey.liveserver", "robbowen.synthwave-vscode", "rocketseat.theme-omni", "rodrigovallades.es7-react-js-snippets", "rogalmic.bash-debug", "rokoroku.vscode-theme-darcula", "rust-lang.rust", "rust-lang.rust-analyzer", "rvest.vs-code-prettier-eslint", "ryannaddy.laravel-artisan", "ryu1kn.partial-diff", "salesforce.salesforce-vscode-slds", "salesforce.salesforcedx-vscode", "salesforce.salesforcedx-vscode-apex", "salesforce.salesforcedx-vscode-apex-debugger", "salesforce.salesforcedx-vscode-apex-replay-debugger", "salesforce.salesforcedx-vscode-core", "salesforce.salesforcedx-vscode-lightning", "salesforce.salesforcedx-vscode-lwc", "salesforce.salesforcedx-vscode-soql", "salesforce.salesforcedx-vscode-visualforce", "samuelcolvin.jinjahtml", "scala-lang.scala", "sdras.night-owl", "sdras.vue-vscode-snippets", "serayuzgur.crates", "shakram02.bash-beautify", "shalldie.background", "shan.code-settings-sync", "shardulm94.trailing-spaces", "shd101wyy.markdown-preview-enhanced", "shopify.ruby-lsp", "shufo.vscode-blade-formatter", "sibiraj-s.vscode-scss-formatter", "sidthesloth.html5-boilerplate", "silvenon.mdx", "simonsiefke.svg-preview", "skyran.js-jsx-snippets", "sleistner.vscode-fileutils", "slevesque.shader", "solarliner.linux-themes", "sonarsource.sonarlint-vscode", "sophisticode.php-formatter", "spywhere.guides", "steoates.autoimport", "streetsidesoftware.code-spell-checker", "stringham.move-ts", "styled-components.vscode-styled-components", "stylelint.vscode-stylelint", "sumneko.lua", "svelte.svelte-vscode", "syler.sass-indented", "sysoev.language-stylus", "tabnine.tabnine-vscode", "tal7aouy.theme", "teabyii.ayu", "techer.open-in-browser", "thekalinga.bootstrap4-vscode", "tht13.html-preview-vscode", "tht13.python", "timonwong.shellcheck", "tinkertrain.theme-panda", "tobiah.unity-tools", "tombonnike.vscode-status-bar-format-toggle", "tomoki1207.pdf", "tonybaloney.vscode-pets", "tushortz.python-extended-snippets", "twxs.cmake", "tyriar.lorem-ipsum", "tyriar.sort-lines", "unity.unity-debug", "usernamehw.errorlens", "utsavm9.c-cpp-flag-debugging", "vadimcn.vscode-lldb", "vincaslt.highlight-matching-tag", "visualstudioexptteam.intellicode-api-usage-examples", "visualstudioexptteam.vscodeintellicode", "vmware.vscode-boot-dev-pack", "vmware.vscode-concourse", "vmware.vscode-manifest-yaml", "vmware.vscode-spring-boot", "vsciot-vscode.vscode-arduino", "vscjava.vscode-gradle", "vscjava.vscode-java-debug", "vscjava.vscode-java-dependency", "vscjava.vscode-java-pack", "vscjava.vscode-java-test", "vscjava.vscode-lombok", "vscjava.vscode-maven", "vscjava.vscode-spring-boot-dashboard", "vscjava.vscode-spring-initializr", "vscode-icons-team.vscode-icons", "vscodevim.vim", "vsls-contrib.gitdoc", "vue.volar", "vue.vscode-typescript-vue-plugin", "waderyan.gitblame", "waderyan.nodejs-extension-pack", "wakatime.vscode-wakatime", "wallabyjs.quokka-vscode", "wayou.vscode-todo-highlight", "wcwhitehead.bootstrap-3-snippets", "webfreak.debug", "wesbos.theme-cobalt2", "whatwedo.twig", "whensunset.chatgpt-china", "whizkydee.material-palenight-theme", "wholroyd.jinja", "wingrunr21.vscode-ruby", "wix.vscode-import-cost", "wmaurer.change-case", "wscats.cors-browser", "wscats.eno", "wwm.better-align", "xabikos.JavaScriptSnippets", "xabikos.ReactSnippets", "xabikos.javascriptsnippets", "xabikos.reactsnippets", "xaver.clang-format", "xdebug.php-debug", "xdebug.php-pack", "xyz.local-history", "yandeu.five-server", "yzane.markdown-pdf", "yzhang.markdown-all-in-one", "zaczero.bootstrap-v4-snippets", "zainchen.json", "zhuangtongfa.Material-theme", "zhuangtongfa.material-theme", "zignd.html-css-class-completion", "ziyasal.vscode-open-in-github", "zobo.php-intellisense", "zxh404.vscode-proto3" ]
       }
     }
   }, {
@@ -3785,7 +3830,7 @@
         "theme_name" : [ "{enum#look_and_feel}" ]
       },
       "enums" : {
-        "__event_id" : [ "switch.ui", "meet.new.ui.switch_theme", "meet.new.ui.action", "invite.banner.closed", "invite.banner.shown" ]
+        "__event_id" : [ "switch.ui", "meet.new.ui.switch_theme", "meet.new.ui.action", "invite.banner.closed", "invite.banner.shown", "islands.theme.off", "islands.theme.on" ]
       }
     }
   }, {
@@ -4153,7 +4198,8 @@
     "id" : "freeze.ui",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "1"
+      "from" : "1",
+      "to" : "3"
     } ],
     "rules" : {
       "event_id" : [ "{enum:freeze.popup.shown}" ]
@@ -4215,7 +4261,8 @@
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "code" : [ "{regexp#integer}" ],
-        "error" : [ "{enum:SEND|NOT_PERMITTED_SERVER|NOT_PERMITTED_USER|ERROR_IN_CONFIG|NOT_PERMITTED_TIMEOUT|NOTHING_TO_SEND|SENT_WITH_ERRORS|EXCEPTION_OCCURRED|NO_ARGUMENTS|NO_APPLICATION_CONFIG|IDE_NOT_CLOSING|ERROR_ON_SEND|NO_DEVICE_ID|NO_MACHINE_ID|INVALID_BUCKET|INVALID_REVISION|NO_LOG_FILES}", "{enum:EMPTY_CONTENT|INVALID_JSON|UNKNOWN|EMPTY_SERVICE_URL|UNREACHABLE_SERVICE|EMPTY_RESPONSE_BODY|ERROR_ON_LOAD}", "{enum:NO_LOGS|NO_UPLOADER|NO_LIBRARIES|NO_TEMP_FOLDER}", "{util#class_name}" ],
+        "dictionary_last_modified" : [ "{regexp#integer}" ],
+        "error" : [ "{enum:SEND|NOT_PERMITTED_SERVER|NOT_PERMITTED_USER|ERROR_IN_CONFIG|NOT_PERMITTED_TIMEOUT|NOTHING_TO_SEND|SENT_WITH_ERRORS|EXCEPTION_OCCURRED|NO_ARGUMENTS|NO_APPLICATION_CONFIG|IDE_NOT_CLOSING|ERROR_ON_SEND|NO_DEVICE_ID|NO_MACHINE_ID|INVALID_BUCKET|INVALID_REVISION|NO_LOG_FILES}", "{enum:NO_LOGS|NO_UPLOADER|NO_LIBRARIES|NO_TEMP_FOLDER}", "{util#class_name}", "{enum:EMPTY_CONTENT|INVALID_JSON|UNKNOWN|EMPTY_SERVICE_URL|UNREACHABLE_SERVICE|EMPTY_RESPONSE_BODY|ERROR_ON_LOAD|UNKNOWN_IO_ERROR}" ],
         "error_ts" : [ "{regexp#integer}" ],
         "errors" : [ "{regexp#integer}" ],
         "external" : [ "{enum#boolean}" ],
@@ -4235,7 +4282,7 @@
         "version" : [ "{regexp#version}" ]
       },
       "enums" : {
-        "__event_id" : [ "external.send.finished", "metadata.load.failed", "external.send.started", "metadata.updated", "external.send.command.creation.started", "logs.send", "metadata.loaded", "metadata.update.failed", "external.send.command.creation.finished", "loading.config.failed", "sent.logs.files.calculated" ]
+        "__event_id" : [ "external.send.finished", "metadata.load.failed", "external.send.started", "metadata.updated", "external.send.command.creation.started", "logs.send", "metadata.loaded", "metadata.update.failed", "external.send.command.creation.finished", "loading.config.failed", "sent.logs.files.calculated", "dictionaries.load.failed", "dictionaries.loaded", "dictionary.updated", "dictionary.update.failed" ]
       }
     },
     "anonymized_fields" : [ {
@@ -4619,25 +4666,38 @@
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
+        "applied_rank" : [ "{regexp#integer}" ],
         "cancelled" : [ "{enum#boolean}" ],
+        "count" : [ "{regexp#integer}" ],
         "domain" : [ "{enum:LITERALS|COMMENTS|DOCUMENTATION|PLAIN_TEXT|COMMIT_MESSAGE}" ],
+        "duration_ms" : [ "{regexp#integer}" ],
         "enabled" : [ "{enum#boolean}" ],
         "fixes" : [ "{regexp#count}", "{regexp#integer}" ],
+        "from" : [ "{enum:zh|ja|ko|en|fr|de|nl|it|pl|pt|ro|sk|es|ast|br|ca|da|eo|gl|ga|sl|sv|tl|el|km|ta|ar|fa|ru|uk|be|unknown}" ],
         "id" : [ "{enum#grazie_rule_long_ids}" ],
         "index" : [ "{regexp#integer}" ],
         "info" : [ "{regexp#fix_info}", "{enum#__info}" ],
         "lang" : [ "{util#lang}" ],
-        "language" : [ "{enum#__language}", "{enum:ko}" ],
+        "language" : [ "{enum:zh|ja|ko|en|fr|de|nl|it|pl|pt|ro|sk|es|ast|br|ca|da|eo|gl|ga|sl|sv|tl|el|km|ta|ar|fa|ru|uk|be|unknown}" ],
         "natural_language" : [ "{enum:CHINESE|JAPANESE|KOREAN|ENGLISH|FRENCH|GERMAN|DUTCH|ITALIAN|POLISH|PORTUGUESE|ROMANIAN|SLOVAK|SPANISH|ASTURIAN|BRETON|CATALAN|DANISH|ESPERANTO|GALICIAN|IRISH|SLOVENE|SWEDISH|TAGALOG|GREEK|KHMER|TAMIL|ARABIC|PERSIAN|RUSSIAN|UKRAINIAN|BELARUSIAN|UNKNOWN}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
-        "total" : [ "{regexp#integer}" ]
+        "range_length" : [ "{regexp#integer}" ],
+        "range_word_count" : [ "{regexp#integer}" ],
+        "rephrase_length" : [ "{regexp#integer}" ],
+        "rephrase_word_count" : [ "{regexp#integer}" ],
+        "sentence_length" : [ "{regexp#integer}" ],
+        "src_word_count" : [ "{regexp#integer}" ],
+        "suggestion_count" : [ "{regexp#integer}" ],
+        "to" : [ "{enum:zh|ja|ko|en|fr|de|nl|it|pl|pt|ro|sk|es|ast|br|ca|da|eo|gl|ga|sl|sv|tl|el|km|ta|ar|fa|ru|uk|be|unknown}" ],
+        "total" : [ "{regexp#integer}" ],
+        "translation_word_count" : [ "{regexp#integer}" ],
+        "word_count" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "language.detected", "typo.found", "quickfix.applied", "language.suggested", "quick.fix.invoked", "suggestion.shown", "suggestion.accepted", "exception.added", "settings.updated" ],
-        "__info" : [ "add.exception", "rule.settings:unmodified", "rule.settings:canceled", "rule.settings:changes:domains", "accept.suggestion", "rule.settings:changes:rules", "rule.settings:changes:languages", "rule.settings:changes:languages,rules", "rule.settings:changes:languages,domains", "rule.settings:changes:languages,domains,rules", "rule.settings:changes:unclassified", "rule.settings:changes:domains,rules" ],
-        "__language" : [ "unknown", "en", "ru", "fr", "de", "pl", "it", "zh", "ja", "uk", "el", "ro", "es", "pt", "sk", "fa", "nl", "km", "ast", "be", "sv", "gl", "eo", "ta", "br", "ar", "tl", "sl", "ga", "da", "ca" ]
+        "__event_id" : [ "language.detected", "typo.found", "quickfix.applied", "language.suggested", "quick.fix.invoked", "suggestion.shown", "suggestion.accepted", "exception.added", "settings.updated", "rephrase.rejected", "auto.fix.undone", "definition.shown", "translate.replaced", "auto.fix.applied", "definition.requested", "translate.requested", "rephrase.applied", "rephrase.requested", "rephrase.shown.empty" ],
+        "__info" : [ "add.exception", "rule.settings:unmodified", "rule.settings:canceled", "rule.settings:changes:domains", "accept.suggestion", "rule.settings:changes:rules", "rule.settings:changes:languages", "rule.settings:changes:languages,rules", "rule.settings:changes:languages,domains", "rule.settings:changes:languages,domains,rules", "rule.settings:changes:unclassified", "rule.settings:changes:domains,rules" ]
       },
       "regexps" : {
         "fix_info" : "accept\\.suggestion|add\\.exception|rule\\.settings:(canceled|unmodified|changes:(unclassified|(languages,?)?(domains,?)?(rules)?))"
@@ -4731,11 +4791,13 @@
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
+        "style" : [ "{enum:INFORMAL|UNSPECIFIED|PUBLIC|FORMAL|ACADEMIC}" ],
+        "type" : [ "{enum:LOCAL|CLOUD}" ],
         "userChange" : [ "{enum#state}" ],
         "value" : [ "{enum#__value}", "{enum:ko}" ]
       },
       "enums" : {
-        "__event_id" : [ "enabled.language", "native.language", "rule", "strategy", "checkingContext" ],
+        "__event_id" : [ "enabled.language", "native.language", "rule", "strategy", "checkingContext", "settings.writing.style", "settings.processing", "settings.auto.fix" ],
         "__value" : [ "en", "ru", "fr", "de", "pl", "it", "zh", "ja", "uk", "el", "ro", "es", "pt", "sk", "fa", "nl", "km", "ast", "be", "sv", "gl", "eo", "ta", "unknown", "br", "ar", "tl", "sl", "ga", "da", "ca" ]
       }
     }
@@ -4905,6 +4967,26 @@
         "plugins_updated" : [ "{regexp#integer}" ],
         "success" : [ "{enum#boolean}" ],
         "updates_prepared" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
+    "id" : "ide.plugins.rd.plugin.sync",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "client_plugins_to_sync" : [ "{regexp#integer}" ],
+        "client_restart_requested" : [ "{enum#boolean}" ],
+        "client_selected_plugins_to_sync" : [ "{regexp#integer}" ],
+        "host_plugins_to_sync" : [ "{regexp#integer}" ],
+        "host_restart_requested" : [ "{enum#boolean}" ],
+        "host_selected_plugins_to_sync" : [ "{regexp#integer}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "plugin.sync.started", "plugin.sync.completed", "plugin.sync.advice.shown", "plugin.sync.available.notification.shown", "plugin.auto.sync.started", "plugin.auto.sync.completed", "plugin.load.after.auto.sync.triggered", "restart.is.requested" ]
       }
     }
   }, {
@@ -5343,7 +5425,7 @@
         "enabled" : [ "{enum#boolean}" ],
         "enabled_globally" : [ "{enum#boolean}" ],
         "lang" : [ "{util#lang}" ],
-        "model" : [ "{enum#__model}", "{enum:sql.column.names.inlay.hints}", "{enum:spring.boot.generate.starters.gradle.kts|spring.boot.generate.starters.maven|spring.boot.generate.starters.gradle|python.dataframe.inlay.hints}", "{enum:rename}", "{enum:component.usage}", "{enum:cron.inlay}", "{enum:python.web.structure}", "{enum:change.signature}", "{enum:quarkus.edit.extensions.gradle|qs.edit.extensions.maven}", "{enum:quarkus.edit.extensions.gradle.kts}", "{enum:quarkus.edit.extensions.maven}", "{enum:go.implement.interface|vgo.update.dependencies}", "{enum:ktor.add.plugins.gradle|ktor.add.plugins.gradle.kts|ktor.add.plugins.maven}", "{enum:SpringPropertiesVisionProvider}", "{enum:spring.config.codevision}", "{enum:chain-method.hints|rust.type.hints|rust.value.range.exclusive.hints}", "{enum:GoAddMethodToInterfaceCodeVisionProvider}", "{enum:rust.implicit.hints}", "{enum:spring.boot.data.aot.method.query}", "{enum:kubernetes.port.forwarding}" ],
+        "model" : [ "{enum#__model}", "{enum:sql.column.names.inlay.hints}", "{enum:spring.boot.generate.starters.gradle.kts|spring.boot.generate.starters.maven|spring.boot.generate.starters.gradle|python.dataframe.inlay.hints}", "{enum:rename}", "{enum:component.usage}", "{enum:cron.inlay}", "{enum:python.web.structure}", "{enum:change.signature}", "{enum:quarkus.edit.extensions.gradle|qs.edit.extensions.maven}", "{enum:quarkus.edit.extensions.gradle.kts}", "{enum:quarkus.edit.extensions.maven}", "{enum:go.implement.interface|vgo.update.dependencies}", "{enum:ktor.add.plugins.gradle|ktor.add.plugins.gradle.kts|ktor.add.plugins.maven}", "{enum:SpringPropertiesVisionProvider}", "{enum:spring.config.codevision}", "{enum:chain-method.hints|rust.type.hints|rust.value.range.exclusive.hints}", "{enum:GoAddMethodToInterfaceCodeVisionProvider}", "{enum:rust.implicit.hints}", "{enum:spring.boot.data.aot.method.query}", "{enum:kubernetes.port.forwarding}", "{enum:kotlin.compiler.plugins.declarations}", "{enum:java.configuration}", "{enum:spring.boot.generate.starters.amper}" ],
         "option_id" : [ "{enum#__option_id}", "{enum:ruby.parameter.name.reflected.in.method.name|kotlin.values.ranges}", "{enum:js.only.show.names.for.literal.args|ts.param.hints.show.names.for.literal.args|vuejs.show.names.for.literal.args|angular.show.names.for.literal.args}", "{enum:derefs_if_borrowed|mutable_borrows|immutable_borrows}" ],
         "option_value" : [ "{enum#boolean}" ]
       },
@@ -5930,10 +6012,15 @@
         "cellStatus" : [ "{enum:STOPPED_OK|STOPPED_ERR|RUNNING|UNDEFINED}" ],
         "cell_code_count" : [ "{regexp#integer}" ],
         "cell_count" : [ "{regexp#integer}" ],
+        "cell_data_wrangler_count" : [ "{regexp#integer}" ],
+        "cell_import_count" : [ "{regexp#integer}" ],
         "cell_markdown_count" : [ "{regexp#integer}" ],
         "cell_sql_count" : [ "{regexp#integer}" ],
+        "cell_visualization_count" : [ "{regexp#integer}" ],
         "cell_with_tags_count" : [ "{regexp#integer}" ],
         "changedTo" : [ "{enum#boolean}" ],
+        "debug_runner" : [ "{util#class_name}" ],
+        "debug_runner_provider" : [ "{util#class_name}" ],
         "dialogCalledFrom" : [ "{enum:CONTEXT_MENU|INLAY_BUTTON}" ],
         "durationChangedTo" : [ "{regexp#integer}" ],
         "durationSeconds" : [ "{regexp#integer}" ],
@@ -5944,10 +6031,13 @@
         "isManagement" : [ "{enum#boolean}" ],
         "isSuccess" : [ "{enum#boolean}" ],
         "memory_used_kb" : [ "{regexp#integer}" ],
-        "mimeType" : [ "{enum:TEXT_HTML|TEXT_PLAIN|TEXT_MARKDOWN|APPLICATION_JAVASCRIPT|APPLICATION_JSON|IMAGE_PNG|IMAGE_JPG|IMAGE_SVG|WIDGET_VIEW|GIF|LATEX|DEBUG|GEO_JSON|VDOM_PATTERN|VND_PATTERN|EMPTY|UNKNOWN}" ],
+        "mimeType" : [ "{enum:TEXT_HTML|TEXT_PLAIN|TEXT_MARKDOWN|APPLICATION_JAVASCRIPT|APPLICATION_JSON|IMAGE_PNG|IMAGE_JPG|IMAGE_SVG|WIDGET_VIEW|GIF|LATEX|DEBUG|GEO_JSON|VDOM_PATTERN|VND_PATTERN|EMPTY|UNKNOWN}", "{enum:IMAGE_BMP|KOTLIN_DATAFRAME|LETS_PLOT}" ],
         "notebook_size_kb" : [ "{regexp#integer}" ],
         "numberLines" : [ "{regexp#integer}" ],
         "output_type" : [ "{enum:BROWSER|CONSOLE_TABLE|EAGER_TENSOR|ERROR|EXTERNAL_TABLE|GENERIC_TABLE|HF_DATASET|IMAGE|JSON|KOTLIN_DATAFRAME|LETS_PLOT|MARKDOWN|NUMPY_ARRAY|PANDAS_DATA_FRAME|PANDAS_SERIES|POLARS_DATA_FRAME|POLARS_SERIES|PYSPARK_TABLE|RESOURCE_VARIABLE|R_MARKDOWN|SPARSE_TENSOR|SVG|SWING_COMPONENT|TEST|TEXT|TORCH_TENSOR|UNKNOWN}", "{enum:NUMPY_RECARRAY}" ],
+        "plugin" : [ "{util#plugin}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{util#plugin_version}" ],
         "post_editor_init_load_time_ms" : [ "{regexp#integer}" ],
         "result" : [ "{enum:TAG_ADDED|CANCEL}" ],
         "resultType" : [ "{enum:ERROR|OK}", "{enum:RUN_DIALOG}" ],
@@ -5959,7 +6049,7 @@
         "widget" : [ "{enum:BQOLOT|THREEJS|PLOTLY|CATBOOST|YGRAPHS|IPYVOLUME|LEAFLET|MATPLOTLIB|VUE|VUETIFY|DATAWIDGETS|OTHER}" ]
       },
       "enums" : {
-        "__event_id" : [ "widget.error.load", "notebook.loaded.time", "notebook.loaded.memory", "widget.loaded", "showed.output", "notebook.opened", "file.download.from.cef", "link.to.cell.in.output.is.clicked", "execution.finished", "execution.finished.error", "server.connection.result", "jupyter.install.package", "jupyter.cell.finished.notification.setting.changed", "jupyter.cell.remove.tag", "jupyter.click.goto.button", "jupyter.cell.finished.notification.duration.changed", "jupyter.cell.finished.notification.clicked", "jupyter.cell.add.tag.event", "jupyter.cell.finished.notification.shown", "jupyter.interrupt.kernel", "jupyter.console.open", "jupyter.run.selection.in.console", "jupyter.cell.cef.update.error", "jupyter.restored.remote.session" ]
+        "__event_id" : [ "widget.error.load", "notebook.loaded.time", "notebook.loaded.memory", "widget.loaded", "showed.output", "notebook.opened", "file.download.from.cef", "link.to.cell.in.output.is.clicked", "execution.finished", "execution.finished.error", "server.connection.result", "jupyter.install.package", "jupyter.cell.finished.notification.setting.changed", "jupyter.cell.remove.tag", "jupyter.click.goto.button", "jupyter.cell.finished.notification.duration.changed", "jupyter.cell.finished.notification.clicked", "jupyter.cell.add.tag.event", "jupyter.cell.finished.notification.shown", "jupyter.interrupt.kernel", "jupyter.console.open", "jupyter.run.selection.in.console", "jupyter.cell.cef.update.error", "jupyter.restored.remote.session", "jupyter.debug.runner.selected", "jupyter.restart.kernel", "jupyter.cell.copy.output.image" ]
       }
     }
   }, {
@@ -6106,6 +6196,101 @@
       "event_data" : {
         "based_on" : [ "{enum#keymaps}" ],
         "keymap_name" : [ "{enum#keymaps}" ]
+      }
+    }
+  }, {
+    "id" : "kmp.compose",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:compose.cmp.used}" ],
+      "event_data" : {
+        "allPlatforms" : [ "{enum:Android|Jvm|Ios|WasmJs|Js|Ktor|Native|Unknown}" ],
+        "cmpPlatforms" : [ "{enum:Android|Jvm|Ios|WasmJs|Js|Ktor|Native|Unknown}" ]
+      }
+    }
+  }, {
+    "id" : "kmp.compose.project",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:compose.cmp.usage.checked}" ],
+      "event_data" : {
+        "allPlatforms" : [ "{enum:Android|Jvm|Ios|WasmJs|Js|Ktor|Native|Unknown}" ],
+        "cmpPlatforms" : [ "{enum:Android|Jvm|Ios|WasmJs|Js|Ktor|Native|Unknown}" ]
+      }
+    }
+  }, {
+    "id" : "kmp.import",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:import.succeeded|import.started|import.failed}" ],
+      "event_data" : {
+        "exceptionClass" : [ "{util#class_name}" ],
+        "platform" : [ "{enum:Android|Jvm|Ios|WasmJs|Js|Ktor|Native|Unknown}" ],
+        "plugin" : [ "{util#plugin}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{util#plugin_version}" ],
+        "target" : [ "{enum:Jvm|Desktop|WasmJs|Wasm|JS|Native|AndroidX64|AndroidX86|AndroidArm32|AndroidArm64|IosArm64|IosX64|IosSimulatorArm64|WatchosArm32|WatchosArm64|WatchosX64|WatchosSimulatorArm64|WatchosDeviceArm64|TvosArm64|TvosX64|TvosSimulatorArm64|LinuxX64|MingwX64|MacosX64|MacosArm64|LinuxArm64|Unknown}" ]
+      }
+    }
+  }, {
+    "id" : "kmp.import.project",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:kmp.usage.checked}" ],
+      "event_data" : {
+        "platform" : [ "{enum:Android|Jvm|Ios|WasmJs|Js|Ktor|Native|Unknown}" ],
+        "target" : [ "{enum:Jvm|Desktop|WasmJs|Wasm|JS|Native|AndroidX64|AndroidX86|AndroidArm32|AndroidArm64|IosArm64|IosX64|IosSimulatorArm64|WatchosArm32|WatchosArm64|WatchosX64|WatchosSimulatorArm64|WatchosDeviceArm64|TvosArm64|TvosX64|TvosSimulatorArm64|LinuxX64|MingwX64|MacosX64|MacosArm64|LinuxArm64|Unknown}" ]
+      }
+    }
+  }, {
+    "id" : "kmp.kdoctor",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:started|fix.launched|finished}" ],
+      "event_data" : {
+        "diagnostic_status" : [ "{enum:OK|INFORMATION|WARNING|ERROR}" ],
+        "fix_key" : [ "{enum:Test|LaunchXcode|DownloadAppleSimulatorRuntime|AcceptXcodeLicense|ConfigureXcode|FirstLaunchXcode|CreateSimulator|FixGradlePermission|GetXcodeFromAppStore|OpenAndroidSdkManager|OpenAndroidDeviceManager|InstallAndroidSdk}" ]
+      }
+    }
+  }, {
+    "id" : "kmp.run_config",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "exceptionClass" : [ "{util#class_name}" ],
+        "executor" : [ "{util#kmp_run_config_executor}" ],
+        "finishedType" : [ "{enum:Terminated|FailedToStart}" ],
+        "is_device" : [ "{enum#boolean}" ],
+        "jvm" : [ "{enum:Jvm|Desktop}" ],
+        "plugin" : [ "{util#plugin}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{util#plugin_version}" ],
+        "sdk" : [ "{enum:macosx|iphoneos|iphonesimulator|appletvos|appletvsimulator|watchos|watchsimulator}" ],
+        "target" : [ "{enum:Jvm|Desktop|WasmJs|Js|Gradle|Ktor|Compose|Apple|Android|Unknown}" ],
+        "version" : [ "{regexp#version}" ],
+        "web" : [ "{enum:WasmJs|Js}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "run.configuration.finished", "run.configuration.compose.finished", "run.configuration.gradle.started", "run.configuration.apple.finished", "run.configuration.ktor.started", "run.configuration.apple.started", "run.configuration.jvm.started", "run.configuration.ktor.finished", "run.configuration.web.started", "run.configuration.android.finished", "run.configuration.unknown.finished", "run.configuration.jvm.finished", "run.configuration.android.started", "run.configuration.gradle.finished", "run.configuration.compose.started", "run.configuration.web.finished", "run.configuration.unknown.started" ]
       }
     }
   }, {
@@ -6300,6 +6485,8 @@
         "kotlin_compilation_failed" : [ "{enum#boolean}" ],
         "kotlin_compiler_version" : [ "{regexp#version}", "{regexp:(\\d+).(\\d+).(\\d+)-?(dev|snapshot|m\\d?|rc\\d?)?}", "{regexp:(\\d+).(\\d+).(\\d+)-?(dev|snapshot|m\\d?|rc\\d?|beta\\d?)?}" ],
         "kotlin_coroutines_version" : [ "{regexp#version}", "{regexp:(\\d+).(\\d+).(\\d+)-?(dev|snapshot|m\\d?|rc\\d?)?}", "{regexp:(\\d+).(\\d+).(\\d+)-?(dev|snapshot|m\\d?|rc\\d?|beta\\d?)?}" ],
+        "kotlin_cross_compilation_disabled" : [ "{enum#boolean}" ],
+        "kotlin_cross_compilation_not_supported" : [ "{enum#boolean}" ],
         "kotlin_incremental_fir_runner_enabled" : [ "{enum#boolean}" ],
         "kotlin_incremental_native_enabled" : [ "{enum#boolean}" ],
         "kotlin_js_plugin_enabled" : [ "{enum#boolean}" ],
@@ -6720,7 +6907,7 @@
         "isMPP" : [ "{enum#boolean}" ],
         "languageLevel" : [ "{regexp#version}" ],
         "languageVersion" : [ "{regexp#float}" ],
-        "nonDefaultLanguageFeatures" : [ "{enum:TypeAliases|BoundCallableReferences|LocalDelegatedProperties|TopLevelSealedInheritance|AdditionalBuiltInsMembers|DataClassInheritance|InlineProperties|DestructuringLambdaParameters|SingleUnderscoreForParameterName|DslMarkersSupport|UnderscoresInNumericLiterals|DivisionByZeroInConstantExpressions|InlineConstVals|OperatorRem|OperatorProvideDelegate|ShortSyntaxForPropertyGetters|RefinedSamAdaptersPriority|SafeCallBoundSmartCasts|TypeInferenceOnGenericsForCallableReferences|NoDelegationToJavaDefaultInterfaceMembers|DefaultImportOfPackageKotlinComparisons|Coroutines|InlineDefaultFunctionalParameters|SoundSmartCastsAfterTry|DeprecatedFieldForInvisibleCompanionObject|NullabilityAssertionOnExtensionReceiver|SafeCastCheckBoundSmartCasts|CapturedInClosureSmartCasts|LateinitTopLevelProperties|LateinitLocalVariables|InnerClassInEnumEntryClass|CallableReferencesToClassMembersWithEmptyLHS|ThrowNpeOnExplicitEqualsForBoxedNull|JvmPackageName|AssigningArraysToVarargsInNamedFormInAnnotations|ExpectedTypeFromCast|DefaultMethodsCallFromJava6TargetError|RestrictionOfValReassignmentViaBackingField|NestedClassesInEnumEntryShouldBeInner|ProhibitDataClassesOverridingCopy|RestrictionOfWrongAnnotationsWithUseSiteTargetsOnTypes|ProhibitInnerClassesOfGenericClassExtendingThrowable|ProperForInArrayLoopRangeVariableAssignmentSemantic|NestedClassesInAnnotations|JvmStaticInInterface|JvmFieldInInterface|ProhibitVisibilityOfNestedClassifiersFromSupertypesOfCompanion|ProhibitNonConstValuesAsVarargsInAnnotations|ReleaseCoroutines|ReadDeserializedContracts|UseReturnsEffect|UseCallsInPlaceEffect|AllowContractsForCustomFunctions|VariableDeclarationInWhenSubject|ProhibitLocalAnnotations|ProhibitSmartcastsOnLocalDelegatedProperty|ProhibitOperatorMod|ProhibitAssigningSingleElementsToVarargsInNamedForm|FunctionTypesWithBigArity|RestrictRetentionForExpressionAnnotations|NormalizeConstructorCalls|StrictJavaNullabilityAssertions|SoundSmartcastForEnumEntries|ProhibitErroneousExpressionsInAnnotationsWithUseSiteTargets|NewCapturedReceiverFieldNamingConvention|ExtendedMainConvention|ExperimentalBuilderInference|InlineClasses|DslMarkerOnFunctionTypeReceiver|RestrictReturnStatementTarget|NoConstantValueAttributeForNonConstVals|WarningOnMainUnusedParameter|PolymorphicSignature|ProhibitConcurrentHashMapContains|ProhibitTypeParametersForLocalVariables|ProhibitJvmOverloadsOnConstructorsOfAnnotationClasses|ProhibitTypeParametersInAnonymousObjects|ProperInlineFromHigherPlatformDiagnostic|ProhibitRepeatedUseSiteTargetAnnotations|ProhibitUseSiteTargetAnnotationsOnSuperTypes|ProhibitTypeParametersInClassLiteralsInAnnotationArguments|ProhibitComparisonOfIncompatibleEnums|BareArrayClassLiteral|ProhibitGenericArrayClassLiteral|NonParenthesizedAnnotationsOnFunctionalTypes|UseGetterNameForPropertyAnnotationsMethodOnJvm|AllowBreakAndContinueInsideWhen|MixedNamedArgumentsInTheirOwnPosition|ProhibitTailrecOnVirtualMember|ProperComputationOrderOfTailrecDefaultParameters|TrailingCommas|ProhibitProtectedCallFromInline|ProperFinally|AllowAssigningArrayElementsToVarargsInNamedFormForFunctions|AllowNullOperatorsForResult|PreferJavaFieldOverload|AllowContractsForNonOverridableMembers|AllowReifiedGenericsInContracts|ProperVisibilityForCompanionObjectInstanceField|DoNotGenerateThrowsForDelegatedKotlinMembers|ProperIeee754Comparisons|FunctionalInterfaceConversion|GenerateJvmOverloadsAsFinal|MangleClassMembersReturningInlineClasses|ImproveReportingDiagnosticsOnProtectedMembersOfBaseClass|NewInference|SamConversionForKotlinFunctions|SamConversionPerArgument|FunctionReferenceWithDefaultValueAsOtherType|OverloadResolutionByLambdaReturnType|ContractsOnCallsWithImplicitReceiver|ProhibitSpreadOnSignaturePolymorphicCall|ProhibitInvisibleAbstractMethodsInSuperclasses|ProhibitNonReifiedArraysAsReifiedTypeArguments|ProhibitVarargAsArrayAfterSamArgument|CorrectSourceMappingSyntax|ProperArrayConventionSetterWithDefaultCalls|AdaptedCallableReferenceAgainstReflectiveType|InferenceCompatibility|RequiredPrimaryConstructorDelegationCallInEnums|ApproximateAnonymousReturnTypesInPrivateInlineFunctions|ForbidReferencingToUnderscoreNamedParameterOfCatchBlock|UseCorrectExecutionOrderForVarargArguments|JvmRecordSupport|AllowNullOperatorsForResultAndResultReturnTypeByDefault|AllowSealedInheritorsInDifferentFilesOfSamePackage|SealedInterfaces|JvmIrEnabledByDefault|JvmInlineValueClasses|SuspendFunctionsInFunInterfaces|SamWrapperClassesAreSynthetic|StrictOnlyInputTypesChecks|ProhibitJvmFieldOnOverrideFromInterfaceInPrimaryConstructor|PrivateInFileEffectiveVisibility|ProhibitSelfCallsInNestedObjects|ProperCheckAnnotationsTargetInTypeUsePositions|SuspendFunctionAsSupertype|UnrestrictedBuilderInference|ClassTypeParameterAnnotations|TypeInferenceOnCallsWithSelfTypes|WarnAboutNonExhaustiveWhenOnAlgebraicTypes|InstantiationOfAnnotationClasses|OptInContagiousSignatures|RepeatableAnnotations|RepeatableAnnotationContainerConstraints|UseBuilderInferenceOnlyIfNeeded|SuspendConversion|ProhibitSuperCallsFromPublicInline|ProhibitProtectedConstructorCallFromPublicInline|TypeEnhancementImprovementsInStrictMode|OptInRelease|ProhibitNonExhaustiveWhenOnAlgebraicTypes|UseBuilderInferenceWithoutAnnotation|ProhibitSmartcastsOnPropertyFromAlienBaseClass|ProhibitInvalidCharsInNativeIdentifiers|DefinitelyNonNullableTypes|ProhibitSimplificationOfNonTrivialConstBooleanExpressions|SafeCallsAreAlwaysNullable|JvmPermittedSubclassesAttributeForSealed|ProperTypeInferenceConstraintsProcessing|ForbidExposingTypesInPrimaryConstructorProperties|PartiallySpecifiedTypeArguments|EliminateAmbiguitiesWithExternalTypeParameters|EliminateAmbiguitiesOnInheritedSamInterfaces|ConsiderExtensionReceiverFromConstrainsInLambda|ProperInternalVisibilityCheckInImportingScope|InlineClassImplementationByDelegation|QualifiedSupertypeMayBeExtendedByOtherSupertype|YieldIsNoMoreReserved|NoDeprecationOnDeprecatedEnumEntries|ProhibitQualifiedAccessToUninitializedEnumEntry|ForbidRecursiveDelegateExpressions|KotlinFunInterfaceConstructorReference|SuspendOnlySamConversions|DontLoseDiagnosticsDuringOverloadResolutionByReturnType|ProhibitConfusingSyntaxInWhenBranches|UseConsistentRulesForPrivateConstructorsOfSealedClasses|ProgressionsChangingResolve|AbstractClassMemberNotImplementedWithIntermediateAbstractClass|ForbidSuperDelegationToAbstractAnyMethod|ProperEqualityChecksInBuilderInferenceCalls|ProhibitNonExhaustiveIfInRhsOfElvis|ReportMissingUpperBoundsViolatedErrorOnAbbreviationAtSupertypes|ForbidUsingExtensionPropertyTypeParameterInDelegate|SynchronizedSuspendError|ReportNonVarargSpreadOnGenericCalls|RangeUntilOperator|GenericInlineClassParameter|ProhibitIllegalValueParameterUsageInDefaultArguments|ProhibitConstructorCallOnFunctionalSupertype|ProhibitArrayLiteralsInCompanionOfAnnotation|ProhibitCyclesInAnnotations|ForbidExtensionFunctionTypeOnNonFunctionTypes|ProhibitEnumDeclaringClass|StopPropagatingDeprecationThroughOverrides|ReportTypeVarianceConflictOnQualifierArguments|ReportErrorsOnRecursiveTypeInsidePlusAssignment|ForbidExtensionCallsOnInlineFunctionalParameters|SkipStandaloneScriptsInSourceRoots|ModifierNonBuiltinSuspendFunError|EnumEntries|ForbidSuperDelegationToAbstractFakeOverride|DataObjects|ProhibitAccessToEnumCompanionMembersInEnumConstructorCall|RefineTypeCheckingOnAssignmentsToJavaFields|ValueClassesSecondaryConstructorWithBody|NativeJsProhibitLateinitIsInitializedIntrinsicWithoutPrivateAccess|TakeIntoAccountEffectivelyFinalInMustBeInitializedCheck|ProhibitUsingNullableTypeParameterAgainstNotNullAnnotated|NoSourceCodeInNotNullAssertionExceptions|MultiplatformRestrictions|EnhanceNullabilityOfPrimitiveArrays|AllowEmptyIntersectionsInResultTypeResolver|ProhibitSmartcastsOnPropertyFromAlienBaseClassInheritedInInvisibleClass|ForbidInferringPostponedTypeVariableIntoDeclaredUpperBound|ProhibitUseSiteGetTargetAnnotations|KeepNullabilityWhenApproximatingLocalType|ProhibitAccessToInvisibleSetterFromDerivedClass|ProhibitOpenValDeferredInitialization|SupportEffectivelyFinalInExpectActualVisibilityCheck|ProhibitMissedMustBeInitializedWhenThereIsNoPrimaryConstructor|MangleCallsToJavaMethodsWithValueClasses|ProhibitDefaultArgumentsInExpectActualizedByFakeOverride|DisableCompatibilityModeForNewInference|DfaBooleanVariables|LightweightLambdas|ObjCSignatureOverrideAnnotation|ProhibitImplementingVarByInheritedVal|PrioritizedEnumEntries|ProhibitInlineModifierOnPrimaryConstructorParameters|ProhibitSingleNamedFunctionAsExpression|ForbidLambdaParameterWithMissingDependencyType|JsAllowInvalidCharsIdentifiersEscaping|SupportJavaErrorEnhancementOfArgumentsOfWarningLevelEnhanced|ProhibitPrivateOperatorCallInInline|ProhibitTypealiasAsCallableQualifierInImport|JsExternalPropertyParameters|CorrectSpecificityCheckForSignedAndUnsigned|AllowAccessToProtectedFieldFromSuperCompanion|CheckLambdaAgainstTypeVariableContradictionInResolution|ProperUninitializedEnumEntryAccessAnalysis|ImprovedCapturedTypeApproximationInInference|ImprovedVarianceInCst|InferMoreImplicationsFromBooleanExpressions|ImprovedExhaustivenessChecksIn21|ProhibitSynchronizationByValueClassesAndPrimitives|AllowSuperCallToJavaInterface|ProhibitJavaClassInheritingPrivateKotlinClass|ProhibitReturningIncorrectNullabilityValuesFromSamConstructorLambdaOfJdkInterfaces|ProhibitNothingAsCatchParameter|NullableNothingInReifiedPosition|AvoidApproximationOfRecursiveCapturedTypesWithNoReason|PCLAEnhancementsIn21|InferenceEnhancementsIn21|ErrorAboutDataClassCopyVisibilityChange|BreakContinueInInlineLambdas|UnstableSmartcastOnDelegatedProperties|ReferencesToSyntheticJavaProperties|ForbidUsingExpressionTypesWithInaccessibleContent|ForbidUsingSupertypesWithInaccessibleContentInTypeArguments|ReportExposedTypeForMoreCasesOfTypeParameterBounds|ForbidReifiedTypeParametersOnTypeAliases|ForbidProjectionsInAnnotationProperties|ForbidJvmAnnotationsOnAnnotationParameters|ForbidFieldAnnotationsOnAnnotationParameters|ForbidParenthesizedLhsInAssignments|ProhibitConstructorAndSupertypeOnTypealiasWithTypeProjection|ForbidCompanionInLocalInnerClass|ForbidImplementationByDelegationWithDifferentGenericSignature|ForbidJvmSerializableLambdaOnInlinedFunctionLiterals|ExpectActualClasses|DataClassCopyRespectsConstructorVisibility|DirectJavaActualization|IgnoreNullabilityForErasedValueParameters|NoBuilderInferenceWithoutAnnotationRestriction|ReportErrorsForComparisonOperators|NoAdditionalErrorsInK1DiagnosticReporter|ProhibitScriptTopLevelInnerClasses|ForbidExposureOfPrivateTypesInNonPrivateInlineFunctionsInKlibs|JsEnableExtensionFunctionInExternals|PackagePrivateFileClassesWithAllPrivateMembers|MultiPlatformProjects|ProhibitComparisonOfIncompatibleClasses|ProhibitAllMultipleDefaultsInheritedFromSupertypes|ProhibitIntersectionReifiedTypeParameter|ExplicitBackingFields|FunctionalTypeWithExtensionAsSupertype|JsAllowValueClassesInExternals|ContextReceivers|ValueClasses|JavaSamConversionEqualsHashCode|UnitConversionsOnArbitraryExpressions|JsAllowImplementingFunctionInterface|CustomEqualsInValueClasses|InlineLateinit|EnableDfaWarningsInK2|ContractSyntaxV2|ImplicitSignedToUnsignedIntegerConversion|ForbidInferringTypeVariablesIntoEmptyIntersection|IntrinsicConstEvaluation|DisableCheckingChangedProgressionsResolve|ContextSensitiveEnumResolutionInWhen|ForbidSyntheticPropertiesWithoutBaseJavaGetter|JavaTypeParameterDefaultRepresentationWithDNN|ProperFieldAccessGenerationForFieldAccessShadowedByKotlinProperty|WhenGuards|MultiDollarInterpolation|IrInlinerBeforeKlibSerialization}", "{enum:ElvisInferenceImprovementsIn21}", "{enum:ConsiderForkPointsWhenCheckingContradictions}", "{enum:CallableReferenceOverloadResolutionInLambda|ContextParameters}", "{enum:ForbidInferOfInvisibleTypeAsReifiedOrVararg|NestedTypeAliases}", "{enum:ProhibitGenericQualifiersOnConstructorCalls|AvoidWrongOptimizationOfTypeOperatorsOnValueClasses|DontCreateSyntheticPropertiesWithoutBaseJavaGetter}", "{enum:PropertyParamAnnotationDefaultTargetMode|AnnotationDefaultTargetMigrationWarning}", "{enum:AllowDnnTypeOverridingFlexibleType|AnnotationAllUseSiteTarget|StricterConstraintIncorporationRecursionDetector}", "{enum#__nonDefaultLanguageFeatures}", "{enum:ForkIsNotSuccessfulWhenNoBranchIsSuccessful|ContextSensitiveResolutionUsingExpectedType}", "{enum:JvmDefaultEnableByDefault}", "{enum:IrRichCallableReferencesInKlibs}", "{enum:DoNotRunSuspendConversionForLambdaReturnStatements|ForbidExposingLessVisibleTypesInInline}", "{enum:DataFlowBasedExhaustiveness}", "{enum:ForbidCaptureInlinableLambdasInJsCode}", "{enum:DontIgnoreUpperBoundViolatedOnImplicitArguments}", "{enum:ForbidInitializationBeforeDeclarationInAnonymous}", "{enum:AllowReifiedTypeInCatchClause|HoldsInContracts|ConditionImpliesReturnsContracts}", "{enum:ForbidGetSetValueWithTooManyParameters}", "{enum:InferenceEnhancementsIn23}", "{enum:JsAllowLongInExportedDeclarations|CheckOptInOnPureEnumEntries|ForbidExposingPackagePrivateInInternal|AllowAnyAsAnActualTypeForExpectInterface}" ],
+        "nonDefaultLanguageFeatures" : [ "{enum#language_feature}" ],
         "platform" : [ "{enum:jvm|js|native|common}", "{enum:jvm|jvm.android|js|common|native.unknown|unknown|native.android_x64|native.android_x86|native.android_arm32|native.android_arm64|native.ios_arm32|native.ios_arm64|native.ios_x64|native.watchos_arm32|native.watchos_arm64|native.watchos_x86|native.watchos_x64|native.tvos_arm64|native.tvos_x64|native.linux_x64|native.mingw_x86|native.mingw_x64|native.macos_x64|native.linux_arm64|native.linux_arm32_hfp|native.linux_mips32|native.linux_mipsel32|native.wasm32}", "{enum:native.macos_arm64}", "{enum:native.ios_simulator_arm64|native.watchos_simulator_arm64|native.tvos_simulator_arm64}", "{enum:native.watchos_device_arm64}", "{enum:wasm}", "{enum:wasm.js|wasm.wasi|wasm.unknown}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
@@ -6728,7 +6915,7 @@
         "system" : [ "{enum:JPS|Maven|Gradle|unknown}" ]
       },
       "enums" : {
-        "__nonDefaultLanguageFeatures" : [ "DontMakeExplicitJavaTypeArgumentsFlexible", "PreferDependentTypeVariablesWithProperArgumentConstraint", "ForbidEnumEntryNamedEntries", "AllowEagerSupertypeAccessibilityChecks", "ResolveTopLevelLambdasAsSyntheticCallArgument", "ReportExposedTypeForInternalTypeParameterBounds", "ProhibitNullableTypeThroughTypealias", "AnnotationsInMetadata", "DisableWarningsForValueBasedJavaClasses", "UnnamedLocalVariables", "DisableWarningsForIdentitySensitiveOperationsOnValueClassesAndPrimitives", "ForbidAnnotationsWithUseSiteTargetOnExpressions", "ExpectRefinement", "JvmIndyAllowLambdasWithAnnotations", "AllowExpectDeclarationsInJsExport", "ImplicitJvmExposeBoxed", "ForbidCrossFileIrFieldAccessInKlibs", "FixationEnhancementsIn22", "ExportKlibToOlderAbiVersion", "ForbidInferOfInvisibleTypeAsReifiedVarargOrReturnType", "AllowContractsOnSomeOperators", "AllowContractsOnPropertyAccessors", "ForbidObjectDelegationToItself", "AllowCheckForErasedTypesInContracts", "DiscriminateSuspendInOverloadResolution", "PreciseSimplificationToFlexibleLowerConstraint", "AllowReturnInExpressionBodyWithExplicitType", "ParseLambdaWithSuspendModifier", "ForbidReturnInExpressionBodyWithoutExplicitTypeEdgeCases", "EnableNameBasedDestructuringShortForm", "NameBasedDestructuring", "DeprecateNameMismatchInShortDestructuringWithParentheses", "CapturedTypeApproximationReworked", "ForbidInlineEnumEntries", "CheckPackageInfoNullnessAnnotations" ]
+        "language_feature" : [ "AbstractClassMemberNotImplementedWithIntermediateAbstractClass", "AdaptedCallableReferenceAgainstReflectiveType", "AdditionalBuiltInsMembers", "AllowAccessToProtectedFieldFromSuperCompanion", "AllowAnyAsAnActualTypeForExpectInterface", "AllowAssigningArrayElementsToVarargsInNamedFormForFunctions", "AllowBreakAndContinueInsideWhen", "AllowCallingJavaOpenSealedClassConstructor", "AllowCheckForErasedTypesInContracts", "AllowContractsForCustomFunctions", "AllowContractsForNonOverridableMembers", "AllowContractsOnPropertyAccessors", "AllowContractsOnSomeOperators", "AllowDnnTypeOverridingFlexibleType", "AllowEagerSupertypeAccessibilityChecks", "AllowEmptyIntersectionsInResultTypeResolver", "AllowExpectDeclarationsInJsExport", "AllowNullOperatorsForResult", "AllowNullOperatorsForResultAndResultReturnTypeByDefault", "AllowReifiedGenericsInContracts", "AllowReifiedTypeInCatchClause", "AllowReturnInExpressionBodyWithExplicitType", "AllowSealedInheritorsInDifferentFilesOfSamePackage", "AllowSuperCallToJavaInterface", "AnnotationAllUseSiteTarget", "AnnotationDefaultTargetMigrationWarning", "AnnotationsInMetadata", "ApproximateAnonymousReturnTypesInPrivateInlineFunctions", "AssigningArraysToVarargsInNamedFormInAnnotations", "AvoidApproximationOfRecursiveCapturedTypesWithNoReason", "AvoidWrongOptimizationOfTypeOperatorsOnValueClasses", "BareArrayClassLiteral", "BoundCallableReferences", "BreakContinueInInlineLambdas", "CallableReferenceOverloadResolutionInLambda", "CallableReferencesToClassMembersWithEmptyLHS", "CapturedInClosureSmartCasts", "CapturedTypeApproximationReworked", "CheckLambdaAgainstTypeVariableContradictionInResolution", "CheckOptInOnPureEnumEntries", "CheckPackageInfoNullnessAnnotations", "ClassTypeParameterAnnotations", "ConditionImpliesReturnsContracts", "ConsiderExtensionReceiverFromConstrainsInLambda", "ConsiderForkPointsWhenCheckingContradictions", "ContextParameters", "ContextReceivers", "ContextSensitiveEnumResolutionInWhen", "ContextSensitiveResolutionUsingExpectedType", "ContractSyntaxV2", "ContractsOnCallsWithImplicitReceiver", "Coroutines", "CorrectSourceMappingSyntax", "CorrectSpecificityCheckForSignedAndUnsigned", "CustomEqualsInValueClasses", "DataClassCopyRespectsConstructorVisibility", "DataClassInheritance", "DataFlowBasedExhaustiveness", "DataObjects", "DefaultImportOfPackageKotlinComparisons", "DefaultMethodsCallFromJava6TargetError", "DefinitelyNonNullableTypes", "DeprecateNameMismatchInShortDestructuringWithParentheses", "DeprecatedFieldForInvisibleCompanionObject", "DestructuringLambdaParameters", "DfaBooleanVariables", "DirectJavaActualization", "DisableCheckingChangedProgressionsResolve", "DisableCompatibilityModeForNewInference", "DisableWarningsForIdentitySensitiveOperationsOnValueClassesAndPrimitives", "DisableWarningsForValueBasedJavaClasses", "DiscriminateSuspendInOverloadResolution", "DivisionByZeroInConstantExpressions", "DoNotGenerateThrowsForDelegatedKotlinMembers", "DoNotRunSuspendConversionForLambdaReturnStatements", "DontCreateSyntheticPropertiesWithoutBaseJavaGetter", "DontIgnoreUpperBoundViolatedOnImplicitArguments", "DontLoseDiagnosticsDuringOverloadResolutionByReturnType", "DontMakeExplicitJavaTypeArgumentsFlexible", "DslMarkerOnFunctionTypeReceiver", "DslMarkersSupport", "EliminateAmbiguitiesOnInheritedSamInterfaces", "EliminateAmbiguitiesWithExternalTypeParameters", "ElvisInferenceImprovementsIn21", "EnableDfaWarningsInK2", "EnableNameBasedDestructuringShortForm", "EnhanceNullabilityOfPrimitiveArrays", "EnumEntries", "ErrorAboutDataClassCopyVisibilityChange", "ExpectActualClasses", "ExpectRefinement", "ExpectedTypeFromCast", "ExperimentalBuilderInference", "ExplicitBackingFields", "ExportKlibToOlderAbiVersion", "ExtendedMainConvention", "FixationEnhancementsIn22", "ForbidAnnotationsWithUseSiteTargetOnExpressions", "ForbidCaptureInlinableLambdasInJsCode", "ForbidCompanionInLocalInnerClass", "ForbidCrossFileIrFieldAccessInKlibs", "ForbidEnumEntryNamedEntries", "ForbidExposingLessVisibleTypesInInline", "ForbidExposingPackagePrivateInInternal", "ForbidExposingTypesInPrimaryConstructorProperties", "ForbidExposureOfPrivateTypesInNonPrivateInlineFunctionsInKlibs", "ForbidExtensionCallsOnInlineFunctionalParameters", "ForbidExtensionFunctionTypeOnNonFunctionTypes", "ForbidFieldAnnotationsOnAnnotationParameters", "ForbidGetSetValueWithTooManyParameters", "ForbidImplementationByDelegationWithDifferentGenericSignature", "ForbidImplicitTypeAnnotationWithMissingDependency", "ForbidInferOfInvisibleTypeAsReifiedOrVararg", "ForbidInferOfInvisibleTypeAsReifiedVarargOrReturnType", "ForbidInferringPostponedTypeVariableIntoDeclaredUpperBound", "ForbidInferringTypeVariablesIntoEmptyIntersection", "ForbidInitializationBeforeDeclarationInAnonymous", "ForbidInlineEnumEntries", "ForbidJvmAnnotationsOnAnnotationParameters", "ForbidJvmSerializableLambdaOnInlinedFunctionLiterals", "ForbidLambdaParameterWithMissingDependencyType", "ForbidObjectDelegationToItself", "ForbidParenthesizedLhsInAssignments", "ForbidProjectionsInAnnotationProperties", "ForbidRecursiveDelegateExpressions", "ForbidReferencingToUnderscoreNamedParameterOfCatchBlock", "ForbidReifiedTypeParametersOnTypeAliases", "ForbidReturnInExpressionBodyWithoutExplicitTypeEdgeCases", "ForbidSuperDelegationToAbstractAnyMethod", "ForbidSuperDelegationToAbstractFakeOverride", "ForbidSyntheticPropertiesWithoutBaseJavaGetter", "ForbidTypeAliasWithMissingDependencyType", "ForbidUpperBoundsViolationOnTypeOperatorAndParameterBounds", "ForbidUsingExpressionTypesWithInaccessibleContent", "ForbidUsingExtensionPropertyTypeParameterInDelegate", "ForbidUsingSupertypesWithInaccessibleContentInTypeArguments", "ForkIsNotSuccessfulWhenNoBranchIsSuccessful", "FunctionReferenceWithDefaultValueAsOtherType", "FunctionTypesWithBigArity", "FunctionalInterfaceConversion", "FunctionalTypeWithExtensionAsSupertype", "GenerateJvmOverloadsAsFinal", "GenericInlineClassParameter", "HoldsInContracts", "IgnoreNullabilityForErasedValueParameters", "ImplicitJvmExposeBoxed", "ImplicitSignedToUnsignedIntegerConversion", "ImproveReportingDiagnosticsOnProtectedMembersOfBaseClass", "ImprovedCapturedTypeApproximationInInference", "ImprovedExhaustivenessChecksIn21", "ImprovedVarianceInCst", "InferMoreImplicationsFromBooleanExpressions", "InferenceCompatibility", "InferenceEnhancementsIn21", "InferenceEnhancementsIn23", "InlineClassImplementationByDelegation", "InlineClasses", "InlineConstVals", "InlineDefaultFunctionalParameters", "InlineLateinit", "InlineProperties", "InnerClassInEnumEntryClass", "InstantiationOfAnnotationClasses", "IntrinsicConstEvaluation", "IrCrossModuleInlinerBeforeKlibSerialization", "IrInlinerBeforeKlibSerialization", "IrIntraModuleInlinerBeforeKlibSerialization", "IrRichCallableReferencesInKlibs", "JavaSamConversionEqualsHashCode", "JavaTypeParameterDefaultRepresentationWithDNN", "JsAllowImplementingFunctionInterface", "JsAllowInvalidCharsIdentifiersEscaping", "JsAllowLongInExportedDeclarations", "JsAllowValueClassesInExternals", "JsEnableExtensionFunctionInExternals", "JsExternalPropertyParameters", "JvmDefaultEnableByDefault", "JvmFieldInInterface", "JvmIndyAllowLambdasWithAnnotations", "JvmInlineValueClasses", "JvmIrEnabledByDefault", "JvmNullOutSpilledCoroutineLocals", "JvmPackageName", "JvmPermittedSubclassesAttributeForSealed", "JvmRecordSupport", "JvmStaticInInterface", "KeepNullabilityWhenApproximatingLocalType", "KotlinFunInterfaceConstructorReference", "LateinitLocalVariables", "LateinitTopLevelProperties", "LightweightLambdas", "LocalDelegatedProperties", "MangleCallsToJavaMethodsWithValueClasses", "MangleClassMembersReturningInlineClasses", "MixedNamedArgumentsInTheirOwnPosition", "ModifierNonBuiltinSuspendFunError", "MultiDollarInterpolation", "MultiPlatformProjects", "MultiplatformRestrictions", "NameBasedDestructuring", "NativeJsProhibitLateinitIsInitializedIntrinsicWithoutPrivateAccess", "NestedClassesInAnnotations", "NestedClassesInEnumEntryShouldBeInner", "NestedTypeAliases", "NewCapturedReceiverFieldNamingConvention", "NewInference", "NoAdditionalErrorsInK1DiagnosticReporter", "NoBuilderInferenceWithoutAnnotationRestriction", "NoConstantValueAttributeForNonConstVals", "NoDelegationToJavaDefaultInterfaceMembers", "NoDeprecationOnDeprecatedEnumEntries", "NoSourceCodeInNotNullAssertionExceptions", "NonParenthesizedAnnotationsOnFunctionalTypes", "NormalizeConstructorCalls", "NullabilityAssertionOnExtensionReceiver", "NullableNothingInReifiedPosition", "ObjCSignatureOverrideAnnotation", "OperatorProvideDelegate", "OperatorRem", "OptInContagiousSignatures", "OptInRelease", "OverloadResolutionByLambdaReturnType", "PCLAEnhancementsIn21", "PackagePrivateFileClassesWithAllPrivateMembers", "ParseLambdaWithSuspendModifier", "PartiallySpecifiedTypeArguments", "PolymorphicSignature", "PreciseSimplificationToFlexibleLowerConstraint", "PreferDependentTypeVariablesWithProperArgumentConstraint", "PreferJavaFieldOverload", "PrioritizedEnumEntries", "PrivateInFileEffectiveVisibility", "ProgressionsChangingResolve", "ProhibitAccessToEnumCompanionMembersInEnumConstructorCall", "ProhibitAccessToInvisibleSetterFromDerivedClass", "ProhibitAllMultipleDefaultsInheritedFromSupertypes", "ProhibitArrayLiteralsInCompanionOfAnnotation", "ProhibitAssigningSingleElementsToVarargsInNamedForm", "ProhibitComparisonOfIncompatibleClasses", "ProhibitComparisonOfIncompatibleEnums", "ProhibitConcurrentHashMapContains", "ProhibitConfusingSyntaxInWhenBranches", "ProhibitConstructorAndSupertypeOnTypealiasWithTypeProjection", "ProhibitConstructorCallOnFunctionalSupertype", "ProhibitCyclesInAnnotations", "ProhibitDataClassesOverridingCopy", "ProhibitDefaultArgumentsInExpectActualizedByFakeOverride", "ProhibitEnumDeclaringClass", "ProhibitErroneousExpressionsInAnnotationsWithUseSiteTargets", "ProhibitGenericArrayClassLiteral", "ProhibitGenericQualifiersOnConstructorCalls", "ProhibitIllegalValueParameterUsageInDefaultArguments", "ProhibitImplementingVarByInheritedVal", "ProhibitInlineModifierOnPrimaryConstructorParameters", "ProhibitInnerClassesOfGenericClassExtendingThrowable", "ProhibitIntersectionReifiedTypeParameter", "ProhibitInvalidCharsInNativeIdentifiers", "ProhibitInvisibleAbstractMethodsInSuperclasses", "ProhibitJavaClassInheritingPrivateKotlinClass", "ProhibitJvmFieldOnOverrideFromInterfaceInPrimaryConstructor", "ProhibitJvmOverloadsOnConstructorsOfAnnotationClasses", "ProhibitLocalAnnotations", "ProhibitMissedMustBeInitializedWhenThereIsNoPrimaryConstructor", "ProhibitNonConstValuesAsVarargsInAnnotations", "ProhibitNonExhaustiveIfInRhsOfElvis", "ProhibitNonExhaustiveWhenOnAlgebraicTypes", "ProhibitNonReifiedArraysAsReifiedTypeArguments", "ProhibitNothingAsCatchParameter", "ProhibitNullableTypeThroughTypealias", "ProhibitOpenValDeferredInitialization", "ProhibitOperatorMod", "ProhibitPrivateOperatorCallInInline", "ProhibitProtectedCallFromInline", "ProhibitProtectedConstructorCallFromPublicInline", "ProhibitQualifiedAccessToUninitializedEnumEntry", "ProhibitRepeatedUseSiteTargetAnnotations", "ProhibitReturningIncorrectNullabilityValuesFromSamConstructorLambdaOfJdkInterfaces", "ProhibitScriptTopLevelInnerClasses", "ProhibitSelfCallsInNestedObjects", "ProhibitSimplificationOfNonTrivialConstBooleanExpressions", "ProhibitSingleNamedFunctionAsExpression", "ProhibitSmartcastsOnLocalDelegatedProperty", "ProhibitSmartcastsOnPropertyFromAlienBaseClass", "ProhibitSmartcastsOnPropertyFromAlienBaseClassInheritedInInvisibleClass", "ProhibitSpreadOnSignaturePolymorphicCall", "ProhibitSuperCallsFromPublicInline", "ProhibitSynchronizationByValueClassesAndPrimitives", "ProhibitTailrecOnVirtualMember", "ProhibitTypeParametersForLocalVariables", "ProhibitTypeParametersInAnonymousObjects", "ProhibitTypeParametersInClassLiteralsInAnnotationArguments", "ProhibitTypealiasAsCallableQualifierInImport", "ProhibitUseSiteGetTargetAnnotations", "ProhibitUseSiteTargetAnnotationsOnSuperTypes", "ProhibitUsingNullableTypeParameterAgainstNotNullAnnotated", "ProhibitVarargAsArrayAfterSamArgument", "ProhibitVisibilityOfNestedClassifiersFromSupertypesOfCompanion", "ProperArrayConventionSetterWithDefaultCalls", "ProperCheckAnnotationsTargetInTypeUsePositions", "ProperComputationOrderOfTailrecDefaultParameters", "ProperEqualityChecksInBuilderInferenceCalls", "ProperExhaustivenessCheckForJavaOpenSealedClass", "ProperFieldAccessGenerationForFieldAccessShadowedByKotlinProperty", "ProperFinally", "ProperForInArrayLoopRangeVariableAssignmentSemantic", "ProperIeee754Comparisons", "ProperInlineFromHigherPlatformDiagnostic", "ProperInternalVisibilityCheckInImportingScope", "ProperTypeInferenceConstraintsProcessing", "ProperUninitializedEnumEntryAccessAnalysis", "ProperVisibilityForCompanionObjectInstanceField", "PropertyParamAnnotationDefaultTargetMode", "QualifiedSupertypeMayBeExtendedByOtherSupertype", "RangeUntilOperator", "ReadDeserializedContracts", "ReferencesToSyntheticJavaProperties", "RefineTypeCheckingOnAssignmentsToJavaFields", "RefinedSamAdaptersPriority", "ReleaseCoroutines", "RepeatableAnnotationContainerConstraints", "RepeatableAnnotations", "ReportErrorsForComparisonOperators", "ReportErrorsOnRecursiveTypeInsidePlusAssignment", "ReportExposedTypeForInternalTypeParameterBounds", "ReportExposedTypeForMoreCasesOfTypeParameterBounds", "ReportMissingUpperBoundsViolatedErrorOnAbbreviationAtSupertypes", "ReportNonVarargSpreadOnGenericCalls", "ReportTypeVarianceConflictOnQualifierArguments", "RequiredPrimaryConstructorDelegationCallInEnums", "ResolveTopLevelLambdasAsSyntheticCallArgument", "RestrictRetentionForExpressionAnnotations", "RestrictReturnStatementTarget", "RestrictionOfValReassignmentViaBackingField", "RestrictionOfWrongAnnotationsWithUseSiteTargetsOnTypes", "SafeCallBoundSmartCasts", "SafeCallsAreAlwaysNullable", "SafeCastCheckBoundSmartCasts", "SamConversionForKotlinFunctions", "SamConversionPerArgument", "SamWrapperClassesAreSynthetic", "SealedInterfaces", "ShortSyntaxForPropertyGetters", "SingleUnderscoreForParameterName", "SkipStandaloneScriptsInSourceRoots", "SoundSmartCastsAfterTry", "SoundSmartcastForEnumEntries", "StopPropagatingDeprecationThroughOverrides", "StrictJavaNullabilityAssertions", "StrictOnlyInputTypesChecks", "StricterConstraintIncorporationRecursionDetector", "SupportEffectivelyFinalInExpectActualVisibilityCheck", "SupportJavaErrorEnhancementOfArgumentsOfWarningLevelEnhanced", "SuspendConversion", "SuspendFunctionAsSupertype", "SuspendFunctionsInFunInterfaces", "SuspendOnlySamConversions", "SynchronizedSuspendError", "TakeIntoAccountEffectivelyFinalInMustBeInitializedCheck", "ThrowNpeOnExplicitEqualsForBoxedNull", "TopLevelSealedInheritance", "TrailingCommas", "TurnTypeCheckWarningsIntoErrors", "TypeAliases", "TypeEnhancementImprovementsInStrictMode", "TypeInferenceOnCallsWithSelfTypes", "TypeInferenceOnGenericsForCallableReferences", "UnderscoresInNumericLiterals", "UnitConversionsOnArbitraryExpressions", "UnnamedLocalVariables", "UnrestrictedBuilderInference", "UnstableSmartcastOnDelegatedProperties", "UseBuilderInferenceOnlyIfNeeded", "UseBuilderInferenceWithoutAnnotation", "UseCallsInPlaceEffect", "UseConsistentRulesForPrivateConstructorsOfSealedClasses", "UseCorrectExecutionOrderForVarargArguments", "UseGetterNameForPropertyAnnotationsMethodOnJvm", "UseReturnsEffect", "ValueClasses", "ValueClassesSecondaryConstructorWithBody", "VariableDeclarationInWhenSubject", "WarnAboutNonExhaustiveWhenOnAlgebraicTypes", "WarningOnMainUnusedParameter", "WhenGuards", "YieldIsNoMoreReserved", "JsAllowExportingSuspendFunctions", "JsStaticInInterface", "ImprovedExhaustivenessChecksIn23" ]
       }
     }
   }, {
@@ -6857,7 +7044,7 @@
         "result" : [ "{enum#boolean}" ]
       },
       "enums" : {
-        "__event_id" : [ "navigation.gutter.label.container", "inspection.remove.duplicate.envvar", "completion.kind", "completion.label.key", "completion.schema", "telepresence.action.triggered", "action.triggered", "service.view.selected", "watch.api.action.triggered", "telepresence.add.tunnel.for.debug.dialog.shown.started", "telepresence.add.tunnel.for.debug.dialog.shown.finished", "telepresence.create.interception.prelaunch.task.started.edited", "telepresence.add.tunnel.for.debug.dialog.shown.stage", "telepresence.create.interception.prelaunch.task.performed", "logs.api.action.triggered", "watch.api.usage", "logs.patterns.count" ]
+        "__event_id" : [ "navigation.gutter.label.container", "inspection.remove.duplicate.envvar", "completion.kind", "completion.label.key", "completion.schema", "telepresence.action.triggered", "action.triggered", "service.view.selected", "watch.api.action.triggered", "telepresence.add.tunnel.for.debug.dialog.shown.started", "telepresence.add.tunnel.for.debug.dialog.shown.finished", "telepresence.create.interception.prelaunch.task.started.edited", "telepresence.add.tunnel.for.debug.dialog.shown.stage", "telepresence.create.interception.prelaunch.task.performed", "logs.api.action.triggered", "watch.api.usage", "logs.patterns.count", "helmfile.values.completion.inline", "helmfile.values.completion" ]
       }
     }
   }, {
@@ -6982,7 +7169,7 @@
         "total_duration_ms" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "ide.error", "ide.freeze", "ide.start", "ide.close", "project.opening.finished", "project.opened", "project.closed", "frame.activated", "frame.deactivated", "project.module.attached", "project.frame.selected", "ide.crash.detected", "protocol.open.command.handled", "ide.deadlock.detected", "project.closed.and.disposed", "early.errors", "ide.freeze.ignored.plugin", "ide.freeze.reported.plugin", "ide.freeze.detected.plugin" ],
+        "__event_id" : [ "ide.error", "ide.freeze", "ide.start", "ide.close", "project.opening.finished", "project.opened", "project.closed", "frame.activated", "frame.deactivated", "project.module.attached", "project.frame.selected", "ide.crash.detected", "protocol.open.command.handled", "ide.deadlock.detected", "project.closed.and.disposed", "early.errors", "ide.freeze.ignored.plugin", "ide.freeze.reported.plugin", "ide.freeze.detected.plugin", "freeze.popup.shown" ],
         "__memory_error_kind" : [ "heap", "min_heap", "perm_gen", "metaspace", "code_cache" ]
       }
     }
@@ -7141,7 +7328,7 @@
         "initial_context_size" : [ "{regexp#integer}" ],
         "prompt_init_size_chars" : [ "{regexp#integer}" ],
         "prompt_limit_tokens" : [ "{regexp#integer}" ],
-        "prompt_source" : [ "{enum:TOKENIZE_USER_INPUT_TASK|CLASSIFY_USERS_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEM_PROMPT_ID_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_TASK|MAKE_WEB_SEARCH_REQUEST_TASK|SUMMARIZE_WEB_SEARCH_RAW_CONTENT_TASK|SUMMARIZE_CONTEXT_ITEM_TASK|COMMIT_TASK_CHAT_BUILDER|LLM_BASE_COMMIT_MESSAGE|LOCAL_CHANGES_ENDPOINT|SLIDING_WINDOW|SLIDING_WINDOW_MESSAGES_WITHIN_TOK_LIMIT|VCS_ENDPOINT|ABSTRACT_CHAT_ACTION_ON_DATA_FRAME_ACTION|ABSTRACT_CHAT_INTENTION|CHAT_INTENTION_TASK|JUPYTER_CREATE_CHAT_AND_SEND_MESSAGE|PY_GENERATE_CHARTS_FOR_DATAFRAME_TASK|JUPYTER_BUILD_CHAT|DESCRIPTION_ENSURE_SOFT_TOKENS_LIMIT|WRITE_DOCUMENTATION_CODE_SNIPPET|FUNCTION_RESPONSE_TOKEN_LIMIT|LLM_COMMIT_MESSAGE_ACTION|LLM_REWORD_COMMIT_ACTION|CODE_DEPENDENCY_COLLECTOR|FILE_SIZE_EXCEEDED_WITHOUT_SUMMARIZATION|FILE_SIZE_EXCEEDED_TO_BE_ATTACHMENT|FILE_SIZE_EXCEEDED_CHAT_INTENTION_CANDIDATE|WRITE_DOCUMENTATION_EXAMPLE_DECLARATION_SIZE|WRITE_DOCUMENTATION_EXAMPLE_DOCUMENTATION_SIZE|CLASSIFY_CHAT_TASK|EDITOR_MODIFICATION_PROMPT_BUILDER_DEFAULT|EDITOR_MODIFICATION_PROMPT_BUILDER_FILE_INFORMATION|GENERATE_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_COMMIT_SUMMARY_TASK_USER|GENERATE_COMMIT_SUMMARY_TASK_COMMIT_MESSAGE|GENERATE_USER_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_USER_COMMIT_SUMMARY_TASK_USER|SHELVE_TITLE_TASK|LLM_GENERATE_MICROSERVICES_EXAMPLE_ACTION|JUPYTER_DATA_RETRIEVER_CODE|JUPYTER_DATA_RETRIEVER_OUTPUT|GO_CODE_CONTEXT|GO_NAME_SUGGESTION_CONTEXT|VGO_CODE_CONTEXT|GO_TESTS_PROMPT_GENERATOR|PYTHON_FUNCTION_FULL_CONTEXT_FUNCTION_TEXT|PYTHON_FUNCTION_FULL_CONTEXT_CLASS_TEXT|PYTHON_CLASS_SIGNATURE|PYTHON_DECLARATIONS_FOR_DEPENDENCY_VARIABLES|PYTHON_CODE_CONTEXT_USAGES|PYTHON_TEST_PROMPT_BUILD_CLASS_DESCRIPTION|PYTHON_JUPYTER_TEXT_ENDPOINT|JVM_STACKTRACE_CONTEXT_PROVIDER}", "{enum:CHAT_CONTEXT_TRIMMING}", "{enum:FOLDER_SIZE_EXCEEDED_TO_BE_ATTACHMENT}", "{enum:TOKENIZE_USER_INPUT_TASK|CLASSIFY_USERS_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEM_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEMS_PROMPT_ID_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_WITH_HISTORY_TASK|MAKE_WEB_SEARCH_REQUEST_TASK|SUMMARIZE_WEB_SEARCH_RAW_CONTENT_TASK|SUMMARIZE_CONTEXT_ITEM_TASK|REQUEST_REQUIRED_CLASSES_TASK|COMMIT_TASK_CHAT_BUILDER|LLM_BASE_COMMIT_MESSAGE|LOCAL_CHANGES_ENDPOINT|SLIDING_WINDOW|SLIDING_WINDOW_MESSAGES_WITHIN_TOK_LIMIT|VCS_ENDPOINT|APPLY_AI_RULE_TASK|ABSTRACT_CHAT_ACTION_ON_DATA_FRAME_ACTION|ABSTRACT_CHAT_INTENTION|CHAT_INTENTION_TASK|JUPYTER_CREATE_CHAT_AND_SEND_MESSAGE|PY_GENERATE_CHARTS_FOR_DATAFRAME_TASK|JUPYTER_BUILD_CHAT|DESCRIPTION_ENSURE_SOFT_TOKENS_LIMIT|WRITE_DOCUMENTATION_CODE_SNIPPET|FUNCTION_RESPONSE_TOKEN_LIMIT|LLM_COMMIT_MESSAGE_ACTION|LLM_REWORD_COMMIT_ACTION|COMMIT_MESSAGE_COMPLETION|CODE_DEPENDENCY_COLLECTOR|CURRENT_FILE_CONTEXT_ATTACHMENT|AUTOMATICALLY_ATTACHED_FILE_CONTEXT|MANUALLY_ATTACHED_FILE_CONTEXT|DIRECTORY_STRUCTURE_ATTACHED_CONTEXT|FILE_SIZE_EXCEEDED_WITHOUT_SUMMARIZATION|FILE_SIZE_EXCEEDED_TO_BE_ATTACHMENT|WRITE_DOCUMENTATION_EXAMPLE_DECLARATION_SIZE|WRITE_DOCUMENTATION_EXAMPLE_DOCUMENTATION_SIZE|CLASSIFY_CHAT_TASK|EDITOR_MODIFICATION_PROMPT_BUILDER_DEFAULT|EDITOR_MODIFICATION_PROMPT_BUILDER_FILE_INFORMATION|GENERATE_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_COMMIT_SUMMARY_TASK_USER|GENERATE_COMMIT_SUMMARY_TASK_COMMIT_MESSAGE|GENERATE_USER_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_USER_COMMIT_SUMMARY_TASK_USER|SHELVE_TITLE_TASK|IMAGE_CODE_TITLE_TASK|LLM_GENERATE_MICROSERVICES_EXAMPLE_ACTION|JUPYTER_DATA_RETRIEVER_CODE|JUPYTER_DATA_RETRIEVER_OUTPUT|GO_CODE_CONTEXT|GO_NAME_SUGGESTION_CONTEXT|VGO_CODE_CONTEXT|GO_TESTS_PROMPT_GENERATOR|PYTHON_FUNCTION_FULL_CONTEXT_FUNCTION_TEXT|PYTHON_FUNCTION_FULL_CONTEXT_CLASS_TEXT|PYTHON_CLASS_SIGNATURE|PYTHON_DECLARATIONS_FOR_DEPENDENCY_VARIABLES|PYTHON_CODE_CONTEXT_USAGES|PYTHON_TEST_PROMPT_BUILD_CLASS_DESCRIPTION|PYTHON_JUPYTER_TEXT_ENDPOINT|JVM_STACKTRACE_CONTEXT_PROVIDER}", "{enum:TOKENIZE_USER_INPUT_TASK|CLASSIFY_USERS_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEM_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEMS_PROMPT_ID_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_WITH_HISTORY_TASK|MAKE_WEB_SEARCH_REQUEST_TASK|SUMMARIZE_WEB_SEARCH_RAW_CONTENT_TASK|SUMMARIZE_CONTEXT_ITEM_TASK|REQUEST_REQUIRED_CLASSES_TASK|COMMIT_TASK_CHAT_BUILDER|LLM_BASE_COMMIT_MESSAGE|LOCAL_CHANGES_ENDPOINT|SLIDING_WINDOW|SLIDING_WINDOW_MESSAGES_WITHIN_TOK_LIMIT|VCS_ENDPOINT|APPLY_AI_RULE_TASK|ABSTRACT_CHAT_ACTION_ON_DATA_FRAME_ACTION|ABSTRACT_CHAT_INTENTION|CHAT_INTENTION_TASK|JUPYTER_CREATE_CHAT_AND_SEND_MESSAGE|PY_GENERATE_CHARTS_FOR_DATAFRAME_TASK|JUPYTER_BUILD_CHAT|DESCRIPTION_ENSURE_SOFT_TOKENS_LIMIT|WRITE_DOCUMENTATION_CODE_SNIPPET|FUNCTION_RESPONSE_TOKEN_LIMIT|LLM_COMMIT_MESSAGE_ACTION|LLM_REWORD_COMMIT_ACTION|COMMIT_MESSAGE_COMPLETION|CODE_DEPENDENCY_COLLECTOR|CURRENT_FILE_CONTEXT_ATTACHMENT|AUTOMATICALLY_ATTACHED_FILE_CONTEXT|MANUALLY_ATTACHED_FILE_CONTEXT|DIRECTORY_STRUCTURE_ATTACHED_CONTEXT|GENERIC_FILE_CONTEXT_ATTACHMENT|SELECTION_CONTEXT_ATTACHMENT|FILE_SIZE_EXCEEDED_WITHOUT_SUMMARIZATION|WRITE_DOCUMENTATION_EXAMPLE_DECLARATION_SIZE|WRITE_DOCUMENTATION_EXAMPLE_DOCUMENTATION_SIZE|CLASSIFY_CHAT_TASK|EDITOR_MODIFICATION_PROMPT_BUILDER_DEFAULT|EDITOR_MODIFICATION_PROMPT_BUILDER_FILE_INFORMATION|GENERATE_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_COMMIT_SUMMARY_TASK_USER|GENERATE_COMMIT_SUMMARY_TASK_COMMIT_MESSAGE|GENERATE_USER_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_USER_COMMIT_SUMMARY_TASK_USER|SHELVE_TITLE_TASK|IMAGE_CODE_TITLE_TASK|LLM_GENERATE_MICROSERVICES_EXAMPLE_ACTION|JUPYTER_DATA_RETRIEVER_CODE|JUPYTER_DATA_RETRIEVER_OUTPUT|GO_CODE_CONTEXT|GO_NAME_SUGGESTION_CONTEXT|VGO_CODE_CONTEXT|GO_TESTS_PROMPT_GENERATOR|PYTHON_FUNCTION_FULL_CONTEXT_FUNCTION_TEXT|PYTHON_FUNCTION_FULL_CONTEXT_CLASS_TEXT|PYTHON_CLASS_SIGNATURE|PYTHON_DECLARATIONS_FOR_DEPENDENCY_VARIABLES|PYTHON_CODE_CONTEXT_USAGES|PYTHON_TEST_PROMPT_BUILD_CLASS_DESCRIPTION|PYTHON_JUPYTER_TEXT_ENDPOINT|JVM_STACKTRACE_CONTEXT_PROVIDER}", "{enum:REGULAR_TEXT_CONTEXT_ATTACHMENT}", "{enum:UI_PICKER_CONTEXT_ATTACHMENT|AUTOLOADED_UI_PICKER_CONTEXT_ATTACHMENT}", "{enum:PROJECT_VIEW_CONTEXT_ATTACHMENT}" ],
+        "prompt_source" : [ "{enum:TOKENIZE_USER_INPUT_TASK|CLASSIFY_USERS_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEM_PROMPT_ID_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_TASK|MAKE_WEB_SEARCH_REQUEST_TASK|SUMMARIZE_WEB_SEARCH_RAW_CONTENT_TASK|SUMMARIZE_CONTEXT_ITEM_TASK|COMMIT_TASK_CHAT_BUILDER|LLM_BASE_COMMIT_MESSAGE|LOCAL_CHANGES_ENDPOINT|SLIDING_WINDOW|SLIDING_WINDOW_MESSAGES_WITHIN_TOK_LIMIT|VCS_ENDPOINT|ABSTRACT_CHAT_ACTION_ON_DATA_FRAME_ACTION|ABSTRACT_CHAT_INTENTION|CHAT_INTENTION_TASK|JUPYTER_CREATE_CHAT_AND_SEND_MESSAGE|PY_GENERATE_CHARTS_FOR_DATAFRAME_TASK|JUPYTER_BUILD_CHAT|DESCRIPTION_ENSURE_SOFT_TOKENS_LIMIT|WRITE_DOCUMENTATION_CODE_SNIPPET|FUNCTION_RESPONSE_TOKEN_LIMIT|LLM_COMMIT_MESSAGE_ACTION|LLM_REWORD_COMMIT_ACTION|CODE_DEPENDENCY_COLLECTOR|FILE_SIZE_EXCEEDED_WITHOUT_SUMMARIZATION|FILE_SIZE_EXCEEDED_TO_BE_ATTACHMENT|FILE_SIZE_EXCEEDED_CHAT_INTENTION_CANDIDATE|WRITE_DOCUMENTATION_EXAMPLE_DECLARATION_SIZE|WRITE_DOCUMENTATION_EXAMPLE_DOCUMENTATION_SIZE|CLASSIFY_CHAT_TASK|EDITOR_MODIFICATION_PROMPT_BUILDER_DEFAULT|EDITOR_MODIFICATION_PROMPT_BUILDER_FILE_INFORMATION|GENERATE_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_COMMIT_SUMMARY_TASK_USER|GENERATE_COMMIT_SUMMARY_TASK_COMMIT_MESSAGE|GENERATE_USER_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_USER_COMMIT_SUMMARY_TASK_USER|SHELVE_TITLE_TASK|LLM_GENERATE_MICROSERVICES_EXAMPLE_ACTION|JUPYTER_DATA_RETRIEVER_CODE|JUPYTER_DATA_RETRIEVER_OUTPUT|GO_CODE_CONTEXT|GO_NAME_SUGGESTION_CONTEXT|VGO_CODE_CONTEXT|GO_TESTS_PROMPT_GENERATOR|PYTHON_FUNCTION_FULL_CONTEXT_FUNCTION_TEXT|PYTHON_FUNCTION_FULL_CONTEXT_CLASS_TEXT|PYTHON_CLASS_SIGNATURE|PYTHON_DECLARATIONS_FOR_DEPENDENCY_VARIABLES|PYTHON_CODE_CONTEXT_USAGES|PYTHON_TEST_PROMPT_BUILD_CLASS_DESCRIPTION|PYTHON_JUPYTER_TEXT_ENDPOINT|JVM_STACKTRACE_CONTEXT_PROVIDER}", "{enum:CHAT_CONTEXT_TRIMMING}", "{enum:FOLDER_SIZE_EXCEEDED_TO_BE_ATTACHMENT}", "{enum:TOKENIZE_USER_INPUT_TASK|CLASSIFY_USERS_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEM_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEMS_PROMPT_ID_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_WITH_HISTORY_TASK|MAKE_WEB_SEARCH_REQUEST_TASK|SUMMARIZE_WEB_SEARCH_RAW_CONTENT_TASK|SUMMARIZE_CONTEXT_ITEM_TASK|REQUEST_REQUIRED_CLASSES_TASK|COMMIT_TASK_CHAT_BUILDER|LLM_BASE_COMMIT_MESSAGE|LOCAL_CHANGES_ENDPOINT|SLIDING_WINDOW|SLIDING_WINDOW_MESSAGES_WITHIN_TOK_LIMIT|VCS_ENDPOINT|APPLY_AI_RULE_TASK|ABSTRACT_CHAT_ACTION_ON_DATA_FRAME_ACTION|ABSTRACT_CHAT_INTENTION|CHAT_INTENTION_TASK|JUPYTER_CREATE_CHAT_AND_SEND_MESSAGE|PY_GENERATE_CHARTS_FOR_DATAFRAME_TASK|JUPYTER_BUILD_CHAT|DESCRIPTION_ENSURE_SOFT_TOKENS_LIMIT|WRITE_DOCUMENTATION_CODE_SNIPPET|FUNCTION_RESPONSE_TOKEN_LIMIT|LLM_COMMIT_MESSAGE_ACTION|LLM_REWORD_COMMIT_ACTION|COMMIT_MESSAGE_COMPLETION|CODE_DEPENDENCY_COLLECTOR|CURRENT_FILE_CONTEXT_ATTACHMENT|AUTOMATICALLY_ATTACHED_FILE_CONTEXT|MANUALLY_ATTACHED_FILE_CONTEXT|DIRECTORY_STRUCTURE_ATTACHED_CONTEXT|FILE_SIZE_EXCEEDED_WITHOUT_SUMMARIZATION|FILE_SIZE_EXCEEDED_TO_BE_ATTACHMENT|WRITE_DOCUMENTATION_EXAMPLE_DECLARATION_SIZE|WRITE_DOCUMENTATION_EXAMPLE_DOCUMENTATION_SIZE|CLASSIFY_CHAT_TASK|EDITOR_MODIFICATION_PROMPT_BUILDER_DEFAULT|EDITOR_MODIFICATION_PROMPT_BUILDER_FILE_INFORMATION|GENERATE_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_COMMIT_SUMMARY_TASK_USER|GENERATE_COMMIT_SUMMARY_TASK_COMMIT_MESSAGE|GENERATE_USER_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_USER_COMMIT_SUMMARY_TASK_USER|SHELVE_TITLE_TASK|IMAGE_CODE_TITLE_TASK|LLM_GENERATE_MICROSERVICES_EXAMPLE_ACTION|JUPYTER_DATA_RETRIEVER_CODE|JUPYTER_DATA_RETRIEVER_OUTPUT|GO_CODE_CONTEXT|GO_NAME_SUGGESTION_CONTEXT|VGO_CODE_CONTEXT|GO_TESTS_PROMPT_GENERATOR|PYTHON_FUNCTION_FULL_CONTEXT_FUNCTION_TEXT|PYTHON_FUNCTION_FULL_CONTEXT_CLASS_TEXT|PYTHON_CLASS_SIGNATURE|PYTHON_DECLARATIONS_FOR_DEPENDENCY_VARIABLES|PYTHON_CODE_CONTEXT_USAGES|PYTHON_TEST_PROMPT_BUILD_CLASS_DESCRIPTION|PYTHON_JUPYTER_TEXT_ENDPOINT|JVM_STACKTRACE_CONTEXT_PROVIDER}", "{enum:TOKENIZE_USER_INPUT_TASK|CLASSIFY_USERS_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEM_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEMS_PROMPT_ID_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_WITH_HISTORY_TASK|MAKE_WEB_SEARCH_REQUEST_TASK|SUMMARIZE_WEB_SEARCH_RAW_CONTENT_TASK|SUMMARIZE_CONTEXT_ITEM_TASK|REQUEST_REQUIRED_CLASSES_TASK|COMMIT_TASK_CHAT_BUILDER|LLM_BASE_COMMIT_MESSAGE|LOCAL_CHANGES_ENDPOINT|SLIDING_WINDOW|SLIDING_WINDOW_MESSAGES_WITHIN_TOK_LIMIT|VCS_ENDPOINT|APPLY_AI_RULE_TASK|ABSTRACT_CHAT_ACTION_ON_DATA_FRAME_ACTION|ABSTRACT_CHAT_INTENTION|CHAT_INTENTION_TASK|JUPYTER_CREATE_CHAT_AND_SEND_MESSAGE|PY_GENERATE_CHARTS_FOR_DATAFRAME_TASK|JUPYTER_BUILD_CHAT|DESCRIPTION_ENSURE_SOFT_TOKENS_LIMIT|WRITE_DOCUMENTATION_CODE_SNIPPET|FUNCTION_RESPONSE_TOKEN_LIMIT|LLM_COMMIT_MESSAGE_ACTION|LLM_REWORD_COMMIT_ACTION|COMMIT_MESSAGE_COMPLETION|CODE_DEPENDENCY_COLLECTOR|CURRENT_FILE_CONTEXT_ATTACHMENT|AUTOMATICALLY_ATTACHED_FILE_CONTEXT|MANUALLY_ATTACHED_FILE_CONTEXT|DIRECTORY_STRUCTURE_ATTACHED_CONTEXT|GENERIC_FILE_CONTEXT_ATTACHMENT|SELECTION_CONTEXT_ATTACHMENT|FILE_SIZE_EXCEEDED_WITHOUT_SUMMARIZATION|WRITE_DOCUMENTATION_EXAMPLE_DECLARATION_SIZE|WRITE_DOCUMENTATION_EXAMPLE_DOCUMENTATION_SIZE|CLASSIFY_CHAT_TASK|EDITOR_MODIFICATION_PROMPT_BUILDER_DEFAULT|EDITOR_MODIFICATION_PROMPT_BUILDER_FILE_INFORMATION|GENERATE_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_COMMIT_SUMMARY_TASK_USER|GENERATE_COMMIT_SUMMARY_TASK_COMMIT_MESSAGE|GENERATE_USER_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_USER_COMMIT_SUMMARY_TASK_USER|SHELVE_TITLE_TASK|IMAGE_CODE_TITLE_TASK|LLM_GENERATE_MICROSERVICES_EXAMPLE_ACTION|JUPYTER_DATA_RETRIEVER_CODE|JUPYTER_DATA_RETRIEVER_OUTPUT|GO_CODE_CONTEXT|GO_NAME_SUGGESTION_CONTEXT|VGO_CODE_CONTEXT|GO_TESTS_PROMPT_GENERATOR|PYTHON_FUNCTION_FULL_CONTEXT_FUNCTION_TEXT|PYTHON_FUNCTION_FULL_CONTEXT_CLASS_TEXT|PYTHON_CLASS_SIGNATURE|PYTHON_DECLARATIONS_FOR_DEPENDENCY_VARIABLES|PYTHON_CODE_CONTEXT_USAGES|PYTHON_TEST_PROMPT_BUILD_CLASS_DESCRIPTION|PYTHON_JUPYTER_TEXT_ENDPOINT|JVM_STACKTRACE_CONTEXT_PROVIDER}", "{enum:REGULAR_TEXT_CONTEXT_ATTACHMENT}", "{enum:UI_PICKER_CONTEXT_ATTACHMENT|AUTOLOADED_UI_PICKER_CONTEXT_ATTACHMENT}", "{enum:PROJECT_VIEW_CONTEXT_ATTACHMENT}", "{enum:EMBARK_QUERY_EXPANSION_REQUEST_TASK}" ],
         "prompt_trim_with_code_attachments" : [ "{enum#boolean}" ],
         "prompt_trunc_size_chars" : [ "{regexp#integer}" ],
         "token_quota" : [ "{regexp#integer}" ],
@@ -7169,7 +7356,7 @@
         "duration_ms" : [ "{regexp#integer}" ],
         "extra" : [ "{enum:clion.toolchain.dialog|exception}" ],
         "ide_activity_id" : [ "{regexp#integer}" ],
-        "state" : [ "{enum:NewUser|CommunityEdition|ConnectionFailure|China|NoValidIdeLicense|LicenseFacadeFail|PerpetualLicense|ValidAiLicense|MarkerFilePresent|AIDisabledByCompany|Delayed|DelayedProject|RemoteDev|Trial}" ],
+        "state" : [ "{enum:NewUser|CommunityEdition|ConnectionFailure|China|NoValidIdeLicense|LicenseFacadeFail|PerpetualLicense|ValidAiLicense|MarkerFilePresent|AIDisabledByCompany|Delayed|DelayedProject|RemoteDev|Trial}", "{enum:JBAccountServiceFail}" ],
         "will_not_show" : [ "{enum#boolean}" ]
       }
     }
@@ -7231,19 +7418,22 @@
         "alias_type" : [ "{util#llm_parameters}" ],
         "applied_ai_rules_count" : [ "{regexp#integer}" ],
         "arguments_length_in_chars" : [ "{regexp#integer}" ],
+        "attached_from_caret" : [ "{enum#boolean}" ],
         "attachment_kind" : [ "{util#class_name}" ],
         "attachment_kinds" : [ "{util#class_name}" ],
         "attachment_sources" : [ "{util#class_name}" ],
         "chat_kind" : [ "{util#class_name}" ],
-        "chat_modes" : [ "{enum:WEB_SEARCH|CODEBASE|CODE_GENERATION|AGENT|CHAT}", "{enum:DATA_WRANGLER}" ],
+        "chat_modes" : [ "{enum:WEB_SEARCH|CODEBASE|CODE_GENERATION|AGENT|CHAT}", "{enum:DATA_WRANGLER}", "{enum:ASK_AI}" ],
         "chat_session_id" : [ "{regexp#date_short_hash}" ],
         "codebase_toggle_enabled" : [ "{enum#boolean}" ],
         "command_type" : [ "{util#llm_parameters}" ],
         "content_source" : [ "{enum:main editor|console editor|preview editor|diff editor|tests console|chat message plaintext|chat message code snippet|chat input editor|unidentified editor|terminal|unknown}", "{enum:chat message code snippet manual|chat message code snippet action}" ],
         "context_autoretrieving_timeout" : [ "{regexp#integer}" ],
+        "context_has_been_added_previously_in_chat" : [ "{enum#boolean}" ],
         "context_provider" : [ "{util#ai_context_provider}" ],
         "copy_type" : [ "{enum:NONE|SELECTED_TEXT|SELECTED_MESSAGES|CURRENT_MESSAGE|CURRENT_CODE}" ],
         "count" : [ "{regexp#integer}" ],
+        "current_file_or_selection" : [ "{enum#boolean}" ],
         "dialog.id" : [ "{regexp#integer}" ],
         "dialog.number_of_disliked_message" : [ "{regexp#integer}" ],
         "dialog.number_of_liked_message" : [ "{regexp#integer}" ],
@@ -7253,21 +7443,30 @@
         "edit_mode_action_invocation_place" : [ "{enum:EDITOR_TOOLBAR|CHAT_TREE_VIEW|UNKNOWN}" ],
         "error" : [ "{enum:BadRequest|Unauthorized|Forbidden|NotFound|Conflict|LengthRequired|PreconditionFailed|ContentTooLarge|UnprocessableContent|TooManyRequests|UnavailableForLegalReasons|ClosedRequest|InternalServerError|HTTPStatusException|ContentLengthExceeded|UnresolvedAddressException|HttpConnectTimeoutException|AccessProhibited|GraziePolicyForbiddenException|UnknownError}", "{enum#__error}" ],
         "error_class" : [ "{util#class_name}" ],
+        "file_has_been_opened" : [ "{enum#boolean}" ],
+        "file_is_currently_open" : [ "{enum#boolean}" ],
         "function_call_error" : [ "{util#class_name}" ],
         "function_call_response_length_in_chars" : [ "{regexp#integer}" ],
         "function_call_trimmed" : [ "{enum#boolean}" ],
         "function_name" : [ "{util#class_name}" ],
         "generated_lines_count" : [ "{regexp#integer}" ],
         "has_selection_in_editor" : [ "{enum#boolean}" ],
+        "is_attachment_modified" : [ "{enum#boolean}" ],
+        "is_attachment_reused" : [ "{enum#boolean}" ],
         "is_collapsed" : [ "{enum#boolean}" ],
         "is_copied_from_project" : [ "{enum:true|false|not applicable}" ],
         "is_exceeded_token_limit" : [ "{enum#boolean}" ],
+        "is_file_modified" : [ "{enum#boolean}" ],
+        "is_file_pinned" : [ "{enum#boolean}" ],
         "is_new_file" : [ "{enum#boolean}" ],
         "is_rule_attached_manually" : [ "{enum#boolean}" ],
+        "is_test_file" : [ "{enum#boolean}" ],
         "labels" : [ "{util#ai_chat_labels}" ],
         "lang" : [ "{util#lang}" ],
         "leaked_function_name" : [ "{util#llm_parameters}" ],
         "level" : [ "{enum:ApplicationJvmFlag|ApplicationRegistry|ProjectFile|ProjectUserSetting|Unknown}", "{enum#__level}", "{enum:IdeLicense}", "{enum:Agreement}", "{enum:IdeLicenseNotInitialized}", "{enum:RemDev}", "{enum:CompanyLicenseInCommunity}" ],
+        "manually_added" : [ "{enum#boolean}" ],
+        "manually_selected" : [ "{enum#boolean}" ],
         "message_author" : [ "{enum:Assistant|User}" ],
         "message_edit_mode" : [ "{enum#boolean}" ],
         "message_id" : [ "{regexp#short_hash}" ],
@@ -7283,6 +7482,7 @@
         "number_of_messages" : [ "{regexp#integer}" ],
         "open_diff_action_invocation_place" : [ "{enum:PATCH_FILE_NAME|PATCH_DIFF_SUMMARY|SHOW_DIFF_ACTION|UNKNOWN}" ],
         "opened_files_count" : [ "{regexp#integer}" ],
+        "parent_file_has_uncommitted_changes" : [ "{enum#boolean}" ],
         "patches_count" : [ "{regexp#integer}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
@@ -7301,22 +7501,27 @@
         "rule_type_to" : [ "{util#llm_parameters}" ],
         "search_invocation_source" : [ "{enum:CTRL_F|ACTION_IN_MENU|UNKNOWN}" ],
         "search_occurrences_number" : [ "{regexp#integer}" ],
-        "selected_chat_mode" : [ "{enum:WEB_SEARCH|CODEBASE|CODE_GENERATION|AGENT|CHAT}", "{enum:DATA_WRANGLER}" ],
+        "selected_chat_mode" : [ "{enum:WEB_SEARCH|CODEBASE|CODE_GENERATION|AGENT|CHAT}", "{enum:DATA_WRANGLER}", "{enum:ASK_AI}" ],
         "selection_length" : [ "{regexp#integer}" ],
         "source" : [ "{enum:CHAT_LOGIN_BUTTON|CHAT_RETRY_BUTTON|CHAT_WAIT_LIST|SETTINGS_PAGE|SETTINGS_PAGE_WAIT_LIST|NOTIFICATION|FULL_LINE}", "{enum:STATUS_BAR_LOGIN_BUTTON}" ],
         "source_action" : [ "{enum:RIDER_GENERATE_UNIT_TESTS}", "{enum:PYTHON_EXPLAIN_DATA_FRAME}", "{enum:GENERATE_API_REQUEST_EXAMPLE}", "{enum:BUILD_ERROR_EXPLANATION}", "{enum:NEW_POPUP_CHAT}", "{enum:WRITE_DOCUMENTATION|EXPLAIN_REGEXP}", "{enum:PYTHON_GENERATE_VISUALIZATIONS}", "{enum:FIX_CODE_INTENTION}", "{enum:NEW_CHAT_FROM_EDITOR}", "{enum:EXTRACT_COMPONENT|KOTLIN_GENERATE_VISUALIZATIONS|KOTLIN_EXPLAIN_DATA_FRAME}", "{enum:GRAPH_BUILDER_GENERATE_VISUALIZATIONS}", "{enum:NAME_SUGGESTION}", "{enum:PYTHON_ADD_TYPE_ANNOTATIONS}", "{enum:GENERATE_JUPYTER_FILE_CONTENT}", "{enum:PYTHON_CONVERT_LOOP_TO_COMPREHENSION}", "{enum:GENERATE_CODE_INLINE_PROMPT}", "{enum:NEW_CHAT_ON_START|GOTO_CHAT}", "{enum:MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}", "{enum:RUST_FIX_WITH_AI}", "{enum:UNKNOWN|NEW_CHAT|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|UNITY_GENERATE_CODE|GENERATE_CODE_INPLACE|GENERATE_UNIT_TESTS|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION}" ],
         "start_time" : [ "{regexp#integer}" ],
         "status" : [ "{regexp#integer}" ],
         "third_party_provider_id" : [ "{enum:ollama|lmstudio}", "{enum:liteLLM|llama.cpp}", "{enum:OpenAI}" ],
+        "time_since_last_edit_in_parent_file" : [ "{regexp#integer}" ],
+        "time_since_last_query_ms" : [ "{regexp#integer}" ],
         "tree_action" : [ "{enum:EXPAND|COLLAPSE}" ],
         "uiContextPickerContentKind" : [ "{enum:Editor|Structure|Local change list|Changes|AI Assistant|AI Assistant|VCS|Problems|Security Analysis|Vulnerable Dependencies|Project View|Navigation Bar|Database Toolbar|Console Output|Build Output|Terminal}" ],
         "unknown_labels" : [ "{regexp#integer}" ],
         "user_intent" : [ "{util#ai_chat_prompt_labels}" ],
-        "user_message_id" : [ "{regexp#short_hash}" ]
+        "user_message_id" : [ "{regexp#short_hash}" ],
+        "was_attachment_modified_by_chat" : [ "{enum#boolean}" ],
+        "was_ever_removed_manually" : [ "{enum#boolean}" ],
+        "was_removed_manually" : [ "{enum#boolean}" ]
       },
       "enums" : {
         "__error" : [ "GrazieAuthorizationException", "RequestTimeout", "AIAssistantForbiddenException", "TokenLimitExceededException", "ClassNotFoundException" ],
-        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked", "chat.search.next.occurrence.clicked", "chat.search.previous.occurrence.clicked", "chat.search.closed", "chat.search.opened", "ai.rule.type.switched", "ai.rules.retrieving.timeout", "ai.rule.created", "ai.rule.deleted", "ai.rule.applied", "chat.model.selector.more.section.toggled", "chat.model.selector.tooltip.shown", "chat.model.auto.selected", "chat.model.auto.applied", "chat.model.selector.closed", "models.loading.started", "models.loading.success", "models.loading.failed" ],
+        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked", "chat.search.next.occurrence.clicked", "chat.search.previous.occurrence.clicked", "chat.search.closed", "chat.search.opened", "ai.rule.type.switched", "ai.rules.retrieving.timeout", "ai.rule.created", "ai.rule.deleted", "ai.rule.applied", "chat.model.selector.more.section.toggled", "chat.model.selector.tooltip.shown", "chat.model.auto.selected", "chat.model.auto.applied", "chat.model.selector.closed", "models.loading.started", "models.loading.success", "models.loading.failed", "reference.start.char.typed", "context.selected.by.retrievers" ],
         "__level" : [ "OSRegistry", "JvmFlag", "JBA", "Allowed", "UserSetting" ]
       }
     },
@@ -7339,6 +7544,9 @@
       "event" : "message.receiving.cancelled",
       "fields" : [ "message_id", "user_message_id", "chat_session_id" ]
     }, {
+      "event" : "context.selected.by.retrievers",
+      "fields" : [ "message_id", "chat_session_id" ]
+    }, {
       "event" : "chat.labels",
       "fields" : [ "chat_session_id", "message_id" ]
     }, {
@@ -7355,6 +7563,9 @@
       "fields" : [ "chat_session_id", "message_id" ]
     }, {
       "event" : "edit.user.message.cancelled.with.mouse",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "reference.start.char.typed",
       "fields" : [ "chat_session_id" ]
     }, {
       "event" : "user.message.enriched",
@@ -7555,6 +7766,20 @@
       "fields" : [ "message_id", "chat_session_id" ]
     } ]
   }, {
+    "id" : "llm.daemon",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:request}" ],
+      "event_data" : {
+        "cached_postprocessed_insights" : [ "{regexp#integer}" ],
+        "new_postprocessed_insights" : [ "{regexp#integer}" ],
+        "new_processed_lines" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
     "id" : "llm.hub",
     "builds" : [ ],
     "versions" : [ {
@@ -7567,8 +7792,8 @@
         "button_name" : [ "{enum:Lets Go|Upgrade|Refresh}" ],
         "current_plan" : [ "{enum:ULTIMATE|ENTERPRISE|PRO_TRIAL|PRO|BUSINESS_TRIAL|BUSINESS|EAP_TRIAL|FREE|NONE}", "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ],
         "new_plan" : [ "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ],
-        "notification_action" : [ "{enum:Close(x)|Upgrade now|Renew now|Upgrade to Pro}" ],
-        "notification_type" : [ "{enum:Trial expires in 5 days|Trial expired|Trial expired Free available|Trial expired Free not available}", "{enum:Free limit|Pro limit|Pro trial limit|Business limit|Business trial limit|Ultimate plan|Enterprise}", "{enum:Pro expires in 5 days|Pro expired|Pro expired Free available|Pro expired Free not available}", "{enum:Business expires in 5 days|Business expired}", "{enum:Business trial expires in 5 days|Business trial expired}" ],
+        "notification_action" : [ "{enum:Top-up credits|Upgrade to ultimate}", "{enum:Close(x)|Upgrade now|Renew now|Upgrade to Pro}" ],
+        "notification_type" : [ "{enum:Trial expires in 5 days|Trial expired|Trial expired Free available|Trial expired Free not available}", "{enum:Free limit|Pro limit|Pro trial limit|Business limit|Business trial limit|Ultimate plan|Enterprise}", "{enum:Ultimate top up limit|Pro top up limit}", "{enum:Pro expires in 5 days|Pro expired|Pro expired Free available|Pro expired Free not available}", "{enum:Pro expired, top up remained}", "{enum:Business expires in 5 days|Business expired}", "{enum:Business expired, top up remained}", "{enum:Business trial expires in 5 days|Business trial expired}" ],
         "plan_type" : [ "{enum:ULTIMATE|ENTERPRISE|PRO_TRIAL|PRO|BUSINESS_TRIAL|BUSINESS|EAP_TRIAL|FREE|NONE}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
@@ -7720,6 +7945,18 @@
       "event" : "persistence.delay.metric.calculated",
       "fields" : [ "chat_uid", "message_id" ]
     } ]
+  }, {
+    "id" : "llm.models",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:models.loading.success|models.loading.started|models.loading.failed}" ],
+      "event_data" : {
+        "models" : [ "{util#llm_profile_id}" ]
+      }
+    }
   }, {
     "id" : "llm.project.state",
     "builds" : [ ],
@@ -7886,6 +8123,7 @@
         "language1" : [ "{util#lang}" ],
         "language2" : [ "{util#lang}" ],
         "language3" : [ "{util#lang}" ],
+        "languages_count" : [ "{regexp#integer}" ],
         "lines_added" : [ "{regexp#integer}" ],
         "lines_removed" : [ "{regexp#integer}" ],
         "modified_files" : [ "{regexp#integer}" ],
@@ -7893,7 +8131,8 @@
         "new_files" : [ "{regexp#integer}" ],
         "rating" : [ "{enum:None|Like|Dislike}" ],
         "renamed_files" : [ "{regexp#integer}" ],
-        "request_id" : [ "{regexp#integer}" ]
+        "request_id" : [ "{regexp#integer}" ],
+        "success" : [ "{enum#boolean}" ]
       }
     }
   }, {
@@ -8011,6 +8250,20 @@
       }
     }
   }, {
+    "id" : "lspserver",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:lsp.server.configured}" ],
+      "event_data" : {
+        "communication_mode" : [ "{enum:stdio|socket}" ],
+        "enabled" : [ "{enum#boolean}" ],
+        "file_extensions" : [ "{util#file.extension.validation.rule}" ]
+      }
+    }
+  }, {
     "id" : "markdown.events",
     "builds" : [ ],
     "versions" : [ {
@@ -8034,8 +8287,11 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:ej_generation.finished|ej_generation.started|ej_generation_step.started|ej_generation_step.finished}" ],
+      "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
+        "agent_locs_added" : [ "{regexp#integer}" ],
+        "agent_locs_read" : [ "{regexp#integer}" ],
+        "agent_locs_removed" : [ "{regexp#integer}" ],
         "anonymous_id" : [ "{regexp#hash}" ],
         "artifact_id" : [ "{regexp#short_hash}" ],
         "artifact_stats_time_ms" : [ "{regexp#integer}" ],
@@ -8046,6 +8302,8 @@
         "explicitly_selected_user_paths_count" : [ "{regexp#integer}" ],
         "ide_activity_id" : [ "{regexp#integer}" ],
         "issue_id" : [ "{regexp#short_hash}" ],
+        "issue_type" : [ "{enum:ISSUE|CHAT}" ],
+        "llm_model" : [ "{enum:OPENAI_GPT_5|ANTHROPIC_SONNET_3_7|ANTHROPIC_SONNET_4}" ],
         "model_stats_cache_create_input_tokens" : [ "{regexp#integer}" ],
         "model_stats_cache_input_tokens" : [ "{regexp#integer}" ],
         "model_stats_cached_cost" : [ "{regexp#float}" ],
@@ -8059,8 +8317,11 @@
         "open_files_added_to_context" : [ "{regexp#integer}" ],
         "open_files_added_to_context_count" : [ "{regexp#integer}" ],
         "parent_artifact_id" : [ "{regexp#short_hash}" ],
+        "post_generation_delay_ms" : [ "{regexp#integer}" ],
         "recent_files_added_to_context" : [ "{regexp#integer}" ],
         "recent_files_added_to_context_count" : [ "{regexp#integer}" ],
+        "remains_locs_added" : [ "{regexp#integer}" ],
+        "remains_locs_removed" : [ "{regexp#integer}" ],
         "result_status" : [ "{enum:UNKNOWN|SUBMIT|EXIT_COST|EXIT_FORMAT|EXIT_TIMEOUT|EXIT_CONTEXT|EXIT_MAX_ITERATIONS|EXIT_EARLY}" ],
         "speed_mode" : [ "{enum:Speed|Quality}" ],
         "start_time_ms" : [ "{regexp#integer}" ],
@@ -8068,7 +8329,8 @@
         "step_type" : [ "{enum:unknown|add_npm_dependency|create|replace_lines|search_replace|edit|edit_symbol|find_class_by_fqn|find_file|find_related_test|goto|npm_install|open|remove_npm_dependency|rewrite_file|npm_build|npm_test|run_test|scroll_up|scroll_down|search_dir|search_file|search_project|submit|undo_edit|get_file_structure|summarize_task_description|report_generator|ls|cd|find|cat|rm|grep|python|python3|pip|pip3|curl|git|pytest|conda}", "{enum#__step_type}" ]
       },
       "enums" : {
-        "__step_type" : [ "gradlew", "mvnw", "AgentStateMarker", "javac", "mvn", "NameMarker", "gradle", "ReportGenerator", "java", "StepSummary", "kotlinc", "SummarizeTaskDescription", "EditFileMarker", "swe_next_step", "nebius_critique", "replace_lines_worker", "phpstorm_swe_patch", "phpstorm_swe_next_step", "edit_critique", "ranking_critique", "rider_swe_next_step", "swe_patch_idea", "void_history_processor", "last_5_observations", "add_steps_info", "search_replace_worker", "last_5_observations_w_steps_info", "relevant_symbols_extractor", "rewrite_file_worker", "rider_swe_patch", "swe_patch", "webstorm_swe_next_step", "webstorm_swe_patch", "open_entire_file", "swe_next_step_idea", "compress_history_processor", "project_str_worker", "goland_swe_next_step", "goland_swe_patch", "rubymine_swe_next_step", "rustrover_swe_patch", "rustrover_swe_next_step", "rubymine_swe_patch" ]
+        "__event_id" : [ "ej_generation.finished", "ej_generation.started", "ej_generation_step.started", "ej_generation_step.finished", "ej_post_generation.finished", "ej_post_generation.started" ],
+        "__step_type" : [ "gradlew", "mvnw", "AgentStateMarker", "javac", "mvn", "NameMarker", "gradle", "ReportGenerator", "java", "StepSummary", "kotlinc", "SummarizeTaskDescription", "EditFileMarker", "swe_next_step", "nebius_critique", "replace_lines_worker", "phpstorm_swe_patch", "phpstorm_swe_next_step", "edit_critique", "ranking_critique", "rider_swe_next_step", "swe_patch_idea", "void_history_processor", "last_5_observations", "add_steps_info", "search_replace_worker", "last_5_observations_w_steps_info", "relevant_symbols_extractor", "rewrite_file_worker", "rider_swe_patch", "swe_patch", "webstorm_swe_next_step", "webstorm_swe_patch", "open_entire_file", "swe_next_step_idea", "compress_history_processor", "project_str_worker", "goland_swe_next_step", "goland_swe_patch", "rubymine_swe_next_step", "rustrover_swe_patch", "rustrover_swe_next_step", "rubymine_swe_patch", "rename_element", "update_status", "answer", "build", "ask_user", "bash" ]
       }
     },
     "anonymized_fields" : [ {
@@ -8080,6 +8342,9 @@
     }, {
       "event" : "ej_generation.started",
       "fields" : [ "issue_id", "anonymous_id", "chain_id", "artifact_id" ]
+    }, {
+      "event" : "ej_post_generation.started",
+      "fields" : [ "artifact_id", "issue_id", "parent_artifact_id", "chain_id" ]
     }, {
       "event" : "ej_generation_step.finished",
       "fields" : [ "chain_id", "issue_id", "parent_artifact_id", "artifact_id" ]
@@ -8101,10 +8366,11 @@
         "file_id" : [ "{regexp#short_hash}" ],
         "follow_up" : [ "{enum#boolean}" ],
         "issue_id" : [ "{regexp#short_hash}" ],
+        "reason" : [ "{enum:LowQuota|EndOfQuota}" ],
         "speed_mode" : [ "{enum:Speed|Quality}" ]
       },
       "enums" : {
-        "__event_id" : [ "task.done.button.clicked", "task.reopen.from.history", "task.ask.confirmation.answered", "task.cancel.step.button.clicked", "task.description.input", "task.go.back.button.clicked", "task.command.auto.approve.checked", "task.description.focus", "task.recent.files.removed", "task.recent.files.selected", "task.rollback.button.clicked", "task.ask.confirmation.showed", "task.recent.files.button.clicked", "task.stop.button.clicked", "task.delete.menu.clicked", "task.start.again.menu.clicked", "task.stop.menu.clicked", "task.start.again.button.clicked", "task.decline.button.clicked", "task.rollback.menu.clicked", "task.delete.all.menu.clicked", "task.example.clicked", "task.submit", "task.command.speed.mode.changed", "initial.screen.not.logged.showed", "initial.screen.register.clicked", "initial.screen.login.jb.clicked" ]
+        "__event_id" : [ "task.done.button.clicked", "task.reopen.from.history", "task.ask.confirmation.answered", "task.cancel.step.button.clicked", "task.description.input", "task.go.back.button.clicked", "task.command.auto.approve.checked", "task.description.focus", "task.recent.files.removed", "task.recent.files.selected", "task.rollback.button.clicked", "task.ask.confirmation.showed", "task.recent.files.button.clicked", "task.stop.button.clicked", "task.delete.menu.clicked", "task.start.again.menu.clicked", "task.stop.menu.clicked", "task.start.again.button.clicked", "task.decline.button.clicked", "task.rollback.menu.clicked", "task.delete.all.menu.clicked", "task.example.clicked", "task.submit", "task.command.speed.mode.changed", "initial.screen.not.logged.showed", "initial.screen.register.clicked", "initial.screen.login.jb.clicked", "license.upgrade.to.ultimate", "license.add.credits" ]
       }
     },
     "anonymized_fields" : [ {
@@ -8263,6 +8529,33 @@
         "group_artifact_id" : [ "{util#maven_plugin_rule_whitelist_ids}" ],
         "has_configuration" : [ "{enum#boolean}" ],
         "version" : [ "{regexp#version}" ]
+      }
+    }
+  }, {
+    "id" : "mcpserver",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:mcp.running|mcp.brave.mode.enabled|mcp.global.clients}" ],
+      "event_data" : {
+        "client_type" : [ "{enum:VSCode (Project)|VSCode|Claude App|Windsurf (Project)|Windsurf|Cursor (Project)|Cursor|Claude Code (Project)|Claude Code}" ],
+        "enabled" : [ "{enum#boolean}" ],
+        "has_port_mismatch" : [ "{enum#boolean}" ],
+        "is_configured" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
+    "id" : "mcpserver.events",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:mcp.tool.call}" ],
+      "event_data" : {
+        "tool_name" : [ "{util#tool_name_validator_id}" ]
       }
     }
   }, {
@@ -8572,6 +8865,23 @@
       }
     }
   }, {
+    "id" : "next.edit.state",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:settings}" ],
+      "event_data" : {
+        "chain_suggestion" : [ "{enum#boolean}" ],
+        "code_insight" : [ "{enum#boolean}" ],
+        "enabled" : [ "{enum#boolean}" ],
+        "enabled_languages" : [ "{util#lang}" ],
+        "instant_preview" : [ "{enum:Instant|ConfirmationBased}" ],
+        "universal_enabled" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
     "id" : "node.js.interpreter.and.package.manager.on.startup",
     "builds" : [ ],
     "versions" : [ {
@@ -8689,7 +8999,7 @@
       },
       "enums" : {
         "__event_id" : [ "action.invoked", "balloon.collapsed", "balloon.expanded", "closed.by.user", "event.log.balloon.shown", "hyperlink.clicked", "logged", "settings.clicked", "shown" ],
-        "notification_id" : [ "ignored.to.exclude.synchronization.notification", "externally.added.files.notification", "project.configuration.files.added.notification", "manage.ignore.files.notification", "github.missing.default.account", "github.pull.request.cannot.set.tracking.branch", "github.clone.unable.to.create.destination.dir", "github.clone.unable.to.find.destination", "github.open.in.browser.file.is.not.under.repo", "github.open.in.browser.cannot.get.last.revision", "github.rebase.success", "github.gist.cannot.create", "github.pull.request.cannot.load.branches", "github.pull.request.cannot.collect.additional.data", "github.pull.request.cannot.load.forks", "github.pull.request.failed.to.add.remote", "github.pull.request.push.failed", "github.pull.request.creation.error", "github.pull.request.cannot.collect.diff.data", "github.pull.request.cannot.find.repo", "github.pull.request.created", "github.pull.request.cannot.process.remote", "github.pull.request.no.current.branch", "github.rebase.cannot.validate.upstream.remote", "github.rebase.upstream.is.own.repo", "github.rebase.cannot.get.user.info", "github.rebase.cannot.retrieve.upstream.info", "github.rebase.cannot.configure.upstream.remote", "github.rebase.repo.not.found", "github.rebase.cannot.load.repo.info", "github.rebase.repo.is.not.a.fork", "github.share.cannot.find.git.repo", "github.share.cannot.create.repo", "github.share.project.successfully.shared", "github.share.empty.repo.created", "github.share.project.created.init.commit.failed", "github.share.init.push.failed", "github.gist.created", "github.git.repo.init.error", "unknown", "hg.update.unresolved.conflicts.error", "git.merge.local.changes.detected", "vcs.patch.apply.rollback.failed", "hg.qrefresh.error", "git.revert.abort.failed", "git.fetch.success", "git.branch.operation.success", "git.pull.failed", "hg.merge.warning", "vcs.commit.finished.with.warnings", "vcs.shelve.successful", "git.merge.reset.error", "git.stage.commit.successful", "git.clone.unable.to.create.destination.dir", "git.rebase.cannot.continue", "vcs.commit.canceled", "git.branch.rename.rollback.success", "hg.merge.error", "hg.rebase.error", "git.update.no.tracked.branch.error", "git.rebase.update.project.error", "hg.tag.creation.error", "git.local.changes.not.restored", "hg.clone.destination.error", "vcs.shelve.failed", "hg.merging.with.ancestor.skipped", "vcs.patch.apply.aborted", "hg.pushed.successfully", "git.remote.branch.deletion.success", "hg.repository.created", "git.tag.created", "hg.qpop.completed.with.errors", "git.branch.operation.error", "hg.compare.with.branch.error", "git.fetch.error", "hg.nothing.to.push", "git.rebase.cannot.abort", "hg.unsupported.extensions", "vcs.patch.partially.applied", "git.branches.update.successful", "hg.exception.during.merge.commit", "git.init.failed", "git.rebase.not.allowed", "hg.qfold.error", "hg.qfinish.error", "git.merge.abort.success", "git.init.error", "git.rebase.commit.edit.undo.error.repo.changed", "git.reset.failed", "git.update.detached.head.error", "git.create.branch.rollback.successful", "git.branch.checkout.failed", "git.delete.branch.on.merge", "vcs.root.added", "git.stash.failed", "vcs.patch.copied.to.clipboard", "git.merge.abort.failed", "vcs.could.not.compare.with.branch", "git.reset.successful", "git.branch.creation.failed", "git.branch.deletion.rollback.error", "hg.graft.continue.error", "hg.merge.exception", "git.rebase.abort.succeeded", "hg.debugancestor.error", "hg.log.command.execution.error", "hg.unable.to.run.executable", "hg.bookmark.error", "git.rebase.commit.edit.undo.error", "git.unstash.with.unresolved.conflicts", "git.unstash.failed", "hg.qgoto.error", "hg.clone.error", "git.clone.failed", "git.rebase.abort.failed", "hg.remote.auth.error", "vcs.uncommitted.changes.saving.error", "git.update.nothing.to.update", "git.merge.rollback.error", "hg.qnew.error", "git.checkout.success", "git.update.error", "git.cannot.resolve.conflict", "git.unstash.with.conflicts", "space.sharing.not.finished", "hg.rebase.continue.error", "git.checkout.rollback.error", "git.reset.partially.failed", "git.remote.branch.deletion.error", "hg.qrename.error", "hg.unsupported.version", "hg.repo.creation.error", "space.git.repo.init.error", "git.tag.remote.deletion.error", "hg.push.error", "vcs.cherry.pick.error", "git.repository.created", "vcs.roots.invalid", "git.stash.local.changes.detected", "git.could.not.compare.with.branch", "git.rebase.not.started", "space.project.shared.successfully", "vcs.compare.failed", "vcs.patch.apply.success.applied", "hg.qdelete.error", "hg.branch.creation.error", "git.cherry.pick.abort.failed", "git.rebase.rollback.failed", "git.merge.error", "vcs.patch.apply.cannot.find.patch.file", "git.rebase.commit.edit.undo.error.protected.branch", "git.rebase.successful", "vcs.commit.failed", "git.could.not.load.changes.of.commit", "git.unresolved.conflicts", "vcs.patch.apply.new.files.error", "hg.rebase.abort.error", "git.revert.abort.success", "git.stage.commit.error", "git.tag.not.created", "git.create.branch.rollback.error", "git.fix.tracked.not.on.branch", "vcs.shelve.deletion.undo", "hg.tag.creation.failed", "git.tag.deletion.rollback.error", "hg.update.error", "vcs.roots.registered", "hg.status.command.error", "hg.qimport.error", "vcs.patch.apply.not.patch.type.file", "vcs.commit.finished", "git.could.not.save.uncommitted.changes", "hg.rename.failed", "git.branch.rename.rollback.failed", "git.cherry.pick.abort.success", "hg.qpop.error", "git.conflict.resolving.error", "git.merge.failed", "hg.pull.error", "git.unstash.patch.applied", "hg.bookmark.name.is.empty", "hg.pull.auth.required", "git.rebase.abort", "vcs.patch.already.applied", "git.checkout.new.branch.operation.rollback.error", "hg4idea.changesets.error", "vcs.patch.creation.failed", "hg.graft.error", "hg.qpush.error", "git.checkout.new.branch.operation.rollback.successful", "github.rebase.remote.origin.not.found", "github.rebase.account.not.found", "github.rebase.multi.repo.not.supported", "rebase.error.failed.to.match.gh.repo", "git.branch.set.upstream.failed", "git.log.could.not.load.changes.of.commit", "vcs.project.partially.updated", "vcs.shelf.undo.delete", "vcs.branch.operations.are.executed.on.all.roots", "git.rebase.collect.updated.changes.error", "git.push.not.supported", "vcs.inactive.ranges.damaged", "git.commit.cancelled", "git.fetch.result", "git.tag.remote.deletion.success", "git.fetch.cancelled", "git.fetch.details", "git.project.updated", "git.all.files.are.up.to.date", "git.fetch.result.error", "git.project.partially.updated", "git.push.result", "git.branch.deleted", "git.tag.restored", "git.files.updated.after.merge", "vcs.project.update.finished", "git.tag.deleted", "git.commit.edit.success", "space.other", "gradle.jvm.invalid", "gradle.jvm.configured", "gradle.configuration.error", "sh.update.shellcheck.error", "sh.update.shellcheck.success", "sh.update.formatter.success", "sh.install.formatter.error", "sh.update.formatter.error", "sh.install.formatter", "sh.update.shellcheck", "sh.update.formatter", "sh.install.formatter.success", "git.bad.executable", "git.init.stage.failed", "git.rebase.failed", "diff.external.too.many.selected", "ignored.to.exclude.not.found", "git.rebase.stopped.for.editing", "vcs.cannot.load.annotations", "untracked.files.overwritten", "diff.external.cant.load.changes", "vcs.obsolete.plugin.unbundled", "vcs.suggested.plugin.install.failed", "diff.merge.intenral.error", "git.rebase.stopped.due.to.conflicts", "vcs.commit.checks.failed", "git.tags.loading.failed", "vcs.commit.checks.only.failed", "vcs.add.unversioned.error", "vcs.post.commit.checks.failed", "grazie.pro.advertisement", "git.open.in.browser.error", "git.ignore.file.generation.error", "review.branch.checkout.failed", "space.merge.request.creation.failed", "space.merge.request.created", "space.git.repo.foldernotfound", "git.stage.operation.error", "vcs.log.navigation.error", "vcs.log.commit.not.found", "file.history.load.details.error", "vcs.log.fatal.error", "vcs.log.not.available", "git.stash.non.empty.index.detected", "git.stash.successful", "space.review.create", "gitlab.merge.request.create", "github.pull.request.create", "maven.workspace.first.import.notification", "maven.wrapper.file.not.found.notification", "maven.workspace.external.storage.notification", "maven.wrapper.downloading.error.notification", "project.structure.automatically.detected.notification.id", "build.script.found.notification.id", "maven.wrapper.information.notification", "maven.wrapper.empty.url.notification", "github.pull.request.branch.update.failed", "lvcs.storage.corrupted", "lvcs.label.created", "git.update.force.pushed.branch.success", "git.update.force.pushed.branch.not.all.cherry.picked", "PrepareIntrospectionDiagnostic.finished", "DiagnosticRefreshAction.finished", "DumpToDdlDataSourceAction.no.db.data.source", "SaveLobAsAction.structure.changed", "SaveLobAsAction.error", "DatabaseModelLoader.single.db.mode.required", "DetailsSyncHelper.sync.required", "database.undo.is.impossible", "git.apply.changes.conflicts", "CopyDdlFromDbAction.error", "CliNotificationManagerBase.dump.finished", "DataSourceUtil.generic.notification", "PasswordExpirationConnectionInterceptor.successful", "CancelProgressAuditor.too.long", "DataSourceConfigurable.storage.move.failed", "CliNotificationManagerBase.restore.finished", "SchemaScripts.generation.finished", "DatabaseEditorHelper.Auditor.print", "DatabaseConfigFileWatcher.found", "RevertFix.failed", "DumpToDdlDataSourceAction.dump.error", "ImportHead.import.finished", "ImportHead.import.failed", "git.apply.changes.success", "DumpToDdlDataSourceAction.no.introspected.schemas", "DbSrcValidator.introspection.suggested", "ImportAction.error", "HandleErrorTask.cant.access", "git.apply.changes.local.changes.detected", "SaveLobAsAction.finished", "ScriptFileLayoutPanel.finished", "DumpToDdlDataSourceAction.no.objects", "DbSrcValidator.stale.pruned", "SaveLobAsAction.failed", "RemoteConsoleProcessSupport.before.task.cycle.prevented", "UseMyFix.failed", "SessionLogger.query.finished", "MergeFix.failed", "SqlAddExternalRelationIntention.stored", "DatabaseEditorHelper.Auditor.warn", "OutdatedCheck.failed", "ScriptFileLayoutPanel.error", "git.apply.changes.error", "DumpToDdlDataSourceAction.no.ddl.data.source", "db.import.failed", "DbSrcValidator.regeneration.suggested", "MsPlanModelBuilder.unable.to.find.table", "DumpToDdlDataSourceAction.failed.to.create.layout", "DataSourceConfigurable.set.default.dialect", "DatabaseEditorHelper.Auditor.error", "git.gpg.agent.configuration.propose", "git.gpg.agent.configuration.success", "git.gpg.agent.configuration.propose.suggestion", "git.gpg.agent.configuration.error", "git.unshallow.success", "invalid.rust.std.lib.source", "could.not.reach.crates.io", "install.target.error", "org.rust.database.plugin.suggestion", "visual.studio.installer", "project.not.found", "target.is.not.installed", "rustfmt.not.installed", "rust.version.not.supported", "component.not.available", "bad.answer.from.crates.io", "rustfmt.error", "defmap.rebuilt", "running.tests.with.sudo", "rustup.not.available", "cannot.load.rustc.for.debugger", "rustup.update.finished", "rustfmt.enabled.by.default", "file.was.shared.on.playground", "crate.is.not.installed", "feedback.form.prompted", "failure.to.share.on.playground", "failed.to.create.mod", "install.component.error", "command.not.available", "git.commit.modal.deprecation", "vcs.git.repo.init.error", "vcs.share.cannot.find.git.repo", "vcs.share.init.push.failed", "vcs.share.cannot.create.repo", "vcs.share.project.successfully.shared", "vcs.share.project.created.init.commit.failed", "vcs.share.empty.repo.created", "vcs.commit.finished.initial", "toolbox.open.project.error", "git.rebase.log.changes.drop.failed", "git.in.memory.operation.failed", "some.requirements.from.base.files.were.not.updated", "all.files.are.up.to.date", "ssh.configuration.created", "installation.failed", "using.future.imports", "download.notebook.package.started", "could.not.upload.helpers.for.remote.interpreter", "stale.python.version", "api.key.invalid", "server.restarted", "server.runner.not.found", "reload.file.from.server.error", "table.data.exception.raised", "jupyter.cell.edited.during.sessions", "server.connection.error", "analyze.entries.in.requirements.file.failed", "exception.raised", "connection.failed", "requirements.have.been.ignored", "download.notebook.package.finished", "api.keys.found", "reconnected.kernel.busy", "python.package.deleted", "provide.path.to.settings.py", "cython.extension.speeds.up.python.debugging", "download.file.is.finished", "refresh.skeletons.for.remote.interpreter.failed", "python.installation.interrupted", "api.key.valid", "deployment.configuration.created", "jupyter.other.cell.under.debugger", "cannot.delete.non.empty.directory", "execution.exception", "jupyter.server.detached", "using.six.package", "no.interpreter.configured", "cannot.delete", "remote.file.rename.exception", "sdk.has.been.configured.as.the.project.interpreter", "reconnected.kernel.idle", "local.files.are.not.synchronized.with.the.server", "jupyter.cell.edited.between.sessions", "jupyter.server.starting", "jupyter.server.started", "kernel.changed", "all.plots.are.saved", "nbstripout.filter", "sync.still.enabled", "create.requirements.file.failed", "run.pipenv.lock.suggestion", "loading.cancelled", "remote.interpreter.support.is.not.available", "unknown.remote.file.status.copying.aborted", "installation.succeeded", "python.package.installed", "file.saved", "black.formatter.support", "cell.execution.finished", "api.keys.imported" ]
+        "notification_id" : [ "ignored.to.exclude.synchronization.notification", "externally.added.files.notification", "project.configuration.files.added.notification", "manage.ignore.files.notification", "github.missing.default.account", "github.pull.request.cannot.set.tracking.branch", "github.clone.unable.to.create.destination.dir", "github.clone.unable.to.find.destination", "github.open.in.browser.file.is.not.under.repo", "github.open.in.browser.cannot.get.last.revision", "github.rebase.success", "github.gist.cannot.create", "github.pull.request.cannot.load.branches", "github.pull.request.cannot.collect.additional.data", "github.pull.request.cannot.load.forks", "github.pull.request.failed.to.add.remote", "github.pull.request.push.failed", "github.pull.request.creation.error", "github.pull.request.cannot.collect.diff.data", "github.pull.request.cannot.find.repo", "github.pull.request.created", "github.pull.request.cannot.process.remote", "github.pull.request.no.current.branch", "github.rebase.cannot.validate.upstream.remote", "github.rebase.upstream.is.own.repo", "github.rebase.cannot.get.user.info", "github.rebase.cannot.retrieve.upstream.info", "github.rebase.cannot.configure.upstream.remote", "github.rebase.repo.not.found", "github.rebase.cannot.load.repo.info", "github.rebase.repo.is.not.a.fork", "github.share.cannot.find.git.repo", "github.share.cannot.create.repo", "github.share.project.successfully.shared", "github.share.empty.repo.created", "github.share.project.created.init.commit.failed", "github.share.init.push.failed", "github.gist.created", "github.git.repo.init.error", "unknown", "hg.update.unresolved.conflicts.error", "git.merge.local.changes.detected", "vcs.patch.apply.rollback.failed", "hg.qrefresh.error", "git.revert.abort.failed", "git.fetch.success", "git.branch.operation.success", "git.pull.failed", "hg.merge.warning", "vcs.commit.finished.with.warnings", "vcs.shelve.successful", "git.merge.reset.error", "git.stage.commit.successful", "git.clone.unable.to.create.destination.dir", "git.rebase.cannot.continue", "vcs.commit.canceled", "git.branch.rename.rollback.success", "hg.merge.error", "hg.rebase.error", "git.update.no.tracked.branch.error", "git.rebase.update.project.error", "hg.tag.creation.error", "git.local.changes.not.restored", "hg.clone.destination.error", "vcs.shelve.failed", "hg.merging.with.ancestor.skipped", "vcs.patch.apply.aborted", "hg.pushed.successfully", "git.remote.branch.deletion.success", "hg.repository.created", "git.tag.created", "hg.qpop.completed.with.errors", "git.branch.operation.error", "hg.compare.with.branch.error", "git.fetch.error", "hg.nothing.to.push", "git.rebase.cannot.abort", "hg.unsupported.extensions", "vcs.patch.partially.applied", "git.branches.update.successful", "hg.exception.during.merge.commit", "git.init.failed", "git.rebase.not.allowed", "hg.qfold.error", "hg.qfinish.error", "git.merge.abort.success", "git.init.error", "git.rebase.commit.edit.undo.error.repo.changed", "git.reset.failed", "git.update.detached.head.error", "git.create.branch.rollback.successful", "git.branch.checkout.failed", "git.delete.branch.on.merge", "vcs.root.added", "git.stash.failed", "vcs.patch.copied.to.clipboard", "git.merge.abort.failed", "vcs.could.not.compare.with.branch", "git.reset.successful", "git.branch.creation.failed", "git.branch.deletion.rollback.error", "hg.graft.continue.error", "hg.merge.exception", "git.rebase.abort.succeeded", "hg.debugancestor.error", "hg.log.command.execution.error", "hg.unable.to.run.executable", "hg.bookmark.error", "git.rebase.commit.edit.undo.error", "git.unstash.with.unresolved.conflicts", "git.unstash.failed", "hg.qgoto.error", "hg.clone.error", "git.clone.failed", "git.rebase.abort.failed", "hg.remote.auth.error", "vcs.uncommitted.changes.saving.error", "git.update.nothing.to.update", "git.merge.rollback.error", "hg.qnew.error", "git.checkout.success", "git.update.error", "git.cannot.resolve.conflict", "git.unstash.with.conflicts", "space.sharing.not.finished", "hg.rebase.continue.error", "git.checkout.rollback.error", "git.reset.partially.failed", "git.remote.branch.deletion.error", "hg.qrename.error", "hg.unsupported.version", "hg.repo.creation.error", "space.git.repo.init.error", "git.tag.remote.deletion.error", "hg.push.error", "vcs.cherry.pick.error", "git.repository.created", "vcs.roots.invalid", "git.stash.local.changes.detected", "git.could.not.compare.with.branch", "git.rebase.not.started", "space.project.shared.successfully", "vcs.compare.failed", "vcs.patch.apply.success.applied", "hg.qdelete.error", "hg.branch.creation.error", "git.cherry.pick.abort.failed", "git.rebase.rollback.failed", "git.merge.error", "vcs.patch.apply.cannot.find.patch.file", "git.rebase.commit.edit.undo.error.protected.branch", "git.rebase.successful", "vcs.commit.failed", "git.could.not.load.changes.of.commit", "git.unresolved.conflicts", "vcs.patch.apply.new.files.error", "hg.rebase.abort.error", "git.revert.abort.success", "git.stage.commit.error", "git.tag.not.created", "git.create.branch.rollback.error", "git.fix.tracked.not.on.branch", "vcs.shelve.deletion.undo", "hg.tag.creation.failed", "git.tag.deletion.rollback.error", "hg.update.error", "vcs.roots.registered", "hg.status.command.error", "hg.qimport.error", "vcs.patch.apply.not.patch.type.file", "vcs.commit.finished", "git.could.not.save.uncommitted.changes", "hg.rename.failed", "git.branch.rename.rollback.failed", "git.cherry.pick.abort.success", "hg.qpop.error", "git.conflict.resolving.error", "git.merge.failed", "hg.pull.error", "git.unstash.patch.applied", "hg.bookmark.name.is.empty", "hg.pull.auth.required", "git.rebase.abort", "vcs.patch.already.applied", "git.checkout.new.branch.operation.rollback.error", "hg4idea.changesets.error", "vcs.patch.creation.failed", "hg.graft.error", "hg.qpush.error", "git.checkout.new.branch.operation.rollback.successful", "github.rebase.remote.origin.not.found", "github.rebase.account.not.found", "github.rebase.multi.repo.not.supported", "rebase.error.failed.to.match.gh.repo", "git.branch.set.upstream.failed", "git.log.could.not.load.changes.of.commit", "vcs.project.partially.updated", "vcs.shelf.undo.delete", "vcs.branch.operations.are.executed.on.all.roots", "git.rebase.collect.updated.changes.error", "git.push.not.supported", "vcs.inactive.ranges.damaged", "git.commit.cancelled", "git.fetch.result", "git.tag.remote.deletion.success", "git.fetch.cancelled", "git.fetch.details", "git.project.updated", "git.all.files.are.up.to.date", "git.fetch.result.error", "git.project.partially.updated", "git.push.result", "git.branch.deleted", "git.tag.restored", "git.files.updated.after.merge", "vcs.project.update.finished", "git.tag.deleted", "git.commit.edit.success", "space.other", "gradle.jvm.invalid", "gradle.jvm.configured", "gradle.configuration.error", "sh.update.shellcheck.error", "sh.update.shellcheck.success", "sh.update.formatter.success", "sh.install.formatter.error", "sh.update.formatter.error", "sh.install.formatter", "sh.update.shellcheck", "sh.update.formatter", "sh.install.formatter.success", "git.bad.executable", "git.init.stage.failed", "git.rebase.failed", "diff.external.too.many.selected", "ignored.to.exclude.not.found", "git.rebase.stopped.for.editing", "vcs.cannot.load.annotations", "untracked.files.overwritten", "diff.external.cant.load.changes", "vcs.obsolete.plugin.unbundled", "vcs.suggested.plugin.install.failed", "diff.merge.intenral.error", "git.rebase.stopped.due.to.conflicts", "vcs.commit.checks.failed", "git.tags.loading.failed", "vcs.commit.checks.only.failed", "vcs.add.unversioned.error", "vcs.post.commit.checks.failed", "grazie.pro.advertisement", "git.open.in.browser.error", "git.ignore.file.generation.error", "review.branch.checkout.failed", "space.merge.request.creation.failed", "space.merge.request.created", "space.git.repo.foldernotfound", "git.stage.operation.error", "vcs.log.navigation.error", "vcs.log.commit.not.found", "file.history.load.details.error", "vcs.log.fatal.error", "vcs.log.not.available", "git.stash.non.empty.index.detected", "git.stash.successful", "space.review.create", "gitlab.merge.request.create", "github.pull.request.create", "maven.workspace.first.import.notification", "maven.wrapper.file.not.found.notification", "maven.workspace.external.storage.notification", "maven.wrapper.downloading.error.notification", "project.structure.automatically.detected.notification.id", "build.script.found.notification.id", "maven.wrapper.information.notification", "maven.wrapper.empty.url.notification", "github.pull.request.branch.update.failed", "lvcs.storage.corrupted", "lvcs.label.created", "git.update.force.pushed.branch.success", "git.update.force.pushed.branch.not.all.cherry.picked", "PrepareIntrospectionDiagnostic.finished", "DiagnosticRefreshAction.finished", "DumpToDdlDataSourceAction.no.db.data.source", "SaveLobAsAction.structure.changed", "SaveLobAsAction.error", "DatabaseModelLoader.single.db.mode.required", "DetailsSyncHelper.sync.required", "database.undo.is.impossible", "git.apply.changes.conflicts", "CopyDdlFromDbAction.error", "CliNotificationManagerBase.dump.finished", "DataSourceUtil.generic.notification", "PasswordExpirationConnectionInterceptor.successful", "CancelProgressAuditor.too.long", "DataSourceConfigurable.storage.move.failed", "CliNotificationManagerBase.restore.finished", "SchemaScripts.generation.finished", "DatabaseEditorHelper.Auditor.print", "DatabaseConfigFileWatcher.found", "RevertFix.failed", "DumpToDdlDataSourceAction.dump.error", "ImportHead.import.finished", "ImportHead.import.failed", "git.apply.changes.success", "DumpToDdlDataSourceAction.no.introspected.schemas", "DbSrcValidator.introspection.suggested", "ImportAction.error", "HandleErrorTask.cant.access", "git.apply.changes.local.changes.detected", "SaveLobAsAction.finished", "ScriptFileLayoutPanel.finished", "DumpToDdlDataSourceAction.no.objects", "DbSrcValidator.stale.pruned", "SaveLobAsAction.failed", "RemoteConsoleProcessSupport.before.task.cycle.prevented", "UseMyFix.failed", "SessionLogger.query.finished", "MergeFix.failed", "SqlAddExternalRelationIntention.stored", "DatabaseEditorHelper.Auditor.warn", "OutdatedCheck.failed", "ScriptFileLayoutPanel.error", "git.apply.changes.error", "DumpToDdlDataSourceAction.no.ddl.data.source", "db.import.failed", "DbSrcValidator.regeneration.suggested", "MsPlanModelBuilder.unable.to.find.table", "DumpToDdlDataSourceAction.failed.to.create.layout", "DataSourceConfigurable.set.default.dialect", "DatabaseEditorHelper.Auditor.error", "git.gpg.agent.configuration.propose", "git.gpg.agent.configuration.success", "git.gpg.agent.configuration.propose.suggestion", "git.gpg.agent.configuration.error", "git.unshallow.success", "invalid.rust.std.lib.source", "could.not.reach.crates.io", "install.target.error", "org.rust.database.plugin.suggestion", "visual.studio.installer", "project.not.found", "target.is.not.installed", "rustfmt.not.installed", "rust.version.not.supported", "component.not.available", "bad.answer.from.crates.io", "rustfmt.error", "defmap.rebuilt", "running.tests.with.sudo", "rustup.not.available", "cannot.load.rustc.for.debugger", "rustup.update.finished", "rustfmt.enabled.by.default", "file.was.shared.on.playground", "crate.is.not.installed", "feedback.form.prompted", "failure.to.share.on.playground", "failed.to.create.mod", "install.component.error", "command.not.available", "git.commit.modal.deprecation", "vcs.git.repo.init.error", "vcs.share.cannot.find.git.repo", "vcs.share.init.push.failed", "vcs.share.cannot.create.repo", "vcs.share.project.successfully.shared", "vcs.share.project.created.init.commit.failed", "vcs.share.empty.repo.created", "vcs.commit.finished.initial", "toolbox.open.project.error", "git.rebase.log.changes.drop.failed", "git.in.memory.operation.failed", "some.requirements.from.base.files.were.not.updated", "all.files.are.up.to.date", "ssh.configuration.created", "installation.failed", "using.future.imports", "download.notebook.package.started", "could.not.upload.helpers.for.remote.interpreter", "stale.python.version", "api.key.invalid", "server.restarted", "server.runner.not.found", "reload.file.from.server.error", "table.data.exception.raised", "jupyter.cell.edited.during.sessions", "server.connection.error", "analyze.entries.in.requirements.file.failed", "exception.raised", "connection.failed", "requirements.have.been.ignored", "download.notebook.package.finished", "api.keys.found", "reconnected.kernel.busy", "python.package.deleted", "provide.path.to.settings.py", "cython.extension.speeds.up.python.debugging", "download.file.is.finished", "refresh.skeletons.for.remote.interpreter.failed", "python.installation.interrupted", "api.key.valid", "deployment.configuration.created", "jupyter.other.cell.under.debugger", "cannot.delete.non.empty.directory", "execution.exception", "jupyter.server.detached", "using.six.package", "no.interpreter.configured", "cannot.delete", "remote.file.rename.exception", "sdk.has.been.configured.as.the.project.interpreter", "reconnected.kernel.idle", "local.files.are.not.synchronized.with.the.server", "jupyter.cell.edited.between.sessions", "jupyter.server.starting", "jupyter.server.started", "kernel.changed", "all.plots.are.saved", "nbstripout.filter", "sync.still.enabled", "create.requirements.file.failed", "run.pipenv.lock.suggestion", "loading.cancelled", "remote.interpreter.support.is.not.available", "unknown.remote.file.status.copying.aborted", "installation.succeeded", "python.package.installed", "file.saved", "black.formatter.support", "cell.execution.finished", "api.keys.imported", "git.in.memory.rebase.merge.conflict", "git.in.memory.rebase.validation.failed", "language.server.is.not.installed", "toolbox.provided.notification" ]
       }
     }
   }, {
@@ -8868,7 +9178,7 @@
     "rules" : {
       "event_id" : [ "{enum:xdg.current.desktop|xdg.session.type|theme|iconTheme}" ],
       "event_data" : {
-        "value" : [ "{enum#__value}", "{enum:Terminal|X11|Wayland|empty|Unknown}", "{enum:empty|unknown|Adwaita|Adwaita-dark|Breeze|Breeze-dark|HighContrast|HighContrastInverse|Yaru|Yaru-dark|Yaru-*|org.kde.breezedark.desktop|org.kde.breezetwilight.desktop|org.kde.breeze.desktop}" ]
+        "value" : [ "{enum#__value}", "{enum:Hyprland}", "{enum:Terminal|X11|Wayland|empty|Unknown}", "{enum:empty|unknown|Adwaita|Adwaita-dark|Breeze|Breeze-dark|HighContrast|HighContrastInverse|Yaru|Yaru-dark|Yaru-*|org.kde.breezedark.desktop|org.kde.breezetwilight.desktop|org.kde.breeze.desktop}" ]
       },
       "enums" : {
         "__value" : [ "LG3D", "KDE", "Gnome", "Gnome_Shell", "Gnome_Classic", "Ubuntu_Gnome", "Budgie_Gnome", "GNOME_Flashback_Unity", "GNOME_Flashback_Gnome", "GNOME_Flashback", "pop_GNOME", "Awesome_GNOME", "X-Cinnamon", "Unity", "Unity7", "XFCE", "XDG_CURRENT_DESKTOP_is_empty", "i3", "MATE", "Pantheon", "Deepin", "LXDE", "LXQt", "Enlightenment", "UKUI", "X-Generic", "ICEWM", "Fluxbox", "default.desktop", "Unknown", "empty" ]
@@ -9756,7 +10066,7 @@
         "executionType" : [ "{enum:local|Remote_Docker|Remote_Docker_Compose|Remote_WSL|Remote_null|third_party|Remote_SSH_Credentials|Remote_Vagrant|Remote_Web_Deployment|Remote_Unknown}" ],
         "interpreterType" : [ "{enum:pyenv}", "{enum:uv|base_conda}", "{enum:hatch}", "{enum:pipenv|condavenv|virtualenv|regular|poetry}" ],
         "lang" : [ "{util#lang}" ],
-        "package" : [ "{enum#python_packages}" ],
+        "package" : [ "{enum#python_packages}", "{dictionary#python_packages.ndjson}" ],
         "package_version" : [ "{regexp#version}" ],
         "python_implementation" : [ "{enum:PyPy|Jython|Python}" ],
         "python_version" : [ "{regexp#integer}", "{regexp#version}" ]
@@ -9775,7 +10085,7 @@
         "file_type" : [ "{util#file_type}" ],
         "has_sdk" : [ "{enum#boolean}" ],
         "interpreterType" : [ "{enum:pipenv|condavenv|virtualenv|regular|poetry}", "{enum:pyenv}", "{enum:uv|base_conda}", "{enum:hatch}" ],
-        "package" : [ "{enum#python_packages}" ],
+        "package" : [ "{enum#python_packages}", "{dictionary#python_packages.ndjson}" ],
         "package_version" : [ "{regexp#version}" ]
       }
     }
@@ -10061,7 +10371,7 @@
         "recovery_reason" : [ "{util#class_name}" ],
         "redone_requests" : [ "{regexp#integer}" ],
         "request_type" : [ "{util#class_name}" ],
-        "response" : [ "{enum:SUCCESS|FAILURE|RETRY|UNKNOWN}" ],
+        "response" : [ "{enum:SUCCESS|FAILURE|RETRY|UNKNOWN}", "{enum:FAILURE_EDITOR_UNBOUND_RECENTLY}" ],
         "undone_requests" : [ "{regexp#integer}" ]
       },
       "enums" : {
@@ -10088,7 +10398,7 @@
         "ide_activity_id" : [ "{regexp#integer}" ],
         "is_seamless_reconnect" : [ "{enum#boolean}" ],
         "is_unattended" : [ "{enum#boolean}" ],
-        "link_flow_type" : [ "{enum:Gateway|Toolbox}" ],
+        "link_flow_type" : [ "{enum:Gateway|Toolbox}", "{enum:toolbox|gateway}" ],
         "mode" : [ "{enum:Readonly|EditFiles|FullAccess|Custom}" ],
         "parentProductCode" : [ "{enum:|unknown|IU|RM|WS|PS|PY|DS|OC|CL|DB|RD|GO|GW}" ],
         "participants_max" : [ "{regexp#integer}" ],
@@ -10351,7 +10661,7 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:frame.became.interactive|first.ui.shown|frame.became.visible|code.loaded.and.visible.in.editor}" ],
+      "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "duration_ms" : [ "{regexp#integer}" ],
         "file_type" : [ "{util#file_type}" ],
@@ -10363,10 +10673,15 @@
         "loaded_cached_markup" : [ "{enum#boolean}" ],
         "loaded_cached_parameter_hints_markup" : [ "{enum#boolean}" ],
         "no_editors_to_open" : [ "{enum#boolean}" ],
+        "number_of_projects" : [ "{regexp#integer}" ],
+        "project_order" : [ "{regexp#integer}" ],
         "projects_type" : [ "{enum:Reopened|FromFilesToLoad|FromArgs|Unknown}" ],
         "source_of_selected_editor" : [ "{enum:TextEditor|UnknownEditor|FoundReadmeFile}" ],
         "type" : [ "{enum:Splash|Frame}" ],
         "violation" : [ "{enum:MightBeLightEditProject|MultipleProjects|NoProjectFound|WelcomeScreenShown|OpeningURI|ApplicationStarter|HasOpenedProject}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "frame.became.interactive", "first.ui.shown", "frame.became.visible", "code.loaded.and.visible.in.editor", "multiple.project.frame.became.interactive", "multiple.project.frame.became.visible", "multiple.project.code.loaded.and.visible.in.editor" ]
       }
     }
   }, {
@@ -10942,7 +11257,7 @@
       "event_data" : {
         "build_script_dependency" : [ "{regexp#integer}" ],
         "build_script_workspace" : [ "{regexp#integer}" ],
-        "category" : [ "{enum:accessibility|aerospace|aerospace::drones|aerospace::protocols|aerospace::simulation|aerospace::space-protocols|aerospace::unmanned-aerial-vehicles|algorithms|api-bindings|asynchronous|authentication|caching|command-line-interface|command-line-utilities|compilers|compression|computer-vision|concurrency|config|cryptography|cryptography::cryptocurrencies|data-structures|database|database-implementations|date-and-time|development-tools|development-tools::build-utils|development-tools::cargo-plugins|development-tools::debugging|development-tools::ffi|development-tools::procedural-macro-helpers|development-tools::profiling|development-tools::testing|email|embedded|emulators|encoding|external-ffi-bindings|filesystem|finance|game-development|game-engines|games|graphics|gui|hardware-support|internationalization|localization|mathematics|memory-management|multimedia|multimedia::audio|multimedia::encoding|multimedia::images|multimedia::video|network-programming|no-std|no-std::no-alloc|os|os::freebsd-apis|os::linux-apis|os::macos-apis|os::unix-apis|os::windows-apis|parser-implementations|parsing|rendering|rendering::data-formats|rendering::engine|rendering::graphics-api|rust-patterns|science|science::geo|science::neuroscience|science::robotics|simulation|template-engine|text-editors|text-processing|value-formatting|virtualization|visualization|wasm|web-programming|web-programming::http-client|web-programming::http-server|web-programming::websocket}" ],
+        "category" : [ "{enum:accessibility|aerospace|aerospace::drones|aerospace::protocols|aerospace::simulation|aerospace::space-protocols|aerospace::unmanned-aerial-vehicles|algorithms|api-bindings|asynchronous|authentication|caching|command-line-interface|command-line-utilities|compilers|compression|computer-vision|concurrency|config|cryptography|cryptography::cryptocurrencies|data-structures|database|database-implementations|date-and-time|development-tools|development-tools::build-utils|development-tools::cargo-plugins|development-tools::debugging|development-tools::ffi|development-tools::procedural-macro-helpers|development-tools::profiling|development-tools::testing|email|embedded|emulators|encoding|external-ffi-bindings|filesystem|finance|game-development|game-engines|games|graphics|gui|hardware-support|internationalization|localization|mathematics|memory-management|multimedia|multimedia::audio|multimedia::encoding|multimedia::images|multimedia::video|network-programming|no-std|no-std::no-alloc|os|os::freebsd-apis|os::linux-apis|os::macos-apis|os::unix-apis|os::windows-apis|parser-implementations|parsing|rendering|rendering::data-formats|rendering::engine|rendering::graphics-api|rust-patterns|science|science::geo|science::neuroscience|science::robotics|simulation|template-engine|text-editors|text-processing|value-formatting|virtualization|visualization|wasm|web-programming|web-programming::http-client|web-programming::http-server|web-programming::websocket}", "{enum:security}" ],
         "count" : [ "{regexp#integer}" ],
         "dependencies" : [ "{enum:2015|2018|2021}", "{enum:2024}" ],
         "dependency" : [ "{regexp#integer}" ],
@@ -11671,7 +11986,7 @@
     "rules" : {
       "event_id" : [ "{enum:connection.failed|connection.succeeded|data.source.added|data.source.saved}" ],
       "event_data" : {
-        "dbms" : [ "{enum:UNKNOWN|HANA|FIREBIRD|ATHENA|PRESTO|TRINO|INFORMIX|IMPALA|NETEZZA|PHOENIX|INGRES|TERADATA|OPENEDGE|TIBERO|FILEMAKER|CLOUD_SPANNER|ZEN|FRONTBASE|IGNITE|MONET|DENODO|IRIS|DRILL|CRATE|GBASE|SQLANYWHERE|ELASTICSEARCH|SALESFORCE|KDB|TIMESTREAM|MSACCESS|BIGQUERY|CASSANDRA|CLICKHOUSE|COUCHBASE|DB2_IS|DB2_LUW|DB2_ZOS|DB2|DERBY|EXASOL|H2|HIVE|HSQLDB|MARIADB|MONGO|AZURE|MSSQL_LOCALDB|SYNAPSE|MYSQL_AURORA|MYSQL|GITBASE|TIDB|OCEANBASE|VITESS|MEMSQL|ORACLE|NETSUITE|POSTGRES|YUGABYTE|COCKROACH|GREENPLUM|REDSHIFT|SNOWFLAKE|SPARK|SYBASE|MSSQL|VERTICA|REDIS|SQLITE|DYNAMO}", "{util#dbms}" ],
+        "dbms" : [ "{enum:UNKNOWN|HANA|FIREBIRD|ATHENA|PRESTO|TRINO|INFORMIX|IMPALA|NETEZZA|PHOENIX|INGRES|TERADATA|OPENEDGE|TIBERO|FILEMAKER|CLOUD_SPANNER|ZEN|FRONTBASE|IGNITE|MONET|DENODO|IRIS|DRILL|CRATE|GBASE|SQLANYWHERE|ELASTICSEARCH|SALESFORCE|KDB|TIMESTREAM|MSACCESS|BIGQUERY|CASSANDRA|CLICKHOUSE|COUCHBASE|DB2_IS|DB2_LUW|DB2_ZOS|DB2|DERBY|EXASOL|H2|HIVE|HSQLDB|MARIADB|MONGO|AZURE|MSSQL_LOCALDB|SYNAPSE|MYSQL_AURORA|MYSQL|GITBASE|TIDB|OCEANBASE|VITESS|MEMSQL|ORACLE|NETSUITE|POSTGRES|YUGABYTE|COCKROACH|GREENPLUM|REDSHIFT|SNOWFLAKE|SPARK|SYBASE|MSSQL|VERTICA|REDIS|SQLITE|DYNAMO}", "{util#dbms}", "{enum:DATABRICKS|INFLUXDB}" ],
         "error_code" : [ "{regexp#integer}" ],
         "sql_state" : [ "{regexp:[0-9A-Z ]{5}}" ]
       }
@@ -12161,12 +12476,13 @@
         "engine" : [ "{enum:REWORKED|CLASSIC|NEW_TERMINAL}" ],
         "font_size" : [ "{regexp#float}" ],
         "line_spacing" : [ "{regexp#float}" ],
+        "mode" : [ "{enum:ALWAYS|ONLY_PARAMETERS|NEVER}" ],
         "option_name" : [ "{enum:enable_audible_bell|close_on_session_end|report_mouse|copy_on_selection|paste_on_middle_mouse_button|override_ide_shortcuts|enable_shell_integration|highlight_hyperlinks|use_option_as_meta|run_commands_using_ide}", "{enum:show_separators_between_commands}" ],
         "shape" : [ "{enum:BLOCK|UNDERLINE|VERTICAL}" ],
         "style" : [ "{enum:SINGLE_LINE|DOUBLE_LINE|SHELL}" ]
       },
       "enums" : {
-        "__event_id" : [ "non.default.tab.name", "non.default.options", "non.default.prompt.style", "non.default.shell", "non.default.cursor.shape", "non.default.font.name", "non.default.column.spacing", "non.default.font.size", "non.default.line.spacing", "non.default.engine" ]
+        "__event_id" : [ "non.default.tab.name", "non.default.options", "non.default.prompt.style", "non.default.shell", "non.default.cursor.shape", "non.default.font.name", "non.default.column.spacing", "non.default.font.size", "non.default.line.spacing", "non.default.engine", "non.default.command.completion.mode" ]
       }
     }
   }, {
@@ -12341,6 +12657,24 @@
     } ],
     "rules" : {
       "event_id" : [ "{enum:click|trial.ended.restart.clicked}" ]
+    }
+  }, {
+    "id" : "trial.tab",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "action_id" : [ "{util#action}" ],
+        "page_kind" : [ "{enum:TRIAL_AVAILABLE|TRIAL_ACTIVE|TRIAL_EXPIRING_TODAY|TRIAL_ENDED|TRIAL_ERROR|FREE}", "{enum:TRIAL_REQUEST_IN_PROGRESS}", "{enum:SUBSCRIPTION_GRACE|TRIAL_GRACE}" ],
+        "type" : [ "{enum:Not_Allowed|Not_Found}" ],
+        "vision_action_id" : [ "{enum:trial.vision.zoom|trial.vision.gif}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "tab_closed", "tab_opened", "action_performed", "vision_action_performed", "action_failed" ]
+      }
     }
   }, {
     "id" : "trusted_projects",
@@ -12577,6 +12911,19 @@
       "enums" : {
         "__algorithm" : [ "TOP", "MATRIX_ALS", "MATRIX_BPR", "PROB", "WIDE", "CODIS", "RANDOM", "WEIGHTS_LIN_REG", "default_shuffle", "unknown", "ONE_TIP_SUMMER2020", "RANDOM_SUMMER2020" ],
         "__event_id" : [ "shown.automatically", "shown.manually", "tip.shown", "dialog.shown", "next.tip", "previous.tip", "dialog.closed", "tip.performed", "dialog.skipped" ]
+      }
+    }
+  }, {
+    "id" : "undo.speculative",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:undo.corruption}" ],
+      "event_data" : {
+        "file_type" : [ "{util#file_type}" ],
+        "undo_call_count_before_corruption" : [ "{regexp#integer}" ]
       }
     }
   }, {
@@ -13352,7 +13699,7 @@
         "plugin_version" : [ "{util#plugin_version}" ]
       },
       "enums" : {
-        "__event_id" : [ "fixLocal", "navigateInfo", "showInfo", "fixGlobal", "globalResult", "localResult", "runGlobal", "localPathResult", "problemTabSelected", "problemTabClosed", "collectDeclaredDependencies", "supportedBuildModels", "dependencyIsIgnored", "supportedBuildModel", "localResultMalicious" ]
+        "__event_id" : [ "fixLocal", "navigateInfo", "showInfo", "fixGlobal", "globalResult", "localResult", "runGlobal", "localPathResult", "problemTabSelected", "problemTabClosed", "collectDeclaredDependencies", "supportedBuildModels", "dependencyIsIgnored", "supportedBuildModel", "localResultMalicious", "localTransitiveResult", "localResultTransitiveMalicious" ]
       }
     }
   }, {
@@ -13781,13 +14128,18 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:thread.selected|frame.selected|session.selected|frames.updated}" ],
+      "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "duration_ms" : [ "{regexp#integer}" ],
         "file_type" : [ "{util#frame_type}" ],
         "frames_per_file_type" : [ "{regexp#integer}" ],
         "location" : [ "{enum:framesView|threadsView}" ],
+        "place" : [ "{util#place}" ],
+        "toolwindow" : [ "{util#toolwindow}" ],
         "total_frames" : [ "{regexp#integer}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "thread.selected", "frame.selected", "session.selected", "frames.updated", "choose.configuration.on.resume", "session.resumed.on.resume" ]
       }
     }
   }, {
@@ -13800,6 +14152,23 @@
       "event_id" : [ "{enum:show.all.frames}" ],
       "event_data" : {
         "enabled" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
+    "id" : "youtrack.plugin",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "has_proxy" : [ "{enum#boolean}" ],
+        "http_status_code" : [ "{regexp#integer}" ],
+        "reason_key" : [ "{enum:notification.content.cannot.connect.to.server.check.credentials|notification.content.cannot.connect.to.server.check.online|notification.content.connection.to.server.lost|notification.content.connection.to.server.might.lost|notification.content.could.not.display.saved.items|notification.content.integration.not.configured.yet.or.connection.lost|notification.content.time.could.not.be.posted.check.connection|notification.content.unable.to.collect.available.work.items.types|notification.content.plugin.not.configured.to.connect.with.youtrack|notification.content.cannot.listen.on.ports|notification.content.unable.to.collect.available.work.items.types.see.ide.log.for.details}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "timeout.error", "http.error", "client.error", "server.error", "proxy.error", "rate_limit.error", "authentication.failed", "connection.problem" ]
       }
     }
   } ],
@@ -13844,5 +14213,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "6056"
+  "version" : "6208"
 }

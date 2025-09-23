@@ -1,6 +1,15 @@
 local waywall = require("waywall")
 local helpers = require("waywall.helpers")
-local Chat = require("chat")
+local chat = require("chat")
+local emote_downloader = require("fetch_emotes")
+
+local read_file = function(name)
+	local file = io.open("/home/arsoniv/.config/waywall/" .. name, "r")
+	local data = file:read("*a")
+	file:close()
+
+	return data
+end
 
 local config = {
 	input = {
@@ -14,8 +23,15 @@ local config = {
 	theme = {
 		background = "#222222ff",
 		ninb_anchor = "bottomleft",
-		ninb_opacity = 0.7,
-		font_path = "/usr/share/fonts/minecraft/MinecraftDefault-Regular.ttf",
+		ninb_opacity = 1,
+		font_path = "/usr/share/fonts/TTF/JetBrainsMono-Medium.ttf",
+		font_size = 25,
+	},
+	shaders = {
+		["rainbow_text"] = {
+			vertex = read_file("rainbow.vert"),
+			fragment = read_file("rainbow.frag"),
+		},
 	},
 	experimental = {
 		jit = true,
@@ -79,10 +95,29 @@ helpers.res_mirror({
 	},
 }, 380, 900)
 
+-- pre pie numbers
+helpers.res_mirror({
+	src = { x = 0, y = 980, w = 40, h = 48 },
+	dst = { x = 1050, y = 650, w = 240, h = 252 },
+	color_key = {
+		input = "#e96d4d",
+		output = "#844444",
+	},
+}, 100, 1200)
+helpers.res_mirror({
+	src = { x = 0, y = 980, w = 40, h = 48 },
+	dst = { x = 1050, y = 650, w = 240, h = 252 },
+	color_key = {
+		input = "#45cb65",
+		output = "#448444",
+	},
+}, 100, 1200)
+
 local resolutions = {
 	thin = helpers.toggle_res(380, 900),
 	tall = helpers.toggle_res(320, 16384),
-	wide = helpers.toggle_res(1650, 280),
+	wide = helpers.toggle_res(1920, 300),
+	pre = helpers.toggle_res(100, 1200),
 }
 
 --ninbot
@@ -120,64 +155,44 @@ end
 
 --local nin_bot_overlay = require("nin_bot")
 --local paceman_stats_overlay = require("paceman_session_overlay")
-local chat1 = Chat("infume", 15, 15, 10, 42, 22, 20000)
-
-local timer = nil
-local function open_timer()
-	if not timer then
-		timer = waywall.timer(10, 10, "#FFFFFFFF", 40, 3)
-	else
-		timer:close()
-		timer = nil
-	end
-end
-local function pause()
-	if timer then
-		timer:pause()
-	end
-end
-local function reset()
-	if timer then
-		timer:reset()
-	end
-end
-
-local function draw_utf8_text()
-	local text = waywall.text("<#FF0000FF>red text<#0000FF99> blue text", 15, 3, 50)
-end
+local chat1 = chat("Arsoniv", 10, 10, 16)
 
 config.actions = {
 	["*-f2"] = function()
 		waywall.exec("razer-cli --dpi 3200")
 		resolutions.thin()
+		eyeMode = false
 	end,
 	["*-p"] = toggleEye,
 	["*-y"] = function()
 		waywall.exec("razer-cli --dpi 3200")
 		resolutions.wide()
+		eyeMode = false
 	end,
-
+	["*-4"] = function()
+		waywall.exec("razer-cli --dpi 3200")
+		resolutions.pre()
+		eyeMode = false
+	end,
 	["shift-1"] = function()
 		waywall.exec("razer-cli --dpi 3200")
 		resolutions.tall()
+		eyeMode = false
 	end,
 
 	["*-n"] = helpers.toggle_floating,
 	["ctrl-n"] = exec_ninb,
 	["ctrl-b"] = exec_pm,
-	["ctrl-g"] = draw_utf8_text,
-
-	--[[ timer
-	["ctrl-8"] = open_timer,
-	["ctrl-9"] = pause,
-	["ctrl-0"] = reset,
-	]]
 
 	["ctrl-k"] = function()
 		chat1:open()
 	end,
 	["ctrl-m"] = function()
-		chat1:send("meow")
+		chat1:send("meow im a gleeb born in 1528 while doing a femboyDancy playing ranked")
+	end,
+
+	["ctrl-alt-l"] = function()
+		emote_downloader.Fetch("01K5JRCYEH0YCV255WGKD5AAB2")
 	end,
 }
 

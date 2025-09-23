@@ -2,41 +2,25 @@
   <component name="RecentProjectsManager">
     <option name="additionalInfo">
       <map>
-        <entry key="$USER_HOME$/projects/1.1game">
+        <entry key="$USER_HOME$/projects/mcsr-launcher">
           <value>
-            <RecentProjectMetaInfo frameTitle="1.1game – GamePanel.java [2d-space-game.main]" projectWorkspaceId="2xkJZiVHLM8PWxQmzSLEYzosiZV">
-              <option name="activationTimestamp" value="1753736441951" />
+            <RecentProjectMetaInfo frameTitle="mcsr-launcher – README.md [MCSRLauncher]" opened="true" projectWorkspaceId="32UspWfb1EnexvXLrvU909HYoWl">
+              <option name="activationTimestamp" value="1757487239870" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="IC-251.23774.435" />
               <option name="buildTimestamp" value="1744642800000" />
               <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="0" />
+                <RecentProjectColorInfo associatedIndex="4" />
               </option>
               <frame x="8" y="55" width="1904" height="1137" />
               <option name="productionCode" value="IC" />
-              <option name="projectOpenTimestamp" value="1752526733150" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
-        <entry key="$USER_HOME$/projects/teach_orson">
-          <value>
-            <RecentProjectMetaInfo frameTitle="teach_orson – Main.java" opened="true" projectWorkspaceId="30WHWWCp9g0Yt6J4o9XLhcCGKLx">
-              <option name="activationTimestamp" value="1753737092600" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="IC-251.23774.435" />
-              <option name="buildTimestamp" value="1744642800000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="2" />
-              </option>
-              <frame x="8" y="55" width="1904" height="1137" />
-              <option name="productionCode" value="IC" />
-              <option name="projectOpenTimestamp" value="1753736442513" />
+              <option name="projectOpenTimestamp" value="1757486669138" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/projects/teach_orson" />
+    <option name="lastOpenedProject" value="$USER_HOME$/projects/mcsr-launcher" />
     <option name="lastProjectLocation" value="$USER_HOME$/projects" />
   </component>
 </application>

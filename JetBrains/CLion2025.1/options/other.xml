@@ -1,4 +1,7 @@
 <application>
+  <component name="CppNewDialogSettings">
+    <option name="addNewFilesToProject" value="false" />
+  </component>
   <component name="FileEditorProviderManager">{
   &quot;selectedProviders&quot;: {
     &quot;DiffPatchFileEditorProvider,text-editor&quot;: &quot;DiffPatchFileEditorProvider&quot;
@@ -17,16 +20,59 @@
   </component>
   <component name="PropertyService"><![CDATA[{
   "keyToString": {
+    "BinEdPlugin.codeColorization": "true",
+    "BinEdPlugin.codeType": "HEXADECIMAL",
+    "BinEdPlugin.fileHandlingMode": "DELTA",
+    "BinEdPlugin.hexCharactersCase": "UPPER",
+    "BinEdPlugin.layoutProfileName.0": "Imported profile",
+    "BinEdPlugin.layoutProfilesCount": "1",
+    "BinEdPlugin.layouts.0.bottomHeaderSpace": "0",
+    "BinEdPlugin.layouts.0.doubleSpaceGroupSize": "0",
+    "BinEdPlugin.layouts.0.halfSpaceGroupSize": "0",
+    "BinEdPlugin.layouts.0.leftRowPositionSpace": "0",
+    "BinEdPlugin.layouts.0.rightRowPositionSpace": "0",
+    "BinEdPlugin.layouts.0.showHeader": "true",
+    "BinEdPlugin.layouts.0.showRowPosition": "true",
+    "BinEdPlugin.layouts.0.spaceGroupSize": "1",
+    "BinEdPlugin.layouts.0.topHeaderSpace": "0",
+    "BinEdPlugin.positionCodeType": "HEXADECIMAL",
+    "BinEdPlugin.rowWrappingMode": "NO_WRAPPING",
+    "BinEdPlugin.selectedEncoding": "UTF-8",
+    "BinEdPlugin.showLineNumbersBackground": "true",
+    "BinEdPlugin.showNonpritables": "false",
+    "BinEdPlugin.textFont.default": "true",
+    "BinEdPlugin.textFont.family": "Monospaced",
+    "BinEdPlugin.textFont.italic": "false",
+    "BinEdPlugin.textFont.strikethrough": "false",
+    "BinEdPlugin.textFont.strong": "false",
+    "BinEdPlugin.textFont.subscript": "false",
+    "BinEdPlugin.textFont.superscript": "false",
+    "BinEdPlugin.textFont.underline": "false",
+    "BinEdPlugin.theme.0.backgroundPaintMode": "STRIPED",
+    "BinEdPlugin.theme.0.decoration.boxLines": "false",
+    "BinEdPlugin.theme.0.decoration.groupLines": "false",
+    "BinEdPlugin.theme.0.decoration.headerLine": "true",
+    "BinEdPlugin.theme.0.decoration.rowNumberLine": "true",
+    "BinEdPlugin.theme.0.decoration.splitLine": "true",
+    "BinEdPlugin.theme.0.paintRowPositionBackground": "true",
+    "BinEdPlugin.theme.0.verticalLineByteGroupSize": "0",
+    "BinEdPlugin.themeProfileName.0": "Imported profile",
+    "BinEdPlugin.themeProfilesCount": "1",
+    "BinEdPlugin.version": "0.2.1",
+    "BinEdPlugin.viewMode": "DUAL",
+    "CUSTOMIZE_ACTIONS": "go to tab\ntab\nfile name\nfile\nrun",
+    "CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2": "0.5997639",
+    "FileTemplates.CurrentTab": "Includes",
+    "FileTemplates.SelectedTemplate": "C File Header",
     "FindSplitterProportion": "0.44077134",
     "InstalledPluginsSearchHistory": "makefile\nnasm\nna\nn\ns",
     "LAST_CALCULATED_COLOR_INDEX_KEY": "0",
     "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "CL-251.25410.104",
     "LAST_INJECTED_LANGUAGE": "Redshift",
-    "Markdown Split EditorLayout": "Preview only",
     "MarketplacePluginsSearchHistory": "makefile\nmake\nasm\nas\nassm",
-    "NextRunPlatformUpdateBuild": "CL-251.27812.15",
+    "NextRunPlatformUpdateBuild": "CL-251.28293.43",
     "NextRunPlatformUpdateSelfBuild": "CL-251.25410.104",
-    "NextRunPlatformUpdateVersion": "2025.1.4",
+    "NextRunPlatformUpdateVersion": "2025.1.5.1",
     "PluginConfigurable.selectionTab": "1",
     "Rad.Init.Cfg.1": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
@@ -36,7 +82,7 @@
     "RunOnceActivity.cidr.test.roots.only": "true",
     "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
     "RunOnceActivity.llm.onboarding.window.launcher.v7": "true",
-    "SettingsSearchHistory": "compac\nfont\nfont size\nmakefile\nview",
+    "SettingsSearchHistory": "email\nrestore\ntabs\nreset\nnew file",
     "TextEditorWithPreview.SplitterProportionKey": "0.48792535",
     "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
     "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
@@ -62,16 +108,23 @@
     "llm.installer.auto.activation.executed": "true",
     "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
     "migrated.non.roamable.values.from.general.settings": "true",
+    "onboarding.tips.enabled": "false",
     "previousColorScheme": "_@user_Dark",
     "registry.to.advanced.settings.migration.build": "CL-251.25410.104",
+    "run.configuration.edit.ad": "true",
     "settings.code.style.selected.tab.C++": "Blank Lines",
     "tab_selection_count": "5",
     "terminal.gen.one.option.visible": "false",
+    "toolwindow.showToolWindowsNames.ts": "2025-09-06T17:07:52.050872681",
     "ts.lib.d.ts.version": "5.6.3",
     "whats.new.last.shown.version": "2025-1.1-25410-8741fe7a4dacb444b25eed96728093ccfaadb6bb"
   },
   "keyToStringList": {
     "file.chooser.recent.files": [
+      "/home/arsoniv/projects/a-waywall",
+      "/home/arsoniv/projects/ww2",
+      "/home/arsoniv/projects/axen/axenc",
+      "/home/arsoniv/projects/og_ww",
       "/home/arsoniv/projects/axen-lang",
       "/home/arsoniv/projects/og_waywall",
       "/home/arsoniv/projects/rainbow-os",
@@ -112,4 +165,9 @@
   },
   &quot;tipsOrderSeed&quot;: 1746962889358
 }</component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="ww2-history" project-path="$USER_HOME$/projects/ww2" last-access-time="1757919065135" />
+    </command-history-files>
+  </component>
 </application>

@@ -1,7 +1,7 @@
 local waywall = require("waywall")
-local json = require("dkjson")
 local priv = require("priv")
 local utf8 = require("utf8")
+local json = require("dkjson")
 
 local INVISIBLE_CHARS = {
 	[0x200B] = true, -- ZERO WIDTH SPACE
@@ -21,6 +21,29 @@ local function strip_invisible(s)
 	return table.concat(t)
 end
 
+local function read_raw_data(filename)
+	local file = io.open(filename, "rb")
+	if not file then
+		error("Failed to open file: " .. filename)
+	end
+	local data = file:read("*a")
+	file:close()
+	return data
+end
+
+local function read_json(filename)
+	local file = io.open(filename, "r")
+	if not file then
+		error("Failed to open file: " .. filename)
+	end
+	local content = file:read("*a")
+	file:close()
+	return json.decode(content)
+end
+
+local atlas_filename = "/home/arsoniv/.config/waywall/atlas.raw"
+local emoteset_filename = "/home/arsoniv/.config/waywall/emoteset.json"
+
 local function new_chat(channel, x, y, size)
 	local CHAT = {}
 
@@ -37,19 +60,16 @@ local function new_chat(channel, x, y, size)
 	CHAT.chat_rows = 15
 	CHAT.text_height = 16
 	CHAT.max_cols = 100
-	CHAT.has_connected = false
 	CHAT.has_joined = false
 	CHAT.irc_client = nil
-	CHAT.http_emoteset = nil
-	CHAT.http_clients = {}
-	CHAT.http_index = 1
-	CHAT.message_lifespan = 10000 -- 10 seconds
+	CHAT.message_lifespan = 3000
 	CHAT.size = size
 	CHAT.self_id = 0
 	CHAT.emote_set = {}
 	CHAT.emote_atlas = nil
-	CHAT.emotes = {}
 	CHAT.emote_images = {}
+	CHAT.ls = 15 -- line gaps
+	CHAT.emote_h = 16
 
 	local function draw_chat()
 		if CHAT.chat_text ~= nil then
@@ -76,22 +96,23 @@ local function new_chat(channel, x, y, size)
 				word = strip_invisible(word)
 
 				local emote = CHAT.emote_set[word]
-				if emote then
+				if emote and CHAT.emote_atlas then
 					local text_before_emote = text_buf .. message_prefix .. body
 					local advance = waywall.text_advance(text_before_emote, CHAT.size)
 
-					body = body .. "   "
-
+					local emote_h = 32
 					local aspect = emote.w / emote.h
-					local emote_h = CHAT.size
-					local emote_w = CHAT.size * aspect
-					local line_height = CHAT.size + 6
+					local emote_w = emote_h * aspect
 
-					local line_number = current_line
+					local space_width = waywall.text_advance(" ", CHAT.size).x
+					local spaces_needed = math.max(1, math.ceil(emote_w / space_width))
+					local spacing = string.rep(" ", spaces_needed)
 
-					local line_top = CHAT.chat_y + line_number * line_height
+					body = body .. spacing
 
-					local emote_y = line_top + (line_height - emote_h) / 2
+					local line_height = CHAT.size + CHAT.ls
+					local line_top = CHAT.chat_y + current_line * line_height - CHAT.size / 2
+					local emote_y = line_top - (CHAT.emote_h - CHAT.size - CHAT.ls / 2) / 2
 
 					local new_image = waywall.image_a({
 						src = { x = emote.x, y = emote.y, w = emote.w, h = emote.h },
@@ -118,12 +139,12 @@ local function new_chat(channel, x, y, size)
 			x = CHAT.chat_x,
 			y = CHAT.chat_y + CHAT.size,
 			size = CHAT.size,
-			ls = 6,
+			ls = CHAT.ls,
 		})
 	end
 
 	function CHAT:send(msg)
-		if self.irc_client and self.has_connected then
+		if self.irc_client then
 			local new_id = CHAT.self_id + 1
 			CHAT.self_id = new_id
 			print("Sending message: " .. msg)
@@ -263,88 +284,31 @@ local function new_chat(channel, x, y, size)
 		end
 	end
 
-	local function http_callback(data)
-		data = json.decode(data)
-
-		for _, emote in ipairs(data.emotes) do
-			local width = emote.data.width or 32
-			local height = emote.data.height or 32
-			local url
-			if emote.data.animated then
-				url = ("https://cdn.7tv.app/emote/%s/1x_static.png?n=%s&w=%d&h=%d"):format(
-					emote.id,
-					emote.name,
-					width,
-					height
-				)
-			else
-				url = ("https://cdn.7tv.app/emote/%s/1x.png?n=%s&w=%d&h=%d"):format(emote.id, emote.name, width, height)
-			end
-
-			-- distribute evenly across http_clients
-			CHAT.http_clients[CHAT.http_index]:get(url)
-			CHAT.http_index = CHAT.http_index % #CHAT.http_clients + 1
-		end
-	end
-
-	CHAT.current_atlas_x = 0
-	CHAT.current_atlas_y = 0
-
-	local function http_callback2(data, url)
-		local name = url:match("[?&]n=([^&]+)")
-		local width = tonumber(url:match("[?&]w=(%d+)")) or 32
-		local height = tonumber(url:match("[?&]h=(%d+)")) or 32
-		if not name then
-			return
-		end
-
-		CHAT.emote_atlas:insert_raw(data, CHAT.current_atlas_x, CHAT.current_atlas_y)
-
-		CHAT.emote_set[name] = {
-			x = CHAT.current_atlas_x,
-			y = CHAT.current_atlas_y,
-			w = width,
-			h = height,
-		}
-
-		CHAT.current_atlas_x = CHAT.current_atlas_x + width
-		if CHAT.current_atlas_x >= 2048 - width then
-			CHAT.current_atlas_x = 0
-			CHAT.current_atlas_y = CHAT.current_atlas_y + height
-			if CHAT.current_atlas_y >= 2048 - height then
-				CHAT.current_atlas_x = 0
-				CHAT.current_atlas_y = 0
-				print("No more room in atlas, overwriting")
-			end
-		end
-
-		print(("Added emote: %s (%dx%d)"):format(name, width, height))
-	end
-
 	function CHAT:open()
 		if not self.has_connected then
-			print("starting client")
+			print("Starting Chat...")
+
+			print("Loading emote atlas from: " .. atlas_filename)
+			print("Loading emote set from: " .. emoteset_filename)
+
+			CHAT.emote_set = read_json(emoteset_filename)
+
+			local atlas_data = read_raw_data(atlas_filename)
+			CHAT.emote_atlas = waywall.atlas(0, atlas_data)
+
+			local emote_count = 0
+			for _ in pairs(CHAT.emote_set) do
+				emote_count = emote_count + 1
+			end
+			print("Loaded emote atlas and " .. tostring(emote_count) .. " emotes")
+
 			-- create irc client
 			self.irc_client = waywall.irc_client_create(self.ip, self.port, self.username, self.token, irc_callback)
 
-			-- create 4 http clients
-			self.http_clients = {
-				waywall.http_client_create(http_callback2),
-				waywall.http_client_create(http_callback2),
-				waywall.http_client_create(http_callback2),
-				waywall.http_client_create(http_callback2),
-				waywall.http_client_create(http_callback2),
-				waywall.http_client_create(http_callback2),
-				waywall.http_client_create(http_callback2),
-			}
-			self.http_emoteset = waywall.http_client_create(http_callback)
-			self.has_connected = true
-
-			-- create emote texture atlas
-			self.emote_atlas = waywall.atlas(2048)
-
-			-- fetch emotes
-			self.http_emoteset:get("http://7tv.io/v3/emote-sets/01GK85Q2KR0004CEXMKS14YZJV")
+			-- create emote texture atlas if not already loaded
+			if not self.emote_atlas then
+				self.emote_atlas = waywall.atlas(2048)
+			end
 
 			-- sleep to allow irc client to connect
 			waywall.sleep(3000)

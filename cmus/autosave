@@ -1,4 +1,4 @@
-set aaa_mode=all
+set aaa_mode=artist
 set altformat_current= %F 
 set altformat_playlist= %f%= %d %{?X!=0?%3X ?    }
 set altformat_title=%f
@@ -84,7 +84,9 @@ set input.ffmpeg.priority=30
 set input.flac.priority=50
 set input.mad.priority=55
 set input.modplug.priority=50
+set input.mp4.priority=50
 set input.mpc.priority=50
+set input.opus.priority=50
 set input.vorbis.priority=50
 set input.wav.priority=50
 set input.wavpack.priority=50

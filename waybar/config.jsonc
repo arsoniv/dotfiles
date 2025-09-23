@@ -5,7 +5,7 @@
   "margin-right": 8,
   "layer": "top",
   "modules-left": ["hyprland/workspaces"],
-  "modules-center": [],
+  "modules-center": [""],
   "modules-right": ["pulseaudio", "battery", "clock"],
   
   "custom/brightness": {
@@ -49,6 +49,11 @@
   "clock": {
     "format": "{:%H:%M}",
     "tooltip": false
-  }
+  },
+
+"custom/hello": {
+"exec": "bash -c 'STATE_FILE=/tmp/hello_toggle_state; [ ! -f $STATE_FILE ] && echo 0 > $STATE_FILE; s=$(cat $STATE_FILE); if [ $s -eq 0 ]; then echo Bent double, like old beggars under sacks, Knock-kneed, coughing like hags, we cursed through sludge,; echo 1 > $STATE_FILE; else echo What passing-bells for these who die as cattle? — Only the monstrous anger of the guns.; echo 0 > $STATE_FILE; fi'",
+    "interval": 10
+}
 }
 

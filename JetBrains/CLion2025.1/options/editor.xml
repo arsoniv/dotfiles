@@ -2,6 +2,15 @@
   <component name="CodeInsightSettings">
     <option name="AUTO_POPUP_JAVADOC_INFO" value="true" />
   </component>
+  <component name="EditorSettings">
+    <option name="languageBreadcrumbsMap">
+      <map>
+        <entry key="C++" value="true" />
+      </map>
+    </option>
+    <option name="ARE_GUTTER_ICONS_SHOWN" value="false" />
+    <option name="SHOW_BREADCRUMBS" value="false" />
+  </component>
   <component name="InlineCompletionOnboarding">
     <option name="onboardingFinished" value="true" />
   </component>

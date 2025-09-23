@@ -35,48 +35,83 @@
       <file>
         <entry file="file://$PROJECT_DIR$/waywall/scene.c">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="352">
+            <state relative-caret-position="956">
               <caret line="933" column="39" selection-start-line="933" selection-start-column="39" selection-end-line="933" selection-end-column="39" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"scene.c","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"scene.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/include/scene.h">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="333">
+            <state relative-caret-position="2332">
               <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"scene.h","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"scene.h","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,89,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
-      <file current-in-tab="true">
+      <file>
         <entry file="file://$PROJECT_DIR$/waywall/config/api.c">
           <provider editor-type-id="text-editor" selected="true">
             <state relative-caret-position="370">
-              <caret line="1059" column="34" lean-forward="true" selection-start-line="1059" selection-start-column="34" selection-end-line="1059" selection-end-column="34" />
+              <caret line="1059" column="34" selection-start-line="1059" selection-start-column="34" selection-end-line="1059" selection-end-column="34" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"api.c","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"api.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/meson.build">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="682">
+              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"meson.build","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,74,10,15,105,99,111,110,115,47,109,101,115,111,110,46,115,118,103,18,21,105,99,111,110,115,47,101,120,112,117,105,47,109,101,115,111,110,46,115,118,103,26,24,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,46,109,101,115,111,110,40,-63,-9,-93,-60,3,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="ghpr://{&quot;sessionId&quot;:&quot;1755636885847&quot;,&quot;projectHash&quot;:&quot;1618fd46&quot;,&quot;repository&quot;:{&quot;serverPath&quot;:{&quot;myHost&quot;:&quot;github.com&quot;},&quot;repositoryPath&quot;:{&quot;owner&quot;:&quot;Arsoniv&quot;,&quot;repository&quot;:&quot;waywall&quot;}},&quot;prId&quot;:{&quot;id&quot;:&quot;PR_kwDOOnG-C86kWQTS&quot;,&quot;number&quot;:2},&quot;isDiff&quot;:false}">
+          <provider editor-type-id="GHPR" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"I just wanted to make more requests :broken_heart:  #2","foregroundColor":-11243910,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"546e7a"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,87,10,25,105,99,111,110,115,47,112,117,108,108,82,101,113,117,101,115,116,79,112,101,110,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,34,36,105,110,116,101,108,108,105,106,46,112,108,97,116,102,111,114,109,46,99,111,108,108,97,98,111,114,97,116,105,111,110,84,111,111,108,115,40,-107,-113,-49,-61,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="ghpr://{&quot;sessionId&quot;:&quot;1755636885847&quot;,&quot;projectHash&quot;:&quot;1618fd46&quot;,&quot;repository&quot;:{&quot;serverPath&quot;:{&quot;myHost&quot;:&quot;github.com&quot;},&quot;repositoryPath&quot;:{&quot;owner&quot;:&quot;Arsoniv&quot;,&quot;repository&quot;:&quot;waywall&quot;}},&quot;prId&quot;:{&quot;id&quot;:&quot;PR_kwDOOnG-C86kWQTS&quot;,&quot;number&quot;:2},&quot;isDiff&quot;:true}">
+          <provider editor-type-id="BackendDiffFileEditorProvider" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Diff for Pull Request #2","foregroundColor":-11243910,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"546e7a"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,60,10,16,97,99,116,105,111,110,115,47,100,105,102,102,46,115,118,103,18,18,101,120,112,117,105,47,118,99,115,47,100,105,102,102,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-74,-123,-108,-105,2,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/waywall/config/vm.c">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="428">
+              <caret line="354" column="33" selection-start-line="354" selection-end-line="354" selection-end-column="33" />
+              <folding>
+                <marker date="1754790354644" expanded="true" signature="0:271" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"vm.c","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,83,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,46,115,118,103,26,22,99,111,109,46,105,110,116,101,108,108,105,106,46,99,105,100,114,46,98,97,115,101,40,-1,-106,-46,125,48,0]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++ Header": {
-      "usageCount": 100,
-      "lastUsed": 1754717071496
+      "usageCount": 104,
+      "lastUsed": 1755636880333
     },
     "C/C++": {
-      "usageCount": 208,
-      "lastUsed": 1754717547183
+      "usageCount": 217,
+      "lastUsed": 1755637704544
     },
     "meson.build": {
-      "usageCount": 37,
-      "lastUsed": 1754428918245
+      "usageCount": 39,
+      "lastUsed": 1755636880312
     },
     "Markdown": {
       "usageCount": 9,
@@ -87,12 +122,16 @@
       "lastUsed": 1754711306922
     },
     "DIFF": {
-      "usageCount": 4,
-      "lastUsed": 1754656177953
+      "usageCount": 7,
+      "lastUsed": 1755637940686
     },
     "Makefile": {
       "usageCount": 11,
       "lastUsed": 1754711306848
+    },
+    "UNKNOWN": {
+      "usageCount": 1,
+      "lastUsed": 1755636970708
     }
   }
 }]]></component>
@@ -144,27 +183,27 @@
     <select />
   </component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory"><![CDATA[{
-  "changedPaths": [
-    "/home/arsoniv/projects/waywall/README.md",
-    "/home/arsoniv/projects/waywall/waywall/meson.build",
-    "/home/arsoniv/projects/waywall/waywall/server/server.c",
-    "/home/arsoniv/projects/waywall/waywall/http.c",
-    "/home/arsoniv/projects/waywall/waywall/config/config.c",
-    "/home/arsoniv/projects/waywall/meson.build",
-    "/home/arsoniv/projects/waywall/waywall/config/vm.c",
-    "/home/arsoniv/projects/waywall/include/config/vm.h",
-    "/home/arsoniv/projects/waywall/Makefile",
-    "/home/arsoniv/projects/waywall/include/irc.h",
-    "/home/arsoniv/projects/waywall/waywall/main.c",
-    "/home/arsoniv/projects/waywall/waywall/lua/api.lua",
-    "/home/arsoniv/projects/waywall/waywall/irc.c",
-    "/home/arsoniv/projects/waywall/include/gif.h",
-    "/home/arsoniv/projects/waywall/include/scene.h",
-    "/home/arsoniv/projects/waywall/waywall/config/api.c",
-    "/home/arsoniv/projects/waywall/waywall/scene.c"
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/arsoniv/projects/waywall/README.md&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/meson.build&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/server/server.c&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/http.c&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/config/config.c&quot;,
+    &quot;/home/arsoniv/projects/waywall/meson.build&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/config/vm.c&quot;,
+    &quot;/home/arsoniv/projects/waywall/include/config/vm.h&quot;,
+    &quot;/home/arsoniv/projects/waywall/Makefile&quot;,
+    &quot;/home/arsoniv/projects/waywall/include/irc.h&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/main.c&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/lua/api.lua&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/irc.c&quot;,
+    &quot;/home/arsoniv/projects/waywall/include/gif.h&quot;,
+    &quot;/home/arsoniv/projects/waywall/include/scene.h&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/scene.c&quot;,
+    &quot;/home/arsoniv/projects/waywall/waywall/config/api.c&quot;
   ]
-}]]></component>
+}</component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -174,10 +213,10 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="308" lastUsage="1754717547183" />
+      <summary usageCount="321" lastUsage="1755637704544" />
     </language>
     <language id="JetBrainsMeson">
-      <summary usageCount="37" lastUsage="1754428918245" />
+      <summary usageCount="39" lastUsage="1755636880314" />
     </language>
     <language id="Lua">
       <summary usageCount="30" lastUsage="1754711306922" />
@@ -639,7 +678,7 @@
                       <entry key="filePath" value="$PROJECT_DIR$/waywall/meson.build" />
                     </map>
                   </attributes>
-                  <data iconPath="icons/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
+                  <data iconPath="icons/expui/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
                   <item name="meson.build" type="ab9368bb:PsiFileNode" />
                 </presentation>
               </presentation>
@@ -667,7 +706,7 @@
                     <entry key="filePath" value="$PROJECT_DIR$/meson.build" />
                   </map>
                 </attributes>
-                <data iconPath="icons/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
+                <data iconPath="icons/expui/meson.svg" iconPlugin="com.intellij.clion.meson" isLeaf="true" text="meson.build" />
                 <item name="meson.build" type="ab9368bb:PsiFileNode" />
               </presentation>
               <presentation>
@@ -764,14 +803,14 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83080000" />
+    <option name="totallyTimeSpent" value="85113000" />
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17778361" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17778361" />
       <window_info id="Commit" order="1" weight="0.17778361" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info id="Pull Requests" order="3" weight="0.17200631" />
+      <window_info active="true" id="Pull Requests" order="3" visible="true" weight="0.17778361" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.33025506" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.33025506" />
@@ -812,16 +851,16 @@
       <unified_weights bottom="0.33025506" left="0.17778361" right="0.2901786" />
     </layout-to-restore>
     <recentWindows>
+      <value>Pull Requests</value>
+      <value>Meson</value>
+      <value>Project</value>
       <value>Terminal</value>
       <value>Version Control</value>
-      <value>Project</value>
       <value>Commit</value>
       <value>Run</value>
       <value>Build</value>
       <value>Problems View</value>
       <value>Services</value>
-      <value>Meson</value>
-      <value>Pull Requests</value>
     </recentWindows>
   </component>
   <component name="WindowStateProjectService">
@@ -961,13 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meson.build">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1342">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waywall/meson.build">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1041,13 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waywall/config/vm.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="956">
-          <caret line="334" column="22" selection-start-line="334" selection-end-line="334" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/waywall/wrap.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="956">
@@ -1080,26 +1105,46 @@
     <entry file="file://$PROJECT_DIR$/include/http.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/scene.h">
+    <entry file="file://$PROJECT_DIR$/meson.build">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+        <state relative-caret-position="682">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waywall/scene.c">
+    <entry file="file://$PROJECT_DIR$/include/scene.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="933" column="39" selection-start-line="933" selection-start-column="39" selection-end-line="933" selection-end-column="39" />
+        <state relative-caret-position="2332">
+          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waywall/config/api.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
-          <caret line="1059" column="34" lean-forward="true" selection-start-line="1059" selection-start-column="34" selection-end-line="1059" selection-end-column="34" />
+          <caret line="1059" column="34" selection-start-line="1059" selection-start-column="34" selection-end-line="1059" selection-end-column="34" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/scene.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="956">
+          <caret line="933" column="39" selection-start-line="933" selection-start-column="39" selection-end-line="933" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waywall/config/vm.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="354" column="33" selection-start-line="354" selection-end-line="354" selection-end-column="33" />
+          <folding>
+            <marker date="1754790354644" expanded="true" signature="0:271" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="ghpr://{&quot;sessionId&quot;:&quot;1755636885847&quot;,&quot;projectHash&quot;:&quot;1618fd46&quot;,&quot;repository&quot;:{&quot;serverPath&quot;:{&quot;myHost&quot;:&quot;github.com&quot;},&quot;repositoryPath&quot;:{&quot;owner&quot;:&quot;Arsoniv&quot;,&quot;repository&quot;:&quot;waywall&quot;}},&quot;prId&quot;:{&quot;id&quot;:&quot;PR_kwDOOnG-C86kWQTS&quot;,&quot;number&quot;:2},&quot;isDiff&quot;:false}">
+      <provider selected="true" editor-type-id="GHPR" />
     </entry>
   </component>
 </project>

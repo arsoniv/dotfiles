@@ -988,3 +988,2967 @@ Traceback (most recent call last):
   File "/usr/lib/python3.13/site-packages/mutagen/mp4/__init__.py", line 1055, in load
     raise MP4StreamInfoError("not a MP4 file")
 mutagen.mp4.MP4StreamInfoError: not a MP4 file
+[2025-09-03 13:45:09,450]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - Sticky Fingers - Wild Horses
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,470]ERROR:Error loading file /home/arsoniv/Music/The White Stripes - Elephant - Seven Nation Army
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,481]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - You Can't Always Get What You Want
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,494]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Africa
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,508]ERROR:Error loading file /home/arsoniv/Music/Toto - Legend - Hold The Line
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,517]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Sticky Fingers - Brown Sugar
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,525]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Rosanna
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,535]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Some Girls - Miss You
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,550]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Beggars Banquet - Sympathy For The Devil
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,562]ERROR:Error loading file /home/arsoniv/Music/Led Zeppelin - Physical Graffiti - Kashmir
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,574]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - Gimme Shelter
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,582]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Tattoo You - Start Me Up
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 13:45:09,596]ERROR:Error loading file /home/arsoniv/Music/The Police - Greatest Hits - Every Little Thing She Does Is Magic
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,790]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - Sticky Fingers - Wild Horses
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,812]ERROR:Error loading file /home/arsoniv/Music/The White Stripes - Elephant - Seven Nation Army
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,823]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - You Can't Always Get What You Want
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,837]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Africa
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,851]ERROR:Error loading file /home/arsoniv/Music/Toto - Legend - Hold The Line
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,863]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Sticky Fingers - Brown Sugar
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,873]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Rosanna
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,882]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Some Girls - Miss You
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,899]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Beggars Banquet - Sympathy For The Devil
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,915]ERROR:Error loading file /home/arsoniv/Music/Led Zeppelin - Physical Graffiti - Kashmir
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,928]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - Gimme Shelter
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,938]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Tattoo You - Start Me Up
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 14:22:46,952]ERROR:Error loading file /home/arsoniv/Music/The Police - Greatest Hits - Every Little Thing She Does Is Magic
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,564]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - Sticky Fingers - Wild Horses
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,577]ERROR:Error loading file /home/arsoniv/Music/The White Stripes - Elephant - Seven Nation Army
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,587]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - You Can't Always Get What You Want
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,598]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Africa
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,608]ERROR:Error loading file /home/arsoniv/Music/Toto - Legend - Hold The Line
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,618]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Sticky Fingers - Brown Sugar
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,626]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Rosanna
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,634]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Some Girls - Miss You
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,647]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Beggars Banquet - Sympathy For The Devil
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,660]ERROR:Error loading file /home/arsoniv/Music/Led Zeppelin - Physical Graffiti - Kashmir
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,674]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - Gimme Shelter
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,680]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Tattoo You - Start Me Up
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:38:03,692]ERROR:Error loading file /home/arsoniv/Music/The Police - Greatest Hits - Every Little Thing She Does Is Magic
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,203]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - Sticky Fingers - Wild Horses
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,216]ERROR:Error loading file /home/arsoniv/Music/The White Stripes - Elephant - Seven Nation Army
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,224]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - You Can't Always Get What You Want
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,235]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Africa
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,244]ERROR:Error loading file /home/arsoniv/Music/Toto - Legend - Hold The Line
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,252]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Sticky Fingers - Brown Sugar
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,260]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Rosanna
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,268]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Some Girls - Miss You
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,281]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Beggars Banquet - Sympathy For The Devil
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,295]ERROR:Error loading file /home/arsoniv/Music/Led Zeppelin - Physical Graffiti - Kashmir
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,307]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - Gimme Shelter
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,314]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Tattoo You - Start Me Up
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:40:49,329]ERROR:Error loading file /home/arsoniv/Music/The Police - Greatest Hits - Every Little Thing She Does Is Magic
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:04,960]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - Sticky Fingers - Wild Horses
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:04,972]ERROR:Error loading file /home/arsoniv/Music/The White Stripes - Elephant - Seven Nation Army
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:04,979]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - You Can't Always Get What You Want
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:04,990]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Africa
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:05,000]ERROR:Error loading file /home/arsoniv/Music/Toto - Legend - Hold The Line
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:05,007]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Sticky Fingers - Brown Sugar
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:05,015]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Rosanna
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:05,024]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Some Girls - Miss You
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:05,037]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Beggars Banquet - Sympathy For The Devil
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:05,050]ERROR:Error loading file /home/arsoniv/Music/Led Zeppelin - Physical Graffiti - Kashmir
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:05,064]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - Gimme Shelter
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:05,070]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Tattoo You - Start Me Up
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 16:42:05,083]ERROR:Error loading file /home/arsoniv/Music/The Police - Greatest Hits - Every Little Thing She Does Is Magic
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,308]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - The Rolling Stones - Sticky Fingers - Wild Horses
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,325]ERROR:Error loading file /home/arsoniv/Music/The White Stripes - Elephant - Seven Nation Army
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,332]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - You Can't Always Get What You Want
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,343]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Africa
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,354]ERROR:Error loading file /home/arsoniv/Music/Toto - Legend - Hold The Line
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,360]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Sticky Fingers - Brown Sugar
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,367]ERROR:Error loading file /home/arsoniv/Music/Toto - Toto IV - Rosanna
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,376]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Some Girls - Miss You
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,389]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Beggars Banquet - Sympathy For The Devil
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,397]ERROR:Error loading file /home/arsoniv/Music/Led Zeppelin - Physical Graffiti - Kashmir
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,410]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Let It Bleed - Gimme Shelter
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,418]ERROR:Error loading file /home/arsoniv/Music/The Rolling Stones - Tattoo You - Start Me Up
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame
+[2025-09-03 20:23:54,430]ERROR:Error loading file /home/arsoniv/Music/The Police - Greatest Hits - Every Little Thing She Does Is Magic
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/puddlestuff/puddleobjects.py", line 674, in gettag
+    return audioinfo.Tag(f)
+           ~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 342, in ReplacementTag
+    return Kind[1](filename)
+           ~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/tagmodel.py", line 159, in __init__
+    super(ModelTag, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 818, in __init__
+    util.MockTag.__init__(self, filename)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 752, in __init__
+    self.link(filename)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 1012, in link
+    tags, audio = self.load(filename, id3_filetype)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/util.py", line 854, in load
+    audio = filetype(filename)
+  File "/usr/lib/python3.13/site-packages/mutagen/_file.py", line 48, in __init__
+    self.load(*args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/puddlestuff/audioinfo/id3.py", line 772, in load
+    return super(ID3FileType, self).load(filename, ID3, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 156, in wrapper
+    return func(self, h, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/id3/_file.py", line 420, in load
+    self.info = self._Info(fileobj, offset)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/mutagen/mp3/__init__.py", line 401, in __init__
+    raise HeaderNotFoundError("can't sync to MPEG frame")
+mutagen.mp3.HeaderNotFoundError: can't sync to MPEG frame

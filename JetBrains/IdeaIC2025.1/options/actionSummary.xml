@@ -16,7 +16,7 @@
       <i c="32" l="1750984649289" />
     </e>
     <e n="$SelectAll">
-      <i c="10" l="1752526752481" />
+      <i c="11" l="1757486722228" />
     </e>
     <e n="$Undo">
       <i c="485" l="1753737024767" />
@@ -43,7 +43,7 @@
       <i c="5" l="1750984632847" />
     </e>
     <e n="EditorBackSpace">
-      <i c="3871" l="1753737072141" />
+      <i c="3873" l="1757486722494" />
     </e>
     <e n="EditorChooseLookupItem">
       <i c="33" l="1753737011281" />
@@ -244,13 +244,16 @@
       <i c="40" l="1749515287687" />
     </e>
     <e n="ShowSettings">
-      <i c="4" l="1749261168569" />
+      <i c="6" l="1757486809418" />
     </e>
     <e n="Stop">
       <i c="27" l="1750984639130" />
     </e>
     <e n="ToggleLineBreakpoint">
       <i c="3" l="1749503710200" />
+    </e>
+    <e n="Vcs.VcsClone">
+      <i c="1" l="1757486642511" />
     </e>
     <e n="VimPluginToggle">
       <i c="1" l="1748392487353" />
@@ -289,13 +292,13 @@
       <i c="5" l="1749507351234" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="11" l="1753736614719" />
+      <i c="12" l="1757487389508" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
       <i c="7" l="1753736449919" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
-      <i c="31" l="1753737092516" />
+      <i c="34" l="1757487420414" />
     </e>
     <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
       <i c="3" l="1752526711981" />
@@ -304,7 +307,7 @@
       <i c="29" l="1753736718070" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
-      <i c="6" l="1753736422442" />
+      <i c="8" l="1757486807743" />
     </e>
     <e n="com.intellij.platform.debugger.impl.frontend.hotswap.HideAction">
       <i c="1" l="1750984638368" />

@@ -6,11 +6,11 @@ opacity = 0.8
 
 [cursor.style]
 shape = "Beam"
-blinking = "Always"
+blinking = "Never"
 
 [font]
-size = 14
-normal = { family = "JetBrainsMonoNerdFont", style = "semibold" }
+size = 11
+normal = { family = "JetBrainsMonoNerdFont", style = "regular" }
 
 [colors.primary]
 background = "#000000"

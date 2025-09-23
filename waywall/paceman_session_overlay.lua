@@ -1,6 +1,15 @@
+local function ms_to_min_sec(ms)
+	if not ms then
+		return "0:00"
+	end
+	local total_seconds = math.floor(ms / 1000)
+	local minutes = math.floor(total_seconds / 60)
+	local seconds = total_seconds % 60
+	return string.format("%d:%02d", minutes, seconds)
+end
+
 local waywall = require("waywall")
 local json = require("dkjson")
-local util = require("util")
 
 -- NPH AND OTHER STATS
 local last_index = 0
@@ -48,7 +57,7 @@ local function display_overlay()
 			.. "\nPer Hour: "
 			.. tostring(saved_data.rnph)
 			.. "\nAverage: "
-			.. util.ms_to_min_sec(saved_data.avg)
+			.. ms_to_min_sec(saved_data.avg)
 
 		if text then
 			text:close()
@@ -57,7 +66,7 @@ local function display_overlay()
 
 		local state = waywall.state()
 		if state.screen == "wall" then
-			text = waywall.text(display_string, 25, 1060, "#FFFFFF", 38)
+			text = waywall.text(display_string, 25, 1060, "#FFFFFFFF")
 		end
 	end
 end
@@ -71,7 +80,7 @@ local function display_overlay2()
 			for _, key in ipairs(key_order) do
 				local value = entry[key]
 				if value ~= nil and not exclude_keys[key] then
-					display_string = display_string .. key .. ": " .. tostring(util.ms_to_min_sec(value)) .. "\n"
+					display_string = display_string .. key .. ": " .. tostring(ms_to_min_sec(value)) .. "\n"
 				end
 			end
 		end

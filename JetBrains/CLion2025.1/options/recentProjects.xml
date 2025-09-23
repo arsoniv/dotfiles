@@ -18,42 +18,26 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/projects/og_waywall">
+        <entry key="$USER_HOME$/projects/axen/axenc">
           <value>
-            <RecentProjectMetaInfo frameTitle="og_waywall – scene.c" projectWorkspaceId="30Tf2PENnYVyxGuk65cu9bIxipV">
-              <option name="activationTimestamp" value="1753829126004" />
+            <RecentProjectMetaInfo frameTitle="axenc [~/projects/axen/axenc]" projectWorkspaceId="32FdC3jMFMc14y2yiDCyw8SnfAm">
+              <option name="activationTimestamp" value="1757020146777" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="CL-251.25410.104" />
               <option name="buildTimestamp" value="1746539640000" />
               <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="7" />
+                <RecentProjectColorInfo associatedIndex="3" />
               </option>
               <frame x="8" y="55" width="1904" height="1137" />
               <option name="productionCode" value="CL" />
-              <option name="projectOpenTimestamp" value="1753829088280" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
-        <entry key="$USER_HOME$/projects/axen-lang">
-          <value>
-            <RecentProjectMetaInfo frameTitle="axen-lang – build.c" projectWorkspaceId="30ZJO8M0KlQ0xST56EwSjtkfcUy">
-              <option name="activationTimestamp" value="1753909685564" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="CL-251.25410.104" />
-              <option name="buildTimestamp" value="1746539640000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="0" />
-              </option>
-              <frame x="8" y="55" width="1904" height="1137" />
-              <option name="productionCode" value="CL" />
-              <option name="projectOpenTimestamp" value="1753829126602" />
+              <option name="projectOpenTimestamp" value="1756616278691" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
         <entry key="$USER_HOME$/projects/waywall">
           <value>
-            <RecentProjectMetaInfo frameTitle="waywall – api.c" opened="true" projectWorkspaceId="30TcygnA0YJSPKhMEY6YBzpAjVN">
-              <option name="activationTimestamp" value="1754721892251" />
+            <RecentProjectMetaInfo frameTitle="waywall [~/projects/waywall] – Changes: server.c" opened="true" projectWorkspaceId="32jAbYYW486KzsLGW95IqwhBvEV">
+              <option name="activationTimestamp" value="1758598637377" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="CL-251.25410.104" />
               <option name="buildTimestamp" value="1746539640000" />
@@ -62,13 +46,29 @@
               </option>
               <frame x="8" y="55" width="1904" height="1137" />
               <option name="productionCode" value="CL" />
-              <option name="projectOpenTimestamp" value="1753909687322" />
+              <option name="projectOpenTimestamp" value="1757967501797" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/projects/a-waywall">
+          <value>
+            <RecentProjectMetaInfo frameTitle="a-waywall [~/projects/a-waywall] – /home/arsoniv/projects/a-waywall/waywall/server/server.c" projectWorkspaceId="32jAgp0p1nOz1R56EX3HSBsEh3T">
+              <option name="activationTimestamp" value="1758092864789" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-251.25410.104" />
+              <option name="buildTimestamp" value="1746539640000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="8" y="55" width="1904" height="1137" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1758085616313" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
     <option name="lastOpenedProject" value="$USER_HOME$/projects/waywall" />
-    <option name="lastProjectLocation" value="$USER_HOME$/projects" />
+    <option name="lastProjectLocation" value="$USER_HOME$/projects/axen" />
   </component>
 </application>

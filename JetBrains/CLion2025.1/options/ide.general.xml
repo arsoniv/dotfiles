@@ -13,6 +13,11 @@
   <component name="StatusBar">
     <option name="widgets">
       <map>
+        <entry key="ActiveRadlerBuildConfiguration" value="false" />
+        <entry key="ClangTidyStatusBarWidget" value="false" />
+        <entry key="Encoding" value="false" />
+        <entry key="LineSeparator" value="false" />
+        <entry key="projectStatusWidgetProvider" value="false" />
         <entry key="webDeployment.default.server.widget" value="false" />
       </map>
     </option>

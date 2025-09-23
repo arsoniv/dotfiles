@@ -4,7 +4,7 @@ vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
 vim.o.number = true
-vim.o.relativenumber = true
+vim.o.relativenumber = false
 
 vim.o.mouse = ""
 
@@ -110,6 +110,22 @@ rtp:prepend(lazypath)
 -- [[ Configure and install plugins ]]
 
 require("lazy").setup({
+	{
+		"andweeb/presence.nvim",
+		config = function()
+			require("presence").setup({
+				auto_update = true,
+				neovim_image_text = "Neovim FTW",
+				main_image = "neovim",
+				show_time = true,
+				editing_text = "Editing %s",
+				file_explorer_text = "Browsing %s",
+				git_commit_text = "Committing changes",
+				plugin_manager_text = "Managing plugins",
+			})
+		end,
+	},
+
 	{
 		"NMAC427/guess-indent.nvim",
 		config = function()

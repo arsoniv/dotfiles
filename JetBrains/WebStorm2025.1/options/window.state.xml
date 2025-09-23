@@ -8,16 +8,16 @@
     <size key="REMOTE_DEVELOPMENT_CONNECTION.0.0.1920.1200" width="810" height="680" />
   </component>
   <component name="WindowManager">
-    <frame x="8" y="56" width="1904" height="1136" />
+    <frame x="8" y="55" width="1904" height="1137" />
   </component>
   <component name="WindowStateApplicationService">
-    <state x="748" y="381" width="454" height="458" key="FileChooserDialogImpl" timestamp="1751963988061">
+    <state x="748" y="381" width="454" height="458" key="FileChooserDialogImpl" timestamp="1755034705859">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="748" y="381" width="454" height="458" key="FileChooserDialogImpl/0.0.1920.1200" timestamp="1751963988061" />
-    <state x="960" y="624" width="1904" height="1136" key="WELCOME_SCREEN" timestamp="1752997846116">
+    <state x="748" y="381" width="454" height="458" key="FileChooserDialogImpl/0.0.1920.1200" timestamp="1755034705859" />
+    <state x="482" y="623" width="948" height="1137" key="WELCOME_SCREEN" timestamp="1755034707710">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="960" y="624" width="1904" height="1136" key="WELCOME_SCREEN/0.0.1920.1200" timestamp="1752997846116" />
+    <state x="482" y="623" width="948" height="1137" key="WELCOME_SCREEN/0.0.1920.1200" timestamp="1755034707710" />
   </component>
 </application>

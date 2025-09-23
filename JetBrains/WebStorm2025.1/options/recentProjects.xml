@@ -1,6 +1,26 @@
 <application>
   <component name="RecentProjectsManager">
-    <option name="lastOpenedProject" value="$USER_HOME$/WebstormProjects/golftracker" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/projects/ww-config-generator">
+          <value>
+            <RecentProjectMetaInfo frameTitle="ww-config-generator – +page.svelte" opened="true" projectWorkspaceId="31CiyP7gLdz6qzOuDFIpuFmqUvz">
+              <option name="activationTimestamp" value="1755034995653" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="WS-251.25410.117" />
+              <option name="buildTimestamp" value="1746610620000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="8" y="55" width="1904" height="1137" />
+              <option name="productionCode" value="WS" />
+              <option name="projectOpenTimestamp" value="1755034708503" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/projects/ww-config-generator" />
     <option name="lastProjectLocation" value="$USER_HOME$/WebstormProjects" />
   </component>
 </application>
