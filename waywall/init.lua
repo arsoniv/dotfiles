@@ -188,7 +188,7 @@ config.actions = {
 		chat1:open()
 	end,
 	["ctrl-m"] = function()
-		chat1:send("meow im a gleeb born in 1528 while doing a femboyDancy playing ranked")
+		chat1:send("meow im a ranked gleeb born in 1528 while doing a femboyDancy playing ranked a lot")
 	end,
 
 	["ctrl-alt-l"] = function()

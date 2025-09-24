@@ -104,11 +104,7 @@ local function new_chat(channel, x, y, size)
 					local aspect = emote.w / emote.h
 					local emote_w = emote_h * aspect
 
-					local space_width = waywall.text_advance(" ", CHAT.size).x
-					local spaces_needed = math.max(1, math.ceil(emote_w / space_width))
-					local spacing = string.rep(" ", spaces_needed)
-
-					body = body .. spacing
+					body = body .. "<+" .. emote_w .. "> "
 
 					local line_height = CHAT.size + CHAT.ls
 					local line_top = CHAT.chat_y + current_line * line_height - CHAT.size / 2
@@ -141,6 +137,7 @@ local function new_chat(channel, x, y, size)
 			size = CHAT.size,
 			ls = CHAT.ls,
 		})
+		print(text_buf)
 	end
 
 	function CHAT:send(msg)
