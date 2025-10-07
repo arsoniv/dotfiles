@@ -1,7 +1,8 @@
 local waywall = require("waywall")
 local helpers = require("waywall.helpers")
-local chat = require("chat")
-local emote_downloader = require("fetch_emotes")
+--local chat = require("chat")
+--local emote_downloader = require("fetch_emotes")
+local statsoverlay = require("paceman_session_overlay")
 
 local read_file = function(name)
 	local file = io.open("/home/arsoniv/.config/waywall/" .. name, "r")
@@ -24,7 +25,7 @@ local config = {
 		background = "#222222ff",
 		ninb_anchor = "bottomleft",
 		ninb_opacity = 1,
-		font_path = "/usr/share/fonts/TTF/JetBrainsMono-Medium.ttf",
+		font_path = "/usr/share/fonts/TTF/JetBrainsMonoNerdFont-SemiBold.ttf",
 		font_size = 25,
 	},
 	shaders = {
@@ -139,6 +140,16 @@ local exec_pm = function()
 	end
 end
 
+--Lingle
+local noLingle = true
+local exec_lin = function()
+	if noLingle then
+		print("STARTING LINGLE")
+		waywall.exec("java -jar /home/arsoniv/Lingle-0.5.5.jar --nogui")
+		noLingle = false
+	end
+end
+
 -- dpi change for eye throws
 local eyeMode = false
 local toggleEye = function()
@@ -154,8 +165,8 @@ local toggleEye = function()
 end
 
 --local nin_bot_overlay = require("nin_bot")
---local paceman_stats_overlay = require("paceman_session_overlay")
-local chat1 = chat("Arsoniv", 10, 10, 16)
+--local chat1 = chat("nyachloe", 10, 10, 17)
+local pacemanStatsOverlay = statsoverlay("arsoniv", 25, 1060, 1125, 820, 38, 25)
 
 config.actions = {
 	["*-f2"] = function()
@@ -182,18 +193,27 @@ config.actions = {
 
 	["*-n"] = helpers.toggle_floating,
 	["ctrl-n"] = exec_ninb,
-	["ctrl-b"] = exec_pm,
+	["ctrl-b"] = function()
+		exec_pm()
+		pacemanStatsOverlay:open()
+	end,
 
+	["ctrl-k"] = function()
+		print("hi")
+		waywall.text("<#000000FF>hello, im a gleeb :(", { x = 100, y = 100, size = 40, shader = "rainbow_text" })
+	end,
+
+	--[[
 	["ctrl-k"] = function()
 		chat1:open()
 	end,
 	["ctrl-m"] = function()
 		chat1:send("meow im a ranked gleeb born in 1528 while doing a femboyDancy playing ranked a lot")
 	end,
-
 	["ctrl-alt-l"] = function()
-		emote_downloader.Fetch("01K5JRCYEH0YCV255WGKD5AAB2")
+		emote_downloader.Fetch("01GK85Q2KR0004CEXMKS14YZJV")
 	end,
+	]]
 }
 
 return config

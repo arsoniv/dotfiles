@@ -1,3 +1,4 @@
+--chat overlay
 local waywall = require("waywall")
 local priv = require("priv")
 local utf8 = require("utf8")

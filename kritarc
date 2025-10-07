@@ -34,8 +34,8 @@ Krita/Ocio/OcioConfigPath=
 Krita/Ocio/OcioLockColorVisualRepresentation=false
 Krita/Ocio/OcioLutPath=
 Krita/Ocio/UseOcio=false
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB b="0" g="0" space="sRGB-elle-V2-srgbtrc.icc" r="0"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB b="1" g="1" space="sRGB-elle-V2-srgbtrc.icc" r="1"/>\n</LastForeGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB r="0" g="0" b="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB r="1" g="1" b="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastForeGroundColor>\n
 LastPreset=b) Basic-3 Flow
 LastPreset_-1=b) Basic-3 Flow
 LineSmoothingDelayDistance=50
@@ -471,12 +471,8 @@ yPosition=16
 pinControls=true
 
 [RecentFiles]
-File1[$e]=$HOME/Pictures/practice-sketch-portrait.kra
-File2[$e]=$HOME/Downloads/overlay.png
-File3[$e]=$HOME/Downloads/beast.jpg
-Name1=practice-sketch-portrait.kra
-Name2=overlay.png
-Name3=beast.jpg
+File1[$e]=$HOME/Downloads/overlay.png
+Name1=overlay.png
 maxRecentFileItems=100
 
 [SelectedTags]

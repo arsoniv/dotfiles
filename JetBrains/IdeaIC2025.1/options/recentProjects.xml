@@ -2,25 +2,25 @@
   <component name="RecentProjectsManager">
     <option name="additionalInfo">
       <map>
-        <entry key="$USER_HOME$/projects/mcsr-launcher">
+        <entry key="$USER_HOME$/projects/Lingle">
           <value>
-            <RecentProjectMetaInfo frameTitle="mcsr-launcher – README.md [MCSRLauncher]" opened="true" projectWorkspaceId="32UspWfb1EnexvXLrvU909HYoWl">
-              <option name="activationTimestamp" value="1757487239870" />
+            <RecentProjectMetaInfo frameTitle="Lingle – Main.java [Lingle.main]" opened="true" projectWorkspaceId="33MJAGKKofpDpIMmGsUeLU8pl6x">
+              <option name="activationTimestamp" value="1759124319968" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="IC-251.23774.435" />
               <option name="buildTimestamp" value="1744642800000" />
               <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="4" />
+                <RecentProjectColorInfo associatedIndex="6" />
               </option>
               <frame x="8" y="55" width="1904" height="1137" />
               <option name="productionCode" value="IC" />
-              <option name="projectOpenTimestamp" value="1757486669138" />
+              <option name="projectOpenTimestamp" value="1759120863180" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/projects/mcsr-launcher" />
+    <option name="lastOpenedProject" value="$USER_HOME$/projects/Lingle" />
     <option name="lastProjectLocation" value="$USER_HOME$/projects" />
   </component>
 </application>

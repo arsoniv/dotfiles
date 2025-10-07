@@ -3,11 +3,11 @@
   <component name="JdkInstallerHistory">
     <option name="installedItems">
       <installed-jdk>
-        <option name="fullText" value="Microsoft OpenJDK 17.0.15" />
-        <option name="installDir" value="/home/arsoniv/.jdks/ms-17.0.15" />
-        <option name="sha256" value="e7029853d3e9d3dde090aa65dc2386c6e9cb0a41028fea41e48c866a958eba03" />
-        <option name="url" value="https://aka.ms/download-jdk/microsoft-jdk-17.0.15-linux-x64.tar.gz" />
-        <option name="versionText" value="17.0.15" />
+        <option name="fullText" value="Oracle OpenJDK 25" />
+        <option name="installDir" value="/home/arsoniv/.jdks/openjdk-25" />
+        <option name="sha256" value="59cdcaf255add4721de38eb411d4ecfe779356b61fb671aee63c7dec78054c2b" />
+        <option name="url" value="https://download.java.net/java/GA/jdk25/bd75d5f9689641da8e1daabeccb5528b/36/GPL/openjdk-25_linux-x64_bin.tar.gz" />
+        <option name="versionText" value="25" />
       </installed-jdk>
     </option>
   </component>
@@ -21,16 +21,16 @@
   <component name="PropertyService"><![CDATA[{
   "keyToString": {
     "InstalledPluginsSearchHistory": "GUI designer\nGUI design\nGUI desi\ngui des\nGUI",
-    "LAST_CALCULATED_COLOR_INDEX_KEY": "4",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "6",
     "MarketplacePluginsSearchHistory": "vim",
     "MemberChooser.copyJavadoc": "false",
     "MemberChooser.showClasses": "true",
     "NewProjectWizard.generateOnboardingTips": "true",
     "NewProjectWizard.gradleDslState": "KOTLIN",
     "NewProjectWizard.groupIdState": "org.arsoniv",
-    "NextRunPlatformUpdateBuild": "IC-251.28293.39",
+    "NextRunPlatformUpdateBuild": "IC-251.28774.11",
     "NextRunPlatformUpdateSelfBuild": "IC-251.23774.435",
-    "NextRunPlatformUpdateVersion": "2025.1.5.1",
+    "NextRunPlatformUpdateVersion": "2025.1.6",
     "PluginConfigurable.selectionTab": "1",
     "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
     "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
@@ -45,6 +45,7 @@
     "defaultJdkConfigured": "true",
     "experimental.ui.on.first.startup": "true",
     "experimental.ui.used.version": "251.23774.435",
+    "file.gist.reindex.count": "1",
     "fileTypeChangedCounter": "1",
     "fontSizeToResetConsole": "13.0",
     "fontSizeToResetEditor": "13.0",
@@ -55,7 +56,7 @@
     "installed.kotlin.plugin.version": "251.23774.435-IJ",
     "java.exceptions.anniversary.banner.shown": "2",
     "jdk.selected.JAVA_MODULE": "21",
-    "kotlin.lastUpdateCheck": "1750714884112",
+    "kotlin.lastUpdateCheck": "1759121125013",
     "last.used.gradle.home": "/usr/share/java/gradle",
     "last_opened_file_path": "/home/arsoniv/projects/1.1game",
     "llm.installer.last.toolwindow.state": "LLM_INSTALLER",

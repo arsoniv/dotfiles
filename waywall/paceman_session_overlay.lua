@@ -1,3 +1,7 @@
+-- paceman overlay
+local waywall = require("waywall")
+local json = require("dkjson")
+
 local function ms_to_min_sec(ms)
 	if not ms then
 		return "0:00"
@@ -8,22 +12,7 @@ local function ms_to_min_sec(ms)
 	return string.format("%d:%02d", minutes, seconds)
 end
 
-local waywall = require("waywall")
-local json = require("dkjson")
-
--- NPH AND OTHER STATS
-local last_index = 0
-local text = nil
-local saved_data = nil
-
---MOST RECENT RUN
-local last_index2 = 0
-local text2 = nil
-local saved_data2 = nil
-
-local last_request_unix_time = 0
-
-local exclude_keys = {
+local EXCLUDE_KEYS = {
 	id = true,
 	time = true,
 	updatedTime = true,
@@ -33,7 +22,7 @@ local exclude_keys = {
 	obtainCryingObsidian = true,
 }
 
-local key_order = {
+local KEY_ORDER = {
 	"nether",
 	"bastion",
 	"fortress",
@@ -50,87 +39,159 @@ local key_order = {
 	"realUpdated",
 }
 
-local function display_overlay()
-	if saved_data ~= nil then
-		local display_string = "Count: "
-			.. tostring(saved_data.count)
-			.. "\nPer Hour: "
-			.. tostring(saved_data.rnph)
-			.. "\nAverage: "
-			.. ms_to_min_sec(saved_data.avg)
+local function new_paceman(username, x_stats, y_stats, x_runs, y_runs, size_stats, size_runs)
+	local PACEMAN = {}
 
-		if text then
-			text:close()
-			text = nil
+	PACEMAN.username = username
+	PACEMAN.x_stats = x_stats or 25
+	PACEMAN.y_stats = y_stats or 1060
+	PACEMAN.x_runs = x_runs or 1125
+	PACEMAN.y_runs = y_runs or 795
+	PACEMAN.size_stats = size_stats or 25
+	PACEMAN.size_runs = size_runs or 38
+	PACEMAN.update_interval = 20000 -- 20 seconds
+
+	PACEMAN.stats_data = nil
+	PACEMAN.runs_data = nil
+	PACEMAN.stats_text = nil
+	PACEMAN.runs_text = nil
+	PACEMAN.last_request_time = 0
+	PACEMAN.http_client = nil
+	PACEMAN.has_connected = false
+
+	local function draw_stats()
+		if PACEMAN.stats_text then
+			PACEMAN.stats_text:close()
+			PACEMAN.stats_text = nil
 		end
 
-		local state = waywall.state()
-		if state.screen == "wall" then
-			text = waywall.text(display_string, 25, 1060, "#FFFFFFFF")
-		end
-	end
-end
+		if PACEMAN.stats_data then
+			local display_string = "Count: "
+				.. tostring(PACEMAN.stats_data.count)
+				.. "\nPer Hour: "
+				.. tostring(PACEMAN.stats_data.rnph)
+				.. "\nAverage: "
+				.. ms_to_min_sec(PACEMAN.stats_data.avg)
 
-local function display_overlay2()
-	if saved_data2 ~= nil then
-		local display_string = "Last Nether: \n"
-		if saved_data2[1] ~= nil then
-			local entry = saved_data2[1]
-
-			for _, key in ipairs(key_order) do
-				local value = entry[key]
-				if value ~= nil and not exclude_keys[key] then
-					display_string = display_string .. key .. ": " .. tostring(ms_to_min_sec(value)) .. "\n"
-				end
+			local state = waywall.state()
+			if state.screen == "wall" then
+				PACEMAN.stats_text = waywall.text("<#000000FF>" .. display_string, {
+					x = PACEMAN.x_stats,
+					y = PACEMAN.y_stats,
+					size = PACEMAN.size_stats,
+					shader = "rainbow_text",
+				})
 			end
 		end
+	end
 
-		if text2 then
-			text2:close()
-			text2 = nil
+	local function draw_runs()
+		if PACEMAN.runs_text then
+			PACEMAN.runs_text:close()
+			PACEMAN.runs_text = nil
 		end
+
+		if PACEMAN.runs_data and PACEMAN.runs_data[1] then
+			local display_string = "Last Nether: \n"
+			local entry = PACEMAN.runs_data[1]
+
+			for _, key in ipairs(KEY_ORDER) do
+				local value = entry[key]
+				if value and not EXCLUDE_KEYS[key] then
+					display_string = display_string .. key .. ": " .. ms_to_min_sec(value) .. "\n"
+				end
+			end
+
+			local state = waywall.state()
+			if state.screen == "wall" then
+				PACEMAN.runs_text = waywall.text("<#000000FF>" .. display_string, {
+					x = PACEMAN.x_runs,
+					y = PACEMAN.y_runs,
+					size = PACEMAN.size_runs,
+					shader = "rainbow_text",
+				})
+			end
+		end
+	end
+
+	local function http_callback(response_string, url)
+		print("HTTP Response from: " .. url)
+		print(response_string)
+
+		if url:find("getNPH") then
+			PACEMAN.stats_data = json.decode(response_string, 1, nil)
+			draw_stats()
+		elseif url:find("getRecentRuns") then
+			PACEMAN.runs_data = json.decode(response_string, 1, nil)
+			draw_runs()
+		end
+	end
+
+	local function make_requests()
+		if not PACEMAN.http_client then
+			return
+		end
+
+		local stats_url =
+			string.format("https://paceman.gg/stats/api/getNPH/?name=%s&hours=2&hoursBetween=2", PACEMAN.username)
+		local runs_url =
+			string.format("https://paceman.gg/stats/api/getRecentRuns/?name=%s&hours=24&limit=1", PACEMAN.username)
+
+		PACEMAN.http_client:get(stats_url)
+		PACEMAN.http_client:get(runs_url)
+	end
+
+	local function state_callback()
+		draw_stats()
+		draw_runs()
 
 		local state = waywall.state()
 		if state.screen == "wall" then
-			text2 = waywall.text(display_string, 1125, 795, "#FFFFFF", 38)
+			local now = waywall.current_time()
+			if now > PACEMAN.last_request_time + PACEMAN.update_interval then
+				make_requests()
+				PACEMAN.last_request_time = now
+			end
 		end
 	end
-end
 
-local make_request = function()
-	local response = waywall.http_request("https://paceman.gg/stats/api/getNPH/?name=arsoniv&hours=2&hoursBetween=2", 0)
-	if response ~= nil then
-		last_index = response
-	end
-	local response2 =
-		waywall.http_request("https://paceman.gg/stats/api/getRecentRuns/?name=arsoniv&hours=24&limit=1", 100)
-	if response2 ~= nil then
-		last_index2 = response2
-	end
-end
+	function PACEMAN:open()
+		if not self.has_connected then
+			print("Starting Paceman overlay for " .. self.username)
 
-waywall.listen("http", function(string, i)
-	print(string)
-	if i == last_index then
-		saved_data = json.decode(string, 1, nil)
-		display_overlay()
-	end
-	if i == last_index2 then
-		saved_data2 = json.decode(string, 1, nil)
-		display_overlay2()
-	end
-end)
+			-- Create HTTP client with callback
+			self.http_client = waywall.http_client_create(http_callback)
 
-waywall.listen("state", function()
-	display_overlay()
-	display_overlay2()
+			-- Register state callback
+			waywall.listen("state", state_callback)
 
-	local state = waywall.state()
-	if state.screen == "wall" then
-		local now = waywall.current_time()
-		if now > last_request_unix_time + 20000 then
-			make_request()
-			last_request_unix_time = now
+			-- Make initial request
+			make_requests()
+
+			self.has_connected = true
 		end
 	end
-end)
+
+	function PACEMAN:close()
+		if self.stats_text then
+			self.stats_text:close()
+			self.stats_text = nil
+		end
+		if self.runs_text then
+			self.runs_text:close()
+			self.runs_text = nil
+		end
+		if self.http_client then
+			self.http_client:close()
+			self.http_client = nil
+		end
+	end
+
+	function PACEMAN:set_update_interval(ms)
+		self.update_interval = ms
+	end
+
+	return PACEMAN
+end
+
+return new_paceman
